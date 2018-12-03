@@ -1,0 +1,576 @@
+$font-family-mac: "Hiragino Sans GB", Optima, "Lucida Grande"
+$font-family-pc: "Microsoft JhengHei", "Microsoft YaHei"
+$font-family-code: Monaco, Consolas, "Courier New"
+
+$color-text: #333
+$color-link: #090
+$color-mark: #ff0
+
+$color-body-bg: #fefefe
+$color-block-bg: #eee
+
+$button-3d-height: 10px
+
+
+@mixin box-sizing($sizing: border-box)
+  -moz-box-sizing: $sizing
+  box-sizing: $sizing
+
+@mixin transform($value...)
+  -webkit-transform: $value
+  transform: $value
+
+@mixin transform-origin($value)
+  -webkit-transform-origin: $value
+  transform-origin: $value
+
+@mixin transform-3d($value: preserve-3d)
+  -webkit-transform-style: $value
+  transform-style: $value
+
+@mixin transform-perspective($value: 350px)
+  -webkit-perspective: $value
+  perspective: $value
+
+@mixin transition($value...)
+  -webkit-transition: $value
+  transition: $value
+
+@mixin transition-transform($duration: 0.3s)
+  -webkit-transition: -webkit-transform $duration
+  transition: transform $duration
+
+@mixin input
+  border: 2px lighten($color-link, 10%) solid
+  background: white
+  box-shadow: inset 2px 2px 3px rgba($color-text, 0.2)
+  border-radius: 3px
+
+@mixin button
+  background: $color-link
+  color: white
+  padding: 10px 15px
+  border: 0
+  border-radius: 0
+  display: inline-block
+
+
+@mixin short-transform
+  @include transition-transform
+
+@mixin transform-origin-0
+  @include transform-origin(50% 50%)
+@mixin transform-origin-1
+  left: 0
+  top: 0
+  @include transform-origin(0% 0%)
+@mixin transform-origin-2
+  right: 0
+  top: 0
+  @include transform-origin(100% 0%)
+@mixin transform-origin-3
+  right: 0
+  bottom: 0
+  @include transform-origin(100% 100%)
+@mixin transform-origin-4
+  left: 0
+  bottom: 0
+  @include transform-origin(0% 100%)
+
+@mixin init-3d
+  @include short-transform
+  @include transform-origin-0
+  @include transform-3d
+
+@mixin p-element
+  position: absolute
+  content: ""
+
+
+@mixin logo-3d
+  padding-bottom: 1em
+  @include init-3d
+  @include transform(rotateY(1deg))
+
+  &:hover
+    @include transform(rotateY(2deg))
+  a
+    background-color: $color-link
+    color: white
+    padding: 20px 80px 20px 20px
+    border-radius: 0 80px 80px 0
+    margin: 0
+    position: relative
+    box-shadow: -5px 5px 0 0 desaturate($color-link, 50%)
+
+    &::after
+      @include p-element
+      right: 20px
+      top: 20px
+      border-radius: 1em
+      background-color: white
+      width: 1em
+      height: 1em
+
+@mixin title-3d
+  @include init-3d
+  @include transform(translateZ($button-3d-height))
+  position: relative
+
+  &::after,
+  &::before
+    @include p-element
+    @include short-transform
+    background-color: lighten($color-text, 30%)
+
+  &::before
+    height: 100%
+    width: $button-3d-height*2
+    @include transform(rotateY(90deg))
+    @include transform-origin-1
+  &::after
+    height: 100%
+    width: $button-3d-height*2
+    @include transform(rotateY(-90deg))
+    @include transform-origin-2
+
+@mixin button-3d
+  @include init-3d
+  @include transform(translateZ($button-3d-height))
+  position: relative
+
+  &:hover
+    background-color: lighten($color-text, 30%)
+    @include transform(translateZ($button-3d-height*0.8))
+  &:active
+    background-color: desaturate($color-link, 50%)
+
+  &::after,
+  &::before
+    @include p-element
+    @include short-transform
+    background-color: lighten($color-link, 50%)
+
+  &::before
+    height: 100%
+    width: $button-3d-height
+    @include transform-origin-2
+    @include transform(rotateY(-90deg))
+  &::after
+    height: $button-3d-height
+    width: 100%
+    @include transform-origin-4
+    @include transform(rotateX(90deg))
+
+  &:hover::before
+    width: $button-3d-height*0.8
+    background-color: lighten($color-text, 40%)
+  &:hover::after
+    height: $button-3d-height*0.8
+    background-color: lighten($color-text, 40%)
+
+  &.alter-door::before
+    @include transform-origin-1
+    @include transform(rotateY(90deg))
+
+  &.alter-floor::after
+    @include transform-origin-1
+    @include transform(rotateX(-90deg))
+
+
+/* general elements
+
+html, table
+  font-family: $font-family-mac, $font-family-pc
+code, pre
+  font-family: $font-family-code
+
+html, table
+  font-size: 20px
+  color: $color-text
+
+h1, h2, h3, h4, strong
+  color: darken($color-text, 30%)
+h1, h2, h3, h4, h5, h6, p
+  margin: 1em 0
+
+input, button, select, textarea, label
+  font-family: $font-family-code
+  font-size: 100%
+
+button, input[type="submit"], input[type="button"]
+  -webkit-appearance: push-button
+
+textarea, iframe, form
+  display: block
+  width: 100%
+  @include box-sizing
+
+code, pre, blockquote, q
+  background: $color-block-bg
+
+pre
+  overflow: auto
+
+pre, blockquote
+  margin: 10px 0
+  padding: 0.25em 0.5em
+  border-radius: 3px
+
+a, mark, code, q
+  border-radius: 3px
+  padding: 2px 5px
+
+a
+  color: $color-link
+  text-decoration: none
+
+  &:hover
+    background: lighten($color-text, 50%)
+    color: white
+
+mark
+  background: $color-mark
+
+/* specified form elements
+
+input:not([type]),
+input[type="text"],
+input[type="password"],
+textarea
+  @include input
+
+button,
+input[type="button"],
+input[type="submit"],
+  @include button
+
+/* basic theme
+
+html
+  background: $color-body-bg none no-repeat fixed center bottom
+  background-size: contain
+
+body
+  margin: 2em
+  line-height: 1.5
+
+h1
+  border-bottom: 8px lighten($color-text, 20%) solid
+  margin-bottom: 0.5em
+  padding-bottom: 0.5em
+
+h2
+  margin: 0.75em 0
+  padding: 0.25em 0.5em
+  background-color: rgba($color-link, 0.4)
+  color: desaturate($color-link, 50%)
+
+  strong
+    color: white
+
+  a
+    color: darken($color-link, 10%)
+
+    &:hover
+      background: $color-mark
+      color: black
+
+dt
+  font-weight: bold
+  margin-bottom: 0.5em
+
+dd
+  margin-bottom: 0.5em
+  margin-left: 1em
+  padding: 0.5em 1em 0.5em 1em
+  border-radius: 5px
+
+ul, ol
+  margin: 1em 0
+  padding: 0
+  padding-left: 2em
+
+ul
+  list-style-type: square
+
+li
+  margin: 1em 0
+  padding: 0
+
+table
+  border-collapse: collapse
+  border-color: lighten($color-text, 60%)
+
+tr
+  background: darken($color-body-bg, 10%)
+
+  &:nth-child(even)
+    background: darken($color-body-bg, 5%)
+
+  &:hover
+    background: darken($color-body-bg, 15%)
+
+td, th
+  padding: 5px 10px
+  border-color: lighten($color-text, 60%)
+  cursor: default
+
+th
+  background: darken($color-body-bg, 20%)
+
+iframe
+  width: 100%
+  height: 300px
+  border: 8px lighten($color-text, 60%) solid
+  overflow: auto
+  @include box-sizing
+
+.button-3d
+  @include button
+
+/* wrapper
+
+#wrapper
+  margin: 80px auto
+
+/* navbar
+
+#search
+  width: auto
+  right: 0
+  text-align: right
+  z-index: 21
+  padding: 5px
+  display: none
+
+/* content
+
+.content
+  margin:
+    left: -20px
+    right: -20px
+  padding:
+    left: 20px
+    right: 20px
+  position: relative
+
+  img
+    padding: 1px
+    background: white
+    border: 1px lighten($color-text, 60%) solid
+    max-width: 90%
+
+/* page nav
+
+.page-navigator
+  list-style: none
+  padding: 0
+
+  li
+    display: inline-block
+
+/* comment panel
+
+#comments > .comment-list
+  padding-left: 40px
+
+.comment-list
+  list-style: none
+  margin: 40px 0
+  padding: 0
+
+.comment-body
+  position: relative
+  padding: 5px 10px
+  border-radius: 5px
+  padding-left: 40px
+
+  > p
+    clear: both
+
+.comment-author
+  float: left
+  position: relative
+  padding-bottom: 10px
+
+  cite
+    font-weight: bold
+    font-style: normal
+    font-size: 24px
+
+  img
+    position: absolute
+    display: block
+    width: 64px
+    height: 64px
+    border-radius: 3px
+    background: white
+    box-shadow: 1px 1px 3px 2px lighten($color-text, 20%)
+    left: -76px
+    top: -8px
+
+.comment-meta
+  float: right
+  font-size: 16px
+
+.respond
+
+  label
+    min-width: 120px
+    display: inline-block
+
+  input[type="text"]
+    min-width: 200px
+    display: inline-block
+
+/* sidebar
+
+#sidebar
+  overflow: hidden
+  margin: 20px auto 40px
+
+  .widget
+    margin-bottom: 20px
+    float: left
+    @include box-sizing
+    border-radius: 5px
+
+    h3
+      margin: 20px
+
+/* default layout
+
+#wrapper
+  max-width: 720px
+  min-width: 600px
+  padding: 0
+  @include transition(padding 0.3s, margin 0.3s, font-size 0.3s)
+
+#sidebar
+  @include transition(width 0.3s)
+
+  .widget
+    width: 31.3%
+    margin-left: 1%
+    margin-right: 1%
+    @include transition(width 0.3s)
+
+  .large
+    width: 64.6%
+
+/* responsive layout
+
+@media all and (min-width: 2000px)
+  body
+    font-size: 28px
+  #wrapper
+    max-width: 1200px
+    position: relative
+    padding-right: 1000px
+  #sidebar
+    font-size: 24px
+    position: absolute
+    width: 960px
+    top: 160px
+    right: 0
+
+@media all and (min-width: 1500px) and (max-width: 2000px)
+  body
+    font-size: 24px
+  #wrapper
+    max-width: 1000px
+    position: relative
+    padding-right: 600px
+  #sidebar
+    position: absolute
+    width: 580px
+    top: 160px
+    right: 0
+    .widget
+      width: 48%
+    .large
+      width: 98%
+
+@media all and (min-width: 1050px) and (max-width: 1500px)
+  #wrapper
+    max-width: 800px
+    position: relative
+    padding-right: 320px
+  #sidebar
+    position: absolute
+    width: 300px
+    top: 160px
+    right: 0
+    .widget,
+    .large
+      width: 98%
+
+@media all and (min-width: 650px) and (max-width: 1050px)
+
+@media all and (min-width: 400px) and (max-width: 650px)
+  #wrapper
+    min-width: 300px
+    width: 100%
+  #sidebar
+    .widget
+      width: 48%
+    .large
+      width: 98%
+
+@media all and (max-width: 400px)
+  #wrapper
+    min-width: 0
+    width: 100%
+  #sidebar
+    .widget,
+    .large
+      width: 98%
+
+#wrapper
+  margin: 0 auto
+  padding-top: 80px
+  padding-bottom: 80px
+
+#nav a
+  margin: 0 0.5em 0 0
+
+.page-navigator
+  li
+    a
+      margin-right: 1em
+
+    &.current a
+      background-color: lighten($color-link, 50%)
+
+@media all and (min-width: 400px)
+  html
+    height: 100%
+    overflow: hidden
+    &:after
+      position: fixed
+      right: 0
+      bottom: 0
+      content: "{\"theme\": \"我的字很大-3D\", \"designer\": \"@勾三股四\"}"
+      font-family: Monaco, Consolas, "Courier New"
+      font-size: 80%
+      padding: 0.5em 1em
+      @include box-sizing
+      color: desaturate($color-link, 80%)
+      z-index: -1
+  body
+    margin: 0
+    padding: 0 2em
+    height: 100%
+    overflow: auto
+    @include transform-perspective
+  h1
+    @include logo-3d
+  h2
+    @include title-3d
+  button,
+  input[type="button"],
+  input[type="submit"],
+  .button-3d
+    @include button-3d
+
