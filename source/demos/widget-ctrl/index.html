@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Widget Controller</title>
+<link rel="stylesheet" href="/s/css/style.css">
+<link rel="stylesheet" href="stage.css">
+<link rel="stylesheet" href="demo.css">
+<link rel="stylesheet" href="ctrl.css">
+
+</head>
+
+<body>
+
+<div id="stage-demo" class="stage">
+    <div id="slide-demo" class="slide" data-layout="normal">
+        <div id="item-title" data-key="title">
+            <div class="output">Slide Title</div>
+        </div>
+        <div id="item-content" data-key="content" class="active">
+            <div class="output">Widget Content</div>
+        </div>
+    </div>
+</div>
+
+<script id="ctrl-template" type="text/template">
+<div class="ctrl">
+    <a href="#" class="ctrl-start"></a>
+    <a href="#" class="ctrl-resize"></a>
+    <ul class="ctrl-menu">
+        <li><a href="#">清空</a></li>
+        <li><a href="#">编辑</a></li>
+        <li><a href="#">…</a></li>
+        <li><a href="#">文字</a></li>
+        <li><a href="#">图片</a></li>
+        <li><a href="#">视频</a></li>
+    </ul>
+</div>
+</script>
+
+<script id="ctrl-template-title" type="text/template">
+<div class="ctrl">
+    <a href="#" class="ctrl-start"></a>
+    <a href="#" class="ctrl-resize"></a>
+    <ul class="ctrl-menu">
+        <li><a href="#">清空</a></li>
+        <li><a href="#">编辑</a></li>
+        <li><a href="#">无</a></li>
+    </ul>
+</div>
+</script>
+
+<script src="/s/js/jquery.js"></script>
+<script src="ctrl.js"></script>
+
+</body>
+
+</html>

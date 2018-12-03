@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"compiled.js",
+"lineCount":1,
+"mappings":"AAAAA,QAASA,UAAS,CAACC,CAAD,CAAM,CAEfA,CAAAC,MAAA,CADQC,qBACR,CAAL,GACIF,CADJ,CACU,SADV,CACsBA,CADtB,CAGA,OAAOA,EALa,C,CCAxBD,SAAA,CAAUI,MAAAC,SAAAC,KAAV;",
+"sources":["script.js","run.js"],
+"names":["formatUrl","url","match","regexp","window","location","href"]
+}

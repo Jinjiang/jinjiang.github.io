@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Avatar Editor (SVG Version)</title>
+<style>
+svg {
+    border: 5px black solid;
+}
+svg rect,
+svg image {
+    cursor: move;
+}
+button {
+    font-family: Consolas;
+    font-size: 200%;
+    padding: 5px 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="avatar-stage"></div>
+<button onclick="zoomOut()">-</button>
+<button onclick="zoomIn()">+</button>
+
+<script src="raphael.js"></script>
+<script>
+var STAGE_SIZE = 300;
+var DEFAULT_SIZE = 200;
+var RESULT_SIZE = 100;
+
+var width;
+var height;
+var src = 'test.jpg';
+
+var isTall;
+var scale = 1;
+var offsetLeft;
+var offsetTop;
+var scaledWidth;
+var scaledHeight;
+var scaledLeft;
+var scaledTop;
+
+var moveX = 0;
+var moveY = 0;
+
+var img = new Image();
+img.onload =  function () {
+    width = img.width;
+    height = img.height;
+    initPaper();
+};
+img.src = src;
+
+var paper;
+var avatar;
+var mask;
+
+paper = Raphael('avatar-stage', STAGE_SIZE, STAGE_SIZE);
+
+function initPaper() {
+    offsetLeft = (STAGE_SIZE - width) / 2;
+    offsetTop = (STAGE_SIZE - height) / 2;
+    
+    avatar = paper.image(src, offsetLeft, offsetTop, width, height);
+
+    mask = paper.rect(RESULT_SIZE, RESULT_SIZE, RESULT_SIZE, RESULT_SIZE);
+    scale = height > width ?
+        (DEFAULT_SIZE / width) :
+        (DEFAULT_SIZE / height);
+
+    avatar.scale(scale, scale);
+    
+    function down(event) {
+        event.preventDefault();
+
+        this.ox = avatar.attr('x');
+        this.oy = avatar.attr('y');
+        this.mx = event.clientX;
+        this.my = event.clientY;
+        
+        document.onmousemove = move;
+        document.onmouseup = up;
+    }
+    
+    function move(event) {
+        event.preventDefault();
+
+        var offsetX = event.clientX - avatar.node.mx;
+        var offsetY = event.clientY - avatar.node.my;
+        avatar.attr('x', avatar.node.ox + offsetX);
+        avatar.attr('y', avatar.node.oy + offsetY);
+    }
+    
+    function up() {
+        document.onmousemove = null;
+        document.onmouseup = null;
+    }
+    
+    avatar.node.onmousedown = down;
+}
+function zoomIn() {
+    scale += 0.1;
+    avatar.scale(scale, scale);
+}
+function zoomOut() {
+    scale -= 0.1;
+    avatar.scale(scale, scale);
+}
+</script>
+
+</body>
+
+</html>
+

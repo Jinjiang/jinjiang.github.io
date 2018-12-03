@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+<head>
+
+<title>Web Web Browser</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="/s/css/style.css">
+<style>
+#fav-bar {
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: "Lucida Grande", "Segoe UI";
+    border: 1px #999 solid;
+    border-radius: 5px;
+    padding: 2px 0;
+    background: #f0f0f0;
+    color: #666;
+    line-height: 1.2;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+#fav-bar > div {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    margin: 0 2px;
+    border: 1px transparent solid;
+    padding: 4px;
+    border-radius: 5px;
+    background: transparent none;
+    vertical-align: middle;
+    -webkit-transition: background 0.15s, border 0.15s;
+    -moz-transition: background 0.15s, border 0.15s;
+}
+#fav-bar > div:hover {
+    border-color: #069;
+    background-color: #eef;
+}
+#fav-bar > div:active {
+    border-color: #069;
+    background-color: #cce;
+}
+#fav-bar .link,
+#fav-bar .folder {
+    padding-left: 24px;
+    background: transparent url(file_16.png) no-repeat 4px center;
+}
+#fav-bar .folder {
+    background-image: url(folder_16.png);
+}
+#fav-bar .more {
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+#fav-bar.has-more .more {
+    display: inline-block;
+}
+#fav-bar.no-more .more {
+    display: none;
+}
+#fav-bar.empty .more {
+    display: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="fav-bar">
+    <div class="placeholder">&nbsp;</div>
+    <!-- template
+    <div data-url="#1">Bookmark Name</div>
+    <div data-url="#2" class="folder">Folder Name</div>
+    <div data-url="#3" class="more">More</div>
+    -->
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

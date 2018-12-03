@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 Web Messaging demo - channel iframe</title>
+    <link rel="stylesheet" type="text/css" href="/s/css/style.css">
+</head>
+<body>
+
+<h3>iFrame URL: <script type="text/javascript">document.write(location.toString());</script></h3>
+<ul id="list"></ul>
+
+<script type="text/javascript" src="/s/js/jquery.js"></script>
+<script type="text/javascript">
+var channel = new MessageChannel();
+window.top.postMessage('Hello Top Window', '*', [channel.port1]);
+channel.port2.onmessage = function (e) {
+    console.log(e, e.data, e.origin, e.lastEventId, e.source, e.ports);
+    var li = $('<li></li>');
+    li.text('[' + (new Date).toLocaleTimeString() + '] - ' + JSON.stringify(e.data)).attr('title', 'fromt: ' + e.origin);
+    $('#list').prepend(li);
+};
+</script>
+
+</body>
+</html>

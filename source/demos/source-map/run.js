@@ -1,0 +1,1 @@
+formatUrl(window.location.href)

@@ -1,0 +1,344 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 49, ../sass/screen.sass */
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 52, ../sass/screen.sass */
+body {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  background: url(../images/grey_wash_wall.png);
+}
+
+/* line 57, ../sass/screen.sass */
+h1 {
+  font-size: 24px;
+}
+@media (min-width: 640px) {
+  /* line 57, ../sass/screen.sass */
+  h1 {
+    font-size: 36px;
+  }
+}
+
+/* line 63, ../sass/screen.sass */
+#root {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  /* background: url(../images/rockywall.png) */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+  min-height: 160px;
+}
+
+/* line 73, ../sass/screen.sass */
+#ctrl {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* line 77, ../sass/screen.sass */
+#main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px grey solid;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* line 86, ../sass/screen.sass */
+#todos {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+}
+
+/* line 91, ../sass/screen.sass */
+#todo-list {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 400px;
+  -moz-perspective: 400px;
+  -ms-perspective: 400px;
+  perspective: 400px;
+}
+/* line 22, ../sass/screen.sass */
+#todo-list::-webkit-scrollbar {
+  width: 12px;
+}
+/* line 24, ../sass/screen.sass */
+#todo-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 26, ../sass/screen.sass */
+#todo-list::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 29, ../sass/screen.sass */
+#todo-list::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.2);
+}
+/* line 101, ../sass/screen.sass */
+#todo-list li {
+  background: url(../images/rockywall.png);
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+/* line 33, ../sass/screen.sass */
+#todo-list li.ng-enter, #todo-list li.ng-leave {
+  -webkit-transition-property: opacity, -webkit-transform;
+  -moz-transition-property: opacity, -moz-transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 39, ../sass/screen.sass */
+#todo-list li.ng-enter {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 41, ../sass/screen.sass */
+#todo-list li.ng-enter-active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 43, ../sass/screen.sass */
+#todo-list li.ng-leave {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 45, ../sass/screen.sass */
+#todo-list li.ng-leave-active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+/* line 107, ../sass/screen.sass */
+#todo-list li:not(.loading-true):hover {
+  text-shadow: 0px 0px 4px #aaaaaa;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #808080), color-stop(25%, #808080), color-stop(25%, #ffffff), color-stop(50%, #ffffff), color-stop(50%, #808080), color-stop(75%, #808080), color-stop(75%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(left top, #808080, #808080 25%, #ffffff 25%, #ffffff 50%, #808080 50%, #808080 75%, #ffffff 75%, #ffffff);
+  background-image: -moz-linear-gradient(left top, #808080, #808080 25%, #ffffff 25%, #ffffff 50%, #808080 50%, #808080 75%, #ffffff 75%, #ffffff);
+  background-image: linear-gradient(left top, #808080, #808080 25%, #ffffff 25%, #ffffff 50%, #808080 50%, #808080 75%, #ffffff 75%, #ffffff);
+  -webkit-background-size: 90px 90px;
+  -moz-background-size: 90px 90px;
+  background-size: 90px 90px;
+}
+/* line 112, ../sass/screen.sass */
+#todo-list li a {
+  display: block;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+#todo-list li a:active, #todo-list li a:focus {
+  outline: none;
+}
+/* line 116, ../sass/screen.sass */
+#todo-list li h3 {
+  margin: 0;
+}
+/* line 118, ../sass/screen.sass */
+#todo-list li p {
+  margin: 0;
+}
+/* line 121, ../sass/screen.sass */
+#todo-list li:first-child, #todo-list li:nth-child(2) {
+  margin-top: 0;
+}
+/* line 124, ../sass/screen.sass */
+#todo-list li:last-child {
+  margin-bottom: 0;
+}
+/* line 128, ../sass/screen.sass */
+#todo-list .description-false h3 {
+  font-size: 24px;
+  margin: 4px 0;
+}
+/* line 131, ../sass/screen.sass */
+#todo-list .description-false p {
+  display: none;
+}
+/* line 135, ../sass/screen.sass */
+#todo-list .description-true h3 {
+  font-size: 16px;
+}
+/* line 137, ../sass/screen.sass */
+#todo-list .description-true p {
+  font-size: 12px;
+}
+/* line 140, ../sass/screen.sass */
+#todo-list #empty-tips {
+  display: none;
+}
+/* line 142, ../sass/screen.sass */
+#todo-list #empty-tips:last-child {
+  display: block;
+}
+
+/* line 145, ../sass/screen.sass */
+#task-detail {
+  margin: 10px 0;
+}
+
+/* line 148, ../sass/screen.sass */
+#messages {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-transition-property: width, bottom;
+  -moz-transition-property: width, bottom;
+  transition-property: width, bottom;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  bottom: -100%;
+  background: white;
+}
+/* line 162, ../sass/screen.sass */
+#messages.shown-true {
+  bottom: 0;
+}
+@media (min-width: 640px) {
+  /* line 148, ../sass/screen.sass */
+  #messages {
+    position: static;
+    width: 0;
+    height: auto;
+  }
+  /* line 170, ../sass/screen.sass */
+  #messages.shown-true {
+    width: 60%;
+    padding-left: 10px;
+  }
+}
+
+/* line 174, ../sass/screen.sass */
+#message-list {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* line 22, ../sass/screen.sass */
+#message-list::-webkit-scrollbar {
+  width: 12px;
+}
+/* line 24, ../sass/screen.sass */
+#message-list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.1);
+}
+/* line 26, ../sass/screen.sass */
+#message-list::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 29, ../sass/screen.sass */
+#message-list::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 185, ../sass/screen.sass */
+#message-form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+}
+
+/* line 188, ../sass/screen.sass */
+#message-nickname {
+  width: 100px;
+  max-width: 25%;
+}
+
+/* line 192, ../sass/screen.sass */
+#message-content {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  margin: 0 10px;
+}

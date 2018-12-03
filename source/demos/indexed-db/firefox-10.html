@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Indexed DB Demo for Firefox 10</title>
+    <link rel="stylesheet" type="text/css" href="/s/css/style.css">
+    <script type="text/javascript" src="/s/js/jquery.js"></script>
+</head>
+<body onload="init()">
+    <button onclick="clickAddBtn()">Add</button>
+    <ul id="list"></ul>
+</body>
+<script type="text/javascript">
+/// Indexed Database demo script ///
+
+
+/// global ///
+
+var db;
+var list = $('#list');
+
+function init() {
+    var req = window.mozIndexedDB.open('readinglist', '1.0');
+    req.onsuccess = function (e) {
+        db = this.result;
+        showList();
+    };
+    req.onupgradeneeded = function (e) {
+        db = this.result;
+        db.createObjectStore('links', {keyPath: 'url'});
+    };
+}
+
+function add(title, url) {
+    var link = {
+        title: title,
+        url: url
+    }; // 创建要存储的对象
+    var transaction = db.transaction('links', IDBTransaction.READ_WRITE);
+    var store = transaction.objectStore('links');
+    var req = store.put(link); // put的作用是key存在时做更新处理，不存在是做添加处理
+    req.onsuccess = showList; // 添加成功后重新展示列表
+}
+
+function remove(url) {
+    var transaction = db.transaction('links', IDBTransaction.READ_WRITE);
+    var store = transaction.objectStore('links');
+    var req = store.delete(url); // 删除此链接
+    req.onsuccess = showList; // 删除成功后重新展示列表
+}
+
+function showList() {
+    list.empty();
+
+    var transaction = db.transaction('links');
+    var store = transaction.objectStore('links');
+    var range = IDBKeyRange.lowerBound(0); // 创建关键字范围描述
+    var req = store.openCursor(range); // 创建在上述范围内遍历的游标
+    req.onsuccess = function (e) {
+        var result = this.result;
+        if (result) {
+            var link = result.value;
+            appendLink(link);
+            result.continue();
+        }
+    };
+}
+
+function appendLink(link) {
+    var url = link.url;
+    var title = link.title;
+    var li = $('<li><a href="#" target="_blank"></a> <button>X</button></li>');
+    li.find('a').attr('title', title).attr('href', url).text(title);
+    li.find('button').click(function (e) {
+        remove(url);
+    });
+    list.append(li);
+}
+
+function clickAddBtn(e) {
+    var title = prompt('please input the title') || '[No title]';
+    var url = prompt('please input the url', 'http://');
+    if (title && url) {
+        add(title, url);
+    }
+}
+
+</script>
+
+</body>
+</html>

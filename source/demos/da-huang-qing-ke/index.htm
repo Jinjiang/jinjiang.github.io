@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<title>大黄，请客吧！ - 新年快乐 O(∩_∩)O~</title>
+<style>
+body {font-family: "Lucida Grande", "Microsoft JhengHei";}
+#main {width: 800px; margin: auto; position: relative;}
+#splash {position: absolute; top: 0; left: 0; width: 800px; height: 600px;}
+#splash {border: 1px black solid; background-color: rgba(255, 255, 255, 0.9);}
+#loading {font-size: 48px; text-align: center; margin: 160px auto 80px;}
+#queue {margin: 20px 0 0 280px; width: 400px;}
+#queue {font-size: 16px; line-height: 1.5; color: #666; list-style: square;}
+#canvas {border: 1px black solid;}
+#footer {margin: 0 0 20px; text-align: right; font-size: 12px;}
+#splash {
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	transition: opacity 1s;
+}
+</style>
+<script src="easel.js"></script>
+
+</head>
+<body onmousedown="return false;">
+
+<div id="main">
+
+	<div id="splash">
+		<div id="loading">Loading</div>
+		<ul id="queue"></ul>
+	</div>
+
+	<canvas id="canvas" width="800" height="600"></canvas>
+
+	<p id="footer">
+		<code>
+			{"Design": "Vincent", "Dev": "Jinks", "Date": "2012-01-17"}
+		</code>
+	</p>
+
+</div>
+
+<script>
+var stage;
+var icon;
+var button;
+var say1;
+var say2;
+var say3;
+var say4;
+var timer;
+
+var splash = document.getElementById('splash');
+var loading = document.getElementById('loading');
+var queue = document.getElementById('queue');
+
+var loadingStatus = 7;
+var loadingTimer;
+var loadingQueue = [];
+var queueStatus;
+
+function init() {
+	var canvas = document.getElementById('canvas');
+	stage = new Stage(canvas);
+
+	initL();
+	initO();
+	initA();
+	initB();
+}
+
+function initL() {
+	var BASE_TXT = 'Loading......';
+	var length = BASE_TXT.length;
+
+	function next() {
+		loadingStatus++;
+		if (loadingStatus == length) {
+			loadingStatus = 7;
+		}
+		loading.innerHTML = BASE_TXT.substr(0, loadingStatus);
+	}
+
+	loadingTimer = setInterval(next, 300);
+}
+
+function initO() {
+	var data = {
+		images:[
+			"sequence/sqA.png",
+			"sequence/sqB.png",
+			"sequence/sqC.png"
+		],
+		frames:{width:200, height:235},
+		animations: {
+			normal: [0, 8],
+			action1: [9, 18],
+			action2: [19, 25]
+		}
+	};
+
+	var spriteSheet  = new SpriteSheet(data);
+
+	for (var i in spriteSheet._images) {
+		loadImage(spriteSheet._images[i]);
+	}
+
+	icon = new BitmapAnimation(spriteSheet);
+	icon.x = 300;
+	icon.y = 120;
+	
+	icon.gotoAndPlay(0);
+	stage.addChild(icon);
+
+	Ticker.setFPS(16);
+	Ticker.addListener(stage);
+
+	icon.tick = function () {
+		if (timer > 0) {
+			timer--;
+			if (timer == 1) {
+				icon.gotoAndPlay(0);
+			}
+			return;
+		}
+		if (icon.currentFrame == 9) {
+			icon.gotoAndPlay(0);
+		}
+		if (icon.currentFrame == 18) {
+			icon.currentFrame = 0;
+			icon.paused = true;
+			timer = 16;
+		}
+		if (icon.currentFrame == 25) {
+			icon.currentFrame = 0;
+			icon.paused = true;
+			timer = 16;
+		}
+	}
+}
+
+function initA() {
+	var dataA = {
+		images:["button/dhqkbutton.png"],
+		frames:{width:462, height:175}
+	};
+
+	var spriteSheetA  = new SpriteSheet(dataA);
+
+	for (var i in spriteSheetA._images) {
+		loadImage(spriteSheetA._images[i]);
+	}
+
+	button = new BitmapAnimation(spriteSheetA);
+	button.y = 400;
+	button.x = 169;
+
+	button.gotoAndStop(0);
+	stage.addChild(button);
+	stage.enableMouseOver();
+
+	button.onMouseOver = function () {
+		button.gotoAndStop(2);
+	};
+	button.onMouseOut = function () {
+		button.gotoAndStop(0);
+	};
+	button.onPress = function () {
+		button.gotoAndStop(1);
+	};
+	button.onClick = function () {
+		button.gotoAndStop(2);
+		o();
+	};
+}
+
+function initB() {
+	say1 = new Bitmap('say/say1.png');
+	say2 = new Bitmap('say/say2.png');
+	say3 = new Bitmap('say/say3.png');
+	say4 = new Bitmap('say/say4.png');
+
+	loadImage(say1.image);
+	loadImage(say2.image);
+	loadImage(say3.image);
+	loadImage(say4.image);
+
+	say1.visible = say2.visible =
+	say3.visible = say4.visible = false;
+
+	say1.x = 80;
+	say3.x = 80;
+	say2.x = 500;
+	say4.x = 500;
+	say1.y = 0;
+	say2.y = 0;
+	say3.y = 180;
+	say4.y = 220;
+
+	stage.addChild(say1);
+	stage.addChild(say2);
+	stage.addChild(say3);
+	stage.addChild(say4);
+}
+
+function o() {
+
+	var func = {
+		a1: function () {
+			icon.gotoAndPlay(9);
+		},
+		a2: function () {
+			icon.gotoAndPlay(19);
+		},
+		b1: function () {
+			say1.visible = true;
+			setTimeout(function () {
+				say1.visible = false;
+			}, 1000);
+		},
+		b2: function () {
+			say2.visible = true;
+			setTimeout(function () {
+				say2.visible = false;
+			}, 1000);
+		},
+		b3: function () {
+			say3.visible = true;
+			setTimeout(function () {
+				say3.visible = false;
+			}, 1000);
+		},
+		b4: function () {
+			say4.visible = true;
+			setTimeout(function () {
+				say4.visible = false;
+			}, 1000);
+		}
+	};
+	
+	func['a' + (Math.ceil(Math.random() * 2))]();
+	func['b' + (Math.ceil(Math.random() * 4))]();
+}
+	
+function loadImage(image) {
+	var length = loadingQueue.length;
+	var li = document.createElement('li');
+
+	function checkLoading() {
+		for (var i = loadingQueue.length - 1; i >= 0; i--) {
+			if (loadingQueue[i]) {
+				return;
+			}
+		};
+		splash.style.opacity = 0;
+		setTimeout(function () {
+			splash.style.display = 'none';
+			clearInterval(loadingTimer);
+		}, 1000);
+	}
+
+	li.innerHTML = image.src.replace(/.+\//i, '') + '<span></span>';
+	queue.appendChild(li);
+	loadingQueue.push(image);
+	image.addEventListener('load', function () {
+		loadingQueue[length] = null;
+		li.lastChild.innerHTML = ' [OK]';
+		checkLoading();
+	});
+	image.addEventListener('error', function () {
+		li.lastChild.innerHTML = ' [ERROR]';
+		li.lastChild.style.color = 'red';
+		if (queueStatus) {
+			return;
+		}
+		var newLi = document.createElement('li');
+		newLi.innerHTML = 'ERROR: please refresh this page again!';
+		newLi.style.color = 'black';
+		queue.insertBefore(newLi, queue.firstChild);
+		queueStatus = 1;
+	});
+}
+
+init();
+</script>
+
+</body>
+</html>

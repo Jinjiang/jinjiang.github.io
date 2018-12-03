@@ -1,0 +1,194 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+$experimental-support-for-opera: false
+$experimental-support-for-khtml: false
+
+@import compass/css3
+@import compass/typography/links/unstyled-link
+@import breakpoint
+
+$phone-width: 320px
+$pad-width: 640px
+
+=app-container
+	height: 100%
+	+box-sizing(border-box)
+
+=scrollbar
+	&::-webkit-scrollbar
+		width: 12px
+	&::-webkit-scrollbar-track
+		+single-box-shadow(rgba(0, 0, 0, 0.1), 0, 0, 6px, 0, inset)
+	&::-webkit-scrollbar-thumb
+		background: rgba(0, 0, 0, 0.1)
+		+single-box-shadow(rgba(0, 0, 0, 0.2), 0, 0, 6px, 0, inset)
+	&::-webkit-scrollbar-thumb:window-inactive
+		background: rgba(0, 0, 0, 0.2)
+
+=list-animation
+	&.ng-enter,
+	&.ng-leave
+		+transition-property(opacity, transform)
+		+transition-duration(0.3s)
+		+transition-timing-function(linear)
+
+	&.ng-enter
+		+opacity(0)
+	&.ng-enter-active
+		+opacity(1)
+	&.ng-leave
+		+opacity(1)
+	&.ng-leave-active
+		+opacity(0)
+		+transform3d(rotateX(180deg))
+
+html
+	+app-container
+
+body
+	+app-container
+	padding: 20px
+	background: url(../images/grey_wash_wall.png)
+
+h1
+	font-size: 24px
+
+	@include breakpoint($pad-width)
+		font-size: 36px
+
+#root
+	+app-container
+	+display-box
+	+box-orient(vertical)
+	/* background: url(../images/rockywall.png)
+	background-color: white
+	border-radius: 5px
+	box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5)
+	min-height: 160px
+
+#ctrl
+	margin-top: 15px
+	margin-bottom: 10px
+
+#main
+	+display-box
+	+box-flex(1)
+	width: 100%
+	overflow: hidden
+	border-top: 1px grey solid
+	margin-bottom: 20px
+	position: relative
+
+#todos
+	+box-flex(1)
+	+display-box
+	+box-orient(vertical)
+
+#todo-list
+	+box-flex(1)
+	margin: 0
+	padding: 0
+	list-style: none
+	overflow-x: hidden
+	overflow-y: auto
+	+scrollbar
+	+perspective(400px)
+
+	li
+		background: url(../images/rockywall.png)
+		padding: 10px 20px
+		margin: 10px 0
+		+list-animation
+
+		&:not(.loading-true):hover
+			+single-text-shadow(0px, 0px, 4px)
+			+background-image(linear-gradient(left top, gray, gray 25%, white 25%, white 50%, gray 50%, gray 75%, white 75%, white))
+			+background-size(90px 90px)
+
+		a
+			display: block
+			+unstyled-link
+
+		h3
+			margin: 0
+		p
+			margin: 0
+
+		&:first-child,
+		&:nth-child(2)
+			margin-top: 0
+		&:last-child
+			margin-bottom: 0
+
+	.description-false
+		h3
+			font-size: 24px
+			margin: 4px 0
+		p
+			display: none
+
+	.description-true
+		h3
+			font-size: 16px
+		p
+			font-size: 12px
+
+	#empty-tips
+		display: none
+		&:last-child
+			display: block
+
+#task-detail
+	margin: 10px 0
+
+#messages
+	+display-box
+	+box-orient(vertical)
+	+transition-property(width, bottom)
+	+transition-duration(0.3s)
+	+transition-timing-function(linear)
+	width: 100%
+	height: 100%
+	overflow: hidden
+	position: absolute
+	right: 0
+	bottom: -100%
+	background: white
+
+	&.shown-true
+		bottom: 0
+
+	@include breakpoint($pad-width)
+		position: static
+		width: 0
+		height: auto
+
+		&.shown-true
+			width: 60%
+			padding-left: 10px
+
+#message-list
+	+box-flex(1)
+	margin: 10px 0
+	padding: 10px
+	border: 1px solid silver
+	border-radius: 5px
+	list-style: none
+	overflow-x: hidden
+	overflow-y: auto
+	+scrollbar
+
+#message-form
+	+display-box
+
+#message-nickname
+	width: 100px
+	max-width: 25%
+
+#message-content
+	+box-flex(1)
+	margin: 0 10px

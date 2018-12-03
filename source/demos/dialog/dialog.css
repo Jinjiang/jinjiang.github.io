@@ -1,0 +1,52 @@
+dt {
+    font-weight: normal;
+}
+dt code {
+    background: transparent;
+}
+
+.mask {
+    display: none;
+    background: silver;
+    filter: alpha(opacity=50);
+    background: rgba(127, 127, 127, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.dialog {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background: white;
+    color: #666;
+    border: 3px gray solid;
+    width: 320px;
+}
+.dialog-head {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px silver solid;
+}
+.dialog-title {
+    float: left;
+    font-weight: bold;
+    color: black;
+    padding: 5px 10px;
+}
+.dialog-ctrl {
+    float: right;
+    background: #ccc;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.dialog-body {
+    padding: 10px 20px 20px;
+}

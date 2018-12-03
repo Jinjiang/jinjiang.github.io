@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Slide Transitions</title>
+<link rel="stylesheet" href="/s/css/style.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="transitions.css">
+
+</head>
+
+<body>
+
+<h1>Slide Transitions</h1>
+
+<p id="changes" style="text-align: center">
+    <button data-key="horizontal" onclick="change('horizontal')">Horizontal</button>
+    <button data-key="vertical" onclick="change('vertical')">Vertical</button>
+    <button data-key="cubic-horizontal" onclick="change('cubic-horizontal')">Cubic Horizontal</button>
+    <button data-key="cubic-horizontal-inner" onclick="change('cubic-horizontal-inner')">Cubic Horizontal Inner</button>
+    <button data-key="cubic-vertical" onclick="change('cubic-vertical')">Cubic Vertical</button>
+    <button data-key="cubic-vertical-inner" onclick="change('cubic-vertical-inner')">Cubic Vertical Inner</button>
+    <button data-key="doors" onclick="change('doors')">Doors</button>
+    <button data-key="zoom-in" onclick="change('zoom-in')">Zoom In</button>
+    <button data-key="zoom-out" onclick="change('zoom-out')">Zoom Out</button>
+    <button data-key="sublime" onclick="change('sublime')">Sublime</button>
+    <button data-key="rotate-y" onclick="change('rotate-y')">Rotate Y</button>
+    <button data-key="rotate-z" onclick="change('rotate-z')">Rotate Z</button>
+    <button data-key="fly" onclick="change('fly')">Fly</button>
+    <button data-key="fall" onclick="change('fall')">Fall</button>
+</p>
+
+<div id="container" data-key="horizontal">
+    <div class="slide">0</div>
+    <div class="slide">1</div>
+    <div class="slide">2</div>
+    <div class="slide">3</div>
+    <div class="slide">4</div>
+    <div class="slide">5</div>
+    <div class="slide">6</div>
+    <div class="slide">7</div>
+    <div class="slide">8</div>
+    <div class="slide">9</div>
+</div>
+
+<p id="ctrl" style="text-align: center;">
+    <button onclick="prev()">&laquo; Prev</button>
+    <button onclick="next()">Next &raquo;</button>
+</p>
+<p style="text-align: center;">
+    <code>ENTER</code> - next slide<br>
+    <code>RIGHT</code> - next slide<br>
+    <code>LEFT</code> - previous slide<br>
+    <code>TAB</code> - next transition<br>
+    <code>TAB + ⇧</code> - previous transition<br>
+    <code>SPACE</code> - toggle onion effect<br>
+</p>
+
+<script src="/s/js/jquery.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Tags demo (CSS 3)</title>
+<link rel="stylesheet" type="text/css" href="/s/css/style.css">
+<style type="text/css">
+    a {
+        display: inline-block;
+        position: relative;
+        padding: 0px 10px;
+        background: #ccc;
+        color: green;
+        line-height: 1.5;
+        margin-left: 1em;
+        border-radius: 0;
+    }
+    a:hover {
+        background: gray;
+        color: white;
+    }
+    a:before {
+        position: absolute;
+        content: " ";
+        border: transparent 0.75em solid;
+        border-right-color: #ccc;
+        top: 0;
+        left: -1.5em;
+        height: 0em;
+        width: 0em;
+    }
+    a:hover:before {
+        border-right-color: gray;
+    }
+    a:after {
+        position: absolute;
+        content: " ";
+        background: white;
+        width: 0.5em;
+        height: 0.5em;
+        top: 0.5em;
+        left: -0.125em;
+        border-radius: 0.25em;
+    }
+</style>
+</head>
+<body>
+
+<h1>Tags Demo (CSS 3)</h1>
+<p>
+    <a href="#">Tag1</a>
+    <a href="#">Tag2</a>
+    <a href="#">Tag3</a>
+    <a href="#">Tag4</a>
+    <a href="#">Tag5</a>
+</p>
+
+</body>
+</html>

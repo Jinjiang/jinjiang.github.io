@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Dialog Demo</title>
+<link rel="stylesheet" href="/s/css/style.css">
+<link rel="stylesheet" href="dialog.css">
+
+</head>
+
+<body>
+
+<h1>Dialog Demo</h1>
+
+<h2>DEMO</h2>
+
+<h3>Alert</h3>
+<p><button id="btn-alert">Alert</button></p>
+
+<h3>Confirm</h3>
+<p><button id="btn-confirm">Confirm</button></p>
+
+<h3>Login</h3>
+<p><button id="btn-login">Login</button><br>
+    (正确的用户名是jinjiang，密码是maxthon)</p>
+
+<h3>Step by Step</h3>
+<p><button id="btn-steps">Start</button></p>
+
+<h2>Source Code</h2>
+
+<a href="dialog.js" target="_blank">Source code</a> (based on jquery and used in requirejs)
+
+<h2>API</h2>
+
+<h3><code>dialog.alert(text)</code></h3>
+<p>Just a alert.</p>
+<dl>
+    <dt><code>text</code></dt>
+    <dd>Alert text description.</dd>
+</dl>
+
+<h3><code>dialog.confirm(text, doYes, doNo)</code></h3>
+<p>Just a confirm.</p>
+<dl>
+    <dt><code>text</code></dt>
+    <dd>Confirm text description.</dd>
+    <dt><code>doYes()</code></dt>
+    <dd>Run when user choose yes.</dd>
+    <dt><code>doNo()</code></dt>
+    <dd>Run when user choose no.</dd>
+</dl>
+
+<h3><code>dialog.show(title, contentHtml, config)</code></h3>
+<p>Show a dialog with a centain title, content, and config.</p>
+<dl>
+    <dt><code>title</code></dt>
+    <dd>Dialog title text.</dd>
+    <dt><code>contentHtml</code></dt>
+    <dd>Dialog content html code.</dd>
+    <dt><code>config</code></dt>
+    <dd>Available keys are: <code>oncreate</code>, <code>onclose</code>, <code>css</code>.<dl>
+        <dt><code>oncreate(dialogObj)</code></dt>
+        <dd>Run when the dialog object created but not shown.</dd>
+        <dt><code>afterCreate(dialogObj)</code></dt>
+        <dd>Run when the dialog object shown.</dd>
+        <dt><code>onclose()</code></dt>
+        <dd>Run when close the dialog.</dd>
+        <dt><code>css</code></dt>
+        <dd>Custom CSS style for the dialog.</dd>
+    </dl></dd>
+</dl>
+
+<h3><code>dialog.update(title, contentHtml, config)</code></h3>
+<p>Show a dialog with a centain title, content, and config.</p>
+<dl>
+    <dt><code>title</code></dt>
+    <dd>Dialog title text.</dd>
+    <dt><code>contentHtml</code></dt>
+    <dd>Dialog content html code.</dd>
+    <dt><code>config</code></dt>
+    <dd>Available keys are: <code>onclose</code>, <code>css</code>, <code>beforeUpdate</code>, <code>afterUpdate</code>.<dl>
+        <dt><code>beforeUpdate(dialogObj)</code></dt>
+        <dd>Run before the dialog object updated.</dd>
+        <dt><code>afterUpdate(dialogObj)</code></dt>
+        <dd>Run after the dialog object updated.</dd>
+    </dl></dd>
+</dl>
+
+<h3><code>dialog.hide()</code></h3>
+<p>Fire <code>onclose</code> event first. If no prevent, then close the dialog.</p>
+
+<h3><code>dialog.forceHide()</code></h3>
+<p>Hide dialog without any confirm.</p>
+
+<h3><code>dialog.setTemplate()</code></h3>
+<p>Set the dialog html template.</p>
+
+<h3><code>dialog.resetTemplate()</code></h3>
+<p>Reset the dialog html template to default.</p>
+
+<h3><code>dialog.TEMPLATE</code></h3>
+<p>The default dialog html template.</p>
+
+<h3><code>dialogObj.element</code></h3>
+<p>The jQuery element object for the dialogObj.</p>
+
+<h3><code>dialogObj.config</code></h3>
+<p>The config for the dialogObj.</p>
+
+<h3><code>dialogObj.setTitle(text)</code></h3>
+<p>Set the title of the dialog.</p>
+
+<h3><code>dialogObj.setContent(contentHtml)</code></h3>
+<p>Set the content html of the dialog.</p>
+
+<script data-main="main" src="/s/js/require.js"></script>
+
+</body>
+
+</html>

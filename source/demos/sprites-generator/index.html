@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Sprites Generator</title>
+<meta charset="utf-8" />
+
+<link rel="stylesheet" type="text/css" href="/s/css/style.css">
+
+<style type="text/css">
+    #wrapper {
+        width: 960px;
+        margin: auto;
+    }
+    #left {
+        float: left;
+        width: 640px;
+        margin-bottom: 20px;
+    }
+    #right {
+        float: left;
+        width: 280px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    h2 code {
+        text-decoration: underline;
+        cursor: pointer;
+        background: transparent;
+        margin: 0 0.5em;
+    }
+    h2 code:hover {
+        background: white;
+        border-radius: 5px;
+        color: black;
+    }
+
+
+    #sprites-area {
+        position: relative;
+        width: 640px;
+        height: 480px;
+        outline: 1px black solid;
+        background: white;
+        overflow: scroll;
+    }
+    #sprites-area img {
+        position: absolute;
+        cursor: move;
+    }
+
+
+    #css-list {
+        list-style: none;
+        padding-left: 0;
+    }
+    #css-list pre {
+        width: 100%;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        overflow: auto;
+        font-size: 14px;
+    }
+    #css-list .selector {
+        border-radius: 3px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    #css-list .selector:hover {
+        background: #666;
+        color: white;
+    }
+</style>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+    <header>
+        <h1>Sprites Generator</h1>
+    </header>
+
+    <nav>
+        <button onclick="outputImage()">Export PNG</button>
+        <button onclick="outputText()">Export CSS</button>
+    </nav>
+
+    <section id="left">
+        <h2><code id="image-filename">sprites.png</code></h2>
+        <div id="sprites-area"></div>
+    </section>
+
+    <section id="right">
+        <h2><code id="css-filename">style.css</code></h2>
+        <ul id="css-list"></ul>
+    </section>
+
+</div>
+
+<script type="text/javascript">
+    /// jquery mini ///
+    function $(selector) {
+        return document.querySelectorAll(selector);
+    }
+    function $1(selector) {
+        return document.querySelector(selector);
+    }
+    function $new(tag) {
+        return document.createElement(tag);
+    }
+    function $each(arr, handler) {
+        Array.prototype.forEach.call(arr, handler);
+    }
+
+
+    // global
+    var spritesName = 'sprites';
+    var cssName = 'style';
+
+
+    // dom elements
+    var area = $1('#sprites-area');
+    var list = $1('#css-list');
+    var imageFilename = $1('#image-filename');
+    var cssFilename = $1('#css-filename');
+
+
+    // bind general events
+    area.ondragover = function (e) {
+        e.preventDefault();
+    };
+    area.ondrop = function (e) {
+        e.stopPropagation();
+        addFiles(e.dataTransfer.files);
+    };
+    imageFilename.onclick = focusImageName;
+    cssFilename.onclick = focusCssName;
+
+
+    /// add file from native drag-n-drop ///
+    function addFiles(fileList) {
+        var IMG_TYPE_MAP = {
+            'image/png': true,
+            'image/jpeg': true
+        };
+        var x = event.clientX - area.offsetLeft + document.body.scrollLeft;
+        var y = event.clientY - area.offsetTop + document.body.scrollTop;
+
+        // add each file (native dragging multi-files is allowed)
+        $each(fileList, function (file) {
+
+            if (IMG_TYPE_MAP[file.type]) {
+                var url = webkitURL.createObjectURL(file);
+                var name = file.name.replace(/.[^.]+$/, '');
+
+                var width;
+                var height;
+
+                var li = $new('li');
+                var pre = $new('pre');
+                var img = new Image;
+
+                // load image from the file
+                img.src = url;
+                img.onload = function (e) {
+
+                    // append image to sprites area
+                    width = img.naturalWidth;
+                    height = img.naturalHeight;
+                    img.dataset.x = x;
+                    img.dataset.y = y;
+                    img.style.left = x + 'px';
+                    img.style.top = y + 'px';
+                    area.appendChild(img);
+
+                    // append pre to css list
+                    pre.innerHTML = getPreHTML(name, spritesName, x, y, width, height);
+                    pre.querySelector('.selector').onclick = focusSelector;
+                    li.appendChild(pre);
+                    list.appendChild(li);
+                };
+
+                // bind move image events
+                img.onmousedown = function (e) {
+
+                    function move(se) {
+                        var x = se.clientX - start_x + old_x;
+                        var y = se.clientY - start_y + old_y;
+
+                        if (x < 0) x = 0;
+                        if (y < 0) y = 0;
+
+                        img.style.left = x + 'px';
+                        img.style.top = y + 'px';
+
+                        se.preventDefault();
+                        pre.querySelector('.x').innerHTML = x;
+                        pre.querySelector('.y').innerHTML = y;
+                    }
+
+                    function mouseup(se) {
+                        var x = se.clientX - start_x + old_x;
+                        var y = se.clientY - start_y + old_y;
+
+                        if (x < 0) x = 0;
+                        if (y < 0) y = 0;
+
+                        img.dataset.x = x;
+                        img.dataset.y = y;
+
+                        document.onmousemove = null;
+                        document.onmouseup = null;
+                        se.preventDefault();
+                    }
+
+                    var old_x = parseInt(this.dataset.x || 0);
+                    var old_y = parseInt(this.dataset.y || 0);
+                    var start_x = e.clientX;
+                    var start_y = e.clientY;
+
+                    document.onmousemove = move;
+                    document.onmouseup = mouseup;
+
+                    e.preventDefault();
+                };
+            }
+        });
+    }
+
+
+    /// build pre element html ///
+    function getPreHTML(name, spritesName, x, y, width, height) {
+        var BASIC_HTML = '<span class="selector">{selector}</span> {\n' +
+            '    background-image: url(<span class="url">{url}</span>);\n' +
+            '    background-position: ' +
+                    '<span class="x">{x}</span>px ' +
+                    '<span class="y">{y}</span>px;\n' +
+            '    width: {width}px;\n' +
+            '    height: {height}px;\n' +
+        '}';
+
+        var selector = '.' + encodeURIComponent(name.replace(/\./g, '_'));
+        var url = url + '.png';
+
+        return BASIC_HTML.replace('{selector}', selector).
+            replace('{url}', url).
+            replace('{x}', x).
+            replace('{y}', y).
+            replace('{width}', width).
+            replace('{height}', height);
+    }
+
+
+    /// all focus events ///
+    function focusImageName() {
+        var newName = prompt('Please modify the sprites filename here', spritesName);
+        if (newName && newName != spritesName) {
+            console.log(this)
+            this.textContent = newName + '.png';
+            spritesName = newName;
+            var urlList = $('#css-list .url');
+            $each(urlList, function (url) {
+                url.textContent = newName + '.png';
+            });
+        }
+    }
+    function focusCssName() {
+        var name = this.textContent;
+        var newName = prompt('Please modify the css filename here', cssName);
+        if (newName && newName != cssName) {
+            this.textContent = newName + '.css';
+            cssName = newName;
+        }
+    }
+    function focusSelector(e) {
+        var name = this.textContent;
+        var newName = prompt('Please modify the Selector name here', name);
+        if (newName && newName != name) {
+            this.textContent = newName;
+        }
+    }
+
+
+    /// all basic data getter ///
+    function getImageData() {
+        var imgList = area.childNodes;
+        var maxWidth = 0;
+        var maxHeight = 0;
+        var srcList = [];
+        $each(imgList, function (img) {
+            maxWidth = Math.max(maxWidth, img.width + img.offsetLeft);
+            maxHeight = Math.max(maxHeight, img.height + img.offsetTop);
+            srcList.push(img.src);
+        });
+        var canvas = $new('canvas');
+        canvas.width = maxWidth;
+        canvas.height = maxHeight;
+        var ctx = canvas.getContext('2d');
+        $each(imgList, function(img) {
+            ctx.drawImage(img, img.offsetLeft, img.offsetTop);
+        });
+        return canvas.toDataURL("image/png");
+    }
+    function getCssData() {
+        var preList = $('pre');
+        var cssList = [];
+        $each(preList, function (pre) {
+            cssList.push(pre.textContent);
+        });
+        return cssList.join('\n');
+    }
+
+
+    /// all output events ///
+    function outputImage() {
+        data = getImageData();
+        alert('A new image file will open soon. Please save it as "' + spritesName + '.png".');
+        window.open(data);
+    }
+    function outputText() {
+        var txt = getCssData();
+        alert('A new css file will open soon. Please save it as "' + cssName + '.css".');
+        window.open('data:text/css,' + encodeURIComponent(txt));
+    }
+</script>
+
+</body>
+</html>

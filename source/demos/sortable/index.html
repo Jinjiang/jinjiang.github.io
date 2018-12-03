@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Sortable Demo</title>
+<link rel="stylesheet" href="/s/css/style.css">
+<link rel="stylesheet" href="demo.css">
+
+</head>
+
+<body>
+
+<h1>jQuery Sortable Plugin</h1>
+
+<p>Make a list or items in a container Sortable!</p>
+<p><button onclick="window.open('sortable.js')" style="font-size: 1.5em;">Download</button></p>
+
+<h2>Code Demo</h2>
+
+<pre>$('#container-vertical .item').sortable({
+    flow: 'vertical', // vertical, horizontal, v-flow, h-flow
+    container: $('#container-vertical'), // items' parent as default
+    wrapWidth: 'auto',
+    wrapHeight: 'auto',
+    wrapPadding: [10, 10, 0, 0], // support [top, side, bottom], [vertical, horizontal], [all] format
+    elWidth: 'auto',
+    elHeight: 'auto',
+    elMargin: [0, 0, 10, 10],
+    timeout: 300, // the time delay when placeholder move. 100ms as default
+    filter: function (index) {return index !== 3;} // use to exclude items handle mouse/touch event
+});</pre>
+
+<h2>flow: vertical</h2>
+
+<h3>CSS:</h3>
+
+<pre>#container-vertical {
+    position: relative;
+    padding: 10px 10px 0 0;
+    width: <mark>400px;</mark>
+    ...
+}
+
+#container-vertical .item {
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 0 10px 10px;
+    padding: 0;
+    ...
+}
+</pre>
+
+<h3>JavaScript:</h3>
+
+<pre>var <mark>dataVertical</mark> = $('#container-vertical .item').sortable({
+    flow: 'vertical',
+    wrapPadding: [10, 10, 0, 0],
+    elMargin: [0, 0, 10, 10],
+    elWidth: <mark>200</mark>
+});
+$('#btn-vertical').click(function (e) {
+    $('#result-vertical').text('Order: ' + <mark>dataVertical.getOrder()</mark>);
+});
+</pre>
+
+<h3>DEMO:</h3>
+
+<div id="container-vertical" class="container">
+    <div class="item">a</div>
+    <div class="item">b</div>
+    <div class="item">c</div>
+    <div class="item">d</div>
+    <div class="item">e</div>
+</div>
+
+<p><button id="btn-vertical">Get Order Result</button></p>
+<p id="result-vertical"></p>
+
+<h2>flow: horizontal</h2>
+
+<h3>CSS:</h3>
+
+<pre>#container-horizontal {
+    height: 60px;
+}
+#container-horizontal .item {
+    width: 40px;
+}</pre>
+
+<h3>JavaScript:</h3>
+
+<pre>$('#container-horizontal .item').sortable({
+    flow: 'horizontal',
+    wrapPadding: [10, 10, 0, 0],
+    elMargin: [0, 0, 10, 10],
+    <mark>elHeight: 'auto',</mark>
+    <mark>filter: function (index) {return index !== 2;},</mark>
+    <mark>timeout: 1000</mark>
+});</pre>
+
+<h3>DEMO:</h3>
+
+<div id="container-horizontal" class="container">
+    <div class="item">a</div>
+    <div class="item">b</div>
+    <div class="item">c</div>
+    <div class="item">d</div>
+    <div class="item">e</div>
+</div>
+
+<p><button id="btn-horizontal">Get Order Result</button></p>
+<p id="result-horizontal"></p>
+
+<h2>flow: v-flow</h2>
+
+<h3>CSS:</h3>
+
+<pre>#container-v-flow {
+    height: 110px;
+}
+#container-v-flow .item {
+    <mark>width: 40px;</mark>
+    <mark>height: 40px;</mark>
+}</pre>
+
+<h3>JavaScript:</h3>
+
+<pre>$('#container-v-flow .item').sortable({
+    flow: 'v-flow',
+    wrapPadding: [10, 10, 0, 0],
+    elMargin: [0, 0, 10, 10]
+});</pre>
+
+<h3>DEMO:</h3>
+
+<div id="container-v-flow" class="container">
+    <div class="item">a</div>
+    <div class="item">b</div>
+    <div class="item">c</div>
+    <div class="item">d</div>
+    <div class="item">e</div>
+</div>
+
+<p><button id="btn-v-flow">Get Order Result</button></p>
+<p id="result-v-flow"></p>
+
+<h2>flow: h-flow</h2>
+
+<h3>CSS:</h3>
+
+<pre>#container-h-flow {
+    width: 200px;
+}
+#container-h-flow .item {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}</pre>
+
+<h3>JavaScript:</h3>
+
+<pre>$('#container-h-flow .item').sortable({
+    flow: 'h-flow',
+    wrapPadding: [10, 10, 0, 0],
+    elMargin: [0, 0, 10, 10],
+    <mark>elWidth: 80,</mark>
+    <mark>elHeight: 80</mark>
+});</pre>
+
+<h3>DEMO:</h3>
+
+<div id="container-h-flow" class="container">
+    <div class="item">a</div>
+    <div class="item">b</div>
+    <div class="item">c</div>
+    <div class="item">d</div>
+    <div class="item">e</div>
+</div>
+
+<p><button id="btn-h-flow">Get Order Result</button></p>
+<p id="result-h-flow"></p>
+
+<h2>Download Sortable</h2>
+
+<p><button onclick="window.open('sortable.js')" style="font-size: 1.5em;">Download</button></p>
+
+<script src="/s/js/jquery.js"></script>
+<script src="sortable.js"></script>
+<script src="demo.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title></title>
+<link rel="stylesheet" type="text/css" href="/s/css/style.css">
+<style></style>
+
+</head>
+
+<body>
+
+<h1>Demo: Files in HTML5</h1>
+
+<h2>Remove BOM</h2>
+
+<p><input type="file" multiple></p>
+<p><button onclick="action1()">Action1!</button></p>
+
+<h2>Append CSS</h2>
+<p><textarea></textarea></p>
+<p><button onclick="action2()">Action2!</button></p>
+
+<h2>Get Favicon TypedArray</h2>
+<p><img src="/favicon.ico" width="64" /></p>
+<p><button onclick="action3()">Action3!</button>
+    <button onclick="action4()">Action4!</button></p>
+
+<script>
+function action1() {
+    var input = document.querySelector('input[type="file"]');
+    var files = input.files;
+
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+        console.log(file.size);
+    }
+
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+        (function (file) {
+            var result = file.webkitSlice(3, file.size); // 用slice方法去掉开头的3个字节
+            var reader = new FileReader(); // 新建一个FileReader类型的对象
+            console.log(result.size);
+            reader.readAsText(file, 'utf-8'); // 按文本格式读取file
+            reader.onloadend = function (e) { // 绑定读取操作完成的事件
+                console.log(reader.result); // 取得读取结果并输出
+            };
+        })(file);
+    }
+}
+
+function action2() {
+    var input = document.querySelector('textarea');
+    var cssText = input.value;
+    var blobBuilder = new WebKitBlobBuilder();
+    blobBuilder.append(cssText);
+
+    var blob = blobBuilder.getBlob('text/plain');
+    var url = window.webkitURL.createObjectURL(blob);
+
+    var link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.href = url;
+    document.head.appendChild(link);
+}
+
+function action3() {
+    // 先读取数据
+    var a = new XMLHttpRequest;
+    a.open('GET', '/favicon.ico');
+    a.responseType = 'arraybuffer';
+    a.send();
+    window.a = a;
+    console.log('DONE!');
+}
+
+function action4() {
+    // 过一段时间之后执行下面的代码展示数据
+    var b = new Int16Array(window.a.response);
+    console.log(b);
+}
+</script>
+
+</body>
+
+</html>

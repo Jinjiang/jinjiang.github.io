@@ -1,0 +1,18 @@
+<div id="task-detail">
+	<form id="detail-form" name="detailForm">
+		<div class="form-group" ng-class="{error: detailForm.name.$invalid}">
+			<label>Title</label>
+			<span ng-show="detailForm.title.$error.required" class="help-inline">Required</span>
+			<input ng-model="task.title" name="title" class="form-control" required>
+		</div>
+
+		<label>Description</label>
+		<textarea ng-model="task.description" class="form-control"></textarea><br>
+
+		<a href="#{{uniqueID}}" class="btn btn-default">Cancel</a>
+		<button ng-click="save()" ng-disabled="isClean() || detailForm.$invalid"
+			class="btn btn-primary">Save</button>
+		<button ng-click="destroy()"
+			ng-show="task.$id" class="btn btn-danger">Delete</button>
+	</form>
+</div>

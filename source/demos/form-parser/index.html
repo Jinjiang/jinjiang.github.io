@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Slide Transitions</title>
+<link rel="stylesheet" href="/s/css/style.css">
+
+</head>
+
+<body>
+
+<h1>Form Parser</h1>
+
+<h2>Input</h2>
+
+<form id="input">
+    <p>Title:<br><input name="title"></p>
+    <p>URL:<br><input name="url"></p>
+    <p>API:</p>
+    <ul id="url-list"></ul>
+    <p><input type="submit"></p>
+</form>
+
+<h2>Output</h2>
+
+<pre id="output" style="white-space: normal;">[result]</pre>
+
+<script>
+var URL_LIST = [
+    'http://v.t.qq.com/share/share.php?title={title}&url={url}&appkey=asdf',
+    'http://service.weibo.com:8080/share/share.php?title={title}&url={url}&source=bookmark&appkey=1123455',
+    'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={url}&title={title}'
+];
+
+var anchor = document.createElement('a');
+
+function parse(baseUrl, opts) {
+    var url, i, search,
+        searchList = [],
+        baseOpts = {};
+
+    anchor.href = baseUrl;
+    url = anchor.protocol + '//' + anchor.hostname +
+        (anchor.port ? (':' + anchor.port) : '') + anchor.pathname;
+
+    if (anchor.search.length > 1) {
+        searchList = anchor.search.substr(1).split('&');
+        searchList.forEach(function (str) {
+            var kvPair = str.split('=');
+            baseOpts[kvPair[0]] = kvPair[1];
+        });
+    }
+
+    for (i in opts) {
+        baseOpts[i] = decodeURIComponent(opts[i]);
+    }
+
+    searchList = [];
+
+    for (i in baseOpts) {
+        searchList.push(i + '=' + encodeURIComponent(baseOpts[i]));
+    }
+
+    if (searchList.length) {
+        url += '?' + searchList.join('&');
+    }
+
+    return url;
+}
+
+function buildForm() {
+    var form = document.getElementById('input'),
+        list = document.getElementById('url-list');
+
+    URL_LIST.forEach(function (url) {
+        var li = document.createElement('li');
+        var label = document.createElement('label');
+        var text = document.createTextNode(url);
+        var radio = document.createElement('input');
+        radio.type = 'radio';
+        radio.name = 'baseUrl';
+        radio.value = url;
+        label.appendChild(radio);
+        label.appendChild(text);
+        li.appendChild(label);
+        list.appendChild(li);
+    });
+
+    form.baseUrl[0].checked = true;
+}
+
+function getFormData(form) {
+    var title = form.title.value,
+        url = form.url.value,
+        i, radio,
+        baseUrl;
+
+    for (i = 0; i < form.baseUrl.length; i++) {
+        radio = form.baseUrl[i];
+        if (radio.checked) {
+            baseUrl = radio.value;
+        }
+    }
+
+    return [baseUrl, {
+        url: url,
+        title: title
+    }];
+}
+
+function buildOutput(formData) {
+    var output = document.getElementById('output'),
+        baseUrl = formData[0],
+        opts = formData[1];
+
+    if (baseUrl) {
+        output.innerText = parse(baseUrl, opts);
+    }
+}
+
+buildForm();
+
+document.getElementById('input').onsubmit = function (e) {
+    e.preventDefault();
+
+    var form = document.getElementById('input'),
+        formData = getFormData(form);
+
+    buildOutput(formData);
+};
+</script>
+
+</body>
+</html>

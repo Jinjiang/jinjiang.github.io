@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>The new iPad Retina Screen loupe demo</title>
+<meta charset="UTF-8">
+
+<style type="text/css">
+    body {
+        margin: 40px;
+        font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+        color: #333;
+    }
+
+    #wrapper {position: relative; width: 1078px; height: 825px; margin: 0 auto}
+
+    #header_1,
+    #header_2,
+    #preview_1,
+    #preview_2,
+    #loupe_1,
+    #loupe_2,
+    #largeview_1,
+    #largeview_2,
+    #wrapper img {position: absolute; top: 0; left: 0}
+
+    #loupe_1,
+    #loupe_2 {z-index: 30; width: 265px; height: 265px}
+
+    #loupe_1 img,
+    #loupe_2 img {z-index: 32; width: 265px; height: 265px; cursor: move}
+
+    #largeview_1,
+    #largeview_2 {z-index: 31; width: 250px; height: 250px}
+
+    #header_1,
+    #header_2 {z-index: 20; width: 429px}
+
+    #preview_1,
+    #preview_2 {z-index: 20}
+
+    #bg {z-index: 10}
+
+    #preview_1 {top: 130px; left: 55px}
+    #preview_2 {top: 130px; left: 595px}
+    #loupe_1 {top: 38px; left: -37px}
+    #loupe_2 {top: 38px; left: 503px}
+
+    h1, h2 {margin: 0; text-align: center}
+    #header_1 {left: 55px; top: 28px}
+    #header_2 {left: 595px; top: 28px}
+</style>
+    
+</head>
+<body>
+
+<h1>The new iPad Retina Screen loupe demo</h1>
+
+<div id="wrapper">
+    <h2 id="header_1">iPad 2</h2>
+    <div id="loupe_1">
+        <img src="http://images.apple.com/v/ipad/a/images/loupe.png" />
+        <canvas id="largeview_1" width="250" height="250"></canvas>
+    </div>
+    <div id="preview_1">
+        <img src="http://images.apple.com/ipad/features/images/retina_gallery_1_left.jpg" />
+    </div>
+    <h2 id="header_2">The new iPad</h2>
+    <div id="loupe_2">
+        <img src="http://images.apple.com/v/ipad/a/images/loupe.png" />
+        <canvas id="largeview_2" width="250" height="250"></canvas>
+    </div>
+    <div id="preview_2">
+        <img src="http://images.apple.com/ipad/features/images/retina_gallery_1_right.jpg" />
+    </div>
+    <img id="bg" src="http://images.apple.com/ipad/features/images/retina_gallery_hardware.jpg" />
+</div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<ul id="todo-list">
+	<li id="empty-tips" class="loading-{{loading}}">
+		<a ng-hide="loading" href="#/{{uniqueID}}/new">
+			<h3>No tasks here. Try to create one now!</h3>
+		</a>
+		<h3 ng-show="loading">Loading...</h3>
+	</li>
+	<li ng-repeat="task in list" class="description-{{!!task.description}}">
+		<a href="#/{{uniqueID}}/edit/{{task.$id}}">
+			<h3>{{task.title}}</h3>
+			<p>{{task.description}}</p>
+		</a>
+	</li>
+</ul>
+

@@ -1,0 +1,13 @@
+#stage-demo {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+#slide-demo {
+    background: white;
+    border-radius: 5px;
+}
+#slide-demo [data-key] .output {border-radius: 5px; background-color: rgba(127, 127, 127, 0.05);}
+#slide-demo [data-key] .output:hover {background-color: rgba(127, 127, 127, 0.1);}

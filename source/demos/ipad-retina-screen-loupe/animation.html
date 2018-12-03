@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>The new iPad Retina Screen loupe demo</title>
+<meta charset="UTF-8">
+
+<style type="text/css">
+    body {
+        margin: 40px;
+        font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+        color: #333;
+    }
+
+    #wrapper {position: relative; width: 1078px; height: 825px; margin: 0 auto}
+
+    #header_1,
+    #header_2,
+    #preview_1,
+    #preview_2,
+    #loupe_1,
+    #loupe_2,
+    #largeview_1,
+    #largeview_2,
+    #wrapper img {position: absolute; top: 0; left: 0}
+
+    #loupe_1,
+    #loupe_2 {z-index: 30; width: 265px; height: 265px}
+
+    #loupe_1 img,
+    #loupe_2 img {z-index: 32; width: 265px; height: 265px; cursor: move}
+
+    #largeview_1,
+    #largeview_2 {z-index: 31; width: 250px; height: 250px}
+
+    #header_1,
+    #header_2 {z-index: 20; width: 429px}
+
+    #preview_1,
+    #preview_2 {z-index: 20}
+
+    #bg {z-index: 10}
+
+    #preview_1 {top: 130px; left: 55px}
+    #preview_2 {top: 130px; left: 595px}
+    #loupe_1 {top: 38px; left: -37px}
+    #loupe_2 {top: 38px; left: 503px}
+
+    h1, h2 {margin: 0; text-align: center}
+    #header_1 {left: 55px; top: 28px}
+    #header_2 {left: 595px; top: 28px}
+</style>
+
+<style type="text/css">
+    #loupe_1:hover,
+    #loupe_2:hover {
+        -webkit-animation-name: "loupe_hover";
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-iteration-count: 1;
+    }
+    @-webkit-keyframes "loupe_hover" {
+        0% {
+            -webkit-transform: scale(1);
+        }
+        30% {
+            -webkit-transform: scale(1.1);
+        }
+        100% {
+            -webkit-transform: scale(1);
+        }
+    }
+</style>
+    
+</head>
+<body>
+
+<h1>The new iPad Retina Screen loupe demo</h1>
+
+<div id="wrapper">
+    <h2 id="header_1">iPad 2</h2>
+    <div id="loupe_1">
+        <img src="http://images.apple.com/v/ipad/a/images/loupe.png" />
+        <canvas id="largeview_1" width="250" height="250"></canvas>
+    </div>
+    <div id="preview_1">
+        <img src="http://images.apple.com/ipad/features/images/retina_gallery_1_left.jpg" />
+    </div>
+    <h2 id="header_2">The new iPad</h2>
+    <div id="loupe_2">
+        <img src="http://images.apple.com/v/ipad/a/images/loupe.png" />
+        <canvas id="largeview_2" width="250" height="250"></canvas>
+    </div>
+    <div id="preview_2">
+        <img src="http://images.apple.com/ipad/features/images/retina_gallery_1_right.jpg" />
+    </div>
+    <img id="bg" src="http://images.apple.com/ipad/features/images/retina_gallery_hardware.jpg" />
+</div>
+
+<script type="text/javascript">
+    /// jquery ///
+
+    function $(any) {
+        var list = document.querySelectorAll(any);
+        var result = [];
+        var length = list.length;
+        for (var i = 0; i < length; i++) {
+            result.push(list[i]);
+        }
+        return result;
+    }
+    function $1(any) {
+        return document.querySelector(any);
+    }
+    function $new(tag) {
+        return document.createElement(tag);
+    }
+
+
+    /// static ///
+
+    var PROP = 3.6;
+    var PREVIEW_X_1 = 55;
+    var PREVIEW_X_2 = 595;
+    var PREVIEW_Y = 130;
+    var LOUPE_X_1 = -37;
+    var LOUPE_X_2 = 503;
+    var LOUPE_Y = 38;
+
+
+    /// global ///
+
+
+    var loupe_1 = $1('#loupe_1');
+    var loupe_2 = $1('#loupe_2');
+    var largeview_1 = $1('#largeview_1');
+    var largeview_2 = $1('#largeview_2');
+    var data_1 = new Image;
+    var data_2 = new Image;
+
+
+    data_1.src = 'http://www.apple.com/ipad/features/images/loupelr1.jpg';
+    data_2.src = 'http://www.apple.com/ipad/features/images/loupehr1.jpg';
+    data_1.onload = check;
+    data_2.onload = check;
+
+
+    // 检查大图片数据是否加载完成
+    function check() {
+        var MAP = [data_1, data_2];
+        var waiting = false;
+        this.setAttribute('data-loaded', 'loaded');
+        MAP.forEach(function (data) {
+            if (!data.getAttribute('data-loaded')) {
+                waiting = true;
+            }
+        });
+        if (!waiting) {
+            // 加载完成后运行load()
+            load();
+        }
+    }
+
+    // 默认为两个放大镜绘制在(0,0)坐标的放大效果
+    function load() {
+        draw(largeview_1, data_1, 0, 0);
+        draw(largeview_2, data_2, 0, 0);
+    }
+
+    // 绘制方法
+    // 参数1: canvas对象
+    // 参数2: 大图片img对象
+    // 参数3: 横坐标
+    // 参数4: 纵坐标
+    function draw(target, src, x, y) {
+
+        // 取得画笔
+        var ctx = target.getContext('2d');
+
+        // 记录画笔状态
+        ctx.save();
+
+        // 切除圆形以外的画布
+        ctx.translate(125, 125);
+        ctx.beginPath();
+        ctx.arc(0, 0, 120, 0, Math.PI * 2, true);
+        ctx.clip();
+
+        // 计算坐标
+        x = -x * PROP - 120;
+        y = -y * PROP - 120;
+
+        // 绘制图像
+        ctx.drawImage(src, x, y);
+
+        // 恢复画笔状态
+        ctx.restore();
+    }
+</script>
+
+</body>
+</html>

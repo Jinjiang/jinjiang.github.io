@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="todos">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="user-scalable=0, initial-scale=1.0" />
+<title>Angufire - Demo</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css">
+<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-resource.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-route.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-cookies.js"></script>
+<script src="http://cdn.firebase.com/v0/firebase.js"></script>
+<script src="http://firebase.github.io/angularFire/angularFire.js"></script>
+<script src="js/script-todos.js"></script>
+
+</head>
+
+<body>
+
+<div id="root" class="container">
+	<div ng-controller="HeaderCtrl" class="clearfix">
+		<div class="pull-left">
+			<h1><a href="#/{{uniqueID}}">#/{{uniqueID}}</a></h1>
+		</div>
+		<div id="ctrl" class="pull-right">
+			<a class="btn btn-default" href="#/{{uniqueID}}/new"><i class="glyphicon glyphicon-plus"></i></a>
+			<a class="btn btn-default" ng-click="toggle()"><i class="glyphicon glyphicon-comment"></i></a>
+			<!-- <a class="btn btn-default" href="#display"><i class="glyphicon glyphicon-ok-sign"></i></a>
+			<a class="btn btn-default" href="#share"><i class="glyphicon glyphicon-send"></i></a>
+			<a class="btn btn-default" href="#layout"><i class="glyphicon glyphicon-th-large"></i></a> -->
+		</div>
+	</div>
+
+	<div id="main">
+		<div id="todos" ng-view></div>
+		<div id="messages" ng-controller="MessageCtrl" class="shown-{{shown}}">
+			<ul id="message-list">
+				<li ng-repeat="message in list">
+					<strong>{{message.nickname}}</strong> - {{message.time}}<br>{{message.content}}
+				</li>
+			</ul>
+			<div id="message-sender">
+				<form id="message-form" name="messageForm">
+					<input id="message-nickname" placeholder="Nickname" ng-model="msg.nickname" name="nickname" class="form-control" required>
+					<input id="message-content" placeholder="Content" ng-model="msg.content" name="content" class="form-control" required>
+					<button ng-click="send()" ng-disabled="messageForm.$invalid" class="btn btn-primary">Save</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>

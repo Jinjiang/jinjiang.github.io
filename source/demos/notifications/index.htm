@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Notification Popup</title>
+    <link rel="stylesheet" type="text/css" href="/s/css/style.css">
+    <script src="/s/js/jquery.js"></script>
+</head>
+<body>
+
+<button id="btn-check">Check</button>
+<button id="btn-request">Request</button>
+<button id="btn-notify">Notify</button>
+<button id="btn-custom">Custom</button>
+
+<script>
+$('#btn-check').click(function () {
+    alert(webkitNotifications.checkPermission());
+});
+$('#btn-request').click(function () {
+    webkitNotifications.requestPermission();
+});
+$('#btn-notify').click(function () {
+    var msg = 'Hello world!';
+    var icon = 'logo.png';
+    var length = Math.floor(Math.random() * 10);
+    var output = [];
+
+    if (Math.random() > 0.5) {
+        icon = '';
+    }
+    for (var i = 0; i < length; i++) {
+        output.push(msg);
+    }
+
+    webkitNotifications.createNotification(icon, 'hello', output.join(' ')).show();
+});
+$('#btn-custom').click(function () {
+    webkitNotifications.createHTMLNotification('notifications-popup.htm').show();
+});
+</script>
+
+</body>
+</html>

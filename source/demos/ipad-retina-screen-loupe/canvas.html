@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>The new iPad Retina Screen loupe demo</title>
+<meta charset="UTF-8">
+
+</head>
+<body>
+
+<canvas id="canvas" width="265" height="265"></canvas>
+
+<script type="text/javascript">
+    var canvas = document.getElementById('canvas');
+    var data = new Image;
+
+
+    data.src = 'http://www.apple.com/ipad/features/images/loupelr1.jpg';
+    data.onload = draw;
+
+
+    function draw(x, y) {
+        var PROP = 3.6;
+
+        var target = canvas;
+        var src = data;
+        var x = 30;
+        var y = 50;
+
+        // 取得画笔
+        var ctx = target.getContext('2d');
+
+        // 记录画笔状态
+        ctx.save();
+
+        // 切除圆形以外的画布
+        ctx.translate(125, 125);
+        ctx.beginPath();
+        ctx.arc(0, 0, 120, 0, Math.PI * 2, true);
+        ctx.clip();
+
+        // 计算坐标
+        x = -x * PROP - 120;
+        y = -y * PROP - 120;
+
+        // 绘制图像
+        ctx.drawImage(src, x, y);
+
+        // 恢复画笔状态
+        ctx.restore();
+    }
+</script>
+
+</body>
+</html>

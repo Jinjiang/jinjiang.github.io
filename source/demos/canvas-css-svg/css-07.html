@@ -1,0 +1,34 @@
+﻿<html>
+ <head>
+   <style>
+@-webkit-keyframes pulse {
+  from {
+    opacity: 0.5;
+    color: red;
+  }
+  to {
+    opacity: 1;
+    color: blue;
+  }
+}
+
+#bg-1 {
+  position: absolute;
+  left: 10px;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  background: yellow;
+  border: 1px black solid;
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+   </style>
+ </head>
+ <body>
+   <div id="bg-1">Transition</div>
+ </body>
+</html>

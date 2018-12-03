@@ -1,0 +1,29 @@
+﻿<html>
+  <head>
+    <script type="application/x-javascript">
+    function draw() {
+      var ctx = document.getElementById('canvas').getContext('2d');
+      var img = new Image();
+      // Image File
+      img.src = 'backdrop.png';
+      // or Image DataURI
+      // var img_src = 'data:image/gif;base64,R0lGODlhCwALAIAAAAAA3pn/ZiH5BAEAAAEALAAAAAALAAsAAAIUhA+hkcuO4lmNVindo7qyrIXiGBYAOw==';
+      // img.src = img_src;
+      img.onload = function(){
+        ctx.drawImage(img,0,0);
+        ctx.beginPath();
+        ctx.moveTo(30,96);
+        ctx.lineTo(70,66);
+        ctx.lineTo(103,76);
+        ctx.lineTo(170,15);
+        ctx.stroke();
+      }
+    }
+    </script>
+  </head>
+  <body onload="draw();">
+    <canvas id="canvas" width="180" height="130"></canvas>
+    <p>Source image</p>
+    <img src="backdrop.png"/>
+  </body>
+</html>

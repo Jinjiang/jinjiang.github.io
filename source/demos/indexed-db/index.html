@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Indexed DB Demo</title>
+    <link rel="stylesheet" type="text/css" href="/s/css/style.css">
+    <style type="text/css">
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 640px;
+    }
+    body.error button,
+    body.error p {
+        display: none;
+    }
+    ul li {
+        margin: 0 0 0.25em;
+        padding: 0.25em 0.25em 1em 1em;
+        border-radius: 5px;
+    }
+    ul li.empty {
+        font-size: 32px;
+        background: #eee;
+    }
+    ul li:hover {
+        background: #eee;
+    }
+    ul a {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    ul button {
+        float: right;
+    }
+    </style>
+    <script type="text/javascript" src="/s/js/jquery.js"></script>
+</head>
+<body>
+<h1>Reading List Demo <sup>(using IndexedDB)</sup></h1>
+<button id="btn-add">Add</button>
+<ul id="list"></ul>
+<p>You can add a link through the "Add" button above.</p>
+<script type="text/javascript">
+/// Indexed Database demo script ///
+
+
+
+
+/// config ///
+
+var dbName = 'test';
+var dbVersion = '1.0';
+var storeName = 'list';
+
+
+
+
+/// global ///
+
+var db;
+var body = $('body');
+var list = $('#list');
+
+
+
+
+/// base ///
+
+function initIDB() {
+    if ('webkitIndexedDB' in window) {
+        window.indexedDB = webkitIndexedDB;
+        window.IDBKeyRange = webkitIDBKeyRange;
+        window.IDBTransaction = window.webkitIDBTransaction;
+    }
+    else if ('mozIndexedDB' in window) {
+        window.indexedDB = mozIndexedDB;
+    }
+    else if ('msIndexedDB' in window) {
+        window.indexedDB = msIndexedDB;
+    }
+}
+
+function connect(onsuccess, onchange, onerror, onchangeerror) {
+    if ('indexedDB' in window) {
+        var req = indexedDB.open(dbName, dbVersion);
+        req.onsuccess = function (e) {
+            db = this.result;
+            if (db.version == dbVersion) {
+                onsuccess(e);
+            }
+            else {
+                var dbReq = db.setVersion(dbVersion);
+                dbReq.onsuccess = function (e) {
+                    var that = {result: this.source};
+                    if (onchange) {
+                        onchange.call(that, e);
+                    }
+                    onsuccess(e);
+                };
+                dbReq.onerror = onchangeerror || error;
+            }
+        };
+        req.onerror = onerror || error;
+        req.onupgradeneeded = onchange;
+    }
+    else {
+        if (onerror) {
+            onerror({});
+        }
+    }
+}
+
+function transaction(mode, process, onsuccess, onerror) {
+    var transaction = db.transaction(storeName, mode || IDBTransaction.READ_ONLY);
+    var store = transaction.objectStore(storeName);
+    var storeReq = process(store);
+
+    if (storeReq) {
+        storeReq.onsuccess = onsuccess;
+        storeReq.onerror = onerror || error;
+    }
+}
+
+function query(callback, finalCallback) {
+    transaction(IDBTransaction.READ_ONLY, function (store) {
+        var range = IDBKeyRange.lowerBound(0);
+        return store.openCursor(range);
+    }, function (e) {
+        var result = e.target.result;
+        if (result) {
+            if (callback) {
+                callback(result.value);
+            }
+            result.continue();
+        }
+        else {
+            if (finalCallback) {
+                finalCallback()
+            };
+        }
+    });
+}
+
+function add(obj, callback) {
+    transaction(IDBTransaction.READ_WRITE, function (store) {
+        return store.put(obj);
+    }, callback);
+}
+
+function remove(key, callback) {
+    transaction(IDBTransaction.READ_WRITE, function (store) {
+        return store.delete(key);
+    }, callback);
+}
+
+function error(e) {
+    console.log('error: ' + this.errorCode, this, e);
+}
+
+
+
+
+/// tasks ///
+
+function getList() {
+    list.empty();
+    query(append, checkEmpty);
+}
+
+function addBtn() {
+    var title = prompt('please input the title');
+    if (title) {
+        var url = prompt('please input the url', 'http://');
+        if (url) {
+            var timeStamp = (new Date).valueOf();
+            var value = {
+                title: title,
+                url: url,
+                timeStamp: timeStamp
+            };
+            add(value, getList);
+        }
+    }
+}
+
+function append(value) {
+    var li = $('<li><button>X</button>' +
+            '<a href="#" target="_blank"></a><br>' +
+            '<span class="datetime"></span></li>');
+    var title = value.title || '[No Title]';
+    var url = value.url || '#';
+    var datetime = (new Date(value.timeStamp)).toString();
+
+    li.find('a').attr('title', title).attr('href', url).text(title);
+    li.find('.datetime').text(datetime);
+    li.find('button').click(function (e) {
+        remove(url, getList);
+    });
+
+    list.append(li);
+}
+
+function checkEmpty() {
+    if (list.children().length == 0) {
+        list.html('<li class="empty">No Items</li>');
+    }
+}
+
+function connectError(e) {
+    body.addClass('error');
+    list.html('<li class="empty">error: IndexedDB not supported</li>');
+}
+
+
+
+
+/// runtime ///
+
+initIDB();
+connect(function (e) {
+    getList();
+    $('#btn-add').click(addBtn);
+}, function (e) {
+    var db = this.result;
+    db.createObjectStore(storeName, {keyPath: 'url'});
+}, connectError);
+
+
+
+
+</script>
+
+</body>
+</html>

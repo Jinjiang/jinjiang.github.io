@@ -1,0 +1,23 @@
+﻿<html>
+ <head>
+  <script type="application/javascript">
+function draw() {
+  var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
+
+  ctx.fillStyle = "red";
+
+  ctx.beginPath();
+  ctx.moveTo(30, 30);
+  ctx.lineTo(150, 150);
+  // was: ctx.quadraticCurveTo(60, 70, 70, 150); which is wrong.
+  ctx.bezierCurveTo(60, 70, 60, 70, 70, 150); // <- this is right formula for the image on the right ->
+  ctx.lineTo(30, 30);
+  ctx.fill();
+}
+   </script>
+ </head>
+ <body onload="draw()">
+   <canvas id="canvas" width="300" height="300"></canvas>
+ </body>
+</html>

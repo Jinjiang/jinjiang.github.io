@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Local Storage Event Test</title>
+    <link rel="stylesheet" href="/s/css/style.css" />
+    <script src="/s/js/jquery.js"></script>
+</head>
+<body>
+
+<h1>Local Storage Event Test</h1>
+
+<blockquote>
+如果改变localStorage的值，当前会话中的同一个顶级浏览上下文中的其它文档会收到storage事件。现在我们当前会话中的同一个顶级浏览上下文中，共有两个文档(index和iframe)，我们可以分别点击“change frome index”按钮和“change from iframe”按钮来改变localStorage的值。
+</blockquote>
+
+<hr />
+
+<table width="100%">
+    <tr>
+        <td width="50%" valign="top" style="background: none;">
+            <h2>Index</h2>
+            <button>change from index</button>
+            <ul></ul>
+        </td>
+        <td style="background: none;">
+            <h2>iFrame</h2>
+            <iframe src="iframe.htm"></iframe>
+        </td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>

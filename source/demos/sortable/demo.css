@@ -1,0 +1,73 @@
+.container {
+    position: relative;
+    background-color: silver;
+    background-color: rgba(127, 127, 127, 0.2);
+    padding: 10px 10px 0 0;
+}
+
+.container .item {
+    margin: 0 0 10px 10px;
+    padding: 0;
+    background-color: gray;
+    background-color: rgba(127, 127, 127, 0.2);
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+
+.ready .item {
+    -webkit-transition: top 0.3s, left 0.3s;
+    -moz-transition: top 0.3s, left 0.3s;
+    transition: top 0.3s, left 0.3s;
+}
+.ready .dragging {
+    z-index: 3;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+.placeholder {
+    z-index: 1;
+    -webkit-transition: top 0.3s, left 0.3s;
+    -moz-transition: top 0.3s, left 0.3s;
+    transition: top 0.3s, left 0.3s;
+    background-color: yellow;
+}
+
+
+#container-vertical {
+    width: 400px;
+}
+#container-vertical item {
+    height: 40px;
+    line-height: 40px;
+}
+
+
+#container-horizontal {
+    height: 60px;
+}
+#container-horizontal .item {
+    width: 40px;
+}
+
+
+#container-v-flow {
+    height: 110px;
+}
+#container-v-flow .item {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+#container-h-flow {
+    width: 200px;
+}
+#container-h-flow .item {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+

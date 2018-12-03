@@ -1,0 +1,141 @@
+#phone {
+    width: 400px;
+    padding: 80px 0;
+    border-radius: 8px;
+    background-color: black;
+    margin: 40px auto;
+    box-shadow: 0 0 3px 3px gray;
+    position: relative;
+}
+#sound {
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    border: 2px gray solid;
+    top: 20px;
+    left: 150px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+#brand {
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    top: 40px;
+    left: 150px;
+    color: white;
+    text-shadow: 0 0 3px 3px gray;
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 5;
+}
+#home-button {
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px white solid;
+    top: 580px;
+    left: 150px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+#grid {
+    background-color: gray;
+    width: 360px;
+    height: 480px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    -webkit-perspective: 300px;
+}
+#grid .cell,
+#grid .app {
+    position: absolute;
+    z-index: 1;
+    background-color: #999;
+    box-sizing: border-box;
+    -webkit-transition: all 0.5s;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-backface-visibility: hidden;
+}
+#grid .cell {
+    width: 120px;
+    height: 120px;
+    left: 120px;
+    top: 180px;
+    border: 1px silver solid;
+    z-index: 2;
+}
+#grid .app {
+    width: 360px;
+    height: 480px;
+    top: 0px;
+    left: 0px;
+}
+#grid .cell:active {
+    background-color: #333;
+}
+#grid .cell.active,
+#grid .app.active {
+    z-index: 3;
+}
+#grid .cell.active {
+    -webkit-transform: rotateY(180deg) scale(3);
+    top: 160px;
+    height: 160px;
+}
+#grid .app.active {
+    -webkit-transform: rotateY(360deg) scale(1);
+}
+
+#grid .cell img {
+    width: 60px;
+    height: 60px;
+    display: block;
+    padding: 27px;
+}
+#grid .cell.active img {
+    padding: 49px 27px;
+}
+
+#grid .app {
+    width: 360px;
+    height: 480px;
+}
+
+#grid .cell[data-index="10"],
+#grid .cell[data-index="11"],
+#grid .cell[data-index="12"] {
+    background-color: #666;
+}
+
+.cell[data-index="1"] {-webkit-transform: translateX(-120px) translateY(-180px)}
+.cell[data-index="2"] {-webkit-transform: translateY(-180px)}
+.cell[data-index="3"] {-webkit-transform: translateX(120px) translateY(-180px)}
+.cell[data-index="4"] {-webkit-transform: translateX(-120px) translateY(-60px)}
+.cell[data-index="5"] {-webkit-transform: translateY(-60px)}
+.cell[data-index="6"] {-webkit-transform: translateX(120px) translateY(-60px)}
+.cell[data-index="7"] {-webkit-transform: translateX(-120px) translateY(60px)}
+.cell[data-index="8"] {-webkit-transform: translateY(60px)}
+.cell[data-index="9"] {-webkit-transform: translateX(120px) translateY(60px)}
+.cell[data-index="10"] {-webkit-transform: translateX(-120px) translateY(180px)}
+.cell[data-index="11"] {-webkit-transform: translateY(180px)}
+.cell[data-index="12"] {-webkit-transform: translateX(120px) translateY(180px)}
+
+.app[data-index="1"] {-webkit-transform: rotateY(180deg) translateX(-120px) translateY(-180px) scale(0.25);}
+.app[data-index="2"] {-webkit-transform: rotateY(180deg) translateY(-180px) scale(0.25);}
+.app[data-index="3"] {-webkit-transform: rotateY(180deg) translateX(120px) translateY(-180px) scale(0.25);}
+.app[data-index="4"] {-webkit-transform: rotateY(180deg) translateX(-120px) translateY(-60px) scale(0.25);}
+.app[data-index="5"] {-webkit-transform: rotateY(180deg) translateY(-60px) scale(0.25);}
+.app[data-index="6"] {-webkit-transform: rotateY(180deg) translateX(120px) translateY(-60px) scale(0.25);}
+.app[data-index="7"] {-webkit-transform: rotateY(180deg) translateX(-120px) translateY(60px) scale(0.25);}
+.app[data-index="8"] {-webkit-transform: rotateY(180deg) translateY(60px) scale(0.25);}
+.app[data-index="9"] {-webkit-transform: rotateY(180deg) translateX(120px) translateY(60px) scale(0.25);}
+.app[data-index="10"] {-webkit-transform: rotateY(180deg) translateX(-120px) translateY(180px) scale(0.25);}
+.app[data-index="11"] {-webkit-transform: rotateY(180deg) translateY(180px) scale(0.25);}
+.app[data-index="12"] {-webkit-transform: rotateY(180deg) translateX(120px) translateY(180px) scale(0.25);}
