@@ -3,6 +3,9 @@ title: '网站装修笔记20120414'
 date: 2012/04/14 10:26:24
 updated: 2012/04/14 10:34:19
 tags:
+- diary
+- slides
+- html5
 - css3
 ---
 

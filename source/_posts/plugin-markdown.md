@@ -3,6 +3,7 @@ title: '分享Typecho插件：Markdown 解析器 + 编辑器'
 date: 2012/03/28 07:09:45
 updated: 2012/07/04 04:08:57
 tags:
+- plugin
 - markdown
 ---
 

@@ -5,10 +5,10 @@ const relationships = require('./relationships.json')
 const moment = require('moment')
 
 function getTags(cid) {
-  const mid = relationships[cid]
-  if (mid && metas[mid]) {
-    return metas[mid]
-  }
+  const list = (relationships[cid] || []).map(mid => {
+    return `- ${metas[mid]}`
+  }).join('\n')
+  return list ? `tags:\n${list}\n` : ''
 }
 
 const output = {}
@@ -20,8 +20,7 @@ Object.keys(posts).forEach(cid => {
   const updated = moment(post.modified * 1000).format('YYYY/MM/DD hh:mm:ss')
   const filename = post.slug
   const text = post.text
-  const tag = getTags(cid)
-  const tags = tag ? `tags:\n- ${tag}\n` : ''
+  const tags = getTags(cid)
   const content = `
 ---
 title: '${title}'

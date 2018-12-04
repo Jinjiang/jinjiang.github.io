@@ -3,6 +3,8 @@ title: '分享bookmarklet一则：随意阅读'
 date: 2012/08/20 10:00:40
 updated: 2012/08/20 10:46:57
 tags:
+- bookmarklet
+- readability
 - reader
 ---
 

@@ -3,6 +3,8 @@ title: '分享Typecho插件：百度统计助手'
 date: 2012/04/03 12:27:40
 updated: 2012/04/03 12:29:21
 tags:
+- plugin
+- baidu
 - statistics
 ---
 

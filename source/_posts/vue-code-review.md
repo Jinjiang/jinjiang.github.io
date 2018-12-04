@@ -3,6 +3,7 @@ title: 'Vue.js 源码学习笔记'
 date: 2015/07/26 11:15:41
 updated: 2018/02/06 01:17:46
 tags:
+- javascript
 - vue
 ---
 
