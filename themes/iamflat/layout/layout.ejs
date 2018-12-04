@@ -61,8 +61,17 @@
         <%= config.description %>
       </p>
     </div>
+
     <div id="nav" class="pure-menu pure-menu-open pure-menu-horizontal">
-      <%= JSON.stringify(site.pages) %>
+      <ul>
+        <% for (var i in site.pages.data.sort(function (a, b) { return a.order - b.order })){ %>
+        <li<% if (page.path === site.pages.data[i].path) { %> class="pure-menu-selected"<% } %>>
+          <a href="<%- url_for(site.pages.data[i].path.replace(/index\.html$/, '')) %>">
+            <%= site.pages.data[i].title %>
+          </a>
+        </li>
+        <% } %>
+      </ul>
     </div>
 
     <div id="main"><%- body %></div>
@@ -71,11 +80,12 @@
       <a href="/"><%= config.title %></a>
       <% if (theme.rss){ %>
       <a href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">文章 RSS</a>
-      <% } %>
+      <% } %><br />
+      我是百度统计：
+      <script src="http://hm.baidu.com/h.js?a0a2372d4b7621d0bfe71f33c58a4bd8"></script>
     </div>
-
   </div>
-
+  <%- js('js/script') %>
 </body>
 
 </html>

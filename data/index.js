@@ -1,20 +1,21 @@
 const fs = require('fs')
-const posts = require('./posts.json')
+const pages = require('./pages.json')
 const moment = require('moment')
 
 // todo: tags
 
 const output = {}
 
-Object.keys(posts).forEach(cid => {
-  const post = posts[cid]
-  const title = post.title
-  const date = moment(post.created * 1000).format('YYYY/MM/DD hh:mm:ss')
-  const updated = moment(post.modified * 1000).format('YYYY/MM/DD hh:mm:ss')
-  const filename = post.slug
-  const text = post.text
+Object.keys(pages).forEach(cid => {
+  const page = pages[cid]
+  const title = page.title
+  const date = moment(page.created * 1000).format('YYYY/MM/DD hh:mm:ss')
+  const updated = moment(page.modified * 1000).format('YYYY/MM/DD hh:mm:ss')
+  const filename = page.slug
+  const text = page.text
   const content = `
 ---
+layout: page
 title: '${title}'
 date: ${date}
 updated: ${updated}
@@ -26,5 +27,5 @@ ${text}
 })
 
 for (const filename in output) {
-  fs.writeFileSync(`_posts/${filename}.md`, output[filename])
+  fs.writeFileSync(`pages/${filename}.md`, output[filename])
 }

@@ -126,10 +126,10 @@ a {
   list-style: none;
   padding: 0;
   font-size: 85%; }
-  .page-navigator li {
+  .page-navigator > * {
     display: inline-block;
     margin-right: 5px; }
-  .page-navigator a {
+  .page-navigator > * {
     padding-left: 0.75em;
     padding-right: 0.75em; }
 

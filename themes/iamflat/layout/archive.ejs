@@ -17,3 +17,13 @@
   <% } %>
 </div>
 <% }) %>
+
+<% if (page.total > 1){ %>
+<ol class="page-navigator">
+  <%- paginator({
+    prev_text: '&laquo;',
+    next_text: '&raquo;',
+    show_all: true
+  }) %>
+</ol>
+<% } %>

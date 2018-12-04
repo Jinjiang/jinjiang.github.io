@@ -20,23 +20,10 @@
 
 <% if (page.total > 1){ %>
 <ol class="page-navigator">
-  <% if (page.current > 1) { %>
-  <li><a href="<%- url_for(page.prev_link) %>" class="pure-button">&laquo;</a></li>
-  <% } %>
-  <% if (page.current === 1) { %>
-  <li><a href="/" class="pure-button pure-button-disabled">1</a></li>
-  <% } else { %>
-  <li><a href="/" class="pure-button">1</a></li>
-  <% } %>
-  <% for (var i = 2; i <= page.total; i++) { %>
-  <% if (i === page.current) { %>
-  <li><a href="/page/<%= i %>/" class="pure-button pure-button-disabled"><%= i %></a></li>
-  <% } else { %>
-  <li><a href="/page/<%= i %>/" class="pure-button"><%= i %></a></li>
-  <% } %>
-  <% } %>
-  <% if (page.next_link) { %>
-  <li><a href="<%- url_for(page.next_link) %>" class="pure-button">&raquo;</a></li>
-  <% } %>
+  <%- paginator({
+    prev_text: '&laquo;',
+    next_text: '&raquo;',
+    show_all: true
+  }) %>
 </ol>
 <% } %>
