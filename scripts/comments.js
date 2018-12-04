@@ -24,7 +24,7 @@ function flatten(comments = [], indent, result) {
       author,
       url,
       created,
-      text,
+      text: text.replace(/\n/ig, '<br/>\n'),
       indent
     })
     // for each child of the comment

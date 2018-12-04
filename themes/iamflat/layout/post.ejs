@@ -11,7 +11,7 @@
   <h2>早期评论</h2>
   <ul>
   <% for (var i = 0; i < list.length; i++) { %>
-    <li id="comment-<%- list[i].id %>" style="margin-left: <%- list[i].indent * 2 %>em;">
+    <li id="comment-<%- list[i].id %>" style="margin-left: <%- Math.min(list[i].indent, 2) * 2 %>em;">
       <p>
         <strong><% if (list[i].url) { %>
         <a href="<%= list[i].url %>" target="_blank" title="<%= list[i].author %>"><%= list[i].author %></a>
