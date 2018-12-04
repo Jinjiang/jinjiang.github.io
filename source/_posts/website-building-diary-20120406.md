@@ -18,7 +18,7 @@ tags:
 
 先说友情链接插件的事情吧，我在Typecho的插件站找到了一款友情链接的插件，名字就叫[Links](http://typecho.us/plugins/links-for-imhan.html)，非常方便实用。我现在随便放了3个链接，看看样子。大家希望跟我交换链接的，可暂时留言至此，回头我会另外做个交换链接的页面。
 
-![友情链接示意图](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/04/2077996433.png)
+![友情链接示意图](/uploads/2012/04/2077996433.png)
 
 ### 响应式侧边栏
 
@@ -46,7 +46,7 @@ tags:
 
 最终效果如图：
 
-![响应式设计预览](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/04/394641605.jpg)
+![响应式设计预览](/uploads/2012/04/394641605.jpg)
 
 这款皮肤我会稍后更新共享在这里。
 

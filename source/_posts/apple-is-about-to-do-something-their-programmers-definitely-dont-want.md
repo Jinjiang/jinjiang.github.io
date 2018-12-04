@@ -17,7 +17,7 @@ Jul 29, 2017
 
 > 苹果在 Apple Park 这个漂亮的新办公楼上花了 50 亿美金，却犯了一个完全可以避免的极其昂贵的错误：让他们的程序员工作在一个开放式的格局中。这真让人惊讶。
 
-![](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2017/08/2254787802.jpg)
+![](/uploads/2017/08/2254787802.jpg)
 
 我在 Fog Creek Software 工作，我们的联合创始人兼前 CEO [Joel Spolsky](https://medium.com/u/869c7e626b83) 在[至少 17 年前](https://www.joelonsoftware.com/2000/04/19/where-do-these-people-get-their-unoriginal-ideas/)就已经针对开放式办公室对于程序员产能的糟糕影响撰文了。他在这方面的洞察基于了 Tom DeMarco 和 Tim Lister 的经典书籍[《Peopleware》](https://en.wikipedia.org/wiki/Peopleware:_Productive_Projects_and_Teams)——该书已经出版了三十年。所以这其实不是什么全新的观点。当然在这数十年里，也已经有无数的[学术研究确认](http://theconversation.com/open-plan-offices-attract-highest-levels-of-worker-dissatisfaction-study-18246)了同一个结论：人们在开放式空间办公是烦躁的、注意力不集中的、常常不开心的。
 
@@ -35,7 +35,7 @@ Jul 29, 2017
 
 > **数以千计的** Apple Park 的雇员都会出现在 Ive 的办公视线内。很多人都将坐在开放空间，而不是以往的小办公室。<mark>程序员们都会担心他们的工作氛围太过嘈杂和注意力不集中。</mark>……
 
-![](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2017/08/941992970.png)
+![](/uploads/2017/08/941992970.png)
 
 通常，公司会以预算为由把程序员安排在开放式办公室。确实让每个程序员都有一个自己的封闭办公室是一笔不小的开销。但是鉴于苹果已经在这个新园区投资了 50 亿美金，且用上了[被 iPhone 设计影响了的定制抽水马桶](https://qz.com/905934/even-the-toilets-in-apples-aapl-campus-2-are-inspired-by-the-iphone/)，你很难确信这是因为省钱而做的决定。
 
@@ -56,7 +56,7 @@ Jul 29, 2017
 
 来参观一下 Fog Creek 在纽约的总部
 
-![](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2017/08/1791376931.jpg)
+![](/uploads/2017/08/1791376931.jpg)
 
 [Google Map Link](https://www.google.com/maps/@40.706976,-74.0132501,0a,29.2y,273.42h,100.56t/data=!3m4!1e1!3m2!1su6fRkLZ36IAAAAQIt5lP8A!2e0?source=apiv3)
 

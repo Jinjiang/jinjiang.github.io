@@ -6,7 +6,7 @@ updated: 2017/08/01 03:03:07
 
 作为“打入敌人内部”的第一件事，转载一下 Vue.js 1.0.0 新世纪福音战士 (其实发这篇文章的时候已经 1.0.3 了) 正式发布的[博文](http://vuejs.org/2015/10/26/1.0.0-release/) ^_^
 
-![Vue.js](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2015/10/2139857295.png)
+![Vue.js](/uploads/2015/10/2139857295.png)
 
 ----
 

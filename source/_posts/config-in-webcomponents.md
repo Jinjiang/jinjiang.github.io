@@ -29,19 +29,19 @@ tags:
 
 而如何管理和划分组件逐渐变成了前端工程里的一门学问。<!--more-->
 
-![components_1.png](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2015/03/594096967.png)
+![components_1.png](/uploads/2015/03/594096967.png)
 
 最简单的分解方式是树形分解，自上而下。比如刚才的那个相册浏览界面的例子。
 
-![components_2.png](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2015/03/3435937818.png)
+![components_2.png](/uploads/2015/03/3435937818.png)
 
 同时，我们会发现，树形的最末端往往存在着有共性的组件，比如按钮、文本框之类的组件，它们无处不在。这时，就有了所谓的“基础组件”和“业务组件”之分。“基础组件”是共享的，树形结构中的任何一个结点(“业务组件”)都可以直接使用这些“基础组件”。
 
-![components_3.png](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2015/03/2975873720.png)
+![components_3.png](/uploads/2015/03/2975873720.png)
 
 如果程序的结构再复杂，那么就在“业务”和“基础”之间分更多的层，每一层有自己明确的职能范围，同时，较高层的组件可以自由调用较低层的组件。
 
-![components_4.png](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2015/03/1309938584.png)
+![components_4.png](/uploads/2015/03/1309938584.png)
 
 ### 组件的配置信息
 

@@ -188,4 +188,4 @@ __1 个图片文件夹__
 
 运行 `node r.js -o config.js` 就可以得到一个打包成功的项目了，并且打包前后的代码都可以正常运行
 
-附件是这个项目例子的源代码：[project.zip](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2013/03/1894338901.zip)
+附件是这个项目例子的源代码：[project.zip](/uploads/2013/03/1894338901.zip)

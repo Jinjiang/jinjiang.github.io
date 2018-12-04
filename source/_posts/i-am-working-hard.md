@@ -8,7 +8,7 @@ updated: 2013/07/23 09:55:31
 
 相关新闻：[东亚杯-王永珀2球孙可建功 中国两球落后3-3日本](http://cs.sports.163.com/match/report/2702.html)
 
-![](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2013/07/2059864972.jpg)
+![](/uploads/2013/07/2059864972.jpg)
 
 当我再一次看到这样的标题的时候，我就知道，言外之意是国足的状况一定非常糟糕。
 

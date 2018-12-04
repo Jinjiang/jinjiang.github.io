@@ -18,12 +18,12 @@ tags:
 
 首先我们当然需要有一个百度统计的账号，然后通过这个账号生成我们要统计的统计代码(如下图)：
 
-![获取百度统计代码](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/04/2240219894.png)
+![获取百度统计代码](/uploads/2012/04/2240219894.png)
 
 其中有一串随机码，我们把这串随机码记下来。值得注意的是，随机码前面有一个转意后的问号(`%3F`)，不要把这几个字符算入随机码。
 
 然后在插件设置中填入这串随机码(如下图)，即可正常工作。
 
-![插件配置界面](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/04/1123693821.png)
+![插件配置界面](/uploads/2012/04/1123693821.png)
 
-有需要的童鞋可以移步到这里[下载](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/04/1884967606.zip)
+有需要的童鞋可以移步到这里[下载](/uploads/2012/04/1884967606.zip)

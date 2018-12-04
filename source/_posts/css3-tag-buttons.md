@@ -6,7 +6,7 @@ updated: 2012/03/30 06:21:20
 
 演示地址：[http://jiongks.name/demos/css3-tag/](http://jiongks.name/demos/css3-tag/)
 
-![CSS 3 tag demo](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/03/527861101.png)
+![CSS 3 tag demo](/uploads/2012/03/527861101.png)
 
 如图的效果。标签有背景色，且左侧有一个三角形，三角形中间有个白色的圆圈。
 

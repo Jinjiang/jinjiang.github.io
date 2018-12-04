@@ -28,7 +28,7 @@ date: ${date}
 updated: ${updated}
 ${tags}---
 
-${text}
+${text.replace(/http\:\/\/jiongks\-typecho\.stor\.sinaapp\.com\/usr\/uploads/g, '/uploads')}
 `
   output[filename] = content.trim()
 })

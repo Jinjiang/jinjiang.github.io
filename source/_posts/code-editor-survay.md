@@ -17,8 +17,8 @@ tags:
 4. EditPlus
 5. Vim
 
-![默认选项的选择情况](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2013/02/404926186.png)<!--more-->
+![默认选项的选择情况](/uploads/2013/02/404926186.png)<!--more-->
 
 为了避免自己孤陋寡闻，把其它主流编辑器遗漏，所以我保留了“其它”这个选项，从结果看，确实有疏漏，其中不乏Eclipse、Emacs、WebStorm、Aptana这样的神器，还看到了一个熟悉的身影Expression Web，那是我之前使用过的一款编辑器，微软出的，还不错：
 
-![其它编辑器使用情况](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2013/02/2598919784.png)
+![其它编辑器使用情况](/uploads/2013/02/2598919784.png)

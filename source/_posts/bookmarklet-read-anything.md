@@ -17,7 +17,7 @@ tags:
 
 阅读模式的核心任务之一，就是能够找出我们在各种凌乱广告、装饰物、页眉页脚之中的正文内容。在找内容这件事上，大家不约而同的使用了智能分析的路数。[这里](http://code.google.com/p/arc90labs-readability/source/browse/trunk/js/readability.js)是早期开源的Readability脚本库的核心代码，我们可以看到其中包含着大量用来识别某dom结点是否是正文根结点的算法公示。而这套算法，又是从大量已存在的网页中归纳而来的。
 
-![Readability](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/08/3234165205.png)
+![Readability](/uploads/2012/08/3234165205.png)
 
 #### 阻力
 
@@ -27,7 +27,7 @@ tags:
 
 可黑盒的智能规则又导致了另外一个问题：智能识别如果出现判断误差，对于那些希望支持阅读模式的网站，又无奈于找不到这些计算规则去适配。于是我们又会看到类似“[how to enable safari reader](http://www.google.com/search?q=how-to-enable-safari-reader)”这样的问题满天飞。
 
-![Google搜索截图：如何激活阅读模式](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/08/938520538.png)
+![Google搜索截图：如何激活阅读模式](/uploads/2012/08/938520538.png)
 
 最后阅读模式的识别规则、支持者、反对者扭打在了一起。
 

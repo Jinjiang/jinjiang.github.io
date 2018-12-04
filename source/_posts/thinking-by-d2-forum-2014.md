@@ -4,7 +4,7 @@ date: 2014/10/26 03:13:25
 updated: 2014/10/26 03:23:17
 ---
 
-![第9届D2前端技术论坛](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2014/10/1199434854.png)
+![第9届D2前端技术论坛](/uploads/2014/10/1199434854.png)
 
 之前参加过 2 次，今年的 [D2](http://d2forum.alibaba-inc.com/) 是我第一次以“自己人”的身份参加的。和往年一样，受益匪浅，但也有了一些不一样的想法。<!--more-->
 

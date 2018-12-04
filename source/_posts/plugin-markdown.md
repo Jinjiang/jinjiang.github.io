@@ -16,10 +16,10 @@ tags:
 
 下面是三张截图，一个是工具栏，一个是预览区域，一个是语法提示区域
 
-![工具栏](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/03/42147765.png)
+![工具栏](/uploads/2012/03/42147765.png)
 
-![预览](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/03/2658819400.png)
+![预览](/uploads/2012/03/2658819400.png)
 
-![语法](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/03/2920005189.png)
+![语法](/uploads/2012/03/2920005189.png)
 
-有需要的童鞋可以移步到这里[下载](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2012/03/1219206788.zip)，但__特别注意__：一定要放在`/usr/plugins/Markdown`文件夹下，其它命名可能会导致500错误(感谢大家的反馈，我之前没有注意到这个细节)。
+有需要的童鞋可以移步到这里[下载](/uploads/2012/03/1219206788.zip)，但__特别注意__：一定要放在`/usr/plugins/Markdown`文件夹下，其它命名可能会导致500错误(感谢大家的反馈，我之前没有注意到这个细节)。
