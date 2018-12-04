@@ -4,3 +4,19 @@
   </h2>
   <%- page.content %>
 </div>
+
+<% var list = comments(page.slug) %>
+<% if (list && list.length) { %>
+<div id="comments">
+  <h2>早期评论</h2>
+  <ol>
+  <% for (var i = 0; i < list.length; i++) { %>
+    <li>
+      <p><strong><%= list[i].author %></strong>
+        <small><%= list[i].created %></small></p>
+      <%- list[i].text %>
+    </li>
+  <% } %>
+  </ol>
+</div>
+<% } %>
