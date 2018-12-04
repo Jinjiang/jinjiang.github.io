@@ -166,7 +166,7 @@ __这种思维方式听上去很玄幻，其实想做到很简单，我们不要
 
 #### 夹带私货 (偷笑)
 
-我在这个过程中，融入了之前一段时间集中实践的 [vue 和 webpack 的工程体系](http://jiongks.name/blog/just-vue/)，在 vue 的基础上进行组件化开发，在 webpack 的基础上管理资源打包、集成和发布，最终合并在了最新的 just-vue 的 adam template 里面。
+我在这个过程中，融入了之前一段时间集中实践的 [vue 和 webpack 的工程体系](https://jiongks.name/blog/just-vue/)，在 vue 的基础上进行组件化开发，在 webpack 的基础上管理资源打包、集成和发布，最终合并在了最新的 just-vue 的 adam template 里面。
 
 之前不是在文章的最后卖了个“最后一公里”的关子吗，这里介绍的图片工作流改进就是其中的一部分：）
 

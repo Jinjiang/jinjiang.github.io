@@ -4,7 +4,7 @@ date: 2013/03/30 02:46:47
 updated: 2013/03/30 03:15:15
 ---
 
-[r.js](https://github.com/jrburke/r.js) 本是 [RequireJS](http://requirejs.org/) 的一个附属产品，支持在 NodeJS、Rhino 等环境下运行 [AMD](http://wiki.commonjs.org/wiki/Modules/AsynchronousDefinition) 程序，并且其包含了一个名为 RequireJS Optimizer 的工具，可以为项目完成合并脚本等优化操作。
+[r.js](https://github.com/jrburke/r.js) 本是 [RequireJS](https://requirejs.org/) 的一个附属产品，支持在 NodeJS、Rhino 等环境下运行 [AMD](https://wiki.commonjs.org/wiki/Modules/AsynchronousDefinition) 程序，并且其包含了一个名为 RequireJS Optimizer 的工具，可以为项目完成合并脚本等优化操作。
 
 r.js 的介绍中明确写道它是 RequireJS 项目的一部分，和 RequireJS 协同工作。但我发现，RequireJS Optimizer 提供了丰富的配置参数，可以让我们完全跳出 AMD 和 RequireJS 程序的束缚，为我们的前端程序服务。
 
@@ -46,7 +46,7 @@ r.js 的介绍中明确写道它是 RequireJS 项目的一部分，和 RequireJS
 2. 把所有的 `css` 文件中，使用 `@import` 语法的文件自动打包合并到 `dir` 目录
 3. 把其它文件复制到 `dir` 目录，比如图片、附件等等
 
-我已经把 RequireJS 和 r.js 整套东西用到了 [H5Slides](http://github.com/jinjiang/h5slides/) 上。觉得蛮方便的。
+我已经把 RequireJS 和 r.js 整套东西用到了 [H5Slides](https://github.com/jinjiang/h5slides/) 上。觉得蛮方便的。
 
 不过工作中的前端开发工作并不是绝对理想化的，有些旧的项目，并不是 AMD 的模块化开发方式，而是传统的 js 程序，开发一个页面时可能需要一口气引入三到五个 css 文件、十来个 js 文件…… 上线的时候为了减少流量及 HTTP 请求数又需要把代码尽可能重用和合并。这个时候就需要一个方便快捷的打包工具帮助我们了，下面就介绍一下 RequireJS Optimizer 是如何完成这项工作的。
 

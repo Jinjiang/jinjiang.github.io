@@ -498,4 +498,4 @@ __我们已经面对到了这一窘境：一开始我们写的 JavaScript 只有
 
 * [幻灯演示](http://lanyrd.com/2012/full-frontal/sztqh/) 2012 Full Frontal conference in Brighton, UK
 * [Grunt](http://gruntjs.com/) 一个可以进行自动化测试等诸多事情的工具
-* [测试驱动的 JavaScript 开发](http://www.amazon.com/dp/0321683919/) 及其 [中文版](http://www.amazon.cn/dp/B0077KA3J4/)
+* [测试驱动的 JavaScript 开发](https://www.amazon.com/dp/0321683919/) 及其 [中文版](https://www.amazon.cn/dp/B0077KA3J4/)

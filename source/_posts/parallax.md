@@ -4,19 +4,19 @@ date: 2013/09/22 05:11:17
 updated: 2013/12/11 10:52:11
 ---
 
-翻译自：[http://www.html5rocks.com/en/tutorials/speed/parallax/](http://www.html5rocks.com/en/tutorials/speed/parallax/)
+翻译自：[https://www.html5rocks.com/en/tutorials/speed/parallax/](https://www.html5rocks.com/en/tutorials/speed/parallax/)
 
 ### 简介
 
 现在满大街都是视觉差(parallax)网站了，我们随便看几个：
 
 * [Old Pulteney Row to the Pole](http://www.rowtothepole.com/)
-* [Adidas Snowboarding](http://www.adidas.com/com/apps/snowboarding/)
-* [BBC News - James Bond: Cars, catchphrases and kisses](http://www.bbc.co.uk/news/entertainment-arts-20026367)
+* [Adidas Snowboarding](https://www.adidas.com/com/apps/snowboarding/)
+* [BBC News - James Bond: Cars, catchphrases and kisses](https://www.bbc.co.uk/news/entertainment-arts-20026367)
 
 也许你对这玩意儿还不太熟，视觉差其实就是它的视觉结构会随着页面的滚动而变化。通常情况下页面里的元素会根据页面的滚动位置而缩放、旋转或移动。
 
-![一个视觉差页面的demo](http://www.html5rocks.com/static/demos/parallax/parallax.jpg)  
+![一个视觉差页面的demo](https://www.html5rocks.com/static/demos/parallax/parallax.jpg)  
 我们的视觉差demo的完整效果
 
 不管你喜不喜欢视觉差网站，有一件事毫无疑问，它是一个性能的黑洞。因为当页面滚动时，浏览器的优化都倾向于新内容随滚动而出现于屏幕的最上方或最下方的情况。一般来说，内容改变得越少浏览器性能越高。而对于一个视觉差网站来说，在页面滚动时，好多元素都在发生改变，大多数情况下整个页面的大块可视元素都在发生变化，所以浏览器不得不重绘整个页面。
@@ -26,7 +26,7 @@ updated: 2013/12/11 10:52:11
 * 背景元素会在你向上或向下滚动页面时改变位置、旋转或缩放。
 * 页面内容，如文字或小的图片，在页面滚动时会按照传统的方式进行上下移动。
 
-建议大家先阅读我们之前介绍过的[滚动性能](http://www.html5rocks.com/en/tutorials/speed/scrolling/)来改进你的app的响应速度。本篇文章是基于那篇文章所写的。
+建议大家先阅读我们之前介绍过的[滚动性能](https://www.html5rocks.com/en/tutorials/speed/scrolling/)来改进你的app的响应速度。本篇文章是基于那篇文章所写的。
 
 所以文字是如果你在建立一个视觉差网站，那么你是否受困于高昂的重绘开销？有没有别的改进建议使得性能最大化？让我们看看这几个方案：
 
@@ -34,25 +34,25 @@ updated: 2013/12/11 10:52:11
 
 ### 方案1：使用DOM元素和绝对定位
 
-这是很多人默认采取的方案。页面里有一大堆元素，任何时候只要触发滚动事件，这些元素就会进行各种变换来完成视觉上的更新。我已经用这个方式写好了一个[demo页面](http://www.html5rocks.com/static/demos/parallax/demo-1a/demo.html)。
+这是很多人默认采取的方案。页面里有一大堆元素，任何时候只要触发滚动事件，这些元素就会进行各种变换来完成视觉上的更新。我已经用这个方式写好了一个[demo页面](https://www.html5rocks.com/static/demos/parallax/demo-1a/demo.html)。
 
 如果你打开开发者工具的时间线的帧模式的话，滚动页面，你会发现各种全屏重绘，这个代价是很高的。如果你滚动多一些，你会发现在一个单个帧里出现了好多滚动事件，每个事件都会触发布局操作。
 
-![Chrome开发者工具中未优化过的滚动事件](http://www.html5rocks.com/static/demos/parallax/paints.png)  
+![Chrome开发者工具中未优化过的滚动事件](https://www.html5rocks.com/static/demos/parallax/paints.png)  
 开发者工具展示了一个单个帧里的大块绘制以及多个由事件触发的布局操作
 
-需要铭记的要点是为了达到60fps(匹配传统显示器60赫兹的刷新频率)，我们需要在16毫秒之内搞定一切。在这个版本中我们使得每次滚动事件都造成了视觉上的变化。但是我们之前的文章[用requestAnimationFrame做出更经济实惠的动画](http://www.html5rocks.com/en/tutorials/speed/animations/)和[滚动性能](http://www.html5rocks.com/en/tutorials/speed/scrolling/)已经讨论过，这样做和浏览器的更新机制并不相符，所以我们要么会错过帧，要么会在同一帧里做了多余的工作。这样的网站无法给人一种纯天然不刺激的感觉，用户就会不爽。
+需要铭记的要点是为了达到60fps(匹配传统显示器60赫兹的刷新频率)，我们需要在16毫秒之内搞定一切。在这个版本中我们使得每次滚动事件都造成了视觉上的变化。但是我们之前的文章[用requestAnimationFrame做出更经济实惠的动画](https://www.html5rocks.com/en/tutorials/speed/animations/)和[滚动性能](https://www.html5rocks.com/en/tutorials/speed/scrolling/)已经讨论过，这样做和浏览器的更新机制并不相符，所以我们要么会错过帧，要么会在同一帧里做了多余的工作。这样的网站无法给人一种纯天然不刺激的感觉，用户就会不爽。
 
-让我们把更新界面的代码从滚动事件里拿出来，放到`requestAnimationFrame`的回调函数里吧，滚动事件只是简单的不惑滚动的值。我们的[第二个demo页面](http://www.html5rocks.com/static/demos/parallax/demo-1b/demo.html)在此。
+让我们把更新界面的代码从滚动事件里拿出来，放到`requestAnimationFrame`的回调函数里吧，滚动事件只是简单的不惑滚动的值。我们的[第二个demo页面](https://www.html5rocks.com/static/demos/parallax/demo-1b/demo.html)在此。
 
 如果你重复滚动测试，你可能会注意到一个轻微的改进，尽管不算明显。原因是因滚动而触发的布局操作并不总是代价昂贵了，但在其他用例中它很可能是。现在至少我们把布局操作限制在了每帧一次。
 
-![Chrome开发者工具中反跳动之后的滚动事件](http://www.html5rocks.com/static/demos/parallax/paints-raf.png)  
+![Chrome开发者工具中反跳动之后的滚动事件](https://www.html5rocks.com/static/demos/parallax/paints-raf.png)  
 开发者工具展示了一个单个帧里的大块绘制以及多个由事件触发的布局操作
 
 现在我们可以每帧绑定一个也可以绑定一百个滚动事件，但我们只记录`requestAnimationFrame`回调函数运行时最近的值并更新到视图上。这里的重点是之前每次滚动事件触发时都强制更新视图，现在则是请求浏览器提供一个合适的窗口来做这件事。怎么样？不错吧！
 
-这个方式的主要问题在于，不论`requestAnimationFrame`与否，整个页面基本上是一个层。通过移动周围的这些可视元素，我们需要大块的重绘。通俗地讲，绘制是一个阻塞操作(虽然这已经在[改变](http://www.chromium.org/developers/design-documents/impl-side-painting))，也就是说浏览器无法做任何其它的工作，我们经常会超出每帧16毫秒的预算，页面还是无法纯天然不刺激。
+这个方式的主要问题在于，不论`requestAnimationFrame`与否，整个页面基本上是一个层。通过移动周围的这些可视元素，我们需要大块的重绘。通俗地讲，绘制是一个阻塞操作(虽然这已经在[改变](https://www.chromium.org/developers/design-documents/impl-side-painting))，也就是说浏览器无法做任何其它的工作，我们经常会超出每帧16毫秒的预算，页面还是无法纯天然不刺激。
 
 ### 方案2：使用DOM元素和3D变换
 
@@ -60,7 +60,7 @@ updated: 2013/12/11 10:52:11
 
 也就是说，在这个方案中，一切变得不一样了：我们为应用3D变换的任何元素提供一个潜在的层。如果我们从这一点出发进行元素的变换那么我们无需重绘这个层，而GPU可以处理这些元素的移动并组合成最后的页面。
 
-这里有[另一个demo](http://www.html5rocks.com/static/demos/parallax/demo-2/demo.html)展示了3D变换的使用。如果你滚动页面你将会发现效果得到了大幅度的改善。
+这里有[另一个demo](https://www.html5rocks.com/static/demos/parallax/demo-2/demo.html)展示了3D变换的使用。如果你滚动页面你将会发现效果得到了大幅度的改善。
 
 人们多次使用`-webkit-transform: translateZ(0);`做hack并看到惊人的性能提升，但今天看来有几个问题：
 
@@ -82,7 +82,7 @@ updated: 2013/12/11 10:52:11
 
 使用canvas元素给了我们一个新的层，但是仅此*一个*层，而在方案2种，我们实际是为*每个*应用3D变换的元素都创建了一个新的层。所以我们需要组合所有的层到一起，这是一个会增长的工作量。鉴于不同浏览器对变换的不同实现，这同时也是跨浏览器兼容性最好的方案。
 
-如果你看看基于这个方案的[这个demo](http://www.html5rocks.com/static/demos/parallax/demo-3/demo.html)，在开发者工具里测试一下，你会发现性能非常好。这个方案我们简单的使用了canvas的`drawImage` API调用，并且我们将其背景图片和每个色块都绘制在屏幕上正确的位置。
+如果你看看基于这个方案的[这个demo](https://www.html5rocks.com/static/demos/parallax/demo-3/demo.html)，在开发者工具里测试一下，你会发现性能非常好。这个方案我们简单的使用了canvas的`drawImage` API调用，并且我们将其背景图片和每个色块都绘制在屏幕上正确的位置。
 
     /**
      * Updates and draws in the underlying visual elements to the canvas.
@@ -150,7 +150,7 @@ updated: 2013/12/11 10:52:11
       renderer = new THREE.CanvasRenderer();
     }
 
-然后使用Three.js的API替换掉我们对上下文的处理。这里的[demo](http://www.html5rocks.com/static/demos/parallax/demo-4/demo.html)同时支持了两个渲染方式，假设你的浏览器也会如此！
+然后使用Three.js的API替换掉我们对上下文的处理。这里的[demo](https://www.html5rocks.com/static/demos/parallax/demo-4/demo.html)同时支持了两个渲染方式，假设你的浏览器也会如此！
 
 作为这个方案的最终思考，如果你不会在页面里放太多额外的元素的话，你可以总是[使用canvas作为背景元素](http://updates.html5rocks.com/2012/12/Canvas-driven-background-images)，这Firefox和基于WebKit的浏览器中都可以。很明显这确实不是无处不在的，所以我们平时使用的时候要小心谨慎。
 

@@ -6,7 +6,7 @@ updated: 2015/06/21 10:52:43
 
 ![Koa](http://img2.tbcdn.cn/L1/461/1/5682414ab4dc8dd1b4ff91b0b57f96947c1c1c11)
 
-晒一下自己用 [Koa](http://koajs.com/) next generation web framework for node.js 写的一个 web 服务
+晒一下自己用 [Koa](https://koajs.com/) next generation web framework for node.js 写的一个 web 服务
 
 这个 web 服务主要是做内容的列表展示和搜索的 (可能说得比较抽象，但确实是 web 服务最常需要做的事情) 主要的文件一共就2个：
 

@@ -14,7 +14,7 @@ updated: 2017/06/27 04:37:50
 
 ![_2015_06_25_12_37_36](http://img4.tbcdn.cn/L1/461/1/bfe85a6c83b251c21d6b7c1fd38baae3fa790540)
 
-[Vue.js](http://vuejs.org/) 是一款极简的 mvvm 框架，如果让我用一个词来形容它，就是 __“轻·巧”__ 。如果用一句话来描述它，它能够集众多优秀逐流的前端框架之大成，但同时保持简单易用。废话不多说，来看几个例子：
+[Vue.js](https://vuejs.org/) 是一款极简的 mvvm 框架，如果让我用一个词来形容它，就是 __“轻·巧”__ 。如果用一句话来描述它，它能够集众多优秀逐流的前端框架之大成，但同时保持简单易用。废话不多说，来看几个例子：
 
     <script src="vue.js"></script>
 
@@ -64,7 +64,7 @@ updated: 2017/06/27 04:37:50
 
 如果想绑定的特性是像 `img[src]` 这样的不能在 html 中随意初始化的 (可能默认会产生预期外的网络请求)，没关系，有 `v-attr="src: url"` 这样的写法，把被绑定的数据里的 `url` 同步过来。
 
-没有介绍到的功能还有很多，推荐大家来我(发起并)翻译的[Vue.js 中文文档](http://cn.vuejs.org/guide/)
+没有介绍到的功能还有很多，推荐大家来我(发起并)翻译的[Vue.js 中文文档](https://cn.vuejs.org/guide/)
 
 #### web 组件化
 
@@ -74,11 +74,11 @@ updated: 2017/06/27 04:37:50
 
 Vue.js 设计了一个 `*.vue` 格式的文件，令每一个组件的样式、模板和脚本集合成了一整个文件， __每个文件就是一个组件，同时还包含了组件之间的依赖关系，麻雀虽小五脏俱全，整个组件从外观到结构到特性再到依赖关系都一览无余__ ：
 
-![vue 文件示例](http://vuejs.org/images/vue-component.png)
+![vue 文件示例](https://vuejs.org/images/vue-component.png)
 
 并且支持预编译各种方言：
 
-![vue 文件示例](http://vuejs.org/images/vue-component-with-pre-processors.png)
+![vue 文件示例](https://vuejs.org/images/vue-component-with-pre-processors.png)
 
 这样再大的系统、在复杂的界面，也可以用这样的方式庖丁解牛。当然这种组件的写法是需要编译工具才能最终在浏览器端工作的，下面会提到一个基于 webpack 的具体方案。
 
@@ -90,7 +90,7 @@ __从功能角度，template, directive, data-binding, components 各种实用�
 
 ![](http://img1.tbcdn.cn/L1/461/1/fb28e5d63e7c32fb2bae6fe2b0539a6e9b77c737)
 
-[webpack](http://webpack.github.io/) 是另一个近期发现的好东西。它主要的用途是通过 CommonJS 的语法把所有浏览器端需要发布的静态资源做相应的准备，比如资源的合并和打包。
+[webpack](https://webpack.github.io/) 是另一个近期发现的好东西。它主要的用途是通过 CommonJS 的语法把所有浏览器端需要发布的静态资源做相应的准备，比如资源的合并和打包。
 
 举个例子，现在有个脚本主文件 `app.js` 依赖了另一个脚本 `module.js`
 

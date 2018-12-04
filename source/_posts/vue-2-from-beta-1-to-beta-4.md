@@ -8,7 +8,7 @@ tags:
 
 主要内容来自 [https://github.com/vuejs/vue/releases](https://github.com/vuejs/vue/releases)
 
-之前 [Vue 2.0 发布技术预览版](http://jiongks.name/blog/announcing-vue-2/) 到现在差不多三个月了，之前写过一篇简单的 [code review](http://jiongks.name/blog/code-review-for-vue-next/)，如今三个月过去了，Vue 2.0 在这个[基础](http://jiongks.name/blog/a-big-map-to-intro-vue-next/)之上又带来了不少更新，这里汇总 beta 以来 (最新的版本是 beta 4) 的主要更新，大家随意学习感受一下
+之前 [Vue 2.0 发布技术预览版](https://jiongks.name/blog/announcing-vue-2/) 到现在差不多三个月了，之前写过一篇简单的 [code review](https://jiongks.name/blog/code-review-for-vue-next/)，如今三个月过去了，Vue 2.0 在这个[基础](https://jiongks.name/blog/a-big-map-to-intro-vue-next/)之上又带来了不少更新，这里汇总 beta 以来 (最新的版本是 beta 4) 的主要更新，大家随意学习感受一下
 
 ### alpha 和 beta 版本的侧重点会有所不同
 

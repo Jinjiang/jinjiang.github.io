@@ -9,13 +9,13 @@ tags:
 
 ![Sass](http://sass-lang.com/images/sass.gif)
 
-远远关注[Sass](http://sass-lang.com)很久了，今天终于鼓起勇气写了[我的第一个Sass文件](http://jiongks.sinaapp.com/usr/themes/iambig-3d/style.sass)
+远远关注[Sass](http://sass-lang.com)很久了，今天终于鼓起勇气写了[我的第一个Sass文件](https://github.com/Jinjiang/jinjiang.github.io/blob/dev/data/themes/iambig-3d/style.sass)
 
 ### Sass简介
 
 一种CSS的预处理程序，基于Ruby运行。安装过程和相关的准备工作非常简单：
 
-0. 当然首先要安装[Ruby](http://www.ruby-lang.org/)
+0. 当然首先要安装[Ruby](https://www.ruby-lang.org/)
 1. `gem install ruby`，必要的环境下需要在命令前加上`sudo`
 2. 进入我的博客主题文件夹，运行`sass-convert style.css style.sass`，把我的css文件先转换成sass文件
 3. 运行`sass --watch style.sass:style.css`，使得程序自动把`style.sass`文件接下来的任何改动自动同步转换到`style.css`
@@ -242,6 +242,6 @@ tags:
 
 ### 结语
 
-最终[我的第一个Sass文件](http://jiongks.sinaapp.com/usr/themes/iambig-3d/style.sass)就这样整理完毕了。(p.s.当然这个文件未来可能还是会有改动，届时可能会和本篇文章描述的内容不符)
+最终[我的第一个Sass文件](https://github.com/Jinjiang/jinjiang.github.io/blob/dev/data/themes/iambig-3d/style.sass)就这样整理完毕了。(p.s.当然这个文件未来可能还是会有改动，届时可能会和本篇文章描述的内容不符)
 
 经过上面这几轮代码的整理，这个Sass文件才真的很Sass了。回顾这次整理的过程，先后用到了变量、运算、嵌套、重用属性等Sass的特性，简单明了，而且`sass --watch`命令、`sass-convert`命令可以方便的对文件进行监听和格式转换。我几乎在感觉不到学习成本的情况下提高了开发效率。这里也推荐大家试试看。

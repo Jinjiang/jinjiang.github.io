@@ -4,13 +4,13 @@ date: 2014/01/01 11:59:23
 updated: 2014/10/15 05:40:07
 ---
 
-译自：[A successful Git branching model &raquo; nvie.com](http://nvie.com/posts/a-successful-git-branching-model/)
+译自：[A successful Git branching model &raquo; nvie.com](https://nvie.com/posts/a-successful-git-branching-model/)
 
 ----
 
 本文将展示我一年前在自己的项目中成功运用的开发模型。我一直打算把这些东西写出来，但总是没有抽出时间，现在终于写好了。这里介绍的不是任何项目的细节，而是有关分支的策略以及对发布的管理。
 
-![](http://nvie.com/img/git-model@2x.png)
+![](https://nvie.com/img/git-model@2x.png)
 
 在我的演示中，所有的操作都是通过 git 完成的。
 
@@ -20,7 +20,7 @@ updated: 2014/10/15 05:40:07
 
 为了了断 git 和中心源代码控制系统的比较和争论，请移步这里看看 [链接1](http://whygitisbetterthanx.com/) [链接2](https://git.wiki.kernel.org/index.php/GitSvnComparsion)。作为一个开发者，我喜欢 git 超过其它任何现有的工具。Git 真正改变了开发者对于合并和分支的认识。在传统的 CVS/SVN 里，合并/分支总是有点令人害怕的(“注意合并冲突，它们会搞死你的”)。
 
-但是 git 中的这些操作是如此的简单有效，它们真正作为你每天工作流程的一部分。比如，在 CVS/SVN 的书籍里，分支和合并总是最后一个章节的讨论重点(对于高级用户)，而在每一本 git 的书里 [链接1](http://book.git-scm.com/) [链接2](http://pragprog.com/titles/tsgit/pragmatic-version-control-using-git) [链接3](http://github.com/progit/progit)，这些内容已经被包含在第三章(基础)里了。
+但是 git 中的这些操作是如此的简单有效，它们真正作为你每天工作流程的一部分。比如，在 CVS/SVN 的书籍里，分支和合并总是最后一个章节的讨论重点(对于高级用户)，而在每一本 git 的书里 [链接1](https://book.git-scm.com/) [链接2](http://pragprog.com/titles/tsgit/pragmatic-version-control-using-git) [链接3](https://github.com/progit/progit)，这些内容已经被包含在第三章(基础)里了。
 
 因为它的简单直接和重复性，分支和合并不再令人害怕。版本控制工具比其它任何东西都支持分支/合并。
 
@@ -31,7 +31,7 @@ updated: 2014/10/15 05:40:07
 
 我们的分支模型中使用良好的代码库的设置方式，是围绕一个真实的中心代码库的。注意，这里的代码库仅仅被看做是一个中心代码库(因为 git 是 DVCS，即分散版本控制系统，从技术层面看，是没有所谓的中心代码库的)。我们习惯于把这个中心代码库命名为 `origin`，这同时也是所有 git 用户的习惯。
 
-![](http://nvie.com/img/centr-decentr@2x.png)
+![](https://nvie.com/img/centr-decentr@2x.png)
 
 每一位开发者都向 `origin` 这个中心结点 pull 和 push。但是除此之外，每一位开发者也可以向其它结点 pull 改变形成子团队。比如，对于两个以上开发者同时开发一项大的新特性来说，为了不必过早向 `origin` 推送开发进度，这就非常有用。在上面的这个例子中，Alice 和 Bob、Alice 和 David、Clair 和 David 都是这样的子团队。
 
@@ -40,7 +40,7 @@ updated: 2014/10/15 05:40:07
 
 ### 主分支
 
-![](http://nvie.com/img/main-branches@2x.png)
+![](https://nvie.com/img/main-branches@2x.png)
 
 该开发模型的核心基本和现有的模型是一样的。中心代码库永远维持着两个主要的分支：
 
@@ -75,7 +75,7 @@ updated: 2014/10/15 05:40:07
 
 #### feature 分支
 
-![](http://nvie.com/img/fb@2x.png)
+![](https://nvie.com/img/fb@2x.png)
 
 * 可能派发自：`develop`
 * 必须合并回：`develop`
@@ -109,7 +109,7 @@ Feature 分支通常仅存在于开发者的代码库中，并不出现在 `orig
 
 `-no-ff` 标记使得合并操作总是产生一次新的提交，哪怕合并操作可以快速完成。这个标记避免将 feature 分支和团队协作的所有提交的历史信息混在主分支的其它提交之后。比较一下：
 
-![](http://nvie.com/img/merge-without-ff@2x.png)
+![](https://nvie.com/img/merge-without-ff@2x.png)
 
 在右边的例子里，我们不可能从 git 的历史记录中看出来哪些提交实现了这一特性——你可能不得不查看每一笔提交日志。恢复一个完整的特性(比如通过一组提交)在右边变成了一个头疼事情，而如果使用了 `--no-ff` 之后，就变得简单了。
 
@@ -183,7 +183,7 @@ Release 分支派发自 `develop` 分支。比如，我们当前的生产环境�
 
 #### hotfix 分支
 
-![](http://nvie.com/img/hotfix-branches@2x.png)
+![](https://nvie.com/img/hotfix-branches@2x.png)
 
 * 可能派发自：`master`
 * 必须合并回：`develop` 和 `master`
@@ -251,6 +251,6 @@ Hotfix 分支创建自 `master` 分支。例如，假设 1.2 版本是目前的�
 
 其实这个分支模型里没有什么新奇的东西。文章开头的那张大图对我们的项目来说非常有用。它非常易于团队成员理解这个优雅有效的模型，并在团队内部达成共识。
 
-这里还有一份那张大图的 [高清PDF版本](http://nvie.com/files/Git-branching-model.pdf)，你可以把它当做手册放在手边快速浏览。
+这里还有一份那张大图的 [高清PDF版本](https://nvie.com/files/Git-branching-model.pdf)，你可以把它当做手册放在手边快速浏览。
 
-**补充**：还有，如果你们需要的话，这里还有一份 [Keynote 版本](http://github.com/downloads/nvie/gitflow/Git-branching-model-src.key.zip)
+**补充**：还有，如果你们需要的话，这里还有一份 [Keynote 版本](https://github.com/downloads/nvie/gitflow/Git-branching-model-src.key.zip)

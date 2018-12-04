@@ -26,5 +26,5 @@ Anyway，今天有幸去他们的演唱会，难得在这个忙碌的季节得�
 <div><object id='sinaplayer' width='480' height='370' ><param name='allowScriptAccess' value='always' /><embed pluginspage='http://www.macromedia.com/go/getflashplayer' src='http://video.sina.com.cn/api/outPlayRefer.php?video_id=230483897' type='application/x-shockwave-flash' name='sinaplayer' allowFullScreen='true' allowScriptAccess='always' width='480' height='370'></embed></object></div>
 [《东区东区》(iOS用户可点击这里观看)](http://video.sina.com.cn/play/shijiao-1712131295-230483897.html)
 
-<div><embed src="http://player.youku.com/player.php/sid/XNDg4NjY0MTgw/v.swf" quality="high" width="640" height="400" align="middle" allowScriptAccess="sameDomain" allowFullscreen="true" type="application/x-shockwave-flash"></embed></div>
-[Encore +《来去夏威夷》+《终结孤单》(iOS用户可点击这里观看)](http://v.youku.com/v_show/id_XNDg4NjY0MTgw.html)
+<div><embed src="https://player.youku.com/player.php/sid/XNDg4NjY0MTgw/v.swf" quality="high" width="640" height="400" align="middle" allowScriptAccess="sameDomain" allowFullscreen="true" type="application/x-shockwave-flash"></embed></div>
+[Encore +《来去夏威夷》+《终结孤单》(iOS用户可点击这里观看)](https://v.youku.com/v_show/id_XNDg4NjY0MTgw.html)

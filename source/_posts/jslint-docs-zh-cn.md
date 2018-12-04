@@ -7,7 +7,7 @@ tags:
 - 翻译
 ---
 
-原文地址：[http://www.jslint.com/lint.html](http://www.jslint.com/lint.html)
+原文地址：[https://www.jslint.com/lint.html](https://www.jslint.com/lint.html)
 
 ### 什么是`JSLint`？
 
@@ -21,11 +21,11 @@ tags:
 
 `JSLint` 会拿来一段 JavaScript 源代码并对其进行检索。一旦发现问题，它就会返回一则消息，用来描述这个问题以及源代码中的大概位置。发现的问题不一定是，但通常是语法上的错误。`JSLint` 通过一些代码规范来杜绝结构性的问题。这并不证明你的程序是正确的，只是提供另一种发现问题的眼光。
 
-`JSLint` 定义了一个专业的 JavaScript 的子集，它比 [ECMAScript 标准第三版](http://www.ecma-international.org/publications/standards/Ecma-262.htm)的定义更严格，和 [JavaScript 编码规范](http://javascript.crockford.com/code.html)中的建议相对应。
+`JSLint` 定义了一个专业的 JavaScript 的子集，它比 [ECMAScript 标准第三版](https://www.ecma-international.org/publications/standards/Ecma-262.htm)的定义更严格，和 [JavaScript 编码规范](http://javascript.crockford.com/code.html)中的建议相对应。
 
 JavaScript 是一个粗中有细的语言，它比你想象中的更好。`JSLint` 帮助你回避很多问题，在这个更好的语言中撰写程序。`JSLint` 会拒绝一些浏览器支持的程序，因为浏览器并不关心代码的质量。你应该接受 `JSLint` 的所有建议。
 
-`JSLint` 在 JavaScript 源代码、HTML 源代码、CSS 源代码或 [JSON](http://www.json.org/) 文本中都可以运行。<!--more-->
+`JSLint` 在 JavaScript 源代码、HTML 源代码、CSS 源代码或 [JSON](https://www.json.org/) 文本中都可以运行。<!--more-->
 
 ### 全局变量
 
@@ -270,7 +270,7 @@ JavaScript 语法中，正则表达式直接量会多写一对 `/` 字符。为�
 
 我们还提供了通过构造 `/*jslint*/` 指令和 `/*properties*/` 指令的方式进行辅助。
 
-当 `JSLint` 被当做函数调用时，它接受一个 `option` 对象参数，这个参数允许你判定你可接受的 JavaScript 子集。网页版的 `JSLint` 在 [http://www.JSLint.com](http://www.jslint.com)，就是这样工作的。
+当 `JSLint` 被当做函数调用时，它接受一个 `option` 对象参数，这个参数允许你判定你可接受的 JavaScript 子集。网页版的 `JSLint` 在 [https://www.JSLint.com](https://www.jslint.com)，就是这样工作的。
 
 选项还可以在 `/*jslint*/` 指令中被定义：
 
@@ -278,7 +278,7 @@ JavaScript 语法中，正则表达式直接量会多写一对 `/` 字符。为�
 
 选项指令起始于 '/*jslint'。注意 `j` 前面没有空格。本规范包含了一系列的键值对，这些键是 `JSLint` 的选项，值是 `true` 或 `false`。`indent` 选项可以取一个数字。一个 `/*jslint*/` 指令优先于 `option` 对象。指令遵照函数作用域。
 
-(表格略，详见：[http://www.jslint.com/lint.html#options](http://www.jslint.com/lint.html#options))
+(表格略，详见：[https://www.jslint.com/lint.html#options](https://www.jslint.com/lint.html#options))
 
 ### 报告
 
@@ -295,4 +295,4 @@ JavaScript 语法中，正则表达式直接量会多写一对 `/` 字符。为�
 * *Global*：在该函数中使用的全局变量。把这个用量降到最少。
 * *Label*：该函数中使用的语句标记。
 
-报告还会包含一个使用过的属性名列表。这里是[`JSLint`的消息列表](http://www.jslint.com/msgs.html)。
+报告还会包含一个使用过的属性名列表。这里是[`JSLint`的消息列表](https://www.jslint.com/msgs.html)。

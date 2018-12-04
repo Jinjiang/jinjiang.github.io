@@ -4,7 +4,7 @@ date: 2013/06/02 06:45:30
 updated: 2013/06/02 09:01:47
 ---
 
-以下内容大多译自[Connect官网](http://www.senchalabs.org/connect/) 2013-06-02
+以下内容大多译自[Connect官网](https://www.senchalabs.org/connect/) 2013-06-02
 
 Connect是基于Node的中间件框架(middleware framework)，提供超过18种官方中间件以及更多的第三方中间件。
 
@@ -60,7 +60,7 @@ Connect是基于Node的中间件框架(middleware framework)，提供超过18种
 * `connect.logger.token(name, function (req, res) {...})` 和
 * `connect.logger.format(name, stringOrFunction)`
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/logger.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/logger.html)
 
 ### 2. 防止跨域伪造请求 csrf
 
@@ -78,7 +78,7 @@ Connect是基于Node的中间件框架(middleware framework)，提供超过18种
         || (req.headers['x-csrf-token']);
     }
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/csrf.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/csrf.html)
 
 ### 3. 压缩 compress
 
@@ -96,7 +96,7 @@ Gzip压缩的中间件
         strategy: ...
     })
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/compress.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/compress.html)
 
 ### 4. HTTP基础认证 basicAuth
 
@@ -104,7 +104,7 @@ Gzip压缩的中间件
 * 提供异步的调用方式 `connect.basicAuth(function (user, pass, callback))`
 * 直接有效的单一用户名密码的方式 `connect.basicAuth('username', 'password')`
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/basicAuth.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/basicAuth.html)
 
 ### 5. 主体解析器 Body Parser
 
@@ -116,7 +116,7 @@ Gzip压缩的中间件
     app.use(connect.urlencoded());
     app.use(connect.multipart());
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/bodyParser.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/bodyParser.html)
 
 ### 5.1 json
 
@@ -128,7 +128,7 @@ _application/json_解析器，并将结果放至 `req.body`
 * `reviver` 用作 `JSON.parse()` 方法的第二参数
 * `limit` 字节数限制，默认不开启
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/json.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/json.html)
 
 ### 5.2 urlencoded
 
@@ -138,7 +138,7 @@ _application/x-www-form-urlencoded_解析器，并将结果放至 `req.body`
 
 * `limit` 字节数限制，默认不开启
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/urlencoded.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/urlencoded.html)
 
 ### 5.3 multipart
 
@@ -149,7 +149,7 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 * `limit` 字节数限制，默认不开启
 * `defer` 延时处理并不等 `end` 事件触发就调用 `req.form.next()` 展示大表单。该选项在需要绑定 `progress` 事件时可用。
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/multipart.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/multipart.html)
 
 ### 6. 超时时间 timeout
 
@@ -157,19 +157,19 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 
 另， `req` 对象会多一个 `req.clearTimeout()` 方法，用来在必要的情况下取消计时。
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/timeout.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/timeout.html)
 
 ### 7. Cookie解析器 cookieParser
 
 解析头中的_Cookie_并将结果放至 `req.cookies` 。你还可以通过 `connect.cookieParser(secret)` 中的 `secret` 参数对cookie进行加密。该密码可以通过 `req.secret` 进行取值。
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/cookieParser.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/cookieParser.html)
 
 ### 8. 会话 session
 
 详情略。
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/session.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/session.html)
 
 ### 9. 基于cookie的会话支持 cookieSession
 
@@ -186,7 +186,7 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 
     req.session = null;
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/cookieSession.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/cookieSession.html)
 
 ### 10. 支持伪造HTTP方法 methodOverride
 
@@ -194,13 +194,13 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 
     connect.methodOverride(key)
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/methodOverride.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/methodOverride.html)
 
 ### 11. 响应时间 responseTime
 
 计算响应时间并展示为 `X-Response-Time` 头
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/responseTime.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/responseTime.html)
 
 ### 12. 静态服务缓存 staticCache
 
@@ -211,7 +211,7 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 * `maxObjects` 最大缓存对象个数，默认128个
 * `maxLength` 最大缓存对象体积，默认256kb
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/staticCache.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/staticCache.html)
 
 ### 12.1 静态文件服务 static
 
@@ -231,7 +231,7 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 
     connect.static.mime
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/static.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/static.html)
 
 ### 13. 目录 directory
 
@@ -251,7 +251,7 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 * `connect.directory.json()` 输出json格式的内容
 * `connect.directory.plain()` 输出文本格式的内容
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/directory.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/directory.html)
 
 ### 14. 虚拟主机 vhost
 
@@ -262,7 +262,7 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
       .use(connect.vhost('bar.com', barApp))
       .use(connect.vhost('*.com', mainApp))
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/vhost.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/vhost.html)
 
 ### 15. 站点图标 favicon
 
@@ -274,7 +274,7 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 
 * `maxAge` 过期时间，默认是1天(86400000)
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/favicon.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/favicon.html)
 
 ### 16. 请求大小限制 limit
 
@@ -282,13 +282,13 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 
     connect.limit('5.5mb')
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/limit.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/limit.html)
 
 ### 17. 查询字符串 query
 
 自动解析查询字符串，生成 `req.query`
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/query.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/query.html)
 
 ### 18. 错误处理 errorHandler
 
@@ -298,6 +298,6 @@ _multipart/form-data_解析器，并将结果放至 `req.body` 和 `req.files`
 * 在_application/json_情况下，回应 `{ "error": error }`
 * 在允许的情况下回应HTML错误信息
 
-更多细节请[移步至此](http://www.senchalabs.org/connect/errorHandler.html)
+更多细节请[移步至此](https://www.senchalabs.org/connect/errorHandler.html)
 
 (完)

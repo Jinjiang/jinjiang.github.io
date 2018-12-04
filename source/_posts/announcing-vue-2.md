@@ -6,7 +6,7 @@ updated: 2017/08/01 03:02:51
 
 原文：[https://medium.com/the-vue-point/announcing-vue-js-2-0-8af1bde7ab9#.cyoou0ivk](https://medium.com/the-vue-point/announcing-vue-js-2-0-8af1bde7ab9#.cyoou0ivk)
 
-![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1f3bs1115fsj20ug0jiq6m.jpg)
+![](https://ww1.sinaimg.cn/mw1024/660d0cdfgw1f3bs1115fsj20ug0jiq6m.jpg)
 
 今天我们非常激动的首发 Vue 2.0 preview 版本，这个版本带来了很多激动人心的改进和新特性。我们来看看这里面都有些什么！
 
@@ -46,7 +46,7 @@ Vue.js 始终聚焦在轻量和快速上面，而 2.0 把它做得更好。现�
 
 ### 解锁更多可能性
 
-基于新的架构，我们还有更多的可能性有待开发 - 比如在手机端渲染到 native 界面。目前我们正在探索一个 Vue.js 2.0 的端，它会用 [weex](http://alibaba.github.io/weex/)：一个由中国最大科技公司之一的阿里巴巴的工程师们维护的项目，作为一个 native 的渲染层。同时从技术角度 Vue 2.0 运行在 ReactNative 上也是可行的。让我们拭目以待！
+基于新的架构，我们还有更多的可能性有待开发 - 比如在手机端渲染到 native 界面。目前我们正在探索一个 Vue.js 2.0 的端，它会用 [weex](https://alibaba.github.io/weex/)：一个由中国最大科技公司之一的阿里巴巴的工程师们维护的项目，作为一个 native 的渲染层。同时从技术角度 Vue 2.0 运行在 ReactNative 上也是可行的。让我们拭目以待！
 
 ### 兼容性以及接下来的计划
 

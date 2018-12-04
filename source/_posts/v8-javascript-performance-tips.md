@@ -4,11 +4,11 @@ date: 2013/09/29 07:32:13
 updated: 2013/12/11 10:52:16
 ---
 
-译自：[Performance Tips for JavaScript in V8](http://www.html5rocks.com/en/tutorials/speed/v8/)
+译自：[Performance Tips for JavaScript in V8](https://www.html5rocks.com/en/tutorials/speed/v8/)
 
 ### 简介
 
-关于如何巧妙提高V8 JavaScript性能的话题，Daniel Clifford在Google I/O上做了[一次非常精彩的分享](http://www.youtube.com/watch?v=UJPdhx5zTaw)。Daniel鼓励我们“追求更快”，认真的分析C++和JavaScript之间的性能差距，根据JavaScript的工作原理撰写代码。在Daniel的分享中，有一个核心要点的归纳，我们也会根据性能指导的变化保持对这篇文章的更新。
+关于如何巧妙提高V8 JavaScript性能的话题，Daniel Clifford在Google I/O上做了[一次非常精彩的分享](https://www.youtube.com/watch?v=UJPdhx5zTaw)。Daniel鼓励我们“追求更快”，认真的分析C++和JavaScript之间的性能差距，根据JavaScript的工作原理撰写代码。在Daniel的分享中，有一个核心要点的归纳，我们也会根据性能指导的变化保持对这篇文章的更新。
 
 ### 最重要的建议
 
@@ -211,6 +211,6 @@ V8有一个和完全编译器并行的优化编译器，它会重编那些最“
 
 ### 参考资料
 
-* [YouTube上的Daniel分享](http://www.youtube.com/watch?v=UJPdhx5zTaw)
+* [YouTube上的Daniel分享](https://www.youtube.com/watch?v=UJPdhx5zTaw)
 * [Deck上的Danial的幻灯演示](http://v8-io12.appspot.com/)
 * [V8工程师Vyacheslav Egorov的“我要基于V8优化我们的JS应用”清单](http://mrale.ph/blog/2011/12/18/v8-optimization-checklist.html)

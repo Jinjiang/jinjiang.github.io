@@ -10,7 +10,7 @@ tags:
 
 原文：[https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8#.6r9xjmu6x](https://medium.com/the-vue-point/vue-2-0-is-here-ef1f26acf4b8#.6r9xjmu6x)
 
-今天我非常兴奋的官宣 Vue.js 2.0 的发布：Ghost in the Shell。历经 8 个 alpha 版本、8 个 beta 版本和 8 个 rc 版本 (矮油好巧！)，Vue.js 2.0 已经为生产环境准备好了！我们的官方教程 [vuejs.org/guide](http://vuejs.org/guide/) 也已经全面更新。
+今天我非常兴奋的官宣 Vue.js 2.0 的发布：Ghost in the Shell。历经 8 个 alpha 版本、8 个 beta 版本和 8 个 rc 版本 (矮油好巧！)，Vue.js 2.0 已经为生产环境准备好了！我们的官方教程 [vuejs.org/guide](https://vuejs.org/guide/) 也已经全面更新。
 
 2.0 的工作自今年 4 月启动以来，[核心团队](https://github.com/orgs/vuejs/people)为 API 设计、bugfix、文档、类型声明做出了很重要的贡献，社区中的同学们也反馈了很多有价值的 API 建议——在此为每一位参与者致以大大的感谢！
 
@@ -62,8 +62,8 @@ Vue 2.0 支持服务端渲染 (SSR)，并且是[流式的](https://github.com/vu
 
 它们各自的 2.0 文档里有更多的细节：
 
-* [http://router.vuejs.org/](http://router.vuejs.org/)
-* [http://vuex.vuejs.org/](http://vuex.vuejs.org/)
+* [https://router.vuejs.org/](https://router.vuejs.org/)
+* [https://vuex.vuejs.org/](https://vuex.vuejs.org/)
 
 #### 社区项目
 
@@ -77,7 +77,7 @@ Vue 2.0 支持服务端渲染 (SSR)，并且是[流式的](https://github.com/vu
 
 ![](https://d262ilb51hltx0.cloudfront.net/max/1600/1*157Ly5X6gx0C2CIvsMaNog.png)
 
-为了帮助大家完成迁移，团队已经在配合 [CLI 迁移辅助工具](https://github.com/vuejs/vue-migration-helper)制作[非常详实的迁移教程](http://vuejs.org/guide/migration.html)。这个工具不一定捕获每一处被废弃的东西，但相信能帮你开个好头。
+为了帮助大家完成迁移，团队已经在配合 [CLI 迁移辅助工具](https://github.com/vuejs/vue-migration-helper)制作[非常详实的迁移教程](https://vuejs.org/guide/migration.html)。这个工具不一定捕获每一处被废弃的东西，但相信能帮你开个好头。
 
 ### One More Thing……
 

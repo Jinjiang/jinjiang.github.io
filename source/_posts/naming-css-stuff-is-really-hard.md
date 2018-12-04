@@ -47,7 +47,7 @@ tags:
 
 基于内容的 class 名是描述它们包含的内容的 class 名。如果你曾经见到过类似 `submit-button`、`intro-text` 或 `profile-photo` 的 class 名，那些名字就是基于内容起的。
 
-这些 class 名感觉很干净。它们让你的内容 (HTML) 和样式 (CSS) 之间保持简洁的分离。理论上，这可以让你完全改版网站的样式和感官而无需触碰到 HTML。[CSS Zen Garden](http://www.csszengarden.com/) 就是这样的。
+这些 class 名感觉很干净。它们让你的内容 (HTML) 和样式 (CSS) 之间保持简洁的分离。理论上，这可以让你完全改版网站的样式和感官而无需触碰到 HTML。[CSS Zen Garden](https://www.csszengarden.com/) 就是这样的。
 
 现在我们回到最初的问题：“这样做的好处是什么？”
 

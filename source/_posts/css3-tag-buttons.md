@@ -4,7 +4,7 @@ date: 2012/03/30 05:34:38
 updated: 2012/03/30 06:21:20
 ---
 
-演示地址：[http://jiongks.name/demos/css3-tag/](http://jiongks.name/demos/css3-tag/)
+演示地址：[https://jiongks.name/demos/css3-tag/](https://jiongks.name/demos/css3-tag/)
 
 ![CSS 3 tag demo](/uploads/2012/03/527861101.png)
 
@@ -96,4 +96,4 @@ updated: 2012/03/30 06:21:20
     }
 
 这样，就大功告成了！  
-demo: [http://jiongks.name/demos/css3-tag/](http://jiongks.name/demos/css3-tag/)
+demo: [https://jiongks.name/demos/css3-tag/](https://jiongks.name/demos/css3-tag/)

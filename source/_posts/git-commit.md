@@ -66,7 +66,7 @@ updated: 2017/08/18 03:42:17
 
 ### 伟大的 Git 提交信息七大法则
 
-> 注意：[这些](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) [法则](http://www.git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project#Commit-Guidelines) [之前](https://github.com/torvalds/subsurface/blob/master/README#L82-109) [在别的地方](http://who-t.blogspot.co.at/2009/12/on-commit-messages.html) [也](https://github.com/erlang/otp/wiki/writing-good-commit-messages) [提到过](https://github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages)。
+> 注意：[这些](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) [法则](https://www.git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project#Commit-Guidelines) [之前](https://github.com/torvalds/subsurface/blob/master/README#L82-109) [在别的地方](http://who-t.blogspot.co.at/2009/12/on-commit-messages.html) [也](https://github.com/erlang/otp/wiki/writing-good-commit-messages) [提到过](https://github.com/spring-projects/spring-framework/blob/30bce7/CONTRIBUTING.md#format-commit-messages)。
 
 1. 用一个空行把主题和主题隔离开
 2. 把主题行限制在 50 个字符以内

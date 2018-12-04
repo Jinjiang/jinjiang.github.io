@@ -4,7 +4,7 @@ date: 2016/04/28 01:16:03
 updated: 2016/05/11 02:17:49
 ---
 
-是的！[Vue 2.0 发布了！](http://jiongks.name/blog/announcing-vue-2/) 源代码仓库[在此](https://github.com/vuejs/vue/tree/next)
+是的！[Vue 2.0 发布了！](https://jiongks.name/blog/announcing-vue-2/) 源代码仓库[在此](https://github.com/vuejs/vue/tree/next)
 
 首先，当我第一次看到 Vue 2.0 的真面目的时候，我的内心是非常激动的
 
@@ -89,7 +89,7 @@ Wahahaha~
 
 另外 virtual-DOM 的另一个优点当然就是可以对渲染引擎做一般化的抽象，进而适配到更多类型的终端渲染引擎上！所以在我的怂恿下，小右把本来在 `runtime` 下的 `runtime/dom` 文件夹挪到了一个名叫 `platforms` 的新文件夹下，改名叫 `platforms/web/runtime`，把本来 `compiler` 文件夹下 web 相关的 `modules` 挪到了 `platforms/web/compiler`！
 
-(是的没错，今天在 [Weex](http://alibaba.github.io/weex/) 的子仓库里已经有另外一个 `platforms/weex` 文件夹了耶)
+(是的没错，今天在 [Weex](https://alibaba.github.io/weex/) 的子仓库里已经有另外一个 `platforms/weex` 文件夹了耶)
 
 #### `compiler` + `runtime` + `platforms` + `server`
 
