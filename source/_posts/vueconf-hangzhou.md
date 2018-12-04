@@ -7,7 +7,7 @@ tags:
 
 <s>先说</s>分享一些自己参加 [VueConf Hangzhou](https://vueconf.cn/) 的流水账见闻。
 
-![](/images/vueconf-hangzhou.png)
+![](/images/vueconf-hangzhou.jpg)
 
 <!-- more -->
 
