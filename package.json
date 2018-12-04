@@ -17,8 +17,10 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-jade": "^0.4.1",
     "hexo-renderer-marked": "^0.3.2",
+    "hexo-renderer-sass": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.1",
+    "markdown-it": "^8.4.2",
     "moment": "^2.22.2"
   }
 }

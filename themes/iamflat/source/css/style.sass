@@ -1,0 +1,222 @@
+$font-family-mac: "Lucida Grande"
+$font-family-pc: "Microsoft JhengHei", "Microsoft YaHei"
+$font-family-code: Monaco, Consolas, "Courier New"
+
+html, table,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"]
+  font-family: $font-family-mac, $font-family-pc
+code, pre
+  font-family: $font-family-code
+  font-size: 85%
+
+body::after
+  position: fixed
+  right: 0
+  bottom: 0
+  content: "{\"theme\":\"我被拍平了\",\"designer\":\"@勾三股四\"}"
+  font-family: Monaco, Consolas, "Courier New"
+  font-size: 80%
+  padding: 0.75em
+  box-sizing: border-box
+  color: white
+  z-index: 100
+  background: rgba(255, 255, 255, 0.5)
+  border-top-left-radius: 0.5em
+
+body
+  line-height: 1.5
+  word-break: break-all
+
+a
+  text-decoration: none
+  border-bottom: 1px black dashed
+
+#header
+  padding: 1em
+  text-align: center
+  border-bottom: 1px solid gray
+  background: #09c
+  color: white
+
+  h1
+    .first-letter
+      display: inline-block
+
+      -webkit-transform: translate(-80%, 0) scale(3) rotate(-15deg)
+      -moz-transform: translate(-80%, 0) scale(3) rotate(-15deg)
+      -ms-transform: translate(-80%, 0) scale(3) rotate(-15deg)
+      transform: translate(-80%, 0) scale(3) rotate(-15deg)
+
+      -webkit-transition: all 0.05s
+      -moz-transition: all 0.05s
+      -ms-transition: all 0.05s
+      transition: all 0.05s
+
+  &:hover
+    h1
+      .first-letter
+        -webkit-transform: translate(-80%, -10px) scale(3) rotate(15deg)
+        -moz-transform: translate(-80%, -10px) scale(3) rotate(15deg)
+        -ms-transform: translate(-80%, -10px) scale(3) rotate(15deg)
+        transform: translate(-80%, -10px) scale(3) rotate(15deg)
+
+  a
+    color: white
+    border-bottom-color: white
+
+#nav
+  text-align: center
+  padding: 0.5em 0
+
+  ul
+    height: auto
+    display: block
+
+#main
+  margin: 0 auto
+  max-width: 40em
+  padding: 0 1em
+  box-sizing: border-box
+
+  .content
+    color: #333
+
+    h3, h4, h5, h6
+      color: #363
+
+    img
+      padding: 1px
+      background: white
+      border: 1px #999 solid
+      max-width: 100%
+      box-sizing: border-box
+
+    h2
+      text-align: center
+      padding: 0.5em 1em
+      background: #6c6
+      color: white
+
+      a
+        color: white
+        border-bottom-color: white
+
+    &:first-child
+      h2:first-child
+        margin-top: 0
+
+#footer
+  text-align: center
+  background: #f60
+  padding: 1em
+  color: white
+  padding-bottom: 4em
+
+  a
+    color: white
+    border-bottom-color: white
+
+@media all and (min-width: 1600px)
+  body
+    font-size: 150% // 1280px
+
+@media all and (min-width: 1000px) and (max-width: 1600px)
+  body
+    font-size: 125% // 960px
+
+@media all and (min-width: 400px) and (max-width: 1000px)
+  body
+    font-size: 100% // 640px
+
+@media all and (max-width: 400px)
+  body
+    font-size: 80% // 512px
+  body::after
+    position: static
+    color: #666
+    background: transparent
+    text-align: center
+    display: block
+    margin: 0
+    font-size: 75%
+  #footer
+    padding-bottom: 1em
+
+// page nav
+
+.page-navigator
+  list-style: none
+  padding: 0
+  font-size: 85%
+
+  *
+    display: inline-block
+    margin-right: 5px
+    padding-left: 0.75em
+    padding-right: 0.75em
+
+// comment panel
+
+#comments > .comment-list
+  padding-left: 40px
+
+.comment-list
+  list-style: none
+  margin: 40px 0
+  padding: 0
+
+.comment-body
+  position: relative
+  padding: 5px 10px
+  border-radius: 5px
+  padding-left: 40px
+
+  > p
+    clear: both
+
+.comment-author
+  float: left
+  position: relative
+  padding-bottom: 10px
+
+  cite
+    font-weight: bold
+    font-style: normal
+    font-size: 24px
+
+  img
+    position: absolute
+    display: block
+    width: 64px
+    height: 64px
+    border-radius: 3px
+    background: white
+    box-shadow: 1px 1px 3px 2px #999
+    left: -76px
+    top: -8px
+
+.comment-meta
+  float: right
+  font-size: 16px
+
+blockquote
+  font-family: "Georgia", serif
+  color: #666
+  font-style: italic
+  line-height: 1.8em
+  border-left: 5px solid #ddd
+  padding-left: 1.5em
+
+pre, code
+  color: #333
+  background: rgb(250, 250, 250)
+  border-radius: 5px
+
+pre
+  padding: 0.5em 1em
+
+  code
+    font-size: 100%
+    margin-left: 0
+    margin-right: 0
