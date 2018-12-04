@@ -2,6 +2,8 @@
 title: '用Sass重新整理自己的博客主题样式'
 date: 2013/06/05 02:23:10
 updated: 2013/06/11 10:04:34
+tags:
+- sass
 ---
 
 ![Sass](http://sass-lang.com/images/sass.gif)

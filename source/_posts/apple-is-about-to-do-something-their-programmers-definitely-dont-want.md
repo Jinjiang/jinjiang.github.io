@@ -2,6 +2,8 @@
 title: '苹果正在做一些他们的程序员明摆着不想要的东西'
 date: 2017/08/01 02:49:46
 updated: 2017/08/01 02:56:39
+tags:
+- 办公室文化
 ---
 
 译自: [https://medium.com/make-better-software/apple-is-about-to-do-something-their-programmers-definitely-dont-want-fc19f5f4487](https://medium.com/make-better-software/apple-is-about-to-do-something-their-programmers-definitely-dont-want-fc19f5f4487)

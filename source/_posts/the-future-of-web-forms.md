@@ -2,6 +2,8 @@
 title: 'Web 表单的未来'
 date: 2017/08/04 11:00:16
 updated: 2017/08/04 11:05:56
+tags:
+- 表单
 ---
 
 译自：[https://blog.prototypr.io/the-future-of-web-forms-4578485e1461](https://blog.prototypr.io/the-future-of-web-forms-4578485e1461) Matt West 的 The Future of Web Forms

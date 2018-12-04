@@ -2,6 +2,8 @@
 title: '[翻译] JSLint 文档'
 date: 2013/02/17 03:04:46
 updated: 2013/02/17 03:07:14
+tags:
+- 翻译
 ---
 
 原文地址：[http://www.jslint.com/lint.html](http://www.jslint.com/lint.html)

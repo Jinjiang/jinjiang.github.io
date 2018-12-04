@@ -2,17 +2,15 @@ const fs = require('fs')
 const pages = require('./pages.json')
 const moment = require('moment')
 
-// todo: tags
-
 const output = {}
 
 Object.keys(pages).forEach(cid => {
-  const page = pages[cid]
-  const title = page.title
-  const date = moment(page.created * 1000).format('YYYY/MM/DD hh:mm:ss')
-  const updated = moment(page.modified * 1000).format('YYYY/MM/DD hh:mm:ss')
-  const filename = page.slug
-  const text = page.text
+  const post = pages[cid]
+  const title = post.title
+  const date = moment(post.created * 1000).format('YYYY/MM/DD hh:mm:ss')
+  const updated = moment(post.modified * 1000).format('YYYY/MM/DD hh:mm:ss')
+  const filename = post.slug
+  const text = post.text
   const content = `
 ---
 layout: page

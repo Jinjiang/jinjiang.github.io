@@ -2,6 +2,8 @@
 title: '手机淘宝前端的图片相关工作流程梳理'
 date: 2015/08/10 04:15:46
 updated: 2015/08/10 04:22:08
+tags:
+- image
 ---
 
 本文首发自[阿里无线前端博客](https://github.com/amfe/article/issues/8)

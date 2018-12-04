@@ -2,6 +2,8 @@
 title: 'ZeroClipboard 学习笔记'
 date: 2012/07/29 04:41:20
 updated: 2012/08/20 10:45:48
+tags:
+- ZeroClipboard
 ---
 
 如题，周末抽空学习了一下。

@@ -2,6 +2,8 @@
 title: '秦升拿到红牌之后……'
 date: 2013/06/11 11:16:06
 updated: 2013/06/11 11:35:58
+tags:
+- 足球
 ---
 
 ![](http://jiongks-typecho.stor.sinaapp.com/usr/uploads/2013/06/3893919286.jpg)

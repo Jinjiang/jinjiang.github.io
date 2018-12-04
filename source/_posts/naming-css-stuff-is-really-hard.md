@@ -2,6 +2,8 @@
 title: 'CSS命名神马的真心难'
 date: 2014/09/23 05:18:41
 updated: 2014/10/26 03:23:44
+tags:
+- css
 ---
 
 译自：[Naming CSS Stuff Is Really Hard](http://seesparkbox.com/foundry/naming_css_stuff_is_really_hard)

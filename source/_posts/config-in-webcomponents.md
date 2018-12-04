@@ -2,6 +2,8 @@
 title: 'webcomponents 笔记 之 配置管理'
 date: 2015/03/30 11:10:40
 updated: 2015/03/31 09:51:22
+tags:
+- config
 ---
 
 话说上周末看到[一个吐槽腾讯“内部开源”的微博](http://weibo.com/1712131295/CaM1n2FcY)，后来我想了想，自己那么骚包的在项目还没做完之前，就在 [CSSConf](/slides/css-scoping/) 上说我们将来要开源一个名叫 Zorro 的库。结果好几个月过去了还是没有准备好，也就不敢再笑话别人了……

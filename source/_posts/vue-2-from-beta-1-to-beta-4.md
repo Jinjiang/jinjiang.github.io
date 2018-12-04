@@ -2,6 +2,8 @@
 title: '【整理】Vue 2.0 自 beta 1 到 beta 4 以来的主要更新'
 date: 2016/07/28 05:33:05
 updated: 2017/08/01 03:01:40
+tags:
+- vue
 ---
 
 主要内容来自 [https://github.com/vuejs/vue/releases](https://github.com/vuejs/vue/releases)

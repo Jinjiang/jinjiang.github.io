@@ -2,6 +2,8 @@
 title: '标签？ID？还是CLASS？'
 date: 2012/11/27 04:42:42
 updated: 2012/11/27 04:50:08
+tags:
+- semantic
 ---
 
 想谈一下几个基本的HTML问题，都是围绕着应该怎样使用HTML。
