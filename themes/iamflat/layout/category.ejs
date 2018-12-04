@@ -1,0 +1,19 @@
+<% page.posts.each(function(post){ %>
+<div class="content">
+  <h2>
+    <a href="<%- url_for(post.path) %>">
+      <%= post.title %>
+    </a>
+  </h2>
+  <% if (post.excerpt){ %>
+  <%- post.excerpt %>
+  <p class="more">
+    <a href="<%- url_for(post.path) %>">
+      阅读剩余部分...
+    </a>
+  </p>
+  <% } else { %>
+  <%- post.content %>
+  <% } %>
+</div>
+<% }) %>

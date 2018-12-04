@@ -1,0 +1,68 @@
+index.php
+archive.php
+  header.php
+  if (have()) {
+    while(next()) {
+      .content
+        h2 > a
+        content('...')
+    }
+  } else {
+    ...
+  }
+  pageNav()
+  sidebar.php
+  footer.php
+
+page.php
+post.php
+  header.php
+  .content
+    h2
+    content()
+  comments.php
+  sidebar.php
+  footer.php
+
+404.php
+  header.php
+  .content
+    h2 + p > form ...
+  sidebar.php
+  footer.php
+
+
+functions.php utils
+
+
+sidebar.php
+  #sidebar.pure-g-r
+    .widget.large.pure-u-*-3
+      h3
+      ul > li > a
+    latest articles
+    latest comments
+    archives
+
+
+comments.php
+  #comments
+    h2
+    if (have()) {
+      pageNav()
+      listComments()
+    }
+
+
+
+
+    <div id="nav" class="pure-menu pure-menu-open pure-menu-horizontal">
+      <%= JSON.stringify(site.pages) %>
+      <ul>
+        <% for (var i in site.pages){ %>
+        <li<% if (page.path === site.pages[i].path){ %> class="pure-menu-selected"<% } %>>
+          <a href="<%- url_for(site.pages[i].path) %>"><%= site.pages[i].title %></a>
+        </li>
+        <% } %>
+      </ul>
+    </div>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- proud for contributing Vue.js -->
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes" />
+
+  <%
+    var title = page.title;
+  
+    if (is_archive()){
+      title = __('archive_a');
+  
+      if (is_month()){
+        title += ': ' + page.year + '/' + page.month;
+      } else if (is_year()){
+        title += ': ' + page.year;
+      }
+    } else if (is_category()){
+      title = __('category') + ': ' + page.category;
+    } else if (is_tag()){
+      title = __('tag') + ': ' + page.tag;
+    }
+  %>
+  <title>
+    <% if (title){ %>
+    <%= title %> -
+    <% } %>
+    <%= config.title %>
+  </title>
+
+  <%- css('css/pure') %>
+  <%- css('css/style') %>
+  <!--[if IE 6]>
+    <%- css('css/style-ie') %>
+  <![endif]-->
+
+  <% if (theme.rss){ %>
+  <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
+  <% if (theme.favicon){ %>
+  <link rel="icon" href="<%- theme.favicon %>">
+  <% } %>
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <div id="header">
+      <h1>
+        <a href="/" title="<%= config.title %>">
+          <%= config.title %>
+        </a>
+      </h1>
+      <p class="description">
+        <%= config.description %>
+      </p>
+    </div>
+    <div id="nav" class="pure-menu pure-menu-open pure-menu-horizontal">
+      <%= JSON.stringify(site.pages) %>
+    </div>
+
+    <div id="main"><%- body %></div>
+
+    <div id="footer">
+      <a href="/"><%= config.title %></a>
+      <% if (theme.rss){ %>
+      <a href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">文章 RSS</a>
+      <% } %>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
