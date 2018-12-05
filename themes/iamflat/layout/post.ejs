@@ -5,6 +5,14 @@
   <%- page.content %>
 </div>
 
+<p align="right">
+  <small>
+    <a href="<%= theme.editLink.post.replace(':slug', page.slug) %>" target="_blank">
+      向本文提出修改或勘误建议
+    </a>
+  </small>
+</p>
+
 <% var list = comments(page.slug) %>
 <% if (list && list.length) { %>
 <div id="comments">

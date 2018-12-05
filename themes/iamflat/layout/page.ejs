@@ -9,6 +9,15 @@
   var slug = page.path.replace(/\/index\.html$/, '');
   var list = comments(slug)
 %>
+
+<p align="right">
+  <small>
+    <a href="<%= theme.editLink.page.replace(':slug', slug) %>" target="_blank">
+      向本文提出修改或勘误建议
+    </a>
+  </small>
+</p>
+
 <% if (list && list.length) { %>
 <div id="comments">
   <h2>早期评论</h2>

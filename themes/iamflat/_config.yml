@@ -1,2 +1,6 @@
 rss: /atom.xml
 favicon: /favicon.ico
+
+editLink:
+  page: https://github.com/Jinjiang/jinjiang.github.io/edit/dev/source/:slug/index.md
+  post: https://github.com/Jinjiang/jinjiang.github.io/edit/dev/source/_posts/:slug.md
