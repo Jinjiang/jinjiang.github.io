@@ -1,0 +1,5273 @@
+[
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491820052.693,
+      "timezone": "+00:00"
+    },
+    "description": "《音乐对编程的影响》：“以我个人的经验，只有在做一些相对重复性的工作，或没有压力的工作时，我才喜欢播放一些背景轻音乐。我并不认为这能让我提高工作效率，只是会让我更开心些。而深度思考时需要安静，需要排除脑子里任何的杂音，固化那稍纵即逝、易碎的灵感。”",
+    "id": "0d74cfe5-834f-4696-9436-a508b1112fa4",
+    "keywords": "教养、文化、观点",
+    "status": 1,
+    "title": "音乐对编程的影响 | 外刊IT评论",
+    "url": "http://www.aqee.net/the-effects-of-working-with-music/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.127,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1emd4lbgahuj20jy0co3z7.jpg)  \n![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1emd4lh0zunj20cb0c1dgg.jpg)  \n解析CSS选择器结构",
+    "id": "093c38de-1cee-4d0f-ad6c-d5afc9c716d3",
+    "keywords": "工具、服务、CSS、选择器",
+    "title": "CSS Explain",
+    "url": "http://josh.github.io/css-explain/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.127,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1ej8276khlrj20lu0inq56.jpg)  \n分析CSS并标出不必要的接近的颜色值冗余",
+    "id": "05fb1bdd-2162-45a6-bf51-5fb54268388d",
+    "keywords": "工具、CSS、配色",
+    "title": "CSS Colorguard",
+    "url": "https://github.com/SlexAxton/css-colorguard"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491727149.958,
+      "timezone": "+00:00"
+    },
+    "description": "2015年的CSS焦点 [网页链接](http://t.cn/RZIHcpc) selector 4、blend modes、calc()、variables、exclusions、shapes、grid layout：你了解多少",
+    "id": "01974f84-2171-4ec6-9e5a-8f8d27d03809",
+    "keywords": "CSS、趋势、观点",
+    "status": 1,
+    "title": "CSS you can get excited about in 2015 | Webdesigner Depot",
+    "url": "http://www.webdesignerdepot.com/2015/01/css-you-can-get-excited-about-in-2015/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723709.14,
+      "timezone": "+00:00"
+    },
+    "description": "JSON Server [typicode/json-server](http://t.cn/8kJApO8) 太赞了！好喜欢这个东西",
+    "id": "04e4fe08-e43f-4be6-b2df-cf53a36652ee",
+    "keywords": "工具、Node.js、服务器",
+    "status": 1,
+    "title": "GitHub - typicode/json-server: Get a full fake REST API with zero coding in less than 30 seconds (seriously)",
+    "url": "https://github.com/typicode/json-server"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491487413.718,
+      "timezone": "+00:00"
+    },
+    "description": "各种 CSS 动画方面的工具和素材",
+    "id": "0180737c-d478-4885-ad35-fc2fd7c0c868",
+    "keywords": "CSS、动效、素材、工具",
+    "title": "CSS Animation Tools, Frameworks & Tutorials",
+    "url": "https://speckyboy.com/css-animation/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490694767.628,
+      "timezone": "+00:00"
+    },
+    "description": "这其实不是一本讲足球的书，更不是教你踢自由球的，而是和足球大师心灵层面的交流，学习做人的道理",
+    "id": "02f1ea89-f823-4d89-bb3d-dd1735a2aeb4",
+    "keywords": "书、周边、足球",
+    "title": "《中村俊辅：任意球大师的“察知力”》",
+    "url": "https://www.amazon.cn/dp/B01M7P4Y4J/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035322.325,
+      "timezone": "+00:00"
+    },
+    "description": "来看看老外整理的 Native vs Hybrid vs Web",
+    "id": "017f1332-dccb-452b-80ab-13894166cdef",
+    "keywords": "观点、移动、框架",
+    "title": "The Mobile App Comparison Chart: Hybrid vs. Native vs. Mobile Web",
+    "url": "http://www.mrc-productivity.com/blog/2016/06/the-mobile-app-comparison-chart-hybrid-vs-native-vs-mobile-web/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491722554.975,
+      "timezone": "+00:00"
+    },
+    "description": "正在找一个能够在浏览器端发 xhr 请求的包，这个貌似不错 [网页链接](http://t.cn/8sa4QSi) 大家觉得怎么样？有没有更好的推荐？",
+    "id": "0edb6edf-b7e6-4f7e-95d1-7f485be79b82",
+    "keywords": "JS、库、XHR、请求",
+    "status": 1,
+    "title": "naugtur/xhr - A small xhr wrapper",
+    "url": "https://github.com/Raynos/xhr"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689742.485,
+      "timezone": "+00:00"
+    },
+    "description": "NCZ 的文章，直译是技术部落，其实就是对前端技术宗教化的思考",
+    "id": "0b004197-b086-4623-b966-48ab3152a71b",
+    "keywords": "观点、JS",
+    "title": "Technical Tribalism",
+    "url": "https://www.nczonline.net/newsletter/archive/5993571fa8/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491721516.116,
+      "timezone": "+00:00"
+    },
+    "description": "Styling SVG `<use>` Content with CSS [网页链接](http://t.cn/RLc3kS2) 长读不能……",
+    "id": "0601adff-059b-4250-94b5-cfc959ec9159",
+    "keywords": "CSS、SVG、知识",
+    "status": 1,
+    "title": "Styling SVG <use> Content with CSS | Codrops",
+    "url": "http://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490690069.382,
+      "timezone": "+00:00"
+    },
+    "description": "基于 Vue 和 Ionic CSS",
+    "id": "084adb22-2b2c-4352-b046-46d7c5097e69",
+    "keywords": "库、Vue、组件库、素材",
+    "title": "Vonic - Mobile UI Components",
+    "url": "http://im.dahoo.wang/vonic/docs/#/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035382.478,
+      "timezone": "+00:00"
+    },
+    "description": "一则很酷的 CSS 3 动效：Waving Cubes - 你想到它是怎么实现的了吗？[馋嘴]",
+    "id": "0524fc05-fcfe-4377-9ef0-cca7b0662aad",
+    "keywords": "CSS、动效、素材、波动",
+    "title": "Waving cubes - A PEN BY David Verlangieri",
+    "url": "http://codepen.io/verlangieri/full/BzomqR/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491034531.393,
+      "timezone": "+00:00"
+    },
+    "description": "`<script>` 标签扫盲贴 `integrity` 这个特性我还是第一次听说，似乎不错",
+    "id": "03b031df-38d8-438a-a5f9-aea5d57cd41d",
+    "keywords": "HTML、知识、小技巧",
+    "title": "Everything I Know About The Script Tag",
+    "url": "https://eager.io/blog/everything-I-know-about-the-script-tag/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490688958.591,
+      "timezone": "+00:00"
+    },
+    "description": "A web framework for building virtual reality experiences\nMake WebVR with HTML and Entity-Component\nWorks on Vive, Rift, desktop, mobile platforms",
+    "id": "0420590a-3de3-4f2d-8e09-e8c7e6c2f5ff",
+    "keywords": "AR、框架",
+    "title": "A-FRAME",
+    "url": "https://aframe.io"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726111.619,
+      "timezone": "+00:00"
+    },
+    "description": "用PhantomCSS、PhantomJS、CasperJS和Grunt的进行CSS测试 [网页链接](http://t.cn/RAPjriE) 这东西终于有了",
+    "id": "0685fd51-3c2b-48e6-a306-414e5cc2280a",
+    "keywords": "测试、CSS、Phantom、图片比对",
+    "status": 1,
+    "title": "CSS Testing with PhantomCSS, PhantomJS, CasperJS and Grunt | Phase2 Technology",
+    "url": "http://www.phase2technology.com/blog/css-testing-with-phantomcss-phantomjs-casperjs-and-grunt"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490701470.918,
+      "timezone": "+00:00"
+    },
+    "description": "通过“Client Hint”来实践响应式图片",
+    "id": "0ef49e71-4da6-40cb-9cfb-38d34a344a6f",
+    "keywords": "响应式、CSS、图片",
+    "title": "Responsive Images 201: Client Hints",
+    "url": "https://cloudfour.com/thinks/responsive-images-201-client-hints/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491467295.542,
+      "timezone": "+00:00"
+    },
+    "description": "编程语言简史 - 亮点自寻[酷]",
+    "id": "0fdfb0c4-a5be-491b-82c7-06d426a7e868",
+    "keywords": "历史、语言、周边",
+    "title": "Brief history of programming languages",
+    "url": "https://foorious.com/articles/brief-history-of-programming-languages/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723297.056,
+      "timezone": "+00:00"
+    },
+    "description": "plain.js [网页链接](http://t.cn/R2Geftv) 中记录了各方面取代jQuery而使用原始JavaScript的方式，如果你还离不开jQuery或Zepto，不妨跟着这份文档熟悉一下",
+    "id": "0ee8d5dd-ff64-4e67-ba63-b7911bd3f37a",
+    "keywords": "JS、手册、DOM、Vanilla",
+    "status": 1,
+    "title": "Plain JavaScript - Functions and Helpers",
+    "url": "http://plainjs.com/javascript/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491386192.316,
+      "timezone": "+00:00"
+    },
+    "description": "Strikingly 申请 Y Combinator 的全攻略。文章里放出了我们当年的申请表。希望对大家有帮助",
+    "id": "18f421c3-a568-4349-b2da-15f259ef8f0e",
+    "keywords": "创业、YC、上线了",
+    "title": "The No BS Approach to Getting into Y Combinator",
+    "url": "https://medium.com/swlh/how-to-get-into-y-combinator-the-no-bs-approach-820cbedbc904"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490927823.779,
+      "timezone": "+00:00"
+    },
+    "description": "Vue 的组件平台，分了 GitHub Stars、Latest Commit、Latest Share 三个维度",
+    "id": "07b0e234-1671-442a-bc1d-e5ec0cb4798e",
+    "keywords": "Vue、组件库、素材",
+    "title": "Vue Components",
+    "url": "https://vuecomponents.com"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491466988.155,
+      "timezone": "+00:00"
+    },
+    "description": "著名的数据处理流程库",
+    "id": "05371969-311b-4f2a-bec1-af83c2cd0173",
+    "keywords": "JS、库、异步、监听、流式",
+    "title": "ReactiveX - An API for asynchronous programming with observable streams",
+    "url": "http://reactivex.io"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387760.889,
+      "timezone": "+00:00"
+    },
+    "description": "Pressure is a JavaScript library for handling Force Touch, 3D Touch, and Pointer Pressure on the web, bundled under one library with a simple API that makes working with them painless.\n\n压力.js - 完美支持苹果3d touch的库，有iPhone6s的同学可以体验感受一下",
+    "id": "0e21259b-8f9d-4c63-80fc-de65bc3695f3",
+    "keywords": "JS、库、手势、3D Touch",
+    "title": "Pressure.js",
+    "url": "https://pressurejs.com"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.127,
+      "timezone": "+00:00"
+    },
+    "description": "> 无论是哪个领域的工作，从起点到目的地的时间就能看出专业人士和外行的差异。这种差异的主要原因，不在于节奏的快慢，而是在于选择“最佳路线”的能力。\n> \n> 实际上，在设计中，进行“创造性的举动”之前，必须先有“舍弃的决心”。为了成就某个目标，其他的必然要果断放弃。\n> \n> 3 天前，老板刚指示要将 A 方针改为 B 方针，过了没几天又发出相反的指示……专一的员工遇到多变的老板——每次开会都会彻底忘记上次的决议，而且从不觉得抱歉。即使如此，不好意思，我不会同情你哦！因为你还不明白！……各位设计师！不必沮丧。老板能够这样三心二意，其实是因为有你当靠山！",
+    "id": "0f6171d7-bfc8-4452-9cc2-91ef777d8256",
+    "keywords": "书、设计、文化",
+    "title": "《住宅设计解剖书》",
+    "url": "https://www.amazon.cn/dp/B00F5I0U2U/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896540.744,
+      "timezone": "+00:00"
+    },
+    "description": "在 浏览器 端压缩和解压缩",
+    "id": "0f44b03e-9178-4442-a012-80b09547ce44",
+    "keywords": "zip、JS、库、压缩",
+    "title": "zip.js - A JavaScript library to zip and unzip files",
+    "url": "https://gildas-lormeau.github.io/zip.js/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724594.039,
+      "timezone": "+00:00"
+    },
+    "description": "自己 mark 一下 [网页链接](http://t.cn/RAr9P48) bash 里循环的写法，每次写的时候都想不起来 - -",
+    "id": "10528d8b-fc49-4679-a473-73fda25b3c2e",
+    "keywords": "小技巧、循环、命令行",
+    "status": 1,
+    "title": "Loop through array of strings in Bash? - Stack Overflow",
+    "url": "http://stackoverflow.com/questions/8880603/loop-through-array-of-strings-in-bash-script"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691920.099,
+      "timezone": "+00:00"
+    },
+    "description": "找到一个在桌面端不打开调试工具就可以模拟手势的 JS 库",
+    "id": "1153f53d-d1c8-490d-b65d-d2c92f723c50",
+    "keywords": "JS、手势、库",
+    "title": "Phantom Limb - Fake touch events in desktop browsers",
+    "url": "https://github.com/brian-c/phantom-limb"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490692092.2,
+      "timezone": "+00:00"
+    },
+    "description": "一个非常神奇的库，能做各种字符串处理！ ​​​​",
+    "id": "198008e1-20c7-48c9-9e1c-d4aeb8c55d6b",
+    "keywords": "库、JS、字符串",
+    "title": "strman - A Javascript string manipulation library",
+    "url": "https://dleitee.github.io/strman/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.127,
+      "timezone": "+00:00"
+    },
+    "description": "> 炒作是不可避免的，我只是希望人们不要盲从罢了\n> \n> 软件世界里自由派和保守派的根本分歧就在于：到底要在安全性上花多大功夫？\n> \n> 所有人挑日期的时候都是随便说的。“这个看起来要 3 个星期。”“要是能在第 4 季度开始的时候上市就好了。”“大家加把劲儿，明天之前把它赶出来吧。”我们行业里大多数人都是被日期催着走的，永远有下一个里程碑，永远有一个最后期限，永远有一个限定时日的目标。我能想到的例外大概只有：1 开源软件项目；2 研究生院的项目；3 Google……我想这就是 Google 通常不事先公开自己的产品的原因吧，他们是真的明白软件开发这种事情就和烹饪、生孩子一样是急不来的。",
+    "id": "0a916214-1295-497c-9278-8696decfd330",
+    "keywords": "书、文化",
+    "title": "《程序员的呐喊》",
+    "url": "https://www.amazon.cn/dp/B00K5KNXJA/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491034832.694,
+      "timezone": "+00:00"
+    },
+    "description": "【为何每个创业公司都要有个吉祥物】来自 readme.io 的经验分享，他们的吉祥物是一只猫头鹰。拟人化的吉祥物有助于品牌的宣传，尤其是那些产品是无趣的面向开发者面向企业的公司。",
+    "id": "109dc74a-0ffd-43d8-86b0-01cb9e1a634c",
+    "keywords": "观点、设计、吉祥物、创业",
+    "title": "Why Every Startup Needs a Mascot",
+    "url": "https://blog.readme.io/why-every-startup-needs-a-mascot/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723672.068,
+      "timezone": "+00:00"
+    },
+    "description": "推荐一篇文章：《Animation Performance》[网页链接](http://t.cn/R24HQMJ) 提到了渲染的主要开销、性能注意事项等，同时还提到了一份最新的 CSS Containment 草案：[网页链接](http://t.cn/8kKmZF0)",
+    "id": "1438cbe2-4aa9-41ef-994c-88f575270c99",
+    "keywords": "CSS、动画、性能",
+    "status": 1,
+    "title": "Animation Performance - The blog of Ada Rose Edwards",
+    "url": "https://ada.is/blog/2015/04/26/animation-perf/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490688129.626,
+      "timezone": "+00:00"
+    },
+    "description": "快速云分享一段富文本，适合实时分享或跨端协作，可以设置在云端保留时间，最长为1天，一般情况下足够了",
+    "id": "11af0c70-4e03-4cc9-8c19-b5b755d40158",
+    "keywords": "分享，富文本，工具",
+    "title": "Context – share whatever you see with others in seconds",
+    "url": "https://ctxt.io"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725341.81,
+      "timezone": "+00:00"
+    },
+    "description": "async.js 的作者 Caolan McMahon 搞了另外一个全新的工具库：highland.js [网页链接](http://t.cn/8sf0x3E) 基于流式编程，同时适用于 Node 和浏览器环境。高大上酷！感觉是个升级版的 underscore",
+    "id": "1782d6e8-7e80-42be-9351-9c746bae1671",
+    "keywords": "JS、库、基础功能",
+    "status": 1,
+    "title": "Highland.js",
+    "url": "http://highlandjs.org/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491814458.224,
+      "timezone": "+00:00"
+    },
+    "description": "Chris Wright - Experiment: Flexbox 详解，推荐阅读 [网页链接](http://t.cn/Rzergid)",
+    "id": "11a729ea-bb98-4975-aed3-a29139ef83ee",
+    "keywords": "",
+    "status": 1,
+    "title": "Chris Wright - Experiment: Flexbox Adventures",
+    "url": "http://chriswrightdesign.com/experiments/flexbox-adventures/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491386811.723,
+      "timezone": "+00:00"
+    },
+    "description": "汉堡动画大全",
+    "id": "18495344-0e06-4771-927d-b16374c4b33f",
+    "keywords": "CSS、动效、素材、设计",
+    "title": "Hamburgers by Jonathan Suh",
+    "url": "https://jonsuh.com/hamburgers/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724807.773,
+      "timezone": "+00:00"
+    },
+    "description": "好凶残的 Netflix Logo 动画 [网页链接](http://t.cn/RAEAtNN) CSS 做的！",
+    "id": "1b47cc13-e640-46de-b807-ff7e528c0898",
+    "keywords": "素材、CSS、Netflix",
+    "status": 1,
+    "title": "CodePen - netfix logo animation CSS",
+    "url": "http://codepen.io/pixelass/full/MYYReK/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689077.073,
+      "timezone": "+00:00"
+    },
+    "description": "人间 CSS 动画荟萃！",
+    "id": "0cd0dbc4-e975-4f74-919f-cb9723ca5942",
+    "keywords": "CSS、动画、素材",
+    "title": "Animista",
+    "url": "http://animista.net"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723048.895,
+      "timezone": "+00:00"
+    },
+    "description": "web版的米奇手表 [网页链接](http://t.cn/R2qymUU)",
+    "id": "118c2c6f-98f2-49c0-854a-ec548c95392e",
+    "keywords": "素材、CSS、Mickey、Apple、Watch",
+    "status": 1,
+    "title": "CodePen - Apple watch like Mickey watch",
+    "url": "http://codepen.io/jaysalvat/full/ogQbKB/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725216.335,
+      "timezone": "+00:00"
+    },
+    "description": "a11yproject [网页链接](http://t.cn/RhB0XWV) 一个专注于a11y (accessibility 即“可访问性”或“信息无障碍化”) 的网站，有大量文章、清单、工具等 [@w3c中国](http://weibo.com/n/w3c%E4%B8%AD%E5%9B%BD?from=feed&loc=at)",
+    "id": "1a070480-894a-4409-8659-4c8822b6ee76",
+    "keywords": "可访问性、知识、入门",
+    "status": 1,
+    "title": "The A11Y Project",
+    "url": "http://a11yproject.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491722420.081,
+      "timezone": "+00:00"
+    },
+    "description": "蛮有趣的一本书 p.s.日本人眼中的服务器和客户端都长这样吗 - -",
+    "id": "21f20aab-9100-418b-b297-dff5b2d2421b",
+    "keywords": "书、HTTP、入门",
+    "status": 1,
+    "title": "《图解HTTP》",
+    "url": "https://www.amazon.cn/dp/B00JTQK1L4/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490694311.068,
+      "timezone": "+00:00"
+    },
+    "description": "基于 Vue 2.0 和 Material Design 的 UI 组件库",
+    "id": "185771c4-a48f-4100-ad69-1144adda545d",
+    "keywords": "组件库、Vue、库",
+    "title": "Muse-UI - 基于 Vue 2.0 和 Material Design 的 UI 组件库",
+    "url": "http://www.muse-ui.org"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "好书！很睿智的看问题角度",
+    "id": "1f627def-7ea8-4df2-895e-d863bc700bb1",
+    "keywords": "书、文化",
+    "title": "《稀缺：我们是如何陷入贫穷与忙碌的》",
+    "url": "https://www.amazon.cn/dp/B00OOG4XQ8/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491471315.622,
+      "timezone": "+00:00"
+    },
+    "description": "很酷的SVG动效工具库 - 暂时还没想好怎么用得上",
+    "id": "1b170e16-b033-4d64-a961-c898432d6f27",
+    "keywords": "SVG、工具、动效",
+    "title": "Segment - A little JavaScript class (without dependencies) to draw and animate SVG path strokes",
+    "url": "http://lmgonzalves.github.io/segment/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723141.175,
+      "timezone": "+00:00"
+    },
+    "description": "express-happiness [网页链接](http://t.cn/R24FGBi) 对express框架做了更友好的封装，但总觉得这个名字起得贱贱的……",
+    "id": "29094927-5d4c-4920-80d7-c3b13e7fc250",
+    "keywords": "JS、Node.js、Express、库",
+    "status": 1,
+    "title": "GitHub - andreas-trad/express-happiness: express wrapper framework",
+    "url": "https://github.com/andreas-trad/express-happiness"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387923.55,
+      "timezone": "+00:00"
+    },
+    "description": "可以在命令行咨询 stackoverflow 的小工具，感受一下",
+    "id": "1127b657-c3d2-485a-81be-b412991a79f2",
+    "keywords": "工具、JS、StackOverflow、趣味",
+    "title": "How2 - stackoverflow from the terminal",
+    "url": "https://github.com/santinic/how2"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689259.772,
+      "timezone": "+00:00"
+    },
+    "description": "ReactConf 2017 上的一个 topic，介绍了 JS 中类型的重要性和一些知识细节",
+    "id": "1830680b-0beb-4a3e-9558-f044e9f76783",
+    "keywords": "JS、知识、分享",
+    "title": "Type systems will make you a better JavaScript programmer",
+    "url": "http://jaredforsyth.com/type-systems-js-dev/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689698.808,
+      "timezone": "+00:00"
+    },
+    "description": "收集了一些有趣的代码注释",
+    "id": "23e724ef-db18-4db5-b99c-2d9a01074797",
+    "keywords": "素材、周边、趣味",
+    "title": "注释用得好，可能会挨打",
+    "url": "https://zhuanlan.zhihu.com/p/25009118"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490702785.398,
+      "timezone": "+00:00"
+    },
+    "description": "《从雅虎的失败中吸取的教训》的问答，再次提到了“天才密度”这个词，@响马 老师“通过雇更贵的程序员来给公司省钱”应该也是这个道理，另外“把创新和研究混为一谈”的观点前阵读过一本《日本电子产业兴衰录》也在深刻反思，推荐延伸阅读",
+    "id": "272f5284-e96e-4be6-a166-0734afbe188f",
+    "keywords": "雅虎、观点、文化",
+    "title": "Xavier Amatriain's answer to What lessons can Silicon Valley tech executives learn from what went wrong at Yahoo?",
+    "url": "https://www.quora.com/What-lessons-can-Silicon-Valley-tech-executives-learn-from-what-went-wrong-at-Yahoo/answer/Xavier-Amatriain"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491371472.187,
+      "timezone": "+00:00"
+    },
+    "description": "Tools, Trends, Titles, What Pays (and What Doesn’t) for Design Professionals\nO'Reilly 2017 年的交互设计相关调查，涉及到交互设计的人员分布、行业、薪水、相关工具、工作流程等细节，便于我们对整个交互设计行业有一个整体的认知。",
+    "id": "1c594210-c383-46b0-9a70-26951f9844cb",
+    "keywords": "交互、调查、设计",
+    "title": "[PDF] 2017 Design Salary Survey",
+    "url": "http://www.oreilly.com/design/free/files/2017-design-salary-survey.pdf"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724342.205,
+      "timezone": "+00:00"
+    },
+    "description": "JavaScript the EXTRA parts [网页链接](http://t.cn/R2zhGli) 随着JS的发展，之间总结出来的Good Parts也出现了一些新的东西。一个有生命力的语言就应该是这样的",
+    "id": "22fb70dc-6bfd-43ef-afb4-fa64052d42ce",
+    "keywords": "JS、小技巧、知识",
+    "status": 1,
+    "title": "JavaScript: The Extra Good Parts | Wix Engineering",
+    "url": "http://engineering.wix.com/2015/04/21/javascript-the-extra-good-parts/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387276.126,
+      "timezone": "+00:00"
+    },
+    "description": "这个表可能会越来越用得到 Six Speed - 看看该用es6、babel之后，除了写法和开发效率之外，性能有怎样的变化",
+    "id": "23c6c12a-8108-4b46-9b23-446d84b888ca",
+    "keywords": "JS、性能、ES6",
+    "title": "Six Speed -  Performance of ES6 features relative to the ES5 baseline operations per second",
+    "url": "https://kpdecker.github.io/six-speed/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819317.921,
+      "timezone": "+00:00"
+    },
+    "description": "《深入浅出 JavaScript “this”》[网页链接](http://flippinawesome.org/2013/12/09/demystifying-this-in-javascript/) this 给你的感觉是什么？(配图大亮啊)",
+    "id": "2e23a770-32e9-4af1-b0b4-5aa5e9dad3b3",
+    "keywords": "JS、知识、this",
+    "status": 1,
+    "title": "Demystifying this in JavaScript - Modern Web | Modern Web",
+    "url": "http://flippinawesome.org/2013/12/09/demystifying-this-in-javascript/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490692050.928,
+      "timezone": "+00:00"
+    },
+    "description": "CSS 怎么居中.com 简单回答几个问题就可以",
+    "id": "17b9c7e3-5a74-4d43-b191-628524c99f50",
+    "keywords": "CSS、工具、居中",
+    "title": "HOW TO CENTER IN CSS",
+    "url": "http://howtocenterincss.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816491.735,
+      "timezone": "+00:00"
+    },
+    "description": "Responsive SVG [网页链接](http://t.cn/RPgpjoS) 觉得酷就点个赞吧！",
+    "id": "1dc8c6cc-bb45-49f9-8d48-64f5a77c2087",
+    "keywords": "CSS、SVG、响应式、素材",
+    "status": 1,
+    "title": "Making SVGs Responsive - Demo 6",
+    "url": "http://tympanus.net/Tutorials/ResponsiveSVGs/index6.html"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491468702.073,
+      "timezone": "+00:00"
+    },
+    "description": "如何让编码不枯燥 - 项目长学不能？不得不维护老代码？纯复制黏贴？做内部工具？代码民工？日复一日？你是怎么对工作失去热情的？来看看这篇吧，我刚耐心看完+举双手认同的一篇文章\n\n> Maintenance mode is sometimes the result of poor technical decisions combined with a lack of courage.\n\n项目处于 (令人厌烦的) 维护状态都是由于没有技术含量的决定和没有足够的动机导致的",
+    "id": "399df109-e81c-485e-b2e2-279cf8c77994",
+    "keywords": "观点、周边",
+    "title": "Coding is boring, unless…",
+    "url": "https://blog.enki.com/coding-is-boring-unless-4e496720d664"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724173.097,
+      "timezone": "+00:00"
+    },
+    "description": "flickr-set-get [网页链接](http://t.cn/R2hbOzJ) 用来在node环境下载flickr照片的库",
+    "id": "273c642c-befd-4b13-bacc-a3e38606d775",
+    "keywords": "Flickr、Node.js、工具、库",
+    "status": 1,
+    "title": "GitHub - lmammino/flickr-set-get: A simple command line app to download photos from a flickr set",
+    "url": "https://github.com/lmammino/flickr-set-get"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724689.687,
+      "timezone": "+00:00"
+    },
+    "description": "Basket.js [网页链接](http://t.cn/RvmQBmK) 把资源都缓存到localStorage这个篮子里",
+    "id": "1e6d0bc4-043a-4781-a972-f8bc764b0ce8",
+    "keywords": "库、缓存、JS",
+    "status": 1,
+    "title": "basket.js - a simple script loader that caches scripts with localStorage",
+    "url": "http://addyosmani.github.io/basket.js/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726310.791,
+      "timezone": "+00:00"
+    },
+    "description": "ExcelJS [网页链接](http://t.cn/Rw8nbh4) 当我看到这个名字的时候！Duang！名字！Duang！Excel！Duang！JS！特技！",
+    "id": "25da8304-4f4b-4389-89e1-56ecf82e0e5e",
+    "keywords": "Excel、JS、工具",
+    "status": 1,
+    "title": "GitHub - guyonroche/exceljs: Excel Workbook Manager",
+    "url": "https://github.com/guyonroche/exceljs"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033016.988,
+      "timezone": "+00:00"
+    },
+    "description": "看了一篇科普文《 d3.js 数据可视化》- 顺便熟悉了一下 SVG",
+    "id": "273c4b85-476f-4461-be19-ffdf9857dcba",
+    "keywords": "D3、知识、入门、数据可视化",
+    "title": "Learn to Create D3.js Data Visualizations by Example",
+    "url": "https://www.sitepoint.com/d3-js-data-visualizations/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726063.735,
+      "timezone": "+00:00"
+    },
+    "description": "trim-html [网页链接](http://t.cn/RAZPPdp) 可以在截断HTML文本的同时保留标签结构不被破坏",
+    "id": "2e272f18-52c8-44e1-a6fb-a78a23cdf139",
+    "keywords": "工具、HTML、JS、截断",
+    "status": 1,
+    "title": "GitHub - brankosekulic/trimHtml",
+    "url": "https://github.com/brankosekulic/trimHtml"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490688456.4,
+      "timezone": "+00:00"
+    },
+    "description": "响应式套路 & 素材库",
+    "id": "1fa7612b-3921-48a0-b412-8f480a570a7d",
+    "keywords": "CSS、响应式、素材",
+    "title": "This is Responsive",
+    "url": "http://bradfrost.github.io/this-is-responsive/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691148.058,
+      "timezone": "+00:00"
+    },
+    "description": "《优秀设计师起步之路》除了一万小时法则之外，及时收集意见反馈、深入分解技能、试着向周围的人表达出你所学到的 (教学相长) 都是非常关键的事情，尤其提到从复刻优秀设计作品、尝试重设计大型网站着手，会令你受益匪浅，最后推荐了一些入门教程。很棒",
+    "id": "1f823b29-0ccc-4972-993d-e2e633fde0a8",
+    "keywords": "设计、知识、素材",
+    "title": "The Beginners Guide to Becoming the Best Designer",
+    "url": "https://uxdesign.cc/the-beginners-guide-to-becoming-the-best-designer-e8e774a0c3bf"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491470542.811,
+      "timezone": "+00:00"
+    },
+    "description": "俗称造假数据用的",
+    "id": "3c0e58a5-6e95-43a9-9171-bd724d9b24ef",
+    "keywords": "工具、库、JS、假数据",
+    "title": "dreamjs - A lightweight json data generator.",
+    "url": "https://github.com/adleroliveira/dreamjs"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491030093.572,
+      "timezone": "+00:00"
+    },
+    "description": "既是图片，又是网页 O网页链接 同一个请求，写在 `<img>` 里就是图片格式，直接用浏览器打开就是一个网页，好高级，仔细看了看把 content-type、metadata、html 注释 各种玩意儿都用上了",
+    "id": "29f6f611-8d5f-49ea-94c3-4bf1a2af5e43",
+    "keywords": "小技巧、响应式、HTML、图片",
+    "title": "This Image is Also an HTML Webpage",
+    "url": "https://dev.to/ben/this-image-is-also-an-html-webpage"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387503.832,
+      "timezone": "+00:00"
+    },
+    "description": "这里有一大堆可以循环播放的声音文件",
+    "id": "1f4a423d-383e-41c2-b51c-24ef8bbfe7a3",
+    "keywords": "Flash、声音、素材",
+    "title": "Loops - Flash Kit",
+    "url": "http://www.flashkit.com/loops/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491468067.769,
+      "timezone": "+00:00"
+    },
+    "description": "又一个单词被我大 JS 所占领了！JS 版 Jekyll，post 和 page 可以直接从 Jekyll 迁移过来",
+    "id": "29def474-b637-4740-9248-fb061267a96c",
+    "keywords": "工具、建站、CMS、JS",
+    "title": "CMS.js - The Javascript Site Generator.",
+    "url": "http://cdmedia.github.io/cms.js/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "好的 API 不需要 SDK [网页链接](http://devs.mailchimp.com/blog/a-good-api-shouldnt-need-an-sdk/)",
+    "id": "2de88b7b-fdf3-4b35-a23c-b063435d4afe",
+    "keywords": "观点、API、SDK",
+    "title": "A Good API Shouldn’t Need an SDK",
+    "url": "http://devs.mailchimp.com/blog/a-good-api-shouldnt-need-an-sdk/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725110.608,
+      "timezone": "+00:00"
+    },
+    "description": "《CSS custom filters入门》[网页链接](http://t.cn/zlqJX1o) 把shaders用在CSS中……感觉科技越来越凶残了",
+    "id": "4f3f3091-65c4-4883-9cca-ecc47260420a",
+    "keywords": "知识、入门、CSS、Filter、GPU、Shader",
+    "status": 1,
+    "title": "Getting started with CSS custom filters (CSS shaders)",
+    "url": "http://alteredqualia.com/css-shaders/article/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491031536.052,
+      "timezone": "+00:00"
+    },
+    "description": "用 CSS4 构建一套主题风格 O网页链接 附带 W3C 的规范描述 [网页链接](https://drafts.csswg.org/css-color/#modifying-colors) (这不就是 Sass 吗 - -) ",
+    "id": "20bf24cc-820e-47a1-bb4f-08a02aa31df8",
+    "keywords": "CSS、小技巧、知识、主题",
+    "title": "Building Themes with CSS4 Color Features",
+    "url": "https://cloudfour.com/thinks/building-themes-with-css4-color-features/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724764.93,
+      "timezone": "+00:00"
+    },
+    "description": "Elevator.js [网页链接](http://t.cn/RAla67Q) 大家猜到他是干嘛的了吗？",
+    "id": "21a98ea6-4bbf-496a-88ba-db689e3f3f9a",
+    "keywords": "趣味、电梯、JS、回到顶部",
+    "status": 1,
+    "title": "Elevator.js",
+    "url": "http://tholman.com/elevator.js/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725201.259,
+      "timezone": "+00:00"
+    },
+    "description": "Apple Watch 的 UI 来了！[网页链接](http://t.cn/RAi5Erz) Framework7-WatchUI 好想造在一个圆形屏幕上打开是什么感觉啊",
+    "id": "3d243014-c9da-41ad-a257-0e3b166fbf9b",
+    "keywords": "素材、Apple、Watch",
+    "status": 1,
+    "title": "watchUI",
+    "url": "http://sniperger.github.io/Framework7-WatchUI/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725075.346,
+      "timezone": "+00:00"
+    },
+    "description": "SpeakingURL [网页链接](http://t.cn/8kykbjs) 把自然语言转成友好的URL (slug) 。。。等等！我大中文表示不服",
+    "id": "2d37822d-007d-4162-935c-c17a41223387",
+    "keywords": "JS、库、slug、URL",
+    "status": 1,
+    "title": "SpeakingURL",
+    "url": "http://pid.github.io/speakingurl/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035212.309,
+      "timezone": "+00:00"
+    },
+    "description": "好书！认认真真看完了，很有启发。而且宜家那个真是笑尿了",
+    "id": "255b941f-d95b-4bb7-a266-9dcf1d580b24",
+    "keywords": "书、设计",
+    "title": "《至美用户-人本设计剖析》",
+    "url": "https://www.amazon.cn/dp/B01EFPCFPI"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035428.892,
+      "timezone": "+00:00"
+    },
+    "description": "不看不知道，原来已经有这么多语言可以编译成 JavaScript 了",
+    "id": "33ab76e6-a40b-4102-9dc6-e698793c893d",
+    "keywords": "周边、JS、方言",
+    "title": "List of languages that compile to JS",
+    "url": "https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033652.328,
+      "timezone": "+00:00"
+    },
+    "description": "基于 Vue 和 SVG 的下拉特小",
+    "id": "352badd6-6911-458c-82a8-0f50b15f318f",
+    "keywords": "Vue、动效、素材、SVG",
+    "title": "Elastic draggable SVG header",
+    "url": "http://codepen.io/yyx990803/full/XmZNOG/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689987.378,
+      "timezone": "+00:00"
+    },
+    "description": "看过很有感触，也很认同",
+    "id": "588dc57f-6178-4532-b640-acc9010e7db9",
+    "keywords": "观点、职业发展",
+    "title": "左耳朵耗子：不灌鸡汤，说真的年龄渐长，技术人的发展之路该怎么走？",
+    "url": "http://www.infoq.com/cn/articles/road-of-the-development-of-technical-people"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725967.607,
+      "timezone": "+00:00"
+    },
+    "description": "NodeGit [网页链接](http://t.cn/RwFJoRU) 在node里操作git node玩家真是太可爱了什么都能搞出来",
+    "id": "237e1908-adbe-429a-b70f-e792bc14a04e",
+    "keywords": "工具、Node.js、Git",
+    "status": 1,
+    "title": "Install NodeGit",
+    "url": "http://www.nodegit.org/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491036217.698,
+      "timezone": "+00:00"
+    },
+    "description": "这篇长文真是赞的不能再赞了 - 来自 FamilySearch 的工程师，现身说法 Living Style Guide 的产生过程、注意事项以及各种踩过的坑，还推荐了相应的工具和参考，当然也描述了很多公司和团队都正在面临的视觉规范统一不起来的问题",
+    "id": "2638c9db-8362-4431-a96a-896b03f49adb",
+    "keywords": "观点、教程、设计、Living Style Guide、CSS",
+    "title": "Creating A Living Style Guide: A Case Study",
+    "url": "https://www.smashingmagazine.com/2016/05/creating-a-living-style-guide-case-study/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491013805.783,
+      "timezone": "+00:00"
+    },
+    "description": "国际象棋的人工智能入门",
+    "id": "3d3c83a1-ed1a-4058-941f-d13e0f4103ee",
+    "keywords": "机器学习，入门",
+    "title": "A step-by-step guide to building a simple chess AI",
+    "url": "https://medium.freecodecamp.com/simple-chess-ai-step-by-step-1d55a9266977"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491820000.631,
+      "timezone": "+00:00"
+    },
+    "description": "Safe integers in JavaScript [网页链接](http://www.2ality.com/2013/10/safe-integers.html)",
+    "id": "2e74c0c0-7dcb-4887-862f-b37118d13da6",
+    "keywords": "JS、知识、数字",
+    "status": 1,
+    "title": "Safe integers in JavaScript",
+    "url": "http://www.2ality.com/2013/10/safe-integers.html"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725382.958,
+      "timezone": "+00:00"
+    },
+    "description": "Probably Use initial-scale=1 | CSS-Tricks | 解决iOS横竖屏切换时的诡异效果 [网页链接](http://t.cn/RAiqsQI)",
+    "id": "25616bad-6f0e-4768-847a-36727b994b0c",
+    "keywords": "小技巧、CSS、屏幕",
+    "status": 1,
+    "title": "Probably Use initial-scale=1 | CSS-Tricks",
+    "url": "https://css-tricks.com/probably-use-initial-scale1/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689538.245,
+      "timezone": "+00:00"
+    },
+    "description": "这个网站的效果非常酷炫，记录一下",
+    "id": "362b4399-4c90-4e06-bf17-e53622eba7c8",
+    "keywords": "素材、动效、设计",
+    "title": "Descente",
+    "url": "http://ss2017.descente.jp"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819772.339,
+      "timezone": "+00:00"
+    },
+    "description": "CSS-Tricks：锥形渐变(Conical Gradients in CSS) 大家感受一下 [网页链接](http://css-tricks.com/conical-gradients-css/)",
+    "id": "39184472-3a0a-4ba3-9625-51aec4756e49",
+    "keywords": "CSS、小技巧、知识",
+    "status": 1,
+    "title": "Conical Gradients in CSS | CSS-Tricks",
+    "url": "http://css-tricks.com/conical-gradients-css/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww3.sinaimg.cn/mw1024/660d0cdfgw1eicgps1u22j20i106r3z8.jpg)  \n对一些 JavaScript 原生函数的更快的实现",
+    "id": "5a4769d6-8a18-4a90-92e6-e950ba59046a",
+    "keywords": "库、JS、性能",
+    "title": "Fast.js",
+    "url": "https://github.com/codemix/fast.js"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491722623.448,
+      "timezone": "+00:00"
+    },
+    "description": "这个网站太实用了 [网页链接](http://t.cn/R2HRJBv) 快速熟悉 flexbox 用法 谢谢",
+    "id": "2466ddbb-7064-437d-9b0c-dd0266942c55",
+    "keywords": "CSS、趣味、Flexbox、手册、知识",
+    "status": 1,
+    "title": "Visual Guide to CSS3 Flexbox: Flexbox Playground |",
+    "url": "https://scotch.io/demos/visual-guide-to-css3-flexbox-flexbox-playground"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817287.315,
+      "timezone": "+00:00"
+    },
+    "description": "《消化JavaScript MVC》[网页链接](http://t.cn/RPyyS5W) 来自 TodoMVC 创始人（— —）",
+    "id": "29c38f3f-342c-4f26-8072-47d0711c6796",
+    "keywords": "MVC、知识",
+    "status": 1,
+    "title": "Digesting JavaScript MVC by Addy Osmani",
+    "url": "https://speakerdeck.com/addyosmani/digesting-javascript-mvc"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724255.217,
+      "timezone": "+00:00"
+    },
+    "description": "基于npm构建命令行工具 [网页链接](http://t.cn/R2hbXyQ) 同时还推荐了一个在node环境下运行系统脚本的库 shell.js [网页链接](http://t.cn/R2hbXy8)",
+    "id": "3e0b0e78-883e-4877-9200-a3fce62d79e4",
+    "keywords": "NPM、入门、命令行、教程",
+    "status": 1,
+    "title": "The npm Blog — Building a simple command line tool with npm",
+    "url": "http://blog.npmjs.org/post/118810260230/building-a-simple-command-line-tool-with-npm"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "前端 newsletter 大全，强烈推荐 [网页链接](https://medium.com/p/2c75e6a87b29)",
+    "id": "2ebf9374-a024-4f08-a369-63d24c8dfdc9",
+    "keywords": "素材、设计、知识",
+    "title": "Newsletters for Web Designers and Front-end Developers",
+    "url": "https://medium.com/p/2c75e6a87b29"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817514.299,
+      "timezone": "+00:00"
+    },
+    "description": "paste.js [网页链接](http://t.cn/Rv6HgLg) HTML5的剪切板粘贴方案 酷！",
+    "id": "2738ac18-a539-42f4-8ce9-61762a805c75",
+    "keywords": "JS、库、剪切板",
+    "status": 1,
+    "title": "GitHub - layerssss/paste.js: read image/text data from clipboard (cross-browser)",
+    "url": "https://github.com/Puffant/paste.js"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1eicgpdmqvdj21400p0ju7.jpg)  \n![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1eicgpheu2sj20uw0p00w3.jpg)  \n更好的 Web 调色板，支持 less, sass, stylus 等",
+    "id": "3c0238e5-62f2-41b9-9d18-be741a3e1250",
+    "keywords": "工具、服务、配色",
+    "title": "COLORS",
+    "url": "http://clrs.cc"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691521.467,
+      "timezone": "+00:00"
+    },
+    "description": "有很多优秀设计文章的网站",
+    "id": "3a35b38e-649c-4e98-b4ea-0b25225cacb5",
+    "keywords": "素材、设计",
+    "title": "UX Planet - a one-stop resource for everything related to user experience.",
+    "url": "https://uxplanet.org/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490688221.926,
+      "timezone": "+00:00"
+    },
+    "description": "浏览器环境下训练深度学习模型",
+    "id": "6211611f-39c4-4f02-98e9-3c32c37378c9",
+    "keywords": "AI、深度学习、JS",
+    "title": "ConvNetJS - Deep Learning in your browser",
+    "url": "http://cs.stanford.edu/people/karpathy/convnetjs/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033203.815,
+      "timezone": "+00:00"
+    },
+    "description": "对比今天的 link 和 button",
+    "id": "25020235-f82b-4540-b588-a2551dd752aa",
+    "keywords": "观点、HTML、按钮、链接",
+    "title": "Links vs. Buttons in Modern Web Applications",
+    "url": "https://marcysutton.com/links-vs-buttons-in-modern-web-applications/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491727264.396,
+      "timezone": "+00:00"
+    },
+    "description": "Animated Headlines [网页链接](http://t.cn/RZAUWjn) 超赞！",
+    "id": "2a522233-3cb9-4610-9a15-8ddb93b75c20",
+    "keywords": "CSS、设计、素材、动效",
+    "status": 1,
+    "title": "Animated Headlines | CodyHouse",
+    "url": "http://codyhouse.co/demo/animated-headlines/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691053.754,
+      "timezone": "+00:00"
+    },
+    "description": "个人分享\n做开源项目的本质是经营技术，更是经营一个品牌。该话题透过 Weex 的发展经历，阐述从品牌的视角思考一个项目如何谋求发展和探索。",
+    "id": "4039de42-c7ad-4bcb-9489-4d013a3b6369",
+    "keywords": "观点、分享、开源、品牌",
+    "title": "由 Weex 谈品牌经营心得",
+    "url": "https://yq.aliyun.com/edu/lesson/play/642"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491101779.329,
+      "timezone": "+00:00"
+    },
+    "description": "网页排版的 checklist",
+    "id": "33488c76-287f-463d-ae62-908880727c70",
+    "keywords": "清单、设计、排版、入门",
+    "title": "Checklist for Better Web Typography",
+    "url": "http://www.merttol.com/articles/web/checklist-for-better-web-typography.html"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "> 在网页设计中有一个存在已久的，非官方的‘三次点击’准则……研究表明，只要用户相信自己正走在通往目标的正确的道路上，只要用户觉得每次点击又向目标迈进了一步，那他们并不会介意额外的点击。实际上，他们介意的是那些令人沮丧的点击",
+    "id": "2748b5aa-998f-429a-b7a6-4bfe962b3bde",
+    "keywords": "书、响应式、设计",
+    "title": "《学习响应式设计》",
+    "url": "https://www.amazon.cn/dp/B00Y3AXKXW/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491721294.526,
+      "timezone": "+00:00"
+    },
+    "description": "推荐 mozilla 的“深入浅出 ES6”科普系列文章 [网页链接](http://t.cn/RADfIJK)",
+    "id": "3dc44026-de7b-47b8-869c-8705309e2bfd",
+    "keywords": "JS、知识、入门、ES6",
+    "status": 1,
+    "title": "ES6 In Depth Articles ★ Mozilla Hacks – the Web developer blog",
+    "url": "https://hacks.mozilla.org/category/es6-in-depth/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "> …敏捷是相对的，且按时间来衡量。如果你的软件团队交付的软件跟不上所处环境的变化，就不算敏捷\n> \n> 可悲的是，在我们的行业里，许多开发者为了在企业晋升机制中有所发展，被迫转向非技术管理岗位。讽刺的是，被迫离开技术岗位的往往是最优秀和最资深的技术人员，而软件团队中则失去了最有价值的技术领导、架构师和导师。今天的开发者还会在将来继续重蹈覆辙\n> \n> 为什么这（学习如何画草图）是值得人们学习的好技能？简而言之，敏捷需要良好的沟通。画草图是在相对短的时间里传达大量信息的一个很好的方式，但这也是一项我们在软件行业中不再经常谈论的技能\n> \n> 敏捷宣言说“可以工作的软件重于面面俱到的文档”…但是很多团队把敏捷宣言中的这句话当成了完全不写任何文档的借口。很遗憾，代码不会讲述完整的故事",
+    "id": "442819dc-6c60-4ee6-ab05-58a743d2441c",
+    "keywords": "书、架构、文化",
+    "title": "《程序员必读之软件架构》",
+    "url": "https://www.amazon.cn/dp/B00Q722580"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691678.753,
+      "timezone": "+00:00"
+    },
+    "description": "2017 前端性能优化清单，挺详细的 ​​​​",
+    "id": "66ce93b7-9910-4390-b5c0-4d1742dac308",
+    "keywords": "知识、性能、手册",
+    "title": "Front-End Performance Checklist 2017",
+    "url": "https://www.smashingmagazine.com/2016/12/front-end-performance-checklist-2017-pdf-pages/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491464591.424,
+      "timezone": "+00:00"
+    },
+    "description": "用 JS 生产 PDF 文档的神器",
+    "id": "2749f05a-004e-44af-a71c-cde0d6c7f02f",
+    "keywords": "JS、库、工具、PDF",
+    "title": "jsPDF - A library to generate PDFs in client-side JavaScript",
+    "url": "https://parall.ax/products/jspdf"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491370937.694,
+      "timezone": "+00:00"
+    },
+    "description": "未来人机交互的 5 大预测，其中也提到了 UX 的现状，比如它如今的定义已经被限制在很狭窄的领域内。新的市场 (智能电视等)、AR/VR、人工智能、语音交互等都是值得关注的地方。",
+    "id": "2da18c5b-e57b-4e21-8358-6fc21ef5a3fc",
+    "keywords": "交互、设计、观点",
+    "title": "Where will UX design be in 5 years? 5 Predictions",
+    "url": "http://trydesignlab.com/blog/where-ux-design-5-years-predictions/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490702493.946,
+      "timezone": "+00:00"
+    },
+    "description": "一篇 Service Worker 的介绍",
+    "id": "4181b54a-50ca-4838-83c7-222547e14dfd",
+    "keywords": "分享、Service Worker、JS",
+    "title": "SERVICE WORKERS FOR EVERYONE",
+    "url": "http://ryanchristiani.com/service-workers/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033292.847,
+      "timezone": "+00:00"
+    },
+    "description": "这本书看完了，不服不行",
+    "id": "37eaceb6-a7bd-443c-a899-fe14810eb868",
+    "keywords": "书、以色列、创业",
+    "title": "创业的国度:以色列经济奇迹的启示",
+    "url": "https://www.amazon.cn/dp/B0041G5DDS/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491556043.59,
+      "timezone": "+00:00"
+    },
+    "description": "支持各种花样的小 tooltip 库",
+    "id": "28a92484-901f-4fca-b543-435a85564697",
+    "keywords": "JS、库、Tooltip",
+    "title": "Tippy.js - A lightweight, pure JavaScript tooltip library",
+    "url": "https://atomiks.github.io/tippyjs/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491034584.748,
+      "timezone": "+00:00"
+    },
+    "description": "号称可以给你的CPU减压的JS库",
+    "id": "54ebb72d-8a89-4d4a-af8d-5465d3119a41",
+    "keywords": "JS、库、性能、CPU",
+    "title": "chillout.js - Reduce CPU usage in JavaScript",
+    "url": "https://github.com/polygonplanet/chillout"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491386468.565,
+      "timezone": "+00:00"
+    },
+    "description": "新版v8即将支持三个新特性 解构赋值 默认形参值 spread operator ",
+    "id": "486d9fa5-db9a-4676-9603-155fdeeb0925",
+    "keywords": "JS、语言特性、知识",
+    "title": "An early look at three high-impact ES6 features coming soon to Node.js",
+    "url": "https://rethinkdb.com/blog/v849-es6-features/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490696150.571,
+      "timezone": "+00:00"
+    },
+    "description": "CSS 背景板荟萃，这个不错，先收藏了",
+    "id": "6829f301-c21c-4237-9d68-ccb75c73a82e",
+    "keywords": "CSS、素材、背景",
+    "title": "HUE.css - A huge collection of CSS backdrops",
+    "url": "http://evankarageorgos.github.io/hue/grid.html"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490694686.702,
+      "timezone": "+00:00"
+    },
+    "description": "一则外文《未来的 Web Forms》看标题以为是讨论新规范的，点进去一看，我勒个去天马行空，难怪交互设计偷懒的时候总喜欢说“你就做成QQ那样就行” [doge]",
+    "id": "2813cb65-7828-4f78-8486-bf0fb90608b1",
+    "keywords": "设计、观点、表单",
+    "title": "The Future of Web Forms - How conversational interfaces are making data collection more human.",
+    "url": "https://blog.prototypr.io/the-future-of-web-forms-4578485e1461#.7jootlgc5"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819378.743,
+      "timezone": "+00:00"
+    },
+    "description": "Numeral.js [网页链接](http://numeraljs.com/) 一个专门处理各种数字格式的 JS 库，语法非常简单。为了方便理解，我简单写了个 jsbin [网页链接](http://output.jsbin.com/ENozUge)",
+    "id": "33dd6d3d-31ec-4926-9cd9-d11cc66b4c76",
+    "keywords": "JS、库、数字",
+    "status": 1,
+    "title": "Numeral.js",
+    "url": "http://numeraljs.com/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725828.472,
+      "timezone": "+00:00"
+    },
+    "description": "《Node.js常见的十个坑》[网页链接](http://t.cn/RAyV1pq) 貌似这么多年过去了还是 @Python发烧友 @朴灵 老师PPT里总结过的那几个",
+    "id": "4b292b4e-b90c-42d6-87fb-7a48beadb11c",
+    "keywords": "观点、Node.js、常见错误、质量",
+    "status": 1,
+    "title": "The Top 10 Most Common Mistakes That Node.js Developers Make | Toptal",
+    "url": "http://www.toptal.com/nodejs/top-10-common-nodejs-developer-mistakes"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491727292.663,
+      "timezone": "+00:00"
+    },
+    "description": "JavaScript 技巧大全 [网页链接](http://t.cn/RZ5tV4D) 文中一共列出了45条",
+    "id": "3e387088-0e6a-4793-bd4a-a092ca5dbe19",
+    "keywords": "小技巧、JS",
+    "status": 1,
+    "title": "45 Useful JavaScript Tips, Tricks and Best Practices - Modern Web | Modern Web",
+    "url": "http://modernweb.com/2013/12/23/45-useful-javascript-tips-tricks-and-best-practices/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491102058.587,
+      "timezone": "+00:00"
+    },
+    "description": "设计清单，大而全的参考",
+    "id": "3019f3c8-4638-4f37-b882-9b55d00804d2",
+    "keywords": "清单、设计",
+    "title": "Design Checklist Before You Finalize Any Web Project | Mert TOL",
+    "url": "http://www.merttol.com/articles/web/design-checklist.html"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491466547.999,
+      "timezone": "+00:00"
+    },
+    "description": "看完了，很有收获！设计的四个基本原则：亲密性、对齐、重复、对比。配色有基本的搭配技巧，CMYK和RGB体系略有偏差，文字有很多标点和排版的细节，字体分老派、现代、粗衬线、无衬线、手写体、花体六大类。推荐给大家[嘻嘻]\n\n看过这本书才发现好多设计师的良苦用心和很多“冷门”CSS属性存在的意义，比如这里提到的字距调整：“字距调整并不是要字母都紧紧贴在一起，而是要让字母间的空格（空隙）看起来很连贯。”",
+    "id": "56289233-8e0f-4d37-a313-ee5d18ef1159",
+    "keywords": "书、设计",
+    "title": "《写给大家看的设计书》",
+    "url": "https://www.amazon.cn/dp/B018KMT5WI/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491466685.878,
+      "timezone": "+00:00"
+    },
+    "description": "分享一个 Medium Editor (非官方的)",
+    "id": "515b9e2c-08c5-4ea8-8a64-ee597615b015",
+    "keywords": "库、编辑器、Medium",
+    "title": "MediumEditor - The dead simple inline editor toolbar",
+    "url": "https://yabwe.github.io/medium-editor/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490944432.656,
+      "timezone": "+00:00"
+    },
+    "description": "生成正则表达式中的字符串，比如 `'how much $ for a unicorn?'` 能转成 `'how much \\$ for a unicorn\\?'`",
+    "id": "8c30976b-466c-41b6-91de-473f1650bb9c",
+    "keywords": "正则、JS、库",
+    "title": "escape-string-regexp - Escape RegExp special characters",
+    "url": "https://www.npmjs.com/package/escape-string-regexp"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032620.687,
+      "timezone": "+00:00"
+    },
+    "description": "产品规划中的三种特性：用户要的，刺激增长的，一般人想不到的",
+    "id": "2abb34df-8d39-4e7a-b967-3f29bd448938",
+    "keywords": "产品、观点",
+    "title": "Guide to Product Planning: Three Feature Buckets",
+    "url": "https://blog.adamnash.com/2009/07/22/guide-to-product-planning-three-feature-buckets/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819729.813,
+      "timezone": "+00:00"
+    },
+    "description": "Point in polygon - Wikipedia, the free encyclopedia 顺着今天微博上讨论的问题看到了这里 长见识啊 百科威武！ [网页链接](http://en.wikipedia.org/wiki/Point_in_polygon)",
+    "id": "3f9365dc-f819-440b-ae63-69b602064979",
+    "keywords": "知识、周边、几何",
+    "status": 1,
+    "title": "Point in polygon - Wikipedia",
+    "url": "http://en.wikipedia.org/wiki/Point_in_polygon"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032037.662,
+      "timezone": "+00:00"
+    },
+    "description": "Uber 出的图片比对的 npm 库 image-diff，文档里写依赖一个叫 ImageMagick [网页链接](http://www.imagemagick.org/script/index.php) 的东东 (所以就是用 Node 包装了一层吗?...)",
+    "id": "4fe22a9b-591f-434e-b347-be40dc85217f",
+    "keywords": "工具、图片、diff、JS",
+    "title": "image-diff - Create image differential between two images",
+    "url": "https://github.com/uber-archive/image-diff"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491467975.812,
+      "timezone": "+00:00"
+    },
+    "description": "分享一则文章：Responsive 排版的几则心得 - 挺实在的……但是真正懂我们的设计师都在哪里？[生病][生病][生病]",
+    "id": "451600db-e139-4dde-886d-b807eff00e4a",
+    "keywords": "响应式、CSS、入门",
+    "title": "Everything I know about Responsive Web Typography",
+    "url": "https://zellwk.com/blog/responsive-typography"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491031779.421,
+      "timezone": "+00:00"
+    },
+    "description": "ESDoc 来了，会成为 JSDoc 的接班人吗？连测试覆盖率都能做，还有默认的托管平台，支持通过一个配置文件生成整个项目的文档站点，感觉来势汹汹。另外可以体验一下 ESDoc 自己的文档在 ESDoc 上的样子 [链接](https://doc.esdoc.org/github.com/esdoc/esdoc/)",
+    "id": "39c91033-7f90-40d9-8e97-5477157e0b7d",
+    "keywords": "JS、文档、工具、服务",
+    "title": "ESDoc - a good documentation generator for JavaScript.",
+    "url": "https://esdoc.org"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726792.942,
+      "timezone": "+00:00"
+    },
+    "description": "Hover.css [网页链接](http://t.cn/8FPsko2) 各种hover效果大全 大家感受一下",
+    "id": "57e84432-3881-4180-bea5-be01f1eb1c22",
+    "keywords": "CSS、素材、库",
+    "status": 1,
+    "title": "Hover.css - A collection of CSS3 powered hover effects",
+    "url": "http://ianlunn.github.io/Hover/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491031957.241,
+      "timezone": "+00:00"
+    },
+    "description": "正在看一个关于 NPM 中的风险和隐患的墙外视频，真是现身说法啊 (貌似他们有个网站专门防这个的 [网页链接](https://snyk.io) 可以一键生成修复风险的 pr) 另外又学会一个新单词 vulnerable",
+    "id": "58f34bdb-4ffe-4c7d-95d4-60c2c5e2810f",
+    "keywords": "NPM、安全、视频",
+    "title": "Writing Secure Node.js Code - Josh Emerson - Node.js Live London - YouTube",
+    "url": "https://www.youtube.com/watch?v=wCfE-9bhY2Y"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816881.891,
+      "timezone": "+00:00"
+    },
+    "description": "《Give It 5 Minutes》[网页链接](http://t.cn/8F8mHfU) \"It’s like I had to be first with an opinion – as if being first meant something. But what it really meant was that I wasn’t thinking hard enough about the problem. The faster you react, the less you think. Not always, but often.\" 凡事多想想，三思而后行",
+    "id": "a45682ba-834b-4468-90d5-7f06674ae0e6",
+    "keywords": "观点、文化",
+    "status": 1,
+    "title": "Give it five minutes – Signal v. Noise",
+    "url": "http://signalvnoise.com/posts/3124-give-it-five-minutes"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726293.362,
+      "timezone": "+00:00"
+    },
+    "description": "《Designing with Animation》[网页链接](http://t.cn/RwuHhl2) 把动画/动效融入设计当中 (需翻墙) 超赞！",
+    "id": "2cd310ee-3cb1-48bc-8891-58cd70e8a13f",
+    "keywords": "视频、设计、观点、动效",
+    "status": 1,
+    "title": "Pasquale D'Silva - Designing with animation - YouTube",
+    "url": "https://www.youtube.com/watch?v=TMe0WnkF1Lc&list=UURx1y52pfeMwbuer9Vh2u-A"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725162.078,
+      "timezone": "+00:00"
+    },
+    "description": "让clip-path给你更多灵感！ [网页链接](http://t.cn/RAl0OYl) 貌似浏览器支持情况还不错啊，但不见太多人用",
+    "id": "3fb18068-6e0f-4ea5-a9c2-afb9df1c4918",
+    "keywords": "CSS、知识、小技巧、裁剪",
+    "status": 1,
+    "title": "Making Sense of Clip Path – Drew Minns – Medium",
+    "url": "https://medium.com/@drewisthe/using-making-sense-of-clip-path-cf651676438c"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724428.809,
+      "timezone": "+00:00"
+    },
+    "description": "Google Web Components [网页链接](http://t.cn/RAgdQs2) 罗列了Google的各种 web 组件，附带 demo, docs, github",
+    "id": "53254a43-3658-4832-bdb4-3f31214d20fd",
+    "keywords": "素材、WebComponents、组建库",
+    "status": 1,
+    "title": "Google Web Components",
+    "url": "https://googlewebcomponents.github.io/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491466193.701,
+      "timezone": "+00:00"
+    },
+    "description": "信息量有点大的 JavaScript 开发大调查 - 这是我见过的最全方位的调查了，大家可以看看自己在各方面是多数派还是少数派，有没有优越感，有没有掉队，另外凡调查必有亮点……",
+    "id": "4d3b09ae-9198-4036-8347-aaec36ecc940",
+    "keywords": "JS、调查、统计",
+    "title": "JavaScript Developer Survey Results",
+    "url": "https://ponyfoo.com/articles/javascript-developer-survey-results"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491473185.522,
+      "timezone": "+00:00"
+    },
+    "description": "> “你能决定我站在哪，但你不能告诉要我想什么”\n\n> 尽管组织可能会表示他们愿意欢迎新想法，但大多数组织文化都明示或暗示员工对所担心的事情保持沉默\n\n> * 过去思维依赖于大量的数据，并关心准确性及真实性\n> * 现在思维通过控制事件和结果，以创造稳定性和安全性\n> * 未来思维发觉可能性，并且通过直觉判断哪里最有可能发现机会\n\n> 其中有 94% 的人认为“容易厌烦”是叛逆者的特征之一。同样，认为叛逆者有耐心的人不到三分之一\n\n> 通过在分析中使用至少五个为什么来提问，你能挖掘出阻碍你实施想法的真正原因所在，顺便说一句，这种方法最初是由丰田佐吉提出的，并应用在了丰田汽车公司改进汽车制造工艺的过程中。\n\n> “如果坚持信念的人不足十分之一，那么在想法的传播上就不会有明显的进展。这一小群人可能要花上上百亿年的时间才能获得大众的认可……一旦这些人的数量超过团队人数的十分之一，那这个想法就会像火焰一样蔓延。”\n\n> 哪些恐惧会让你停下前进的步伐：失去工作、减少晋升机会、惹怒老板、损害我的声誉、疏远同事、发生冲突以及被迫和他人争论、被别人认为很傻、要向高层汇报我的想法、需要对整项工作负责、被别人抢走功劳",
+    "id": "4238aab5-8524-4433-82f1-4bac49b9dcda",
+    "keywords": "书、叛逆、创新、文化",
+    "title": "《优秀的叛逆者》",
+    "url": "https://www.amazon.cn/dp/B013QBZSCY/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033552.146,
+      "timezone": "+00:00"
+    },
+    "description": "总体感觉 flow 类型检查更严格准确，更小巧，TypeScript 对上层开发者工具的集成度更高，似乎未来的可能性也更多一些？",
+    "id": "5bc6007e-c5ad-4811-8136-1192d8afede4",
+    "keywords": "JS、工具、类型",
+    "title": "FLOW VS TYPESCRIPT",
+    "url": "https://djcordhose.github.io/flow-vs-typescript/2016_hhjs.html"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491373697.219,
+      "timezone": "+00:00"
+    },
+    "description": "在线设计生成 Logo 的网站，只要输入名称、口号和几个关键特征之类的东西即可",
+    "id": "5b2a355d-873f-4360-89b1-9799df2990f3",
+    "keywords": "服务、工具、Logo、设计",
+    "title": "Logojoy | Make a Logo Design Online",
+    "url": "https://www.logojoy.com/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491818372.118,
+      "timezone": "+00:00"
+    },
+    "description": "巴士因子(Bus Factor) [网页链接](http://t.cn/zHF27pA) 指对某些信息集中于某一个人，或少数几个人的一个不那么严格的度量指标。一件事的“巴士因子”=N，则意味着如果有N个人被巴士撞到，无法工作，就会导致项目混乱以致于无法继续。",
+    "id": "a7da5c39-4b31-4afc-b177-69f08558811c",
+    "keywords": "文化",
+    "status": 1,
+    "title": "Bus factor - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bus_factor"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491466811.01,
+      "timezone": "+00:00"
+    },
+    "description": "文章简单介绍了一个 Android 项目中常见的 build.gradle、*.properties 等文件都是干嘛的，也解释了 gradle 配置文件的格式和含义",
+    "id": "332956ef-4754-44a8-8518-82aa92630e38",
+    "keywords": "Android、gradle、入门、知识",
+    "title": "The Ins and Outs of Gradle",
+    "url": "https://code.tutsplus.com/tutorials/the-ins-and-outs-of-gradle--cms-22978"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490688849.598,
+      "timezone": "+00:00"
+    },
+    "description": "Babel 维护者 Henry Zhu 的分享",
+    "id": "401f261b-93b4-4476-873d-8cabfad357c0",
+    "keywords": "Babel、JS、知识",
+    "title": "How Writing a Babel Plugin is Like……",
+    "url": "http://henryzoo.com/babel-plugin-slides/assets/player/KeynoteDHTMLPlayer.html"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689388.133,
+      "timezone": "+00:00"
+    },
+    "description": "A lightweight JavaScript library for creating particles。\n粒子系统和粒子操作",
+    "id": "590a023b-8a60-44a7-b533-3939bd3fa311",
+    "keywords": "JS、库、粒子",
+    "title": "Particles.js",
+    "url": "http://vincentgarreau.com/particles.js/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490695333.976,
+      "timezone": "+00:00"
+    },
+    "description": "我这么没正事儿天天刷微博是不是应该吃点儿药。。。 ",
+    "id": "58641d0a-b270-47ce-b622-51c254c7b44c",
+    "keywords": "书、心理学",
+    "title": "《分心不是我的错》",
+    "url": "https://www.amazon.cn/dp/B007K5HVNM"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ekg0s9mx69j20fh0e7dhq.jpg)  \n![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ekg0p1e9i3j20ce0h2jtp.jpg)  \n对 `<time>` 元素的实用性扩展",
+    "id": "427c4752-f478-4249-8069-564efaabb000",
+    "keywords": "组件、时间",
+    "title": "Time Elements",
+    "url": "https://github.com/github/time-elements"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490694864.604,
+      "timezone": "+00:00"
+    },
+    "description": "英文大标题叫 #Debugging Teams# 读完有很多共鸣，也想到当年 D2 上克军 @kejunz “从侠客到军队”的理念，文中总结的 HRT (谦虚/尊重/信任) 说成是程序员核心价值观一点也不为过！也希望我可以做到把自己的团队 debug 好",
+    "id": "60cab3f9-fe6e-4617-a571-4b0a21e13993",
+    "keywords": "书、团队、管理",
+    "title": "《进化-从孤胆极客到高效团队》",
+    "url": "https://www.amazon.cn/dp/B01M1L9AYY"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "《这就是你招不到牛人的原因》[网页链接](http://firstround.com/review/Heres-Why-Youre-Not-Hiring-the-Best-and-the-Brightest/) 来自 stackoverflow 的创始人 Jeff 看完觉得很有道理也深受启发",
+    "id": "5ca8bcec-1f0d-4a59-b14a-93d3ddb50e2b",
+    "keywords": "观点、文化、管理",
+    "title": "Here’s Why You’re Not Hiring the Best and the Brightest",
+    "url": "http://firstround.com/review/Heres-Why-Youre-Not-Hiring-the-Best-and-the-Brightest/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491034956.706,
+      "timezone": "+00:00"
+    },
+    "description": "【Pixel Density, Demystified】科普文章，解释了app开发里用到的不同大小的图片（1x、2x、3x）是怎么回事，以及pixel-density-independent的单位：iOS上的Points与Android上的DIPs",
+    "id": "ad38394a-cd51-41b7-bdbe-921a3807a1c6",
+    "keywords": "CSS、响应式、移动、入门",
+    "title": "Pixel Density, Demystified - How pixel density works and how it affects your designs.",
+    "url": "https://medium.com/@pnowelldesign/pixel-density-demystified-a4db63ba2922"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035568.19,
+      "timezone": "+00:00"
+    },
+    "description": "用这个教程试玩了一下 Electron",
+    "id": "33de2094-3963-4794-8ea4-ef629d47d333",
+    "keywords": "Electron、入门、教程",
+    "title": "Create Cross-Platform Desktop Node Apps with Electron",
+    "url": "https://www.sitepoint.com/desktop-node-apps-with-electron/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725659.009,
+      "timezone": "+00:00"
+    },
+    "description": "Textures.js [网页链接](http://t.cn/RAv8MUV) 基于SVG的各种纹理！",
+    "id": "42ffd2cf-1fb8-43e7-9f58-164d7dd79bfe",
+    "keywords": "纹理、JS、库、SVG、素材库",
+    "status": 1,
+    "title": "Textures.js",
+    "url": "http://riccardoscalco.github.io/textures/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490690694.796,
+      "timezone": "+00:00"
+    },
+    "description": "设计师不是爱找麻烦，我们只是想让世界变得更好一点",
+    "id": "5f6c8912-1e3d-47f7-bde0-8df750fa36d7",
+    "keywords": "观点、设计",
+    "title": "We’re Not Unhappy, We’re Designers",
+    "url": "http://articles.morganallanknutson.com/were-designers"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387716.16,
+      "timezone": "+00:00"
+    },
+    "description": "电子邮件中的CSS似乎在国外一直是个有一定关注度的话题，又发现一个新的 email framework",
+    "id": "5d367458-2bc2-422a-9ddd-ac89251c8b17",
+    "keywords": "CSS、邮件、响应式、库、框架",
+    "title": "Responsive HTML Email Framework",
+    "url": "http://emailframe.work"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819247.225,
+      "timezone": "+00:00"
+    },
+    "description": "Fatal: LF would be replaced by CRLF – git version control system | Sutana Ryan's Blog and Portfolio Site 救命恩人一定要转 [网页链接](http://www.sutanaryan.com/fatal-lf-would-be-replaced-by-crlf-git-version-control-system/)",
+    "id": "50d7ea8e-3680-4b1d-b5c7-637f8a15c5ff",
+    "keywords": "Git、小技巧",
+    "status": 1,
+    "title": "Fatal: LF would be replaced by CRLF – git version control system | | Sutana Ryan's Blog and Portfolio Site",
+    "url": "http://www.sutanaryan.com/fatal-lf-would-be-replaced-by-crlf-git-version-control-system/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491471441.351,
+      "timezone": "+00:00"
+    },
+    "description": "ES6 小问答，这里有网友的答案：[https://gist.github.com/DmitrySoshnikov/3928607cb8fdba42e712](https://gist.github.com/DmitrySoshnikov/3928607cb8fdba42e712)",
+    "id": "60d14e34-5fa8-4a18-bb9f-da380049d9dd",
+    "keywords": "习题、JS、语法",
+    "title": "Javascript quiz. ES6 edition.",
+    "url": "http://perfectionkills.com/javascript-quiz-es6/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724725.936,
+      "timezone": "+00:00"
+    },
+    "description": "《Designer 和 Developer 不再分居了》[网页链接](http://t.cn/RAeyFUE) 对这篇文章有深深的认同感！！",
+    "id": "71404b83-3056-4d24-bea2-289ff0418dcb",
+    "keywords": "设计、观点、文化",
+    "status": 1,
+    "title": "Designers And Developers: No Longer A House Divided – Smashing Magazine",
+    "url": "http://www.smashingmagazine.com/2015/05/08/designers-and-developers-no-longer-a-house-divided/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725042.767,
+      "timezone": "+00:00"
+    },
+    "description": "大哥别睡！[网页链接](http://t.cn/RAQB7wB) 一个防止手机自动锁屏的JS库——当然只是在浏览器里工作的。这不是一个新的W3C规范，你们看看源代码就知道了",
+    "id": "af816f82-5b98-4e45-9418-239bcb986254",
+    "keywords": "小技巧、JS、库、防锁屏",
+    "status": 1,
+    "title": "NoSleep.js/NoSleep.js at master · richtr/NoSleep.js · GitHub",
+    "url": "https://github.com/richtr/NoSleep.js/blob/master/NoSleep.js"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "现实增强的 JS 框架，能够做出类似 PokemanGo 或抓猫的效果",
+    "id": "3c8279ec-d31c-4be5-b246-5e6ac3fde08c",
+    "keywords": "JS、AR、库、框架",
+    "title": "AR.js",
+    "url": "https://github.com/jeromeetienne/AR.js"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032318.111,
+      "timezone": "+00:00"
+    },
+    "description": "发现一个 mobile input types 科普页面，不过里面的图还是 iPhone4 的…… ",
+    "id": "46305d28-c0ad-40aa-b136-7d87902cb1aa",
+    "keywords": "表单、移动、知识",
+    "title": "mobile input types",
+    "url": "http://mobileinputtypes.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724647.273,
+      "timezone": "+00:00"
+    },
+    "description": "Vorlon.js [网页链接](http://t.cn/RAmR5S0) 基于Node.js和Socket.io的javascript远程调试工具，并且可扩展",
+    "id": "70ae4509-a868-4bde-b881-913bf51fdb3e",
+    "keywords": "工具、Node.js、远程调试",
+    "status": 1,
+    "title": "Vorlon.JS",
+    "url": "http://vorlonjs.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816312.04,
+      "timezone": "+00:00"
+    },
+    "description": "介绍 HTML 特性 tabindex 的一篇文章：[网页链接](http://t.cn/RhVN3YM) 这些用法你都了解吗？",
+    "id": "6066b86d-a9ae-4518-91f8-942956144faa",
+    "keywords": "小技巧、HTML",
+    "status": 1,
+    "title": "Using the tabindex attribute | The Paciello Group – Your Accessibility Partner (WCAG 2.0/508 audits, VPAT, usability and accessible user experience)",
+    "url": "http://www.paciellogroup.com/blog/2014/08/using-the-tabindex-attribute/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490692201.451,
+      "timezone": "+00:00"
+    },
+    "description": "11 个简单实用的 NPM 小技巧，有点意思，学到了 ",
+    "id": "5ae42cf0-855d-4412-a892-6b5c91f27ae6",
+    "keywords": "知识、NPM、JS、小技巧",
+    "title": "11 Simple npm Tricks That Will Knock Your Wombat Socks Off",
+    "url": "https://nodesource.com/blog/eleven-npm-tricks-that-will-knock-your-wombat-socks-off/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490692389.736,
+      "timezone": "+00:00"
+    },
+    "description": "一则配色技巧的墙外文章，学会了一个新名词：Duotone ​​",
+    "id": "63b18620-6358-4ab3-be8b-a5186d54467a",
+    "keywords": "设计、知识、配色",
+    "title": "Vibrant Colors For Apps and Sites",
+    "url": "https://uxplanet.org/vibrant-colors-for-apps-and-sites-ee488953de55#.uctl12q5n"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819846.029,
+      "timezone": "+00:00"
+    },
+    "description": "Puzzle Script - an open-source HTML5 puzzle game engine [网页链接](http://www.puzzlescript.net/)",
+    "id": "7887deb8-18d1-40f1-9821-c164e9350796",
+    "keywords": "JS、趣味、库、游戏",
+    "status": 1,
+    "title": "PuzzleScript - an open-source HTML5 puzzle game engine",
+    "url": "http://www.puzzlescript.net/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725537.022,
+      "timezone": "+00:00"
+    },
+    "description": "我勒个去！[网页链接](http://t.cn/RAtXfLq) 真的好狡猾 《非阻塞式CSS加载》",
+    "id": "b166cffc-3c9f-4540-a212-9a797c26d291",
+    "keywords": "CSS、小技巧、Font",
+    "status": 1,
+    "title": "Loading CSS without blocking render by Keith Clark",
+    "url": "http://keithclark.co.uk/articles/loading-css-without-blocking-render/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724297.278,
+      "timezone": "+00:00"
+    },
+    "description": "你知道 document 和 supports 这两个 at-rules 吗？更多整理来看：[网页链接](http://t.cn/RAs0f8W)",
+    "id": "42100ac9-124d-4c7e-a189-5017b9ea828e",
+    "keywords": "CSS、知识、入门",
+    "status": 1,
+    "title": "The At-Rules of CSS | CSS-Tricks",
+    "url": "https://css-tricks.com/the-at-rules-of-css/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691798.829,
+      "timezone": "+00:00"
+    },
+    "description": "Vue 2.0 版的 Material Design 风格组件库",
+    "id": "4fa5ae7c-f4e2-4bb9-82b2-7d44c5ba898b",
+    "keywords": "库、组件库、Vue、Material",
+    "title": "Vue Material",
+    "url": "https://vuematerial.github.io"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691344.5,
+      "timezone": "+00:00"
+    },
+    "description": "用一整天时间看完了，接受自己的假设是不准确的，然后找到合适的客户，鼓励客户充分表达，细心品味其中的内涵，验证假设，通过构建有价值的最小化产品进一步确认。每一步都有套路和学问。创业团队适用，大公司现有产品也有不同的操作方式方法。很多细节，一言难尽，看过就知道了",
+    "id": "717f5c1c-ae49-40ec-a127-f0694054a377",
+    "keywords": "书、精益",
+    "title": "《精益客户开发》",
+    "url": "https://www.amazon.cn/dp/B0175XO924"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725886.704,
+      "timezone": "+00:00"
+    },
+    "description": "Loaders.css [网页链接](http://t.cn/RAAejFW) 各种纯CSS的加载动画 特 技",
+    "id": "779055aa-a2c5-4900-b5c9-7f0279da6b01",
+    "keywords": "CSS、库、素材、Loader",
+    "status": 1,
+    "title": "Loaders.css - Delightful and performance-focused pure css loading animations.",
+    "url": "http://connoratherton.com/loaders"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035487.614,
+      "timezone": "+00:00"
+    },
+    "description": "一篇关于 asm.js 非常全面的 slides 介绍 - 今天认真学习了一下，很赞[good]",
+    "id": "60cb581a-e1ed-48a1-b997-3821b5dfcf4c",
+    "keywords": "WASM、JS、入门、知识",
+    "title": "BIG WEB APP? COMPILE IT! - ALON ZAKAI / MOZILLA",
+    "url": "http://kripken.github.io/mloc_emscripten_talk/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491468181.487,
+      "timezone": "+00:00"
+    },
+    "description": "微软开源的 JS 引擎 Chakra 来了",
+    "id": "6cc3d376-e8a3-463e-a292-5ea60114eab3",
+    "keywords": "JS、引擎、微软、Chakra",
+    "title": "ChakraCore is the core part of the Chakra Javascript engine that powers Microsoft Edge",
+    "url": "https://github.com/Microsoft/ChakraCore"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816997.305,
+      "timezone": "+00:00"
+    },
+    "description": "用 CSS+SVG 切图 [网页链接](http://t.cn/RvDlWYT) 感受一下",
+    "id": "793fd94d-de10-4b6a-9420-58a21e9bd3b3",
+    "keywords": "CSS、SVG、裁剪、小技巧",
+    "status": 1,
+    "title": "Clipping in CSS and SVG — The <code>clip-path</code> Property and <code><clipPath></code> Element",
+    "url": "http://sarasoueidan.com/blog/css-svg-clipping/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491386284.614,
+      "timezone": "+00:00"
+    },
+    "description": "《基于 viewport 的排版》也就是传说中的 rem 替代方案：vw/vh + calc()",
+    "id": "b362f6c6-3b09-425c-abe4-3372c8158340",
+    "keywords": "CSS、响应式、viewport",
+    "title": "Viewport Unit Based Typography",
+    "url": "https://zellwk.com/blog/viewport-based-typography/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817131.457,
+      "timezone": "+00:00"
+    },
+    "description": "我觉得 code review 实践中有很多值得注意的地方，刚才那篇只是管中窥豹，我再转发一篇 (这篇绝对的干货)：来自 SmartBear Software 的《11 个高效的同行代码评审最佳实践》中文版：[网页链接](http://t.cn/hg63aV) 原版pdf：[网页链接](http://t.cn/zHkT1Ri)",
+    "id": "42ef0c49-3111-4681-8ebf-3420641c4162",
+    "keywords": "文化、代码审查",
+    "status": 1,
+    "title": "11 个高效的同行代码评审最佳实践",
+    "url": "http://www.ibm.com/developerworks/cn/rational/11-proven-practices-for-peer-review/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490694973.579,
+      "timezone": "+00:00"
+    },
+    "description": "移动应用设计的新趋势：降低复杂度 另总结的五点细节：减少颜色数量、加大黑粗标题、简单轻盈好认的图标、更多的留白、更醒目的应用 icon ​​​​",
+    "id": "528bb826-cdc6-48ec-9154-d6bb379a9f37",
+    "keywords": "设计、趋势、观点",
+    "title": "Complexion Reduction: A New Trend In Mobile Design",
+    "url": "https://medium.com/swarm-nyc/complexion-reduction-a-new-trend-in-mobile-design-cef033a0b978#.xjjitobct"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819938.827,
+      "timezone": "+00:00"
+    },
+    "description": "VideoSWS：各路HTML5播放器“大乱斗” [网页链接](http://praegnanz.de/html5video/) 总有一款恶心你",
+    "id": "746b2557-ff27-42ad-bdf9-4b907fdc9a90",
+    "keywords": "素材、视频、工具",
+    "status": 1,
+    "title": "HTML5 Video Player Comparison",
+    "url": "http://praegnanz.de/html5video/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490701804.557,
+      "timezone": "+00:00"
+    },
+    "description": "你也许不需要 JavaScript，里面有些效果咋一看感觉还是蛮神奇的，尤其是那个置顶的滚动进度条",
+    "id": "80d78fdb-3022-4e5c-ab70-e6afb1d1ff8b",
+    "keywords": "素材、CSS、趣味",
+    "title": "YOU MIGHT NOT NEED JAVASCRIPT",
+    "url": "http://youmightnotneedjs.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491102068.987,
+      "timezone": "+00:00"
+    },
+    "description": "纯 CSS 的响应式 table 布局",
+    "id": "62571a3f-eecb-49dc-987f-6554ba53140a",
+    "keywords": "CSS、table、响应式、布局",
+    "title": "CSS only Responsive Tables",
+    "url": "https://dbushell.com/2016/03/04/css-only-responsive-tables/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033377.882,
+      "timezone": "+00:00"
+    },
+    "description": "【如何与这4种难以对付的客户打交道】很形象地归纳总结了4种麻烦客户：Mr. I want it now、Mr. Complainer、Mr. Lazy、Mr. I know better。",
+    "id": "6efa1d61-24ab-4951-9f41-ba0096bc050d",
+    "keywords": "观点、开源、文化",
+    "title": "4 Types of Difficult Customers on Chat and How to Deal with Them",
+    "url": "https://www.livechatinc.com/blog/types-of-difficult-customers/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1492151812.437,
+      "timezone": "+00:00"
+    },
+    "description": "介绍了一套“8 点网格布局法”，所有的尺寸单位都是 8 像素的倍数",
+    "id": "794d7f7e-2e16-4952-b1e3-339071887edf",
+    "keywords": "设计、布局、观点",
+    "title": "Intro to the 8-Point Grid System",
+    "url": "https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819228.391,
+      "timezone": "+00:00"
+    },
+    "description": "科技公司的业界良心 (Admirable Qualities of a Tech Company) [网页链接](https://thomashunter.name/blog/admirable-qualities-of-a-tech-company/) 你赞同呢？中文翻译[网页链接](http://www.aqee.net/admirable-qualities-of-a-tech-company/)",
+    "id": "b6e4d60c-3d5e-4fbe-a76a-0efc716b7bdc",
+    "keywords": "文化、观点",
+    "status": 1,
+    "title": "Admirable Qualities of a Tech Company | Thomas Hunter II",
+    "url": "https://thomashunter.name/blog/admirable-qualities-of-a-tech-company/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491903497.668,
+      "timezone": "+00:00"
+    },
+    "description": "SVG 动画库，动画展示一个完整的 SVG 图形，分同步、错落、一步接一步三种模式，效果很赞",
+    "id": "48347a69-4155-4416-91b7-2560f1f8b269",
+    "keywords": "SVG、动效、库、JS",
+    "title": "vivus.js - svg animation, bringing your SVGs to life",
+    "url": "https://maxwellito.github.io/vivus/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1ei6gewfu6hj20nk0y8wim.jpg)  \n在Sass和JavaScript之间共享JSON变量",
+    "id": "5668bd26-48c7-4f9f-be28-d94dda74657f",
+    "keywords": "工具、Sass、变量",
+    "title": "Sass JSON Vars",
+    "url": "https://github.com/vigetlabs/sass-json-vars"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1ei6ge9yc8wj20t00euac9.jpg)  \n![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ei6geqwk4hj20n40l5jy0.jpg)  \n![](http://ww3.sinaimg.cn/mw1024/660d0cdfgw1ei6gesrgvhg20lc0cqdmm.gif)  \n调试增强工具，有Chrome扩展",
+    "id": "781970c6-31c0-4d97-88da-c42961041cac",
+    "keywords": "工具、调试、DevTools",
+    "title": "deb.js",
+    "url": "https://github.com/krasimir/deb.js"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490692308.581,
+      "timezone": "+00:00"
+    },
+    "description": "纯 CSS 的播放预览效果，很酷！而且可以用在富文本邮件里。\n相关教程：https://cm.engineering/better-video-previews-for-email-12432ce71846",
+    "id": "815c795f-e276-4a96-8806-9deb1455b86a",
+    "keywords": "邮件、CSS、视频、库",
+    "title": "Video preview for email",
+    "url": "http://codepen.io/stigm/full/NbgwPQ"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817408.985,
+      "timezone": "+00:00"
+    },
+    "description": "一篇介绍 HTML5 Gamepad API 的文章[网页链接](http://t.cn/RvW3X1A)",
+    "id": "63ea2543-3873-4349-82b7-4d3f4dd434d7",
+    "keywords": "JS、知识、游戏",
+    "status": 1,
+    "title": "Using the HTML5 Gamepad API to Add Controller Support to Browser Games",
+    "url": "http://gamedevelopment.tutsplus.com/tutorials/using-the-html5-gamepad-api-to-add-controller-support-to-browser-games--cms-21345"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "感受一下 SVG 模拟的 checkbox 和 radio [网页链接](http://codepen.io/SaraSoueidan/pen/40433575e3d0d026c7d9c00eb45522a1) [网页链接](http://tympanus.net/Development/AnimatedCheckboxes/)",
+    "id": "71775c83-d2de-4f08-8580-2b69e2c08ee1",
+    "keywords": "CSS、SVG、表单、素材",
+    "title": "Animated Checkboxes and Radio Buttons with SVG",
+    "url": "https://tympanus.net/Development/AnimatedCheckboxes/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691591.044,
+      "timezone": "+00:00"
+    },
+    "description": "每次使用 Web Font 总有那么几秒钟。。。Font Face Observer 也许可以帮你",
+    "id": "830b042e-0513-4b84-b77e-528c191d1864",
+    "keywords": "CSS、库、Font",
+    "title": "Font Face Observer",
+    "url": "https://www.fontfaceobserver.com"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490692356.846,
+      "timezone": "+00:00"
+    },
+    "description": "Algolia Places 这个库好神奇！各种地址都可以自动提示，先收藏了！！ ​​​​",
+    "id": "b7c9c594-e460-4abf-93aa-eb1c7423df48",
+    "keywords": "库、JS、地理位置",
+    "title": "Algolia Places - Turn any <input> into an address autocomplete",
+    "url": "https://community.algolia.com/places/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490695986.156,
+      "timezone": "+00:00"
+    },
+    "description": "CSS 版的 Angry Birds wee～～～～～x [二哈][二哈][二哈] ​​​​",
+    "id": "487e91a9-34b6-4f01-afb4-3d01204422a1",
+    "keywords": "CSS、Angry Birds、codeine、素材",
+    "title": "Angry Birds in Pure CSS",
+    "url": "http://codepen.io/rachel_web/pen/JKzrav"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689206.393,
+      "timezone": "+00:00"
+    },
+    "description": "GitHub 的 Markdown 规范文档",
+    "id": "574d6efc-e315-4196-bbbc-709d77679abf",
+    "keywords": "Markdown、规范、知识、手册",
+    "title": "GitHub Flavored Markdown Spec",
+    "url": "https://github.github.com/gfm/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491472460.771,
+      "timezone": "+00:00"
+    },
+    "description": "> 我们发现，这种‘组织畏惧(organisational fear)’根深蒂固于这种文化之中：喜怒无常的领导人和如惊弓之鸟的中层——他们不敢说出真相。\n\n> 尽管适度的恐惧对于激励是有益的，但是如果不加区别地应用“威慑力”会像过度服用某种药一样，会适得其反",
+    "id": "7b9fba5d-f3f2-441c-8f0c-1a656d55081b",
+    "keywords": "观点、诺基亚、文化",
+    "title": "谁“杀死”了诺基亚？两年后欧洲第一商学院教授找出了真相",
+    "url": "http://mp.weixin.qq.com/s?__biz=MjM5Njc3Mjk0Mg==&mid=211298529&idx=1&sn=7e282bd364d8d07ea4967c2b27cffab1&scene=1&srcid=0930XoPpHSbCTk1F9QD0PRE1&from=singlemessage&isappinstalled=0#rd"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817830.479,
+      "timezone": "+00:00"
+    },
+    "description": "《16款前端在线编辑器》 [网页链接](http://t.cn/8sqChKx) via codecondo",
+    "id": "8311090a-4e1c-42f8-abc1-6a88f92453eb",
+    "keywords": "工具、素材、编辑器",
+    "status": 1,
+    "title": "16 Online JavaScript Editors for Web Developers |",
+    "url": "http://codecondo.com/16-online-javascript-editors-for-web-developers/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1ebw2peb78bj20f90o2die.jpg)  \n![](http://ww3.sinaimg.cn/mw1024/660d0cdfgw1ebw2pfiq6ng20cv06aq3u.gif)  \n友好展示/转换比特币价格的",
+    "id": "659a57d9-87cc-478b-a760-6f67d44de02f",
+    "keywords": "比特币、JS、库",
+    "title": "bitcoinprices.js",
+    "url": "https://github.com/miohtama/bitcoin-prices"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491818391.386,
+      "timezone": "+00:00"
+    },
+    "description": "推荐一个网站：The Code Player [网页链接](http://t.cn/zOM0ZTs) 可以展示你写的 HTML5 demo，并且把你编码的过程录下来，其他人在播放编码过程的同时，可以跟随作者的思路了解罗马城是怎样一天一天建起来的",
+    "id": "78958c6a-a4e0-489b-819e-096521ac46b7",
+    "keywords": "工具、平台、素材、设计",
+    "status": 1,
+    "title": "Learn HTML5, CSS3, Javascript - video style tutorials",
+    "url": "http://thecodeplayer.com/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490695849.012,
+      "timezone": "+00:00"
+    },
+    "description": "JS 假文 这些假文看着好眼熟，应该都是从一些真实的前端文章里提取出来的吧……",
+    "id": "857a68fc-a006-449f-9b0b-00fab0fd0d18",
+    "keywords": "JS、库、假文",
+    "title": "JS Ipsum - Generate your own JS gibberish",
+    "url": "http://jsipsum.lunarlogic.io"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816972.855,
+      "timezone": "+00:00"
+    },
+    "description": "琳琅满目的自定义滚动条 [网页链接](http://t.cn/8sK7AdE) via cssdeck.com",
+    "id": "c96b0d47-0d81-43e6-82b3-10e91ee71518",
+    "keywords": "CSS、素材、滚动条",
+    "status": 1,
+    "title": "CSS3 - Webkit - Vertical Scrollbars | CSSDeck",
+    "url": "http://cssdeck.com/labs/css3-webkit-vertical-scrollbars/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725922.547,
+      "timezone": "+00:00"
+    },
+    "description": "前段时间震动API [网页链接](http://t.cn/zO22ioN) 的正式发布轰动一时。今天介绍更多它的好基友：靠近API [网页链接](http://t.cn/RAZLprx) 亮度API [网页链接](http://t.cn/RAZLpri) 电量API [网页链接](http://t.cn/zOzxXFi) 体感API [网页链接](http://t.cn/RvaFEdS) 锁屏API [网页链接](http://t.cn/RAZLprJ) 相机API [网页链接](http://t.cn/RAZLpr6)",
+    "id": "4dc1feab-2452-4a74-86da-3012a5cb615d",
+    "keywords": "知识、规范、W3C、API",
+    "status": 1,
+    "title": "Vibration API (Second Edition)",
+    "url": "http://www.w3.org/TR/vibration/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490695771.53,
+      "timezone": "+00:00"
+    },
+    "description": "各种 icon 荟萃，没有设计能力的前端同学可以现抓现用",
+    "id": "5cc1dc8d-513f-4c7f-8ed5-d65ffa3c2991",
+    "keywords": "素材、CSS、Icon",
+    "title": "Noun Project - Icons for Everything",
+    "url": "https://thenounproject.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491727317.297,
+      "timezone": "+00:00"
+    },
+    "description": "CSS3 的滤镜效果：Filter Effects [网页链接](http://t.cn/R2h8DFw)",
+    "id": "7d354625-9d81-48cd-bbab-ef33de3f377e",
+    "keywords": "知识、CSS、Filter、素材",
+    "status": 1,
+    "title": "CSS Filter Effects",
+    "url": "http://www.cssreflex.com/css-generators/filter"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724281.503,
+      "timezone": "+00:00"
+    },
+    "description": "[网页链接](http://t.cn/R2zDUjP) fakeIndexedDB 内存版的IndexedDB，纯JS实现",
+    "id": "87264d01-236e-4926-babc-62e6366be488",
+    "keywords": "工具、数据库、JS",
+    "status": 1,
+    "title": "GitHub - dumbmatter/fakeIndexedDB: A pure JS in-memory implementation of the IndexedDB API",
+    "url": "https://github.com/dumbmatter/fakeIndexedDB"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491386342.498,
+      "timezone": "+00:00"
+    },
+    "description": "《Styling Broken Images 美化加载失败的图片》美化的工作主要是通过伪元素实现的，正常显示的图片是 replaced element 不支持伪元素，但“when the image is broken and not loaded, these pseudo-elements can appear” 巧妙的实现！重要的结论！酷",
+    "id": "786922d0-5a79-42c2-9fbf-f4568fae011d",
+    "keywords": "小技巧、CSS、图片",
+    "title": "Styling Broken Images",
+    "url": "https://bitsofco.de/styling-broken-images/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035081.798,
+      "timezone": "+00:00"
+    },
+    "description": "在代码里通过 emoji 描述问题，有点意思",
+    "id": "8284e695-f6c1-4f62-a8f6-95fb7782b927",
+    "keywords": "趣味、周边、emoji",
+    "title": "How Emoji Can Improve Your Code—Seriously",
+    "url": "https://www.tjvantoll.com/2016/06/10/emoji-and-coding/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491471142.212,
+      "timezone": "+00:00"
+    },
+    "description": "怎么区分手机上的webkit和桌面端Chrome模拟的webkit？这里有一个巧妙的思路：`navigator.plugins.length === 0`",
+    "id": "9ca79d1f-4d23-4ec9-8386-73bba5a4c23e",
+    "keywords": "小技巧、JS、兼容性",
+    "title": "How to detect if a mobile device is emulated by Google Chrome?",
+    "url": "http://stackoverflow.com/questions/28083715/how-to-detect-if-a-mobile-device-is-emulated-by-google-chrome"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491037007.489,
+      "timezone": "+00:00"
+    },
+    "description": "给大家推荐一个 Pure CSS 的 tooltip。热气球.css 各种 tooltip——当然了热气球不可能往左往右飞的，但是它可以[doge]",
+    "id": "ca596903-f0e3-47c8-953f-fcb07dda04be",
+    "keywords": "CSS、库、tooltip",
+    "title": "Balloon.css - Simple tooltips made of pure CSS",
+    "url": "http://kazzkiq.github.io/balloon.css/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725456.728,
+      "timezone": "+00:00"
+    },
+    "description": "Bass CSS [网页链接](http://t.cn/Rhp0ABN) 一款“低级”的CSS工具集，由24个独立模块组成",
+    "id": "4f538bee-2bdb-4f6b-b8d9-2ad909bead7a",
+    "keywords": "CSS、工具、框架、库",
+    "status": 1,
+    "title": "Basscss",
+    "url": "http://www.basscss.com/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "Uber 开源的 WebGL 数据可视化框架",
+    "id": "5e0a8467-77ba-46e9-a016-9e31b7c51ab3",
+    "keywords": "WebGL、JS、库、数据可视化、图形库",
+    "title": "Deck.gl",
+    "url": "http://uber.github.io/deck.gl/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033158.896,
+      "timezone": "+00:00"
+    },
+    "description": "比如限制输入的信用卡、手机号、日期、数字等等格式",
+    "id": "82050796-0c02-441c-a4d2-e2350d33e0d2",
+    "keywords": "库、JS、表单、格式化",
+    "title": "Cleave.js - Format your <input/> content when you are typing",
+    "url": "http://nosir.github.io/cleave.js/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490695092.668,
+      "timezone": "+00:00"
+    },
+    "description": "推荐一款 Mac 上优秀的 gif 录制应用",
+    "id": "8df2cffe-77f8-4a95-836e-4c7d99bd0056",
+    "keywords": "工具、录屏、gif",
+    "title": "Kap - n open-source screen recorder built with web technology",
+    "url": "https://getkap.co/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491465351.521,
+      "timezone": "+00:00"
+    },
+    "description": "一个基于 JS 的持久化全文搜索引擎",
+    "id": "7cb28008-eef3-497c-976f-37e277dd2e51",
+    "keywords": "JS、工具、搜索",
+    "title": "search-index - A persistent, network resilient, full text search library for the browser and Node.js",
+    "url": "https://github.com/fergiemcdowall/search-index"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491469033.476,
+      "timezone": "+00:00"
+    },
+    "description": "Mozilla 的标签化 WebVR 框架",
+    "id": "85cc3af3-b272-4043-9add-4580c9a20361",
+    "keywords": "JS、VR、框架、库",
+    "title": "A-Frame - Make WebVR - A web framework for building virtual reality experiences",
+    "url": "https://aframe.io"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491473319.369,
+      "timezone": "+00:00"
+    },
+    "description": "然",
+    "id": "a0a7f6e1-c422-435a-8cf1-47f7d514f4b0",
+    "keywords": "观点、文化、教养、音乐",
+    "title": "为什么练习乐器可以改变人的气质？",
+    "url": "https://www.zhihu.com/question/21268757/answer/17714364"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724489.646,
+      "timezone": "+00:00"
+    },
+    "description": "Ramjet [网页链接](http://t.cn/RAnhDS5) 官网有动画展示。DOM届的transformer “D-I-V！变形！谷-歌-歌-歌-基”",
+    "id": "d04d1c43-20c7-4302-a2f3-bb09c891a749",
+    "keywords": "动效、库、JS",
+    "status": 1,
+    "title": "ramjet",
+    "url": "http://www.rich-harris.co.uk/ramjet/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725609.631,
+      "timezone": "+00:00"
+    },
+    "description": "分享一个名叫“chalk”(粉笔)的 Node.js 库 [网页链接](http://t.cn/RPLPJlZ) 可以方便的输出彩色命令行信息",
+    "id": "53332c4d-f67e-4763-85f2-b4602ca4e284",
+    "keywords": "工具、Node.js、命令行、配色",
+    "status": 1,
+    "title": "GitHub - chalk/chalk: Terminal string styling done right",
+    "url": "https://github.com/sindresorhus/chalk"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689333.776,
+      "timezone": "+00:00"
+    },
+    "description": "列出了 GitHub 的一些酷炫特性和小技巧",
+    "id": "5f6fa8e8-f875-493a-a0bc-81169b590b06",
+    "keywords": "知识、GitHub",
+    "title": "GitHub Cheat Sheet - A list of cool features of Git and GitHub.",
+    "url": "https://github.com/tiimgreen/github-cheat-sheet"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032817.401,
+      "timezone": "+00:00"
+    },
+    "description": "可以用自然语言来描述正则表达式 - 我大前端真是折腾无止境……",
+    "id": "83527527-2259-4bd0-974d-5cb7ed4d95cb",
+    "keywords": "JS、工具、库、正则",
+    "title": "RE-Build - Building regular expressions with natural language",
+    "url": "https://github.com/MaxArt2501/re-build"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "又发现一个“深入浅出ES6”的系列 [网页链接](http://ponyfoo.com/articles/tagged/es6-in-depth) 之前在 Mozilla 也看到过 [微博](http://weibo.com/1712131295/CsRRnE4xh) 现在不自己写个 ES6 教程都不好意思说自己 JS 牛掰了。。。",
+    "id": "8e4c773d-4693-466d-a3f3-7fea64aec9ed",
+    "keywords": "入门、JS、ES6、知识",
+    "title": "ES6 in Depth",
+    "url": "http://ponyfoo.com/articles/tagged/es6-in-depth"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490855651.218,
+      "timezone": "+00:00"
+    },
+    "description": "解释各种命令行的含义，非常清晰透彻",
+    "id": "8c70e023-cc9f-49ec-9bc5-2554c4fb819b",
+    "keywords": "工具、命令行、bash",
+    "title": "explainshell.com - write down a command-line to see the help text that matches each argument",
+    "url": "http://explainshell.com"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1emd4lo0cxwj20in0lm0vv.jpg)  \n![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1emd4mcm43tj20pg0p0428.jpg)  \n![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1emd4mhv3cpj20h20aq3zj.jpg)  \nLazyLoad 和响应式图片的结合",
+    "id": "8b2ac90a-4273-4a2a-ba71-ce4ed458dea1",
+    "keywords": "库、响应式、懒加载、图片",
+    "title": "lazySizes",
+    "url": "http://afarkas.github.io/lazysizes/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490694929.466,
+      "timezone": "+00:00"
+    },
+    "description": "一篇外文《我为什么讨厌 SPA》评论里都炸锅了，而且我还活捉了 @糖伴西红柿 ​​​​",
+    "id": "a2c1700d-b46d-484f-b5ea-f9e5e0c4ea79",
+    "keywords": "SPA、观点",
+    "title": "Why I hate your Single Page App",
+    "url": "https://medium.com/@stilkov/why-i-hate-your-single-page-app-f08bb4ff9134#.2vobpqgpc"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491727116.858,
+      "timezone": "+00:00"
+    },
+    "description": "2014百大Codepen [网页链接](http://t.cn/RZ5VIDH) 感受一下 HTML5/CSS3 的魅力！",
+    "id": "d56be76d-9fdf-4eb8-9d0f-76dbb11dca79",
+    "keywords": "CSS、设计、素材",
+    "status": 1,
+    "title": "Top Pens of 2014 on CodePen",
+    "url": "http://codepen.io/2014/popular/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491469143.619,
+      "timezone": "+00:00"
+    },
+    "description": "新技能 get - `git clone git+ssh://username@host/~/working`",
+    "id": "5621100a-1ce7-4623-a8ae-c14139d531a7",
+    "keywords": "小技巧、git、远程",
+    "title": "How can I 'git clone' from another machine?",
+    "url": "http://stackoverflow.com/questions/2808177/how-can-i-git-clone-from-another-machine"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726082.672,
+      "timezone": "+00:00"
+    },
+    "description": "mailcheck.js [网页链接](http://t.cn/RwKK77B) 可以进行常见邮箱域名的有效性检查，支持配置常用邮箱域名，同时支持jQuery环境、无jQuery浏览器环境、Node.js环境",
+    "id": "623c0d94-9053-4b48-a8e8-5bc963801d84",
+    "keywords": "邮件、工具、Node.js",
+    "status": 1,
+    "title": "GitHub - mailcheck/mailcheck: Reduce misspelled email addresses in your web apps.",
+    "url": "https://github.com/mailcheck/mailcheck"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032771.944,
+      "timezone": "+00:00"
+    },
+    "description": "分分钟的 Web Design - 整容前/整容后",
+    "id": "839d180a-0528-4a06-a7b5-3d694482ec23",
+    "keywords": "设计、小技巧",
+    "title": "Web Design in 4 minutes",
+    "url": "http://jgthms.com/web-design-in-4-minutes/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490688771.952,
+      "timezone": "+00:00"
+    },
+    "description": "三星开源的跨屏 3D 图形原型框架，可配合可视化编辑器，对 IoT 友好",
+    "id": "907dd39e-3a88-470a-ac11-3712a9d65956",
+    "keywords": "JS、WebGL、IoT、工具",
+    "title": "DreemGL",
+    "url": "https://dreemproject.org"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816911.495,
+      "timezone": "+00:00"
+    },
+    "description": "配色方案利器 Kuler！[网页链接](http://t.cn/zlAJ019) 酷！",
+    "id": "9fef9b47-4a8e-4eb1-ac09-7d15ea09d27d",
+    "keywords": "配色、工具、设计",
+    "status": 1,
+    "title": "Adobe Color CC",
+    "url": "https://kuler.adobe.com/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1ebw2pduie2j20f40yzn2r.jpg)  \n![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ebw2pfzblzg206m01idjc.gif)  ",
+    "id": "95c2706b-d5eb-4c26-86f6-697691f4aa7a",
+    "keywords": "iOS 风格的 checkbox",
+    "title": "switchery",
+    "url": "https://github.com/abpetkov/switchery"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490702384.595,
+      "timezone": "+00:00"
+    },
+    "description": "转 Node 内存快照，对分析内存泄漏之类的工作也许有帮助。如今的前端真是月球表面荟萃[doge][doge][doge]",
+    "id": "a4ad57fd-61f8-41d7-93b4-09282e6555ae",
+    "keywords": "Node、JS、内存、工具",
+    "title": "node-heapdump - Make a dump of the V8 heap for later inspection",
+    "url": "https://github.com/bnoordhuis/node-heapdump"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491467063.101,
+      "timezone": "+00:00"
+    },
+    "description": "发现一个 iOS View controller: Stacker - 试用于 URL Driven Apps，包含 JS Bridge 支持。试了个 demo，感觉还不错。\n\n不过感觉自己 iOS 还是太不熟悉了，人家官方5分钟的demo，我连安装依赖到配环境一共折腾了快2个小时，原本的午休时间都耗进去了 - - 最后要说 gem bundler 之类的还是得有 taobao 的镜像靠谱……",
+    "id": "d8dc8834-aa3a-4ce0-8bb0-710509d963c3",
+    "keywords": "iOS、库、JS Bridge",
+    "title": "Stacker - An iOS view controller to kickstart development of hybrid native/web iPhone apps.",
+    "url": "http://www.lokimeyburg.com/Stacker/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035014.237,
+      "timezone": "+00:00"
+    },
+    "description": "如何在你的网站上实现响应式图片 - Responsive 喊了这么多年，要是周围还都落不了地，就真该歇菜换思路了……",
+    "id": "57cdbece-f98f-438a-850c-e81edbb07405",
+    "keywords": "CSS、响应式、图片、入门",
+    "title": "How To Start Implementing Responsive Images On Your Website",
+    "url": "https://trydesignlab.com/blog/how-to-start-implementing-responsive-images-on-you/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490690832.352,
+      "timezone": "+00:00"
+    },
+    "description": "UX Strategy 以策略而不是设计的角度考虑用户体验，强调价值创新和用户调研，并且和品牌策略、商业策略有所区别。其中也反复提到了商业画布、MVP、黑客增长等概念，可以和其它精益系列的书融会贯通。看过很有收获",
+    "id": "6afcae95-9661-40f4-85d4-6079cb309167",
+    "keywords": "书、设计",
+    "title": "《决胜UX 互联网产品用户体验策略》",
+    "url": "https://www.amazon.cn/dp/B01MCXFAKR"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490702921.301,
+      "timezone": "+00:00"
+    },
+    "description": "看了一篇 Java 妹纸对 Angular 2 的大吐槽《为什么学习 ng 这么痛苦 (excruciating)》看完真替妹纸心疼啊[笑cry] 另外我们自己的项目也应该引以为戒",
+    "id": "85d58124-3c71-4fe8-a517-d1b03750472d",
+    "keywords": "观点、Angular、JS",
+    "title": "Why Learning Angular 2 Was Excruciating",
+    "url": "https://hackernoon.com/why-learning-angular-2-was-excruciating-d50dc28acc8a#.m5wh7wlbw"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724790.919,
+      "timezone": "+00:00"
+    },
+    "description": "“作为一个通读过规范的人” [网页链接](http://t.cn/RAQr6lN) 贺老您遇到对手啦！！！",
+    "id": "90b83757-bffe-4717-a02b-fa366d8c95f9",
+    "keywords": "观点、W3C、规范",
+    "status": 1,
+    "title": "I Read All the W3C Specs",
+    "url": "http://sandersk.github.io/reading-w3c/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1ej8287twgbj20k20j1mz8.jpg)  \n![](http://ww3.sinaimg.cn/mw1024/660d0cdfgw1ej828b0mt0j20jo0j2ta1.jpg)  \n![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1ej828canjoj20jg0iy40v.jpg)  \n![](http://ww3.sinaimg.cn/mw1024/660d0cdfgw1ej828dvf7tj20ji0j1jsw.jpg)  \n![](http://ww3.sinaimg.cn/mw1024/660d0cdfgw1ej829743jfj20lu0h1wh3.jpg)  \n分析出图片的“保护色”并作为应景色",
+    "id": "b050d0bf-3bdc-4ac3-9758-3986b93bd807",
+    "keywords": "工具、库、JS、配色",
+    "title": "jquery.adaptive-backgrounds.js",
+    "url": "http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490702971.181,
+      "timezone": "+00:00"
+    },
+    "description": "《系统设计中的留白》觉得把技术和设计结合得恰到好处，自己也涨了不少设计上的知识",
+    "id": "97efd0b5-fc2e-4ca2-95a8-77076c317503",
+    "keywords": "设计、知识、留白",
+    "title": "Space in Design Systems - From Basics to Expanded Concepts to Apply Space with Intent",
+    "url": "https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62#.h29654oai"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491722585.262,
+      "timezone": "+00:00"
+    },
+    "description": "找到一个相当好用的 date.js 啊 [网页链接](http://t.cn/R2Q3tXe) 可惜npm里没有找到 网站 datejs.com 好像也打不开了。赶紧 fork",
+    "id": "b5e9a6ee-983b-44a6-a960-276655dd5e53",
+    "keywords": "库、JS、日期、时间",
+    "status": 1,
+    "title": "datejs/Datejs - A JavaScript Date and Time Library",
+    "url": "https://github.com/datejs/Datejs"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032268.852,
+      "timezone": "+00:00"
+    },
+    "description": "这位妹纸好厉害，不光能搞出 reflection 特效，写得一手好文章，而且文章里的各种数学公式示意图都是 CodePen 版本的，已经有人在评论里问那些图是怎么做出来的[doge]",
+    "id": "daa9e9a2-2b81-489f-8376-2c18de58c2e8",
+    "keywords": "CSS、Reflection、动效",
+    "title": "The State of CSS Reflections",
+    "url": "https://css-tricks.com/state-css-reflections/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491473696.363,
+      "timezone": "+00:00"
+    },
+    "description": "> 有条理的人却有着凌乱不堪的办公桌\n\n> 当你使人的互动行为更简单，那么隐藏在幕后的复杂性就增加了。把系统的一部分变得简单，那么剩下的部分就变的更加复杂。这个原理就是今天所谓的“特斯勒的复杂守恒定律”\n\n> 解决排队等待问题：\n> \n> 1. 提供一个概念模型\n> 2. 使等待看起来合理\n> 3. 满足或者超越期待\n> 4. 让人们保持忙碌\n> 5. 公平\n> 6. 积极的开始，积极的结尾",
+    "id": "63e668d2-b52d-43e2-9419-ca51f164f700",
+    "keywords": "书、心理学、设计、复杂",
+    "title": "《如何管理复杂》",
+    "url": "https://www.amazon.cn/dp/B005EJIXBK/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725571.291,
+      "timezone": "+00:00"
+    },
+    "description": "npm 包分享之 CSS [网页链接](http://t.cn/RAVPjin) 可以像操作 JSON.parse / JSON.stringify 一样操作 CSS 代码！",
+    "id": "6bcafbfc-10a8-4f47-b604-1b31d42515f6",
+    "keywords": "库、JS、CSS、语法分析",
+    "status": 1,
+    "title": "css - npm",
+    "url": "https://www.npmjs.com/package/css"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817185.485,
+      "timezone": "+00:00"
+    },
+    "description": "网上看到一份“前端代码回顾清单” [网页链接](http://t.cn/RvgJ1xI) 自己顺手翻译成了中文的 [网页链接](http://t.cn/RvgJ1xf)",
+    "id": "8c4736d8-e7cf-41ae-b1f0-5ce435b3de41",
+    "keywords": "文化、代码审查",
+    "status": 1,
+    "title": "GitHub - 92bondstreet/code-review-front-end: Code Review Checklist for Front-End Developers",
+    "url": "https://github.com/Jinjiang/code-review-front-end"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491386744.179,
+      "timezone": "+00:00"
+    },
+    "description": "Flexbox 塔防 - 用 CSS Flexbox 玩塔防！怎么样感受一下[馋嘴]",
+    "id": "9485c871-5876-49e7-b3b4-94cf0aaebe24",
+    "keywords": "Flexbox、CSS、趣味、游戏",
+    "title": "Flexbox Defense",
+    "url": "http://www.flexboxdefense.com"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491034069.099,
+      "timezone": "+00:00"
+    },
+    "description": "这个项目非常赞，在开发转译、代码优化功能时可以快速查看从源代码解析生成的 AST，并且鼠标移到 AST 节点上时源代码对应位置会高亮显示。",
+    "id": "b4e8aa8c-d365-4f0b-94f7-9a41eb668d7a",
+    "keywords": "工具、语法分析",
+    "title": "AST Explorer",
+    "url": "http://astexplorer.net"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491818071.22,
+      "timezone": "+00:00"
+    },
+    "description": "“网站有必要在每个浏览器里都长得一模一样吗.com” [网页链接](http://t.cn/7hiVb) - -",
+    "id": "989fab69-737b-42ca-b8b6-964ff10c05a0",
+    "keywords": "周边、趣味",
+    "status": 1,
+    "title": "Do websites need to look exactly the same in every browser?",
+    "url": "http://dowebsitesneedtolookexactlythesameineverybrowser.com/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ejcl9rm5x0j20q30jrjsg.jpg)  \n![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ejcl9xid1jg20a006ojs9.gif)  \n强大的 CSS3 动画制作工具",
+    "id": "b770ef92-34ff-45e1-a8ee-a85ab6b0f91c",
+    "keywords": "工具、CSS、动效",
+    "title": "Bounce.js",
+    "url": "http://bouncejs.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816353.29,
+      "timezone": "+00:00"
+    },
+    "description": "曾几何时，你有没有被别人 JavaScript 代码里的酷炫小技巧震惊呢？ [网页链接](http://t.cn/RhiDaF2) 这篇文章列举了几种 JavaScript hacks 并进行了解释，看看你是不是都眼熟：）",
+    "id": "e95ba9e7-5e31-401a-9dd5-4da318da3d93",
+    "keywords": "小技巧、JS、知识",
+    "status": 1,
+    "title": "JavaScript hacks explained",
+    "url": "http://blog.mdnbar.com/javascript-common-tricks"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724897.632,
+      "timezone": "+00:00"
+    },
+    "description": "JS的味道 [网页链接](http://t.cn/RAQ10HF) 各种深度代码格式刷，你能够认同多少做到多少",
+    "id": "647e98b5-722d-4825-b2f8-a1a0f5b5b536",
+    "keywords": "观点、编码规范、质量、JS",
+    "status": 1,
+    "title": "JavaScript Code Smells",
+    "url": "http://elijahmanor.github.io/talks/js-smells/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "用 performance.now() 测量 JavaScript 函数的执行效率 [网页链接](http://www.sitepoint.com/measuring-javascript-functions-performance/)",
+    "id": "6d6ab787-6c69-43c2-830b-a9a2c6a70344",
+    "keywords": "性能、JS、知识",
+    "title": "Measuring JavaScript Functions’ Performance",
+    "url": "http://www.sitepoint.com/measuring-javascript-functions-performance/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490702639.675,
+      "timezone": "+00:00"
+    },
+    "description": "这本书已经看了一半，迫不及待先分享一下。我觉得它还可以命名为《代码闻味指南》或《code review 宝典》，如果我早半年看这本书，或许今天不会在工作上这么狼狈……",
+    "id": "8ff1c3c6-9717-40f9-9072-d4dcd2f04c47",
+    "keywords": "书、工程、文化",
+    "title": "《软件设计重构》",
+    "url": "https://www.amazon.cn/dp/B01KTX2AK0"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1emd4mmop0xj20lc0midi9.jpg)  \n基于 webcomponents 规范的路由器",
+    "id": "96283b38-bd6e-4078-b7fd-d88583f1a544",
+    "keywords": "组件、路由",
+    "title": "App Router",
+    "url": "https://github.com/erikringsmuth/app-router"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490688355.408,
+      "timezone": "+00:00"
+    },
+    "description": "Vue.js API 完全手册",
+    "id": "ba3429b3-c560-4f14-86f9-119e560801ab",
+    "keywords": "vue、手册、js",
+    "title": "Vue.js Complete API Cheat Sheet",
+    "url": "https://vuejs-tips.github.io/cheatsheet/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491471920.072,
+      "timezone": "+00:00"
+    },
+    "description": "能够智能的识别出人脸区域的图片裁剪工具",
+    "id": "9dd743a3-bed4-4f51-8611-cebf2188bc08",
+    "keywords": "人工智能、JS、库、图片",
+    "title": "smartcrop.js - Content aware image cropping",
+    "url": "https://github.com/jwagner/smartcrop.js"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491722992.689,
+      "timezone": "+00:00"
+    },
+    "description": "viewport.js [网页链接](http://t.cn/R2UMjFW) 友好展示滚动条当前位置/进度的一个js库",
+    "id": "bba02717-53da-408e-93ac-68d4d6236d23",
+    "keywords": "JS、库、进度条",
+    "status": 1,
+    "title": "viewport.js - ships the document sections with additional properties containing the viewport scrolling position relatively to the sections.",
+    "url": "http://asvd.github.io/viewport/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725847.231,
+      "timezone": "+00:00"
+    },
+    "description": "《响应式排版中的精细控制》[网页链接](http://t.cn/RAwe833) 主要是运用 media query、vw vh 单位、calc()",
+    "id": "ed1eaa95-29ff-473d-bdfe-e010d4a32f6f",
+    "keywords": "CSS、响应式、排版、观点",
+    "status": 1,
+    "title": "Precise control over responsive typography · MadebyMike",
+    "url": "http://madebymike.com.au/writing/precise-control-responsive-typography/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726227.876,
+      "timezone": "+00:00"
+    },
+    "description": "《JavaScript 框架疲劳》[网页链接](http://t.cn/RwT63E8) 摘译其中一段：“这是一个被无尽的各种小框架所统治的世界，让老前端们可以持续混搭使用，总有积累和谈资，但对于一个新手或非专业前端来说，他们始终找不到一个好的通用框架”",
+    "id": "65c0bae0-dd07-4617-85f6-2bcf79429d3e",
+    "keywords": "观点、JS、趋势",
+    "status": 1,
+    "title": "A JS Framework on Every Table - Allen Pike",
+    "url": "http://www.allenpike.com/2015/javascript-framework-fatigue/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491722372.277,
+      "timezone": "+00:00"
+    },
+    "description": "非常赞的书，陆陆续续看了一个多月终于看完了",
+    "id": "73cc295c-a345-4062-ad30-c22e3b45f1b2",
+    "keywords": "书、设计",
+    "status": 1,
+    "title": "《设计中的设计》",
+    "url": "https://www.amazon.cn/dp/B0011CRO32/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726143.249,
+      "timezone": "+00:00"
+    },
+    "description": "之前介绍过的“6to5”更名为了babeljs [网页链接](http://t.cn/Rw0YrVG) 来学学es6新特性",
+    "id": "949ed244-f0b4-4fe2-8bbf-cadfe8995cea",
+    "keywords": "知识、手册、JS、ES6",
+    "status": 1,
+    "title": "Learn ES2015",
+    "url": "https://babeljs.io/learn-es2015/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819911.837,
+      "timezone": "+00:00"
+    },
+    "description": "幸福和成功的十条诫律 | 外刊IT评论网 [网页链接](http://www.aqee.net/the-10-commandments-for-happiness-and-success/)",
+    "id": "9989d79c-eaf4-4012-a1a2-4cbc90a93dcb",
+    "keywords": "文化、教养、观点",
+    "status": 1,
+    "title": "幸福和成功的十条诫律 | 外刊IT评论",
+    "url": "http://www.aqee.net/the-10-commandments-for-happiness-and-success/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491470345.53,
+      "timezone": "+00:00"
+    },
+    "description": "HTML 语法解析工具",
+    "id": "bdaa3197-0c58-408d-b412-f40c0de9a3d1",
+    "keywords": "HTML、语法解析、工具",
+    "title": "parse5 - HTML parsing/serialization toolset for Node.js",
+    "url": "https://www.npmjs.com/package/parse5"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ebw2pezk71j20ep0euabn.jpg)  \n![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1ebw2pf98i4j20ec030q31.jpg)  \n一个轻量级的生成 SVG 圆环进度条的 JS 库",
+    "id": "a07084ce-47c9-4f0a-9624-d357ff28dd70",
+    "keywords": "SVG、JS、进度条、库",
+    "title": "lugolabs/circles",
+    "url": "https://github.com/lugolabs/circles"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ejcl9g47m2j20n50m3jtl.jpg)  \n![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1ejcl9ktx4ej20cl0cugmu.jpg)  \n![](http://ww3.sinaimg.cn/mw1024/660d0cdfgw1ejcla1rajjj207c0663yg.jpg)  \n![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1ejcl9oao9nj20gy0miq5l.jpg)  \n轻量级的 2D 图形库，特点是 cutouts 和 pinning，提供类似 DOM 的数据模型和事件机制",
+    "id": "c4a7785d-1334-401e-ae2c-ac58a0924929",
+    "keywords": "库、JS、图形库",
+    "title": "Stage.js - 2D JavaScript library for cross-platform HTML5 game development",
+    "url": "http://piqnt.com/stage.js/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490703062.327,
+      "timezone": "+00:00"
+    },
+    "description": "《SVG 的能量超乎你想像》 文中的交互式 Demo 设计得很直观，看过深有感触",
+    "id": "f03e34db-a740-43f1-8792-dd604bfcd2f0",
+    "keywords": "SVG、CSS、响应式",
+    "title": "SVG has more potential",
+    "url": "https://madebymike.com.au//writing/svg-has-more-potential/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723414.49,
+      "timezone": "+00:00"
+    },
+    "description": "《为什么 Mobile First 的说法已经过时了》更重要的是屏幕 (大小) 发生了改变，而不是设备 [网页链接](http://t.cn/R2ZcNHR)",
+    "id": "660fdc9d-63de-4546-a8b5-4a0aeb153213",
+    "keywords": "观点、响应式、设计",
+    "status": 1,
+    "title": "Why 'mobile first' may already be outdated - Inside Intercom",
+    "url": "https://blog.intercom.io/why-mobile-first-may-already-be-outdated/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725493.677,
+      "timezone": "+00:00"
+    },
+    "description": "这几个 CSS font-size 你都熟悉吗？[网页链接](http://t.cn/RA0UqhL)",
+    "id": "818cd723-43ed-4592-a9c9-c7de79298ec6",
+    "keywords": "CSS、字号、Font、知识、手册",
+    "status": 1,
+    "title": "CSS Font Sizing",
+    "url": "http://bitsofco.de/2015/css-font-sizing/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "Dragular [网页链接](https://github.com/bevacqua/dragula) 一个支持 IE7+的拖拽库，看着不错",
+    "id": "96e4d757-6a76-42e7-8dc5-46ca49858ca6",
+    "keywords": "库、JS、拖拽、手势",
+    "title": "dragula - Drag and drop so simple it hurts",
+    "url": "https://github.com/bevacqua/dragula"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691451.148,
+      "timezone": "+00:00"
+    },
+    "description": "第二届 WeexConf 相关留档",
+    "id": "a0b24096-6bbd-438b-ae80-f3ce490abf3e",
+    "keywords": "分享、素材",
+    "title": "【资料合集】Weex Conf 回顾集锦",
+    "url": "https://yq.aliyun.com/articles/68818"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491465420.472,
+      "timezone": "+00:00"
+    },
+    "description": "W3C 新出的 CSS 索引，方便查阅 - 国家队来了，民间组织们准备好膝盖[挖鼻]",
+    "id": "c179e299-037f-4290-bb10-790bde54f247",
+    "keywords": "CSS、手册、W3C",
+    "title": "CSS Indexes",
+    "url": "https://drafts.csswg.org/indexes/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819976.466,
+      "timezone": "+00:00"
+    },
+    "description": "【动画讲解】如何用CSS制作一个三角形 [网页链接](http://cdpn.io/lotjh)",
+    "id": "a0f44ac9-a9db-4d7a-baff-74f4155d42e4",
+    "keywords": "趣味、CSS、几何",
+    "status": 1,
+    "title": "CodePen - Animation to Explain CSS Triangles",
+    "url": "http://cdpn.io/lotjh"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723735.687,
+      "timezone": "+00:00"
+    },
+    "description": "Sass的像素世界 [网页链接](http://t.cn/R2GefZK) 人类已经无法阻止Sass了！",
+    "id": "c594e3fe-6376-44ae-8173-cbc97e983248",
+    "keywords": "CSS、Sass、趣味",
+    "status": 1,
+    "title": "✨Sass Pixel Art | Una Kravets Online✨",
+    "url": "http://una.im/sass-pixel-art/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724673.59,
+      "timezone": "+00:00"
+    },
+    "description": "《爱上BEM》[网页链接](http://t.cn/RAFp9Z9) BEM 的文章看到了，有个深切感受：所有支持 BEM 好的人总会说，之前自己对 BEM 的第一印象简直就是一坨屎…… 这样推广真的好吗？“刚开始看到 BEM 的时候，其实我是拒绝的！拒绝的！特技！！”",
+    "id": "f4b4f81e-8882-41c4-8c68-dfed37b7d22e",
+    "keywords": "BEM、CSS、观点",
+    "status": 1,
+    "title": "Learning to Love BEM – Mono",
+    "url": "http://mono.company/2015/05/06/learning-to-love-bem/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491818029.007,
+      "timezone": "+00:00"
+    },
+    "description": "Border Animation Effect [网页链接](http://t.cn/8F1E7kq)",
+    "id": "6725ee8f-e611-4d78-8dc4-0a5d04fe67d1",
+    "keywords": "动效、CSS、设计、素材",
+    "status": 1,
+    "title": "Border Animation Effect with SVG",
+    "url": "http://tympanus.net/Tutorials/BorderAnimationSVG/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491905341.288,
+      "timezone": "+00:00"
+    },
+    "description": "用 CSS 和 SVG 画出一个水波纹的动效",
+    "id": "81bb70bf-a9b5-4b99-aaaf-a4167fb0a881",
+    "keywords": "SVG、CSS、水波纹、动效、素材",
+    "title": "CSS & SVG Animated Waves - A PEN BY Ted McDonald PRO",
+    "url": "https://codepen.io/tedmcdo/pen/PqxKXg"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491386650.007,
+      "timezone": "+00:00"
+    },
+    "description": "方便有爱的右键保存logo的新体验",
+    "id": "9b5a7440-63ba-453f-9d3b-8c2e1f245e8d",
+    "keywords": "小技巧、图片、Logo",
+    "title": "Right Click Logo to Show Logo Download Options",
+    "url": "https://css-tricks.com/right-click-logo-show-logo-download-options/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723077.649,
+      "timezone": "+00:00"
+    },
+    "description": "Smart-polyfill [网页链接](http://t.cn/R2qAUhd) 智能识别你要兼容的范围并通过服务器接口完成polyfill。commit log很有爱",
+    "id": "a25dc9f5-eaaf-4d94-99d0-ba44b08dd34b",
+    "keywords": "JS、polyfill、库、兼容性",
+    "status": 1,
+    "title": "GitHub - steelbrain/Smart-Polyfill: A smart polyfill server for browsers written in Node",
+    "url": "https://github.com/steelbrain/Smart-Polyfill"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490690284.502,
+      "timezone": "+00:00"
+    },
+    "description": "There is a BOT for X 机器人荟萃",
+    "id": "c3083767-5112-4c85-bdc3-70f54b4cbc65",
+    "keywords": "机器人、素材",
+    "title": "There is a bot for X",
+    "url": "https://thereisabotforthat.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817957.629,
+      "timezone": "+00:00"
+    },
+    "description": "军功章里，有HTML的一半，也有CSS的一半 [网页链接](http://t.cn/8stzHeU) 教程：[网页链接](http://t.cn/8stzHe4) via TheCodeBlock",
+    "id": "a3f2cb56-cc07-4bce-817b-540fdd310555",
+    "keywords": "CSS、趣味、素材",
+    "status": 1,
+    "title": "CodePen - Ribbon Badge in Pure CSS.",
+    "url": "http://codepen.io/nikhil/full/wgpHn"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723258.401,
+      "timezone": "+00:00"
+    },
+    "description": "《Extending Styles》[网页链接](http://t.cn/R2qAcAq) 从软件的“开放/封闭”原则角度阐述了自己的观点，同时提到了未来webcomponents",
+    "id": "c97d43a1-24e3-40b5-a54f-e6109123f435",
+    "keywords": "CSS、观点",
+    "status": 1,
+    "title": "Extending Styles",
+    "url": "https://philipwalton.com/articles/extending-styles/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387206.538,
+      "timezone": "+00:00"
+    },
+    "description": "非常赞的 3D CSS 库",
+    "id": "f8a91f1f-0ef6-4199-aa68-34b1bf1deff3",
+    "keywords": "3D、CSS、库",
+    "title": "voxel.css - A lightweight 3D CSS voxel library.",
+    "url": "http://voxelcss.com"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491036371.68,
+      "timezone": "+00:00"
+    },
+    "description": "十分棒的 flowchart 语言，用 Markdown 画图表",
+    "id": "68531910-5d3d-490c-80b9-0e2049885193",
+    "keywords": "库、JS、Markdown、图表、数据可视化",
+    "title": "mermaid - Generation of diagram and flowchart from text in a similar manner as markdown",
+    "url": "http://knsv.github.io/mermaid/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491466061.206,
+      "timezone": "+00:00"
+    },
+    "description": "专治各种英文排版细节，比如成对的69式引号、版权符号、特殊字符等\n\n```\nbeautifyText('a --- \"b (tm) c\" -- d');\n// -> 'a — “b ™ c” – d'\n```",
+    "id": "82927d0c-8680-4ba8-86a4-ad254955d26b",
+    "keywords": "JS、库、排版",
+    "title": "beautify-text - Automated typographic quotation and punctuation marks",
+    "url": "https://github.com/bevacqua/beautify-text"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819491.888,
+      "timezone": "+00:00"
+    },
+    "description": "一张图让你读懂 Canvas 的 globalCompositeOperation via [网页链接](https://developer.mozilla.org/zh-CN/docs/Canvas_tutorial/Compositing)",
+    "id": "9f170102-49fe-4610-86a1-5863ac37dec5",
+    "keywords": "Canvas、手册、知识",
+    "status": 1,
+    "title": "组合 Compositing - Web API 接口 | MDN",
+    "url": "https://developer.mozilla.org/zh-CN/docs/Canvas_tutorial/Compositing"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "> 在医学领域人们总喜欢说“预防胜于治疗”，这话虽然老套，却十分正确。作为医生，我们经常发现，当病人腕关节或者后背疼痛时，许多治疗都是徒劳的\n> \n> 马克·吐温曾经说过：“保持身体健康的唯一办法，就是吃点你不想吃的，喝点你不想喝的，以及做点你不愿意做的事情”\n> \n> 过去10年里，科学已经出色地揭示出大脑与身体其他部分之间的联系。我们已经知道，身体锻炼不但能促进蛋白质的生成，从而巩固脑组织的神经化学物质平衡，还能提高大脑的氧气和葡萄糖水平，进而提高我们的认知能力\n> \n> …程序员终身都在学习。在瞬息万变的科技领域里，学习新东西始终是工作的一部分。一个程序员理解新技术的能力就是他保持与时俱进的关键。不幸的是，这常常让程序员养成久坐的习惯…在某些情况下，还会导致程序员摄入过多的咖啡因",
+    "id": "a65d3d69-33bb-4551-829c-fb51485f8aab",
+    "keywords": "书、健康、周边",
+    "title": "《程序员健康指南》",
+    "url": "https://www.amazon.cn/dp/B00N4LZ6RO"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "> ![](http://ww2.sinaimg.cn/mw1024/660d0cdfjw1es4gzrqk9ij218g10h46d.jpg)  \n> “按经济价值来计算一杯咖啡的价格”：和其它价值相比，体验的价格优势格外明显\n> \n> 产品可用性的定义：有效性、效率、满意度，满足这三个要素，才称得上实现了产品可用性。\n> \n> ![](http://ww3.sinaimg.cn/mw1024/660d0cdfjw1es4gzvgfn8j20s618gtfm.jpg)\n> 橡胶用户：导致产品不能用的常见原因之一就是“定义用户失败”。如果大家听到有一款车是“敞篷越野面包车”的话，会作何感想呢？橡胶用户 (Elastic User) 的意思就是这样的定义可以根据设计人员的想象而随心所欲的变化。\n> \n> 头脑风暴法 4+3 原则：1 严禁批判、2 自由奔放、3 量比质重要、4 欢迎搭便车；5 可视化、6 严禁跑题、7 每次一人发言",
+    "id": "c604cc6b-f1a9-42ad-b9e7-fadfd04594e1",
+    "keywords": "书、设计、用户体验、文化",
+    "title": "《用户体验与可用性测试》",
+    "url": "https://www.amazon.cn/dp/B00VEM0EY0/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491467200.352,
+      "timezone": "+00:00"
+    },
+    "description": "最近各种 reactive 编程袭来，看 Node Server 版：Node server with Rx and Cycle.js",
+    "id": "a45d0dc0-0dc8-4589-b5f0-0ee609ee47b3",
+    "keywords": "Node、Rx、入门",
+    "title": "Node server with Rx and Cycle.js",
+    "url": "https://glebbahmutov.com/blog/node-server-with-rx-and-cycle/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "推荐一个 Typeset.js 的库 [网页链接](https://blot.im/typeset/) 用来输出自动优化标点符号等英文书写细节的库",
+    "id": "ca5fa0dc-218e-49d0-9653-dd736f091008",
+    "keywords": "HTML、库、排版、特殊字符、标点符号",
+    "title": "Typeset.js - an HTML pre-processor for web typography",
+    "url": "https://blot.im/typeset/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490701963.529,
+      "timezone": "+00:00"
+    },
+    "description": "什么样的问题会被对方说“这是一个好问题”？可以参考一下这篇文章",
+    "id": "fb4bbf48-3edb-41af-a80d-cc9ed66b368c",
+    "keywords": "教养、文化、管理、提问题",
+    "title": "Asking Good Questions",
+    "url": "https://medium.com/@dan_abramov/asking-good-questions-421f08ee7e5c#.m6u6b2pka"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490702222.909,
+      "timezone": "+00:00"
+    },
+    "description": "一篇外文《如何学技术》1. 犯错 2. 提问 3. 快速反馈 4. 制造不舒适 5. 和自身的知识作比对 6. 持之以恒",
+    "id": "6c3bed6a-5daa-4cb4-aff1-e5648b564c08",
+    "keywords": "教养、观点、学习",
+    "title": "How To Learn Technical Things",
+    "url": "https://jamison.dance/07-04-2016/how-to-learn-technical-things"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490690981.77,
+      "timezone": "+00:00"
+    },
+    "description": "涨姿势了，汇总成三个词就是 一致性 (consistent) 连续性 (continuous) 互补性 (complementary)，3C。总结得很精辟，也蛮有启发的",
+    "id": "82954e76-8b41-4206-a0e9-e3e741d8862c",
+    "keywords": "书、IoT、设计、交互",
+    "title": "《多设备体验设计-物联网时代产品开发模式》",
+    "url": "https://www.amazon.cn/dp/B01M30D3PH"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491902681.97,
+      "timezone": "+00:00"
+    },
+    "description": "3 大 Landing Page 的设计趋势：斜角度、波形条纹、区块模糊化",
+    "id": "a118a045-2b08-4717-bb4b-f1f48ec8a57d",
+    "keywords": "设计、趋势、着陆页",
+    "title": "3 trends in landing page design - Muzli",
+    "url": "https://medium.muz.li/3-trends-in-landing-page-design-5cf900f2c90f"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491531626.766,
+      "timezone": "+00:00"
+    },
+    "description": "JavaScript 版的 Box2D",
+    "id": "b4a1c458-ec08-440b-9dcf-6d725a411a3e",
+    "keywords": "Canvas、JS、库、物理引擎",
+    "title": "Planck.js – JavaScript rewrite of Box2D physics library",
+    "url": "http://piqnt.com/planck.js/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387564.943,
+      "timezone": "+00:00"
+    },
+    "description": "从 gulp 走向 npm script - 微博上有有多少同学已经在用 npm script 了呢？[馋嘴]",
+    "id": "c64b9dee-9159-4f35-bb3d-24d28fe09599",
+    "keywords": "NPM、工具、技巧",
+    "title": "Moving from Gulp to npm Scripts",
+    "url": "https://codepicnic.com/posts/moving-from-gulp-to-npm-scripts-6f3ef77ac0e3619e98159e9b6febf557/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490702129.043,
+      "timezone": "+00:00"
+    },
+    "description": "wide-gamut？sRGB？Color Depth？我只能说好神奇",
+    "id": "b33fa490-e3e2-41cd-ba5a-9277f913ec2f",
+    "keywords": "CSS、配色、知识",
+    "title": "Improving Color on the Web",
+    "url": "https://webkit.org/blog/6682/improving-color-on-the-web/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033456.697,
+      "timezone": "+00:00"
+    },
+    "description": "周末读完了《日本电子产业兴衰录》，感慨颇多，启发颇多。而且我们刻板印象感受到的和日本人自己深刻反省的电子产业有很多微妙的差异",
+    "id": "cb7aabec-163c-449a-8382-10052e2eb74f",
+    "keywords": "书、日本、历史",
+    "title": "《日本电子产业兴衰录》",
+    "url": "https://www.amazon.cn/dp/B01HB0KNAS"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491465851.678,
+      "timezone": "+00:00"
+    },
+    "description": "邮件的写法和网页会略有不同，写出漂亮的邮件并不容易，更难的是写 responsive 的漂亮邮件。也许 MJML 可以让这件事情变得容易些。自创上层语法，生成对邮件友好的 html 代码",
+    "id": "fbab7b79-6f10-4717-b263-8cf48dddbb84",
+    "keywords": "邮件、响应式、工具",
+    "title": "MJML - The only framework that makes responsive email easy",
+    "url": "https://mjml.io"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491472142.877,
+      "timezone": "+00:00"
+    },
+    "description": "一张图看懂 HTTP 状态码",
+    "id": "75a0e49e-83ce-4e0c-a369-041ed59a6cfe",
+    "keywords": "趣味、HTTP、状态码",
+    "title": "HTTP return codes cheat sheet",
+    "url": "http://photo.weibo.com/1657668863/wbphotos/large/mid/3897941985325129/pid/62ce04ffgw1ex0xk9si4ej20g00sg0tf"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490703191.015,
+      "timezone": "+00:00"
+    },
+    "description": "HTML5 的地图小控件 Leaflet 发布了 1.0。亲自试了一下，在触摸屏、Mac触摸板上体验都非常良好，还有很多小功能，很赞",
+    "id": "829ecb15-1b6d-4e1e-9bc8-cd03262df96a",
+    "keywords": "组件、库、地图",
+    "title": "Leaflet - an open-source JavaScript library for mobile-friendly interactive maps",
+    "url": "http://leafletjs.com/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033684.159,
+      "timezone": "+00:00"
+    },
+    "description": "用人话来介绍 ES6",
+    "id": "a484e0e5-c4b0-4b61-b12a-7e35f0389eb6",
+    "keywords": "JS、规范、知识、入门",
+    "title": "ES6 in Humans",
+    "url": "https://github.com/metagrover/ES6-for-humans"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491471027.198,
+      "timezone": "+00:00"
+    },
+    "description": "这本书不是想给你一整套系统，而是在几个非常典型的常见问题上延展，帮你完善自己的思维体系。我是真心觉得受用，绝大部分的case我都印象深刻而且有实际的实践机会！再次推荐一下：）",
+    "id": "be7d8c4d-0b40-4574-a2b3-d7cffe79b206",
+    "keywords": "书、设计、心理学",
+    "title": "《设计师要懂心理学》",
+    "url": "https://www.amazon.cn/dp/B00COG458G/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035739.31,
+      "timezone": "+00:00"
+    },
+    "description": "一个接受任何 PR 的 GitHub Repo……我的天呐",
+    "id": "d283bed2-61d1-4a28-9bb8-b18124b3c948",
+    "keywords": "GitHub、趣味",
+    "title": "illacceptanything - The project where literally anything* goes.",
+    "url": "https://github.com/illacceptanything/illacceptanything"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723639.126,
+      "timezone": "+00:00"
+    },
+    "description": "推荐一个iTunes频道：FiveJS 每周五分钟JS热点 全英语 开车/公交/挤地铁的时候更好的利用时间+锻炼听力 [网页链接](http://t.cn/R2Gr3JC)",
+    "id": "b85a0e97-1454-44b2-8e13-cbe6f04e3f88",
+    "keywords": "周边、观点、JS、广播",
+    "status": 1,
+    "title": "5 Minutes of JavaScript by Code School on iTunes",
+    "url": "https://itunes.apple.com/us/podcast/5-minutes-of-javascript/id775261328?mt=2"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491815078.546,
+      "timezone": "+00:00"
+    },
+    "description": "一个滚动后停靠在最上面的解决方案 [网页链接](http://t.cn/RhYEZ3F) via css-tricks",
+    "id": "d5b7e1f6-d670-4315-b7a6-62ae0db083d2",
+    "keywords": "CSS、小技巧、sticky",
+    "status": 1,
+    "title": "Scroll-Then-Fix Content | CSS-Tricks",
+    "url": "http://css-tricks.com/scroll-fix-content/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491034380.881,
+      "timezone": "+00:00"
+    },
+    "description": "有关 NPM 依赖的相关知识",
+    "id": "7f27c171-99fa-4b5c-9112-9c9a862bbb81",
+    "keywords": "知识、NPM、依赖",
+    "title": "The 5 dimensions of an npm dependency",
+    "url": "https://snyk.io/blog/whats-an-npm-dependency/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww3.sinaimg.cn/mw1024/660d0cdfgw1ekg0r0kmpvj20ga0f33zy.jpg)  \n![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1ekg0q3cdnug20ba0aqkeo.gif)  \n![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1ekg0qrunj3g20a00a0asi.gif)  \n智能信用卡表单",
+    "id": "930c0e75-7cb9-49ab-aa7c-1a9ac74c2390",
+    "keywords": "组件、信用卡",
+    "title": "jessepollak/Card",
+    "url": "https://github.com/jessepollak/card"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387832.416,
+      "timezone": "+00:00"
+    },
+    "description": "砖.js - 当下最流行的“砖”式布局，大家喜欢吗[酷]",
+    "id": "c18adbe2-68a6-450e-ac2f-91389a385069",
+    "keywords": "JS、库、布局、砖式布局",
+    "title": "Bricks.js - A blazing fast masonry layout generator for fixed width elements",
+    "url": "http://callmecavs.com/bricks.js/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490703299.371,
+      "timezone": "+00:00"
+    },
+    "description": "NPM 也是够调皮的，他们有一个仓库收集 npm 三个字母缩写可解释的含义 O网页链接 (比如 Never Push to Master 你随意感受一下) 而且通过开放pr的方式征集更多创意 O网页链接 粗略看了一下，网友的智慧真的是无穷的[二哈]",
+    "id": "d3275b76-6dad-4af2-9ae4-7afdf6d7243a",
+    "keywords": "趣味、NPM、JS、周边",
+    "title": "npm-expansions - Send us a pull request by editing expansions.txt",
+    "url": "http://npm.im/npm-expansions"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "一个 5k 左右的 jQuery 替代品，支持 IE8",
+    "id": "ba0ff843-87a8-4755-8420-3b0c382f0076",
+    "keywords": "库、JS、jQuery、选择器",
+    "title": "Selector - A micro javascript library used as a replacement for jQuery, weighing in at nearly 5KB",
+    "url": "https://github.com/Websilk/Selector"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490701399.619,
+      "timezone": "+00:00"
+    },
+    "description": "一项名叫《网页平均值》的统计，有些结论蛮有趣的，比如 <area> 居然这么多地方在用……",
+    "id": "d7bffea8-fb08-4c3c-84e0-7ac4e6d37f27",
+    "keywords": "HTML、统计、知识",
+    "title": "The average web page - FROM TOP TWENTY GOOGLE RESULTS",
+    "url": "https://www.advancedwebranking.com/html/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035634.239,
+      "timezone": "+00:00"
+    },
+    "description": "CSS 做的拉面[色] - 顺便记住，拉面的英文是 Ramen[阴险]",
+    "id": "c54aff28-4d91-4eb3-ba8a-6c17318507ac",
+    "keywords": "CSS、素材、趣味、拉面",
+    "title": "Ramen by pure CSS - A PEN BY AaronChuo (小狂)",
+    "url": "http://codepen.io/aaronchuo/full/GLEed/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490702852.824,
+      "timezone": "+00:00"
+    },
+    "description": "《移动应用设计中的“拇指区域”》有理有据直观易懂 看来手机最下方平行五个 tab 其实不够好，沿着拇指区域边缘排列也许更好",
+    "id": "822638f4-02fe-4782-821d-1f589d5764a7",
+    "keywords": "知识、设计、手势",
+    "title": "The Thumb Zone: Designing For Mobile Users",
+    "url": "https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491467706.925,
+      "timezone": "+00:00"
+    },
+    "description": "可让你直接在 Chrome 开发者工具直接运行 Node.js 程序, 调试, 非常方便。\n\n> 好机智的手段，我原来还以为模仿 node inspector 搞了什么，结果直接用 electron 在跑 node，简单粗暴",
+    "id": "989af7e4-37f4-47a6-bdbb-77f3a1d8a928",
+    "keywords": "工具、Node、DevTools",
+    "title": "Jam3/devtool - runs Node.js programs through Chromium DevTools",
+    "url": "https://github.com/Jam3/devtool"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490698412.173,
+      "timezone": "+00:00"
+    },
+    "description": "音频描述 GitHub 动态，好无聊的项目，适合做桌面",
+    "id": "c233173c-4ff8-45b8-9df2-228a52ad4c7a",
+    "keywords": "GitHub、创意、音频",
+    "title": "Project Audio for GitHub",
+    "url": "https://github.audio"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725288.792,
+      "timezone": "+00:00"
+    },
+    "description": "《10步让你做出引人入胜的用户体验》[网页链接](http://t.cn/RAqPSuT) 英文原版：http://www.creativebloq.com/ux/10-steps-engaging-user-experience-3156607",
+    "id": "dac3790a-9774-45fb-ba4c-15668d7fbf91",
+    "keywords": "观点、设计、入门",
+    "status": 1,
+    "title": "10步让你做出引人入胜的用户体验-UI中国-专业用户体验设计平台",
+    "url": "http://www.ui.cn/project.php?id=45911"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726166.978,
+      "timezone": "+00:00"
+    },
+    "description": "State of Web Type [网页链接](http://t.cn/RwuHfx2) 字体界的 caniuse.com。上百个字体特性的描述及其浏览器支持情况一览无余",
+    "id": "bd6098b8-c412-48ce-88d5-b29f7d1bfbd7",
+    "keywords": "手册、知识、Font、兼容性",
+    "status": 1,
+    "title": "State of Web Type",
+    "url": "http://stateofwebtype.com/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490703240.504,
+      "timezone": "+00:00"
+    },
+    "description": "一篇用 Chrome DevTools 调试 Node.js 的文章 O网页链接 前提条件是 Node 6.3+ 和 Chrome 55+ (这 DevTools 是要往 Chrome Studio 发展的意思吗)",
+    "id": "de5bc7cb-480a-4f40-8492-a2d82d4d1b2d",
+    "keywords": "DevTools、Chrome、工具、小技巧、Node",
+    "title": "Node.js debugging with Chrome DevTools (in parallel with browser JavaScript)",
+    "url": "https://blog.hospodarets.com/nodejs-debugging-in-chrome-devtools"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816623.016,
+      "timezone": "+00:00"
+    },
+    "description": "纯CSS实现的“视觉差”特效 [网页链接](http://t.cn/RPS8msk) 思路很赞！回归视觉差的本源",
+    "id": "c83a5da8-33da-4a41-8834-0b2f5c014a12",
+    "keywords": "CSS、视觉差、小技巧",
+    "status": 1,
+    "title": "Pure CSS Parallax Websites by Keith Clark",
+    "url": "http://blog.keithclark.co.uk/pure-css-parallax-websites/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689497.798,
+      "timezone": "+00:00"
+    },
+    "description": "Canvas API 手册，PDF 版",
+    "id": "852dbaa2-d38e-4202-816f-6e3c852820bd",
+    "keywords": "Canvas、手册、知识",
+    "title": "Canvas API 手册",
+    "url": "https://skilled.co/html-canvas/images/HTML_Canvas_Cheatsheet.pdf"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491491330.642,
+      "timezone": "+00:00"
+    },
+    "description": "压缩/解压缩本地文件的 Node 包",
+    "id": "a34d8c7a-b58f-438b-93f7-19b7ab20f4e8",
+    "keywords": "JS、Node.js、工具、压缩、库",
+    "title": "zip-local - very simple zipping/uzipping of local files and directories in node.js",
+    "url": "https://github.com/Mostafa-Samir/zip-local"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816584.75,
+      "timezone": "+00:00"
+    },
+    "description": "美丽开源 [Beautiful Open](http://t.cn/RPm5DxV) 汇集各种美丽的开源网站",
+    "id": "c35a64ae-39d1-445a-9ee3-40695370f226",
+    "keywords": "素材、设计、网站",
+    "status": 1,
+    "title": "Beautiful Open",
+    "url": "http://beautifulopen.com/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1ejcl8rc9asj20la0cbwge.jpg)  \n![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1ejcl96174rj20db09rwep.jpg)  \n![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ejcl9bv9s3j20lu0h0dhv.jpg)  \n立体像素画的Canvas库",
+    "id": "dd10f47e-9c1e-4e62-9e65-00087dddcfc1",
+    "keywords": "库、JS、图形库、Canvas、像素",
+    "title": "Obelisk.js",
+    "url": "https://github.com/nosir/obelisk.js"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491103381.444,
+      "timezone": "+00:00"
+    },
+    "description": "A JavaScript display engine for mathematics that works in all browsers.  No more setup for readers. It just works. Medium 的御用 MathML 库",
+    "id": "c2fc26f3-4836-437f-bea0-a12008f7325f",
+    "keywords": "库、MathML、JS",
+    "title": "MathJax - Beautiful math in all browsers",
+    "url": "https://www.mathjax.org"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819807.439,
+      "timezone": "+00:00"
+    },
+    "description": "[网页链接](http://css-tricks.com/interview-questions-css/) 少年 来 做题 纯CSS题目 不服来辩",
+    "id": "e1192b84-b384-414a-aa0c-1009bc7fbd0d",
+    "keywords": "CSS、面试、小技巧",
+    "status": 1,
+    "title": "Interview Questions and Exercises About CSS | CSS-Tricks",
+    "url": "http://css-tricks.com/interview-questions-css/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "剖析 Responsive Images [网页链接](https://jakearchibald.com/2015/anatomy-of-responsive-images/)",
+    "id": "d012c8c3-bb03-4f27-982e-4c7febdd0187",
+    "keywords": "知识、响应式、图片、CSS",
+    "title": "The anatomy of responsive images",
+    "url": "https://jakearchibald.com/2015/anatomy-of-responsive-images/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ekg0sg144sj20gq0cywfw.jpg)  \n![](http://ww4.sinaimg.cn/mw1024/660d0cdfgw1ekg0pjf0qsj20k00gvabt.jpg)  \n![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ekg0pqao3oj20ld0icwhv.jpg)  \nPayPal的HTML5无障碍播放器",
+    "id": "8e4217af-73e4-4cc1-ab48-44a3e363053f",
+    "keywords": "组件、视频、播放器、无障碍",
+    "title": "Accessible HTML5 Video Player",
+    "url": "https://github.com/paypal/accessible-html5-video-player/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691848.627,
+      "timezone": "+00:00"
+    },
+    "description": "我一定是在看科幻电影。。。",
+    "id": "a7c0ec49-c3c9-4f56-8571-a01afd22a4db",
+    "keywords": "PostCSS、工具、Grid",
+    "title": "postcss-grid-kiss - A PostCSS plugin to keep CSS grids stupidly simple",
+    "url": "https://github.com/sylvainpolletvillard/postcss-grid-kiss"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726630.77,
+      "timezone": "+00:00"
+    },
+    "description": "Client-side MVC's major bug - TimKadlec.com：if your client-side MVC framework does not support server-side rendering, that is a bug. It cripples performance. [网页链接](http://t.cn/RwAjYWj)",
+    "id": "c3ec7f9b-c347-45ea-9a87-5ca3e0817102",
+    "keywords": "观点、MVC",
+    "status": 1,
+    "title": "Client-side MVC's major bug - TimKadlec.com",
+    "url": "http://timkadlec.com/2015/02/client-side-templatings-major-bug/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491819300.469,
+      "timezone": "+00:00"
+    },
+    "description": "“响应性注释” [网页链接](http://responsivecomments.com/) media queries、data-attributes 和 注释 的合体，是不是有一点小牛掰的感觉？",
+    "id": "df678421-7398-4982-85c0-c5e1c4017050",
+    "keywords": "小技巧、响应式、HTML",
+    "status": 1,
+    "title": "<!-- ResponsiveComments. --> A client side solution to conditional loading in Responsive Web Design",
+    "url": "http://responsivecomments.com/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817377.962,
+      "timezone": "+00:00"
+    },
+    "description": "用 CSS 实现有层次的字体 (Layer Fonts in CSS) [网页链接](http://t.cn/RvjESvi) via webdesignerdepot.com 这个技术太凶残了！！",
+    "id": "c5bfe0db-99c9-4978-9759-bf2ffe6f097f",
+    "keywords": "CSS、小技巧、Font",
+    "status": 1,
+    "title": "How to get started with layer fonts in CSS | Webdesigner Depot",
+    "url": "http://www.webdesignerdepot.com/2014/06/how-to-get-started-with-layer-fonts-in-css/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490949455.123,
+      "timezone": "+00:00"
+    },
+    "description": "ajax 等各种请求的库，适合浏览器和 Node，基于 Promise",
+    "id": "e51249f6-6883-426d-87cb-d6448d63ab47",
+    "keywords": "库、JS、Node、请求、网络",
+    "title": "axios - Promise based HTTP client for the browser and node.js",
+    "url": "https://www.npmjs.com/package/axios"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "> 大企业为什么会失败？从硬盘行业获得的启示：为什么领先的硬盘制造商不能及时推出 8 英寸硬盘呢？很明显，他们顽强具备生产这种硬盘的技术能力，而它们之所以遭遇失败，是因为迟迟没有做出进入 8 英寸硬盘这一新兴市场的战略决策，从而贻误了良机。\n> \n> 在成熟企业中，预期回报反过来将推动资源流向延续性创新，而不是流向破坏性创新。这种资源分配模式也解释了为什么成熟企业在延续性创新中总能保持领先地位，而在破坏性创新中却总是表现不佳这样一个问题。",
+    "id": "d683fdb9-e80e-4e08-9565-b0bd3139a6ee",
+    "keywords": "书、创新、文化",
+    "title": "《创新者的窘境》",
+    "url": "https://www.amazon.cn/dp/B00GTDW848/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491035818.061,
+      "timezone": "+00:00"
+    },
+    "description": "这个网站简直是地理数据可视化的神器啊 - 还可以选择中国地图、世界地图、美国地图，填好数据后秒开 SVG / PNG",
+    "id": "91a2220b-56a7-43d8-b15b-6b14431aeb04",
+    "keywords": "服务、工具、地图、SVG",
+    "title": "Datamaps.co - Create your free data map",
+    "url": "https://datamaps.co"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491034330.55,
+      "timezone": "+00:00"
+    },
+    "description": "在命令行输出一段“弹框”文字，好无聊[doge]",
+    "id": "aa208224-7220-4cda-b86b-ae80727dd1ed",
+    "keywords": "JS、库、周边、创意",
+    "title": "console.frog",
+    "url": "http://tholman.com/console-dot-frog/"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490686392.347,
+      "timezone": "+00:00"
+    },
+    "description": "各种酷炫 Demo / 动效 集合，设计素材和灵感集合地",
+    "id": "d209a428-7d77-4056-a5d1-6ac937c3d29d",
+    "keywords": "设计, 动效, 素材",
+    "title": "Awwwards",
+    "url": "https://www.awwwards.com/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725360.204,
+      "timezone": "+00:00"
+    },
+    "description": "《我是如何开发 Node 应用的》[网页链接](http://t.cn/RA58Mlb) 超赞的总结",
+    "id": "dfb35d0b-ada3-4a76-9c75-15918725f930",
+    "keywords": "Node.js、入门、教程",
+    "status": 1,
+    "title": "How I build Node.js Applications",
+    "url": "http://blog.ragingflame.co.za/2015/4/1/how-i-build-nodejs-applications"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491487555.554,
+      "timezone": "+00:00"
+    },
+    "description": "介绍 HTML 中颜色代码的方方面面，科普文 + 工具集",
+    "id": "d1aa08f6-ac2b-4aaa-9832-85c2fc6b245d",
+    "keywords": "CSS、颜色、配合、入门、知识",
+    "title": "HTML Color Codes",
+    "url": "http://htmlcolorcodes.com"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491468016.987,
+      "timezone": "+00:00"
+    },
+    "description": "翻到国外去年年中的一项 JavaScript 调查 - 关键词 React/ES6/Isomorphic/Modules 而 ng/Node 依然火热，可以和国内的整体状况对比对比看……",
+    "id": "e7c78bf1-4513-4f8a-9874-56211efd3d2e",
+    "keywords": "JS、调查、统计",
+    "title": "JavaScript Scene Tech Survey Results Summer 2015",
+    "url": "https://medium.com/javascript-scene/javascript-scene-tech-survey-d2449a529ed"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491814350.393,
+      "timezone": "+00:00"
+    },
+    "description": "《响应式Web设计的9项基本原则》 中文翻译：[网页链接](http://t.cn/RZPphY8)",
+    "id": "db9e451b-e1a3-4773-bff6-121d9f7b0bac",
+    "keywords": "响应式、入门、设计",
+    "status": 1,
+    "title": "9 basic principles of responsive web design",
+    "url": "http://blog.froont.com/9-basic-principles-of-responsive-web-design/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723534.676,
+      "timezone": "+00:00"
+    },
+    "description": "从今天起推荐HTML5以外的github福利：ResolutionMenu [网页链接](http://t.cn/R2U1rAg) 简易的Mac分辨率切换菜单。在家多人用电脑的时候免不了要把分辨率切来切去，这个菜单感觉还不错。源码可以拿来学习，也可以build成app放到应用程序文件夹里做日常使用 (我对XCode环境比较陌生，截图里的本地发布方式对吗？)",
+    "id": "976ba8cb-8638-43a6-81be-dce680190de7",
+    "keywords": "周边、分辨率、工具",
+    "status": 1,
+    "title": "GitHub - robbertkl/ResolutionMenu: Simple OS X status bar menu app to switch display modes / resolutions, with support for HiDPI (retina) modes",
+    "url": "https://github.com/robbertkl/ResolutionMenu"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817809.321,
+      "timezone": "+00:00"
+    },
+    "description": "“Rotated Table Headers” [网页链接](http://t.cn/8sVCxVm) via Chris Coyier",
+    "id": "ac83b415-6aac-4517-85a8-75afddc0575b",
+    "keywords": "CSS、小技巧、table",
+    "status": 1,
+    "title": "CodePen - Rotated Table Headers",
+    "url": "http://codepen.io/chriscoyier/full/Fapif"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726031.452,
+      "timezone": "+00:00"
+    },
+    "description": "“is.js” [网页链接](http://t.cn/RwfsKQm) JS界的“十万个是不是”，上百种类型/环境/数据检查，做表单验证和测试的时候是不是特别希望身边有个这样的东西呢",
+    "id": "d3f94629-8a51-4da1-a083-cfc019844bfc",
+    "keywords": "JS、库、条件判断、断言",
+    "status": 1,
+    "title": "is.js - micro check library",
+    "url": "http://arasatasaygin.github.io/is.js/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032167.995,
+      "timezone": "+00:00"
+    },
+    "description": "Sharingbuttons.io - Super fast and easy Social Media Sharing Buttons. No JavaScript. No tracking. No Weibo[doge]",
+    "id": "e0caeef7-6da0-4969-8b97-dd1cfbd66696",
+    "keywords": "工具、分享、社交",
+    "title": "Sharingbuttons.io - Super fast and easy Social Media Sharing Buttons. No JavaScript. No tracking.",
+    "url": "http://sharingbuttons.io"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491036286.555,
+      "timezone": "+00:00"
+    },
+    "description": "这个工程你一定要收藏！- 各国国旗荟萃有木有！p.s. 代码我还没细看也不知道澳大利亚国旗有没有复用英国国旗[偷笑]",
+    "id": "d3a6accb-f9c1-4cf4-b99c-c42a69e28449",
+    "keywords": "CSS、Icon、Font、国旗",
+    "title": "flag-icon-css - A collection of all country flags in SVG — plus the CSS for easier integration.",
+    "url": "http://flag-icon-css.lip.is"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387600.878,
+      "timezone": "+00:00"
+    },
+    "description": "如何监测 (instrument) Node.js - 把未知错误和当事人 (req) 关联起来。来自 Opbeat 的博客",
+    "id": "f3c889b0-2d0a-483c-9b2c-f577c7d7691f",
+    "keywords": "Node、JS、小技巧",
+    "title": "How we instrument Node.js",
+    "url": "https://opbeat.com/blog/posts/how-we-instrument-nodejs/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387131.721,
+      "timezone": "+00:00"
+    },
+    "description": "这篇长文几乎解答了我对函数式编程的所有疑问和困惑，现在有点迫不及待写写了。[中文](https://zhuanlan.zhihu.com/p/20824527)",
+    "id": "dc1e666c-ce58-4030-bd37-714f337b6c95",
+    "keywords": "JS、函数式、知识、入门",
+    "title": "Functional Programming for JavaScript People",
+    "url": "https://medium.com/@chetcorcos/functional-programming-for-javascript-people-1915d8775504"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691743.721,
+      "timezone": "+00:00"
+    },
+    "description": "这些设计里充分体现了 Blend 这个词的含义",
+    "id": "9a07f2bb-e300-40d8-8296-aea87c54a58d",
+    "keywords": "素材、设计、Blend",
+    "title": "40 Beautiful Logos Made With Blend Modes And Transparency",
+    "url": "https://digitalsynopsis.com/design/colorful-overlay-signs-icons-logos/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725710.654,
+      "timezone": "+00:00"
+    },
+    "description": "带文本标签的图标最好？[网页链接](http://t.cn/RAAnCQT)",
+    "id": "b22ffb0d-2bec-44af-a4c7-e9e403300896",
+    "keywords": "设计、观点、图标",
+    "status": 1,
+    "title": "The best icon is a text label — Thomas Byttebier",
+    "url": "http://thomasbyttebier.be/blog/the-best-icon-is-a-text-label"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491722914.184,
+      "timezone": "+00:00"
+    },
+    "description": "一个 Web Notifications 的封装",
+    "id": "d56d98f5-9a00-4430-a950-6e03fb78ecc8",
+    "keywords": "JS、库、提醒",
+    "status": 1,
+    "title": "shivkumarganesh/Notifications: NotifyMe enables you to create web notifications pretty easily - \"Just Call me and Launch!!\"",
+    "url": "https://github.com/shivkumarganesh/NotifyMe"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491470292.438,
+      "timezone": "+00:00"
+    },
+    "description": "JS 语法解析工具",
+    "id": "f00159b2-9605-452a-a6ed-ec919844f69f",
+    "keywords": "JS、语法解析、工具",
+    "title": "esprima - ECMAScript parsing infrastructure for multipurpose analysis",
+    "url": "https://github.com/jquery/esprima"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724957.601,
+      "timezone": "+00:00"
+    },
+    "description": "彩蛋.js [网页链接](http://t.cn/RATw0Xz) 专门做彩蛋用的！试着在页面上输入“上-上-下-下-左-右-左-右-B-A”",
+    "id": "d66c24cf-460e-433a-9f4a-3e8d758e84ff",
+    "keywords": "JS、库、趣味、彩蛋",
+    "status": 1,
+    "title": "Egg.js - A Simple Way to Add Easter Eggs to Your Site",
+    "url": "http://thatmikeflynn.com/egg.js/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490696230.358,
+      "timezone": "+00:00"
+    },
+    "description": "HTML5 Input 元素的现状，文章从真正的用户体验和实际场景出发整理了一些表单的细节实现，不同的浏览器各有千秋，似乎 Edge 的细节处理得还蛮不错的，Firefox 和 Safari 桌面版一片空白…… ​​​​",
+    "id": "f486fea3-5014-43e3-9dce-703b732ae9ef",
+    "keywords": "表单、HTML、观点",
+    "title": "The State of HTML5 Input Elements",
+    "url": "https://www.sitepoint.com/the-state-of-html5-input-elements/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490703016.5,
+      "timezone": "+00:00"
+    },
+    "description": "你可能不知道的10个Chrome DevTools 命令行法宝",
+    "id": "e7cc2095-1c34-4951-b274-8066fce12d1f",
+    "keywords": "Chrome、工具、小技巧、DevTools",
+    "title": "Things you probably didn’t know you could do with Chrome’s Developer Console",
+    "url": "https://medium.freecodecamp.com/10-tips-to-maximize-your-javascript-debugging-experience-b69a75859329#.rw70hr49p"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491034451.211,
+      "timezone": "+00:00"
+    },
+    "description": "Codepen 联合创始人，著名 CSS 大师 Chris 为您介绍 Codepen 酷炫的小技巧 - 不得不说想得周到，设计的好，完美",
+    "id": "9a3e84b6-610c-4ed0-abec-c4ce5b304035",
+    "keywords": "小技巧、工具",
+    "title": "10 Cool Things You Can Do with CodePen and JavaScript",
+    "url": "https://www.sitepoint.com/cool-things-codepen-javascript/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491029251.291,
+      "timezone": "+00:00"
+    },
+    "description": "发现一个叫 JS Tips 的网站，各种 JavaScript 的小技巧和科普知识",
+    "id": "b2f07bf2-1ef6-4f95-a365-c15035d6c3f8",
+    "keywords": "JS、小技巧",
+    "title": "Js Tips - A JS tip per day!",
+    "url": "http://www.jstips.co"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491386594.244,
+      "timezone": "+00:00"
+    },
+    "description": "五步升级你的 Mac Terminal - 你还在使用老掉牙的 terminal 吗？[偷笑]",
+    "id": "fa6aea85-59b4-4a2a-a0db-d891f77dd29d",
+    "keywords": "小技巧、Mac、命令行",
+    "title": "5 ways to upgrade your Terminal",
+    "url": "https://medium.com/@sahanarajasekar/5-ways-to-upgrade-your-terminal-2fb8ab447949#.tl6y9f13z"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490687934.209,
+      "timezone": "+00:00"
+    },
+    "description": "你知道某个计算在你的电脑里一秒钟能执行多少次吗？可以在这里试试看，或许结果出乎你的意料",
+    "id": "d6af31ca-62a2-4526-b424-baf0f70b9b6d",
+    "keywords": "计算, 性能，知识",
+    "title": "DO YOU KNOW HOW MUCH YOUR COMPUTER CAN DO IN A SECOND?",
+    "url": "http://computers-are-fast.github.io"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491471663.548,
+      "timezone": "+00:00"
+    },
+    "description": "Photos of hands holding various phones, to be used in any presentation of your designs\n\nfacebook 还开放了这种东西……",
+    "id": "f9ecee01-2e41-4f44-b091-a035405fc6c4",
+    "keywords": "设计、素材、手机壳、原型",
+    "title": "Diverse Device Hands | Facebook Design",
+    "url": "http://facebook.design/handskit.html"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491467478.984,
+      "timezone": "+00:00"
+    },
+    "description": "感受一下这种写法：`$ npm install --save-dev babel-{core,loader} babel-preset-{es2015,stage-0,react} webpack`",
+    "id": "ed9d0965-edf6-43a9-ac01-35ba0a36d27a",
+    "keywords": "NPM、小技巧",
+    "title": "Type less by using brace-expansion - Twitter",
+    "url": "https://twitter.com/ericclemmons/status/691461537085566978"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491556163.962,
+      "timezone": "+00:00"
+    },
+    "description": "如何用 1000 行 C 写一个文本编辑器 (类似 VIM 那种)，并且附带了 [Demo](https://asciinema.org/a/90r2i9bq8po03nazhqtsifksb) 和[教程](http://viewsourcecode.org/snaptoken/kilo/)",
+    "id": "9bbeb3a1-b348-43c7-83c2-a59101a55337",
+    "keywords": "C、编辑器、教程、案例",
+    "title": "Writing an editor in less than 1000 lines of code, just for fun",
+    "url": "http://antirez.com/news/108"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689157.784,
+      "timezone": "+00:00"
+    },
+    "description": "聚合了 2016 年 Medium 社区最优秀的设计文章和素材",
+    "id": "b3f8d8ee-3c18-466c-9f15-a108966d842a",
+    "keywords": "设计、知识、素材",
+    "title": "Medium’s Best Design Writing of 2016",
+    "url": "https://medium.com/swlh/mediums-best-design-writing-of-2016-68de5ed2b7d9#.hsuo8cohs"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032695.287,
+      "timezone": "+00:00"
+    },
+    "description": "“作为一名设计师我曾经这样恶心了4回” ",
+    "id": "dfa5e8af-de69-495b-a002-5537b86e3814",
+    "keywords": "设计、观点",
+    "title": "4 ways I’ve fucked up as a designer",
+    "url": "https://medium.com/@geometrieva/here-are-some-of-the-ways-ive-fucked-up-as-a-designer-d6b1d430a750"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726815.809,
+      "timezone": "+00:00"
+    },
+    "description": "《深入浅出 Flexbox》[网页链接](http://t.cn/RwAGt1y) Flexbox 可以用来做什么呢？卡片？分屏？停靠？多列？出版物？还是仪表盘？其实都可以。好赞的一篇文章！还附带了生动的实例和代码讲解！强烈推荐阅读",
+    "id": "fc376890-6107-41e5-ad51-ec19041da143",
+    "keywords": "Flexbox、CSS、教程",
+    "status": 1,
+    "title": "Experiment: Using Flexbox Today - Chris Wright",
+    "url": "http://chriswrightdesign.com/experiments/using-flexbox-today/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725948.548,
+      "timezone": "+00:00"
+    },
+    "description": "[网页链接](http://t.cn/RAzkeae) 也许适合“抠各种文案细节”",
+    "id": "f5d1e303-62f1-4e07-83f8-64fba4a01340",
+    "keywords": "排版、JS、库",
+    "status": 1,
+    "title": "type.js",
+    "url": "http://typejs.org/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491386546.549,
+      "timezone": "+00:00"
+    },
+    "description": "relay react graphql jsx babel webpack material design express 人间逼格荟萃[酷]",
+    "id": "9dbfd538-a991-4ed9-8ff1-499ad8408424",
+    "keywords": "工具、Relay、React、全栈、脚手架",
+    "title": "relay-fullstack - Relay Starter Kit - Integrated with Relay, GraphQL, Express, ES6/ES7, JSX, Webpack, Babel, Material Design Lite, and PostCSS",
+    "url": "https://github.com/lvarayut/relay-fullstack"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491817921.223,
+      "timezone": "+00:00"
+    },
+    "description": "CSS用餐时间！[网页链接](http://t.cn/8sUXQfR) 大家快来练习CSS选择器了",
+    "id": "b92e27df-643c-49b1-8da9-77b84044d502",
+    "keywords": "CSS、趣味、选择器",
+    "status": 1,
+    "title": "CSS Diner - Where we feast on CSS Selectors!",
+    "url": "http://flukeout.github.io/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "分享一则《如何在 Git 里撤销（几乎）任何操作》 [网页链接](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)\n",
+    "id": "f18d5910-ef32-4224-be07-1e322ffa2be2",
+    "keywords": "Git、GitHub、小技巧",
+    "title": "How to undo (almost) anything with Git",
+    "url": "https://github.com/blog/2019-how-to-undo-almost-anything-with-git"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ej827b855rj20j40gb40h.jpg)  \n![](http://ww1.sinaimg.cn/mw1024/660d0cdfgw1ej8281a0uuj20iv07ngmk.jpg)  \n可随页面滚动而显示/隐藏的页头",
+    "id": "fe2bb7c6-b37c-4e34-b85f-8abe4d8bd362",
+    "keywords": "JS、库、滚动条、吸顶",
+    "title": "Headroom",
+    "url": "http://wicky.nillia.ms/headroom.js/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490690907.61,
+      "timezone": "+00:00"
+    },
+    "description": "人类早已用眼过度，UX不能只和视觉感官划等号，有很多交互是不需要界面的，“扔个界面上去”已经变成一种病态的惯性思维。让屏幕和自己的眼睛都歇一歇吧",
+    "id": "fa797e43-83f5-4a44-8988-e0829b2a9b43",
+    "keywords": "书、设计、交互",
+    "title": "《无界面交互-潜移默化的UX设计方略》",
+    "url": "https://www.amazon.cn/dp/B01N6N6O4Y"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726361.023,
+      "timezone": "+00:00"
+    },
+    "description": "等不及CSS变量？来玩玩这个吧：currentcolor [网页链接](http://t.cn/RwnfzC7) 能实现出很多意想不到的效果哦：）来自 Dreamweaver 的 blog (对没错是4嘴威窝的部落格)，另外 currentColor 也不是什么新玩意儿了，03 年就有了：[网页链接](http://t.cn/RwnfzCz)",
+    "id": "a27a3bf4-ac86-4a96-8560-4fd02ad7ba9e",
+    "keywords": "小技巧、CSS、配色",
+    "status": 1,
+    "title": "Extending the Color Cascade with the CSS currentColor Variable | Creative Cloud blog by Adobe",
+    "url": "http://blogs.adobe.com/dreamweaver/2015/02/extending-the-color-cascade-with-the-css-currentcolor-variable.html"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032223.348,
+      "timezone": "+00:00"
+    },
+    "description": "《表单设计10条定律》 总结得很完整很全面，将来再做表单的时候照着这10条过一遍，基本上能够确保在一个高水准了",
+    "id": "c81e3f71-f776-4c07-b171-d0b639b81529",
+    "keywords": "表单、设计、知识",
+    "title": "10 Rules For Efficient Form Design",
+    "url": "http://babich.biz/10-rules-for-efficient-form-design/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724190.283,
+      "timezone": "+00:00"
+    },
+    "description": "readremaining.js [网页链接](http://t.cn/R2hDc5b) 根据你的阅读速度判断还需要多长时间才能读完全文 “长读不能”终结者",
+    "id": "f191756f-4536-456b-a4ee-6952e174a52d",
+    "keywords": "JS、库、阅读时间",
+    "status": 1,
+    "title": "ReadRemaining.js - How long you'll need to read any text.",
+    "url": "http://aerolab.github.io/readremaining.js/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723515.17,
+      "timezone": "+00:00"
+    },
+    "description": "感觉 React Native 一发布，其它类似的产品就都坐不住了，最近好多跟风发布：Ionic 1.0.0 [网页链接](http://t.cn/R2wUDC4) NativeScript 1.0.0 [网页链接](http://t.cn/R2wUDCG) Reapp [网页链接](http://t.cn/R2wUDCb) Tabris.js [网页链接](http://t.cn/R2wUDCq) deku [网页链接](http://t.cn/RAFQeKu) 看不过来了",
+    "id": "fa8223c9-bc38-4766-b5c8-82687832671a",
+    "keywords": "素材、Hybrid、工具",
+    "status": 1,
+    "title": "driftyco/ionic · GitHub",
+    "url": "https://github.com/driftyco/ionic/releases/tag/v1.0.0"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725414.542,
+      "timezone": "+00:00"
+    },
+    "description": "HTTP状态码大全 [网页链接](http://t.cn/8spqwn3) via REST API Tutorial。除了200、404和500你还熟知哪些呢",
+    "id": "cab79e52-7e09-4e20-9871-341d2407094d",
+    "keywords": "手册、HTTP、知识",
+    "status": 1,
+    "title": "HTTP Status Codes",
+    "url": "http://www.restapitutorial.com/httpstatuscodes.html"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724225.088,
+      "timezone": "+00:00"
+    },
+    "description": "Practical Web Audio [网页链接](http://t.cn/R2vLhsq) 音频必然是未来前端不可或缺的一部分，我长期这样认为的。这篇文章不能同意更多了，转出来",
+    "id": "aa30e231-2815-452a-b6e9-4a2e9ac40f17",
+    "keywords": "声音、知识、Audio、入门",
+    "status": 1,
+    "title": "Practical Web Audio - Telerik",
+    "url": "http://developer.telerik.com/featured/practical-web-audio/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490703361.372,
+      "timezone": "+00:00"
+    },
+    "description": "分享一个在线问卷的网站 *typeform*，体验做得蛮好，而且响应式界面是个亮点",
+    "id": "cce6f043-9879-433d-acbe-aa8e18cd6669",
+    "keywords": "表单、响应式、服务",
+    "title": "Typeform - Goodbye forms. Hello typeforms",
+    "url": "https://www.typeform.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816235.004,
+      "timezone": "+00:00"
+    },
+    "description": "这些CSS写得简直掉渣天了！[网页链接](http://a.singlediv.com) 每张图都只是一个div而已啊",
+    "id": "fec56f72-460f-4573-b0ef-b67555d8a847",
+    "keywords": "素材、趣味、CSS、设计",
+    "status": 1,
+    "title": "A Single Div",
+    "url": "http://a.singlediv.com"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491556228.207,
+      "timezone": "+00:00"
+    },
+    "description": "各种 HTML、XML 编码解码的库",
+    "id": "ad19b246-8f7f-4d40-adaa-20bc47b46b0b",
+    "keywords": "JS、HTML、entity、库",
+    "title": "html-entities - Fast html entities library",
+    "url": "https://www.npmjs.com/package/html-entities"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723570.782,
+      "timezone": "+00:00"
+    },
+    "description": "webfontload.com [网页链接](http://t.cn/Rw2wMEX) 把所有 Google Fonts 导入自己的 Mac OS 字体库：`curl [网页链接](http://t.cn/Rw2wMEa) | sh`",
+    "id": "cfa30167-1eb8-4d75-83f5-4ff7967c2408",
+    "keywords": "工具、Font",
+    "status": 1,
+    "title": "Web FontLoad - Beautify The Web One Site at a Time",
+    "url": "http://webfontload.com/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726668.494,
+      "timezone": "+00:00"
+    },
+    "description": "用 CSS Masks 轻松实现纹理艺术字 [网页链接](http://t.cn/RwqEans)",
+    "id": "ff28da6b-5f56-463b-b423-49f7490d479f",
+    "keywords": "纹理、CSS、小技巧",
+    "status": 1,
+    "title": "Easy Textures with CSS Masks | Viget",
+    "url": "http://viget.com/inspire/easy-textures-with-css-masks"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725401.499,
+      "timezone": "+00:00"
+    },
+    "description": "wallpaper [网页链接](http://t.cn/RAajql8) 一个可以设置操作系统壁纸的node库。。。NodeOS你好",
+    "id": "b2c8aff0-4d05-4c8a-8264-6fb9449b5b1d",
+    "keywords": "工具、Node.js、壁纸",
+    "status": 1,
+    "title": "GitHub - sindresorhus/wallpaper: Get or set the desktop wallpaper",
+    "url": "https://github.com/sindresorhus/wallpaper"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490701730.209,
+      "timezone": "+00:00"
+    },
+    "description": "JavaScript 的“最低消费”就只有这六个字符吗？！如果有耐心看完整篇文章你会想到“引人入胜”这四个字",
+    "id": "d5732dd0-bd65-44cd-8718-0e6707cbb692",
+    "keywords": "JS、趣味、小技巧、语言特性",
+    "title": "A Javascript journey with only six characters",
+    "url": "http://www.jazcash.com/a-javascript-journey-with-only-six-characters/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490695701.335,
+      "timezone": "+00:00"
+    },
+    "description": "看完了，蛮系统的，也有鲜活的设计案例，尤其银行app那个例子，有庖丁解牛的一面，也有现实的一面。最后还配合介绍了一些设计外延的工程和技术知识，包括作者自己的独到看法，感觉作者是个很厉害的人啊。推荐阅读",
+    "id": "d8c2fc43-2e0a-46ad-b19c-209203ce22e3",
+    "keywords": "书、设计、体验",
+    "title": "《体验设计白书》",
+    "url": "https://www.amazon.cn/dp/B01KTX2A6O"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491816754.719,
+      "timezone": "+00:00"
+    },
+    "description": "好励志的故事！[网页链接](http://t.cn/RvmrNtm) 《我的人生是如何被一段密码改变的》",
+    "id": "b76e3c5a-7b9c-4d0a-9496-e4dfc71c3de4",
+    "keywords": "文化",
+    "status": 1,
+    "title": "How a Password Changed My Life",
+    "url": "https://medium.com/@manicho/how-a-password-changed-my-life-7af5d5f28038"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490692244.893,
+      "timezone": "+00:00"
+    },
+    "description": "Viewer.js 各种大图预览效果库 ​​​​",
+    "id": "d9a538c3-9b24-45dc-8012-bab0bc842800",
+    "keywords": "JS、库、图片、预览",
+    "title": "Viewer.js - JavaScript image viewer.",
+    "url": "http://fengyuanchen.github.io/viewerjs/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491814409.44,
+      "timezone": "+00:00"
+    },
+    "description": "分享一个网站：Learn CSS Layout [网页链接](http://t.cn/zjjXPGF) 有中文版本",
+    "id": "bc0280f1-ef3f-4282-a633-4b4c593a8ab6",
+    "keywords": "",
+    "status": 1,
+    "title": "Learn CSS Layout",
+    "url": "http://learnlayout.com/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491032474.057,
+      "timezone": "+00:00"
+    },
+    "description": "机器学习屌屌的：史上最傻瓜的机器学习介绍 - [有中文版了](https://zhuanlan.zhihu.com/p/24339995)",
+    "id": "d9eb72ee-eba8-41d3-9394-4b7a4d671b36",
+    "keywords": "机器学习，知识，入门",
+    "title": "Machine Learning is Fun! - The world’s easiest introduction to Machine Learning",
+    "url": "https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471#.dbif88tg8"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491721587.225,
+      "timezone": "+00:00"
+    },
+    "description": "咖喱 JS",
+    "id": "bd19bdce-c914-4fc3-b0b2-c9451c5fc577",
+    "keywords": "Curry、JS、函数式、知识",
+    "status": 1,
+    "title": "Currying in JavaScript",
+    "url": "https://medium.com/@kevincennis/currying-in-javascript-c66080543528"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "《Responsive的对照表》 [网页链接](http://www.sitepoint.com/responsive-solutions-for-feature-comparison-tables/) 如何在多屏幕 (准确的说是小屏幕) 优雅展示一个table一直是个大问题。文中给出了两种不同的方案",
+    "id": "da02eba4-2d43-4066-996e-53f765015082",
+    "keywords": "响应式、CSS、小技巧、table",
+    "title": "Responsive Solutions for Feature Comparison Tables",
+    "url": "http://www.sitepoint.com/responsive-solutions-for-feature-comparison-tables/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491726450.179,
+      "timezone": "+00:00"
+    },
+    "description": "发现一个极好的git教程《git magic》且有中文翻译 [网页链接](http://t.cn/aDrVcR)",
+    "id": "c55cb48b-1e21-4971-ae45-63512e0b51e2",
+    "keywords": "Git、教程、手册",
+    "status": 1,
+    "title": "Git Magic - 前言",
+    "url": "http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724447.771,
+      "timezone": "+00:00"
+    },
+    "description": "“老板，来份Sass堡” [网页链接](http://t.cn/RArXBLW) Sass Burger",
+    "id": "db4452f2-5a51-48b1-b370-38a450f40319",
+    "keywords": "CSS、库、汉堡、菜单",
+    "status": 1,
+    "title": "Sass Burger",
+    "url": "http://joren.co/sass-burger/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490695175.898,
+      "timezone": "+00:00"
+    },
+    "description": "学到很多简单实用的东西，对 @图灵教育 的“精益”系列的书都特别喜欢，比较对自己胃口[good]",
+    "id": "c5904037-a324-4eec-9b19-87a65a08a880",
+    "keywords": "精益、书、品牌",
+    "title": "《精益品牌塑造》",
+    "url": "https://www.amazon.cn/dp/B01LZ7FX0V"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491723320.98,
+      "timezone": "+00:00"
+    },
+    "description": "TypeScript入门 [网页链接](http://t.cn/R2Gef2r)",
+    "id": "dc71cab4-818b-4f76-9ba0-343733213195",
+    "keywords": "typescript、入门、教程、JS",
+    "status": 1,
+    "title": "Getting Started with TypeScript - Treehouse Blog",
+    "url": "http://blog.teamtreehouse.com/getting-started-typescript"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1eicgp5t42rj20jr0k5jst.jpg)  \n![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1eicgp8oyrlj20lb0ifq4y.jpg)  \n轻松获取任意屏幕的 PPI/DPI 信息",
+    "id": "d1ac5408-3fa5-4f3e-b943-ca645ddb392c",
+    "keywords": "服务、工具、响应式",
+    "title": "DPI Love",
+    "url": "http://dpi.lv"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490691207.605,
+      "timezone": "+00:00"
+    },
+    "description": "感觉 CSS 新的 Grid Layout 好复杂…… 这已经是我能找到的最简洁明了的介绍了，然而我也看了好久才把它们学完 ​​​​",
+    "id": "dfe51991-9421-41b3-a4b0-40e3fdd9bff8",
+    "keywords": "CSS、知识、Grid",
+    "title": "Grid by Example",
+    "url": "http://gridbyexample.com"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725775.639,
+      "timezone": "+00:00"
+    },
+    "description": "动画的12项基本法则 - 维基百科，自由的百科全书 [网页链接](http://t.cn/RAy7pxN)",
+    "id": "ddbb5f5e-c9f5-4bd5-8fd0-5a5c0020a0e9",
+    "keywords": "动效、知识、入门",
+    "status": 1,
+    "title": "動畫的12項基本法則 - 维基百科，自由的百科全书",
+    "url": "http://zh.m.wikipedia.org/wiki/%E5%8B%95%E7%95%AB%E7%9A%8412%E9%A0%85%E5%9F%BA%E6%9C%AC%E6%B3%95%E5%89%87"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491724531.685,
+      "timezone": "+00:00"
+    },
+    "description": "Symdiff [网页链接](http://t.cn/RAFp3xq) 帮助检查你的CSS中是否有多余的样式，用法也比较简单",
+    "id": "e1c07fcf-4f16-4179-a024-32e78c7ca187",
+    "keywords": "工具、CSS、质量、分析",
+    "status": 1,
+    "title": "symdiff",
+    "url": "https://symdiff.github.io/"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491029544.687,
+      "timezone": "+00:00"
+    },
+    "description": "NPM 发布了他们御用的 markdown 解析器 O网页链接 还配套了命令行工具、浏览器自定义标签、cheerio中间件等，大家可以试试看[酷]",
+    "id": "e19ebe9a-2229-4246-b78f-4986091a7db7",
+    "keywords": "JS、库、Markdown",
+    "title": "marky-markdown",
+    "url": "https://www.npmjs.com/package/marky-markdown"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491387368.077,
+      "timezone": "+00:00"
+    },
+    "description": "一个“手把手”做R-R Todo的教程。本地跑起来试了一下，一个很简单的没有任何样式的todos，js代码build出来一共2.7MB，估计里面有一些开发版的冗余内容吧……我觉得[衰][衰][衰]",
+    "id": "e4b9104b-2564-4c8a-9f54-7797c81985fc",
+    "keywords": "React、教程、入门、Redux",
+    "title": "Step by Step Guide To Building React Redux Apps",
+    "url": "https://medium.com/@rajaraodv/step-by-step-guide-to-building-react-redux-apps-using-mocks-48ca0f47f9a"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490692138.583,
+      "timezone": "+00:00"
+    },
+    "description": "Trace 带来的 Node.js 业界调查 (2016)",
+    "id": "e1cd713a-55bb-4358-8760-b56b8c603985",
+    "keywords": "知识、Node、JS、调查",
+    "title": "How Developers use Node.js",
+    "url": "https://blog.risingstack.com/node-js-developer-survey-results-2016/"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491555629.418,
+      "timezone": "+00:00"
+    },
+    "description": "热门 JS Perf 列表 [Popular test cases · jsPerf](https://jsperf.com/popular) 不过还是太少了，不知道社区里有没有人整理过经典的 JS Perf 测试用例 [@JS小组](http://weibo.com/n/JS%E5%B0%8F%E7%BB%84?from=feed&loc=at)",
+    "id": "e5779d03-fa3b-4251-8a92-5e3892c4d2d6",
+    "keywords": "素材、JS、性能",
+    "title": "Popular test cases - jsPerf",
+    "url": "https://jsperf.com/popular"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491467782.514,
+      "timezone": "+00:00"
+    },
+    "description": "各种浏览器特性检测，1k大小，也许大家啥时候用得上",
+    "id": "e6adc607-fa7b-493e-aaac-ea1556a8f413",
+    "keywords": "库、JS、特性检测",
+    "title": "Feature.js, a feature detection library in 1kb",
+    "url": "http://featurejs.com"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490689599.393,
+      "timezone": "+00:00"
+    },
+    "description": "A free guide to all HTML elements",
+    "id": "e5d480a6-9771-49da-86d8-d52c58262c5b",
+    "keywords": "HTML、手册、知识",
+    "title": "HTML 手册",
+    "url": "http://htmlreference.io"
+  },
+  {
+    "$hz_v$": 2,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491896183.128,
+      "timezone": "+00:00"
+    },
+    "description": "![](http://ww2.sinaimg.cn/mw1024/660d0cdfgw1ebid5dip2hj20e40jh0v4.jpg)  \n轻量级文件大小描述库",
+    "id": "eb0e0c7b-a8f7-4df0-af71-53bd3e972a7c",
+    "keywords": "JS、库、文件大小",
+    "title": "file-size.js",
+    "url": "https://github.com/Nijikokun/file-size"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490703107.42,
+      "timezone": "+00:00"
+    },
+    "description": "用 JS 访问和控制系统剪切板，先收藏着 (代码不多star好多[可怜])",
+    "id": "e6e3b456-fd85-47bb-9149-5b25230d9279",
+    "keywords": "JS、库、剪切版",
+    "title": "clipboard.js - A modern approach to copy text to clipboard",
+    "url": "https://clipboardjs.com"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1490692505.205,
+      "timezone": "+00:00"
+    },
+    "description": "个人分享和开源心得",
+    "id": "f091f6b7-d7f9-48ea-862b-59c4bf9c8fdd",
+    "keywords": "观点、开源",
+    "title": "【开源访谈】阿里 Weex 负责人勾股：开源社区不纯粹做技术的事情",
+    "url": "https://www.oschina.net/question/2886655_2214296"
+  },
+  {
+    "$hz_v$": 0,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491033916.659,
+      "timezone": "+00:00"
+    },
+    "description": "【GIF搜索引擎Giphy的故事】GIF动图是当代互联网重要的组成部分：）GIF看上去应该是年轻人玩的东西，但Giphy的创始人们算老人了，30好几创办Giphy。因为是搜索引擎，所以盈利模式是广告",
+    "id": "eea14b84-0a3a-42c3-b05b-9a7d2b9a5344",
+    "keywords": "周边、创业",
+    "title": "How Two Guys Built the Ultimate GIF Search Engine",
+    "url": "https://www.bloomberg.com/news/articles/2016-01-28/how-two-guys-built-the-ultimate-gif-search-engine"
+  },
+  {
+    "$hz_v$": 1,
+    "datetime": {
+      "$reql_type$": "TIME",
+      "epoch_time": 1491725759.226,
+      "timezone": "+00:00"
+    },
+    "description": "2015年前端开发的起跑线在哪里？[网页链接](http://t.cn/RAAncGt) JS、测试、自动化、代码质量、版本控制、客户端模板、Node。。。",
+    "id": "f3d9ac32-548f-4241-9e4e-985923aef097",
+    "keywords": "观点、趋势",
+    "status": 1,
+    "title": "A Baseline for Front-End [JS] Developers, 2015",
+    "url": "http://rmurphey.com/blog/2015/03/23/a-baseline-for-front-end-developers-2015/"
+  }
+]
