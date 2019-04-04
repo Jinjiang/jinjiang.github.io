@@ -84,7 +84,7 @@ __谢谢__
 
 <iframe src="https://codesandbox.io/embed/n734wvx92m?fontsize=14&module=%2Fsrc%2FApp.vue" title="Vue Mark Display Demo 3" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-当然在 markdown 中你也可以撰写任意 HTML5 代码，比如潜入一端 HTML 甚至全局有效的 `<style>` 标签，都可以被解析：
+当然在 markdown 中你也可以撰写任意 HTML5 代码，比如嵌入一段 HTML 甚至全局有效的 `<style>` 标签，都可以被解析：
 
 ``` md
 # 这里是第一页
