@@ -50,4 +50,4 @@ jobs:
             git remote add origin https://jinjiang:$GITHUB_TOKEN@github.com/Jinjiang/jinjiang.github.io.git
             git add .
             git commit -m "generated docs"
-            git push origin HEAD:gh-pages
+            git push origin HEAD:gh-pages --force
