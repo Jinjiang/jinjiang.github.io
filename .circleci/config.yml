@@ -39,9 +39,9 @@ jobs:
 
       # run tests!
       - run:
-        name: Install and configure dependencies
-        command: |
-          git config user.email "zhaojinjiang@me.com"
-          git config user.name "Jinjiang"
+          name: Install and configure dependencies
+          command: |
+            git config user.email "zhaojinjiang@me.com"
+            git config user.name "Jinjiang"
       - run: yarn build
       - run: yarn deploy
