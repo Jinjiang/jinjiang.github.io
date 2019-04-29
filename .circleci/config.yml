@@ -38,11 +38,6 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run:
-          name: Install and configure dependencies
-          command: |
-            git config user.email "zhaojinjiang@me.com"
-            git config user.name "Jinjiang"
       - run: yarn build
       # - run: yarn deploy
       - run:
@@ -50,6 +45,8 @@ jobs:
           command: |
             cd public
             git init
+            git config user.email "zhaojinjiang@me.com"
+            git config user.name "Jinjiang"
             git remote add origin https://jinjiang:$GITHUB_TOKEN@github.com/Jinjiang/jinjiang.github.io.git
             git add .
             git commit -m "generated docs"
