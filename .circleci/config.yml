@@ -44,4 +44,13 @@ jobs:
             git config user.email "zhaojinjiang@me.com"
             git config user.name "Jinjiang"
       - run: yarn build
-      - run: yarn deploy
+      # - run: yarn deploy
+      - run:
+          name: deploy
+          command: |
+            cd public
+            git init
+            git remote add origin https://jinjiang:$GITHUB_TOKEN@github.com/Jinjiang/jinjiang.github.io.git
+            git add .
+            git commit -m "generated docs"
+            git push origin HEAD:gh-pages
