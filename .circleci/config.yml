@@ -39,6 +39,7 @@ jobs:
       - run:
           name: deploy
           command: |
+            cp -r .circleci public/
             cd public
             git init
             git config user.email "zhaojinjiang@me.com"
