@@ -56,4 +56,6 @@ workflows:
             branches:
               only:
                 - dev
+              ignore:
+                - master
   
