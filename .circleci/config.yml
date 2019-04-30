@@ -5,6 +5,10 @@
 version: 2
 jobs:
   build:
+    branches:
+      only:
+        - dev
+
     docker:
       # specify the version you desire here
       - image: circleci/node:8
@@ -48,15 +52,3 @@ jobs:
             git add .
             git commit -m "generated docs"
             git push origin HEAD:master --force
-workflows:
-  version: 2
-  deploy:
-    jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - dev
-              ignore:
-                - master
-  
