@@ -170,7 +170,7 @@ https://www.npmjs.com/package/mark2slides
 用法：
 
 ``` bash
-npm install --global md2slides
+npm install --global mark2slides
 m2s my-slides.md
 ```
 
