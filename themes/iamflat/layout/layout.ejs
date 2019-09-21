@@ -35,9 +35,6 @@
 
   <%- css('css/pure') %>
   <%- css('css/style') %>
-  <!--[if IE 6]>
-    <%- css('css/style-ie') %>
-  <![endif]-->
 
   <% if (theme.rss){ %>
   <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
@@ -48,6 +45,9 @@
 </head>
 
 <body>
+  <script>(() => { if ((new Date().getHours() + 6) % 24 < 12) document.body.classList.add('dark-mode') })()</script>
+
+  <div class="dark-mode-helper"></div>
 
   <div id="wrapper">
 
@@ -64,6 +64,7 @@
 
     <div id="nav" class="pure-menu pure-menu-open pure-menu-horizontal">
       <ul>
+        <li><a href="#" onclick="document.body.classList.toggle('dark-mode'), event.preventDefault()">🌚</a></li>
         <% for (var i in site.pages.data.sort(function (a, b) { return a.order - b.order })){ %>
         <li<% if (page.path === site.pages.data[i].path) { %> class="pure-menu-selected"<% } %>>
           <a href="<%- url_for(site.pages.data[i].path.replace(/index\.html$/, '')) %>">
@@ -72,6 +73,7 @@
         </li>
         <% } %>
         <li><a href="<%- url_for(config.archive_dir) %>">归档</li>
+        <li><a href="#" onclick="document.body.classList.toggle('dark-mode'), event.preventDefault()">🌝</a></li>
       </ul>
     </div>
 
@@ -86,6 +88,7 @@
       <script src="https://hm.baidu.com/h.js?a0a2372d4b7621d0bfe71f33c58a4bd8"></script>
     </div>
   </div>
+
   <%- js('js/script') %>
 </body>
 

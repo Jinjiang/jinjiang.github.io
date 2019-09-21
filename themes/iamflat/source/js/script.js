@@ -28,9 +28,8 @@
     if (window.innerWidth <= 640) {
       bgImage = bgImage.replace('.jpg', '_m.jpg');
     }
-    header.style.background = '#09c none no-repeat center center';
-    header.style.backgroundSize = 'cover';
-    header.style.backgroundImage = 'linear-gradient(to bottom, rgba(0, 144, 192, 1), rgba(0, 144, 192, 0.5)), url(' + bgImage + ')';
+    header.classList.add('has-bg')
+    header.style.backgroundImage = 'linear-gradient(to bottom, var(--header-bg-color-top), var(--header-bg-color-bottom)), url(' + bgImage + ')';
   }
 })();
 
@@ -41,9 +40,8 @@
     if (window.innerWidth <= 640) {
       bgImage = bgImage.replace('.jpg', '_m.jpg');
     }
-    footer.style.background = '#f60 none no-repeat center center';
-    footer.style.backgroundSize = 'cover';
-    footer.style.backgroundImage = 'linear-gradient(to bottom, rgba(255, 96, 0, 0.5), rgba(255, 96, 0, 1)), url(' + bgImage + ')';
+    footer.classList.add('has-bg')
+    footer.style.backgroundImage = 'linear-gradient(to bottom, var(--footer-bg-color-top), var(--footer-bg-color-bottom)), url(' + bgImage + ')';
   }
 })();
 

@@ -2,6 +2,8 @@ $font-family-mac: "Lucida Grande"
 $font-family-pc: "Microsoft JhengHei", "Microsoft YaHei"
 $font-family-code: Monaco, Consolas, "Courier New"
 
+// font
+
 html, table,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"]
@@ -9,6 +11,8 @@ html, table,
 code, pre
   font-family: $font-family-code
   font-size: 85%
+
+// copyright
 
 body::after
   position: fixed
@@ -24,6 +28,45 @@ body::after
   background: rgba(255, 255, 255, 0.5)
   border-top-left-radius: 0.5em
 
+// dark mode
+// - https://dev.wgao19.cc/sun-moon-blending-mode/
+
+body
+  --header-bg-color: #09c
+  --header-bg-color-top: rgba(0, 144, 192, 1)
+  --header-bg-color-bottom: rgba(0, 144, 192, 0.5)
+  --footer-bg-color: #f60
+  --footer-bg-color-top: rgba(255, 96, 0, 0.5)
+  --footer-bg-color-bottom: rgba(255, 96, 0, 1)
+
+  &.dark-mode
+    --header-bg-color: rgba(7, 11, 33, 1)
+    --header-bg-color-top: rgba(7, 11, 33, 1)
+    --header-bg-color-bottom: rgba(7, 11, 33, 0.5)
+    --footer-bg-color: rgba(7, 11, 33, 1)
+    --footer-bg-color-top: rgba(7, 11, 33, 0.5)
+    --footer-bg-color-bottom: rgba(7, 11, 33, 1)
+
+.dark-mode-helper
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 0
+  background: rgb(248, 244, 221)
+  mix-blend-mode: difference
+  pointer-events: none
+  transition: height ease-in-out 0.3s
+
+body.dark-mode
+  .dark-mode-helper
+    height: 100vh
+
+#header, #footer, img, iframe
+  isolation: isolate
+
+// basic
+
 body
   line-height: 1.8
   word-break: break-all
@@ -32,12 +75,18 @@ a
   text-decoration: none
   border-bottom: 1px black dashed
 
+// layout
+
 #header
   padding: 1em
   text-align: center
   border-bottom: 1px solid gray
-  background: #09c
+  background: var(--header-bg-color)
   color: white
+
+  &.has-bg
+    background: var(--header-bg-color) none no-repeat center center
+    background-size: cover
 
   h1
     .first-letter
@@ -107,15 +156,21 @@ a
         margin-top: 0
 
 #footer
-  text-align: center
-  background: #f60
   padding: 1em
+  text-align: center
+  background: var(--footer-bg-color)
   color: white
   padding-bottom: 4em
+
+  &.has-bg
+    background: var(--footer-bg-color) none no-repeat center center
+    background-size: cover
 
   a
     color: white
     border-bottom-color: white
+
+// media query details
 
 @media all and (min-width: 1600px)
   body
@@ -202,6 +257,8 @@ a
 .comment-meta
   float: right
   font-size: 16px
+
+// special content
 
 blockquote
   font-family: "Georgia", serif
