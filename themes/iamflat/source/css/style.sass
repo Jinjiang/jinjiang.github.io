@@ -211,53 +211,6 @@ a
     padding-left: 0.75em
     padding-right: 0.75em
 
-// comment panel
-
-#comments
-  margin-top: 4em
-
-#comments > .comment-list
-  padding-left: 40px
-
-.comment-list
-  list-style: none
-  margin: 40px 0
-  padding: 0
-
-.comment-body
-  position: relative
-  padding: 5px 10px
-  border-radius: 5px
-  padding-left: 40px
-
-  > p
-    clear: both
-
-.comment-author
-  float: left
-  position: relative
-  padding-bottom: 10px
-
-  cite
-    font-weight: bold
-    font-style: normal
-    font-size: 24px
-
-  img
-    position: absolute
-    display: block
-    width: 64px
-    height: 64px
-    border-radius: 3px
-    background: white
-    box-shadow: 1px 1px 3px 2px #999
-    left: -76px
-    top: -8px
-
-.comment-meta
-  float: right
-  font-size: 16px
-
 // special content
 
 blockquote
@@ -279,3 +232,18 @@ pre
     font-size: 100%
     margin-left: 0
     margin-right: 0
+
+// hack github comments
+
+#main .gt-meta,
+#main .gt-header,
+#main .gt-header-controls,
+#main .gt-comment
+  position: static
+
+#main .gt-comments > div
+  position: static !important
+
+g-emoji
+  isolation: isolate
+  display: inline-block
