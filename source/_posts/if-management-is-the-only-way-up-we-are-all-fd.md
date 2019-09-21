@@ -22,8 +22,8 @@ updated: 2017/08/01 02:58:36
 
 我画了这张图来辅助[说明][illustrate]两种角色之间的不同：
 
-![ics-vs-pws-small](https://moz.com/rand/wp-content/uploads/2013/04/ics-vs-pws-small.gif)  
-([大图](https://moz.com/rand/wp-content/uploads/2013/04/ics-vs-pws-large.gif))
+![ics-vs-pws-small](https://images.sparktoro.com/blog/wp-content/uploads/2017/10/ics-vs-pws-small.gif)  
+([大图](https://images.sparktoro.com/blog/wp-content/uploads/2017/10/ics-vs-pws-large.gif))
 
 <!--more-->
 
