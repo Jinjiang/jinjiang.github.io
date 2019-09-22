@@ -42,11 +42,13 @@ order: 3
 
 ### 联系方式
 
-* Website: <a href="http://jiongks.name/" target="_blank">http://jiongks.name/</a>
-* Weibo: <a href="http://weibo.com/mx006" target="_blank">http://weibo.com/mx006</a>
-* GitHub: <a href="http://github.com/jinjiang/" target="_blank">http://github.com/jinjiang/</a>
-* <del>QQ: 110 698 041 (不再使用)</del>
-* Email: zhaojinjiang[at]me
+* Twitter: <a href="https://twitter.com/zhaojinjiang" target="_blank">https://twitter.com/zhaojinjiang</a>
+* GitHub: <a href="https://github.com/jinjiang/" target="_blank">https://github.com/jinjiang/</a>
+* Medium: <a href="https://medium.com/@jinjiang" target="_blank">https://medium.com/@jinjiang</a>
+* Website: <a href="https://jiongks.name/" target="_blank">https://jiongks.name/</a>
+* Email: zhaojinjiang[at]me[dot].com
+* <del>Weibo: <a href="https://weibo.com/mx006" target="_blank">https://weibo.com/mx006</a> (不再活跃)</del>
+* <del>QQ: 110 698 041 (不再活跃)</del>
 
 ### 你们还想知道神马⋯⋯
 
