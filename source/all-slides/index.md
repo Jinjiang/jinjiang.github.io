@@ -6,12 +6,22 @@ updated: 2017/12/05 04:03:15
 order: 2
 ---
 
-* [《CSS in Native》](https://img.w3ctech.com/slide/CSS%20in%20Native%20-%20CSSConf%20Guangzhou%202016.pdf) <small>CSSConf 广州 2016-12-017</small>
+* [《Lean Animations》](/slides/lean-animations) <small>talk.css 新加坡 2019-09-04</small>
+* [《挖掘鍵盤的潛能》](/slides/kb-discovery) <small>ModernWeb 台北 2019-08-29</small>
+* [《迎接 UI 設計工具的新時代》](/slides/ui-design-tools) <small>ModernWeb 台北 2019-08-28</small>
+* [《你不知道的五个 CSS 特性》](/slides/five-css-features) <small>CSSConf 深圳 2019-03-30</small>
+* [《Making Your Vue App Accessible》](/slides/vue-a11y-utils) <small>VueConfCN 杭州 2018-11-24</small>
+* [《我为什么选择 Vue》](/slides/why-vue) <small>ModernWeb 台北 2018-07-18</small>
+* [《CSS Houdini 初探》](/slides/css-houdini) <small>CSSConf 厦门 2018-03-31</small>
+* [《由 Weex 谈品牌经营心得》](/slides/weex-opensource-branding) <small>云栖在线峰会 杭州 2017-03-01</small>
+* [《Weex vs. Web》](/slides/weex-web) <small>WeexConf 杭州 2017-01-12</small>
+* [《CSS in Native》](/slides/weex-css) <small>CSSConf 广州 2016-12-17</small>
+* [《移动开发与 Weex 的改变和被改变》](/slides/weex-osc2016-beijing) <small>源创会 北京 2016-12-04</small>
 * [《Weex 开发者工具探究》](https://pan.baidu.com/s/1c2oiFE4) [视频](https://pan.baidu.com/s/1slF207z) <small>iWeb 峰会 北京 2016-08-27</small>
-* [《Weex 开源之路》](https://pan.baidu.com/s/1pKYSgif) <small>源创汇 开源中国 杭州 2016-08-13</small>
+* [《Weex 开源之路》](/slides/weex-osc2016) <small>源创汇 开源中国 杭州 2016-08-13</small>
 * [《Weex 跨平台渲染实践》](https://pan.baidu.com/s/1jI2eKui) [视频](https://pan.baidu.com/s/1i4XFqgH) <small>iWeb 峰会 Shanghai 2016-06-04</small>
 * [《Weex——灵活的移动端高性能动态化方案》](http://www.infoq.com/cn/presentations/weex-flexible-mobile-terminal-high-performance-dynamic-program) <small>QCon 北京 2016-04-22</small>
-* [《手机淘宝 CSS 实践启示录》](/slides/css-memos/) <small>CSSConf 上海 2015-08-08</small>
+* [《手机淘宝 CSS 实践启示录》](/slides/taobao-css-memos/) <small>CSSConf 上海 2015-08-08</small>
 * [《Web Components 中的 CSS》](/slides/css-scoping/) <small>CSSConf 北京 2015-01-10</small>
 * [《Date in Web》](/slides/date-in-web/) <small>携程技术交流会 上海 2014-09-20</small>
 * [《Source Map 简介》](/slides/source-map-intro/) <small>HTML5 峰会 北京国际会议中心 2013-08-10</small>
