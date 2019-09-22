@@ -9,10 +9,10 @@ order: 3
 ### 囧克斯
 
 本名 赵锦江  
-英文名 Jinks Zhao  
+英文名 Jinjiang <del>Jinks Zhao</del>  
 昵称 勾三股四
 
-该网站的名字因本人英文名被调戏而得名为<strong>囧克斯</strong>
+该网站的名字因本人蹭用英文名被调戏而得名为<strong>囧克斯</strong>
 
 ### 网站结构
 
@@ -38,7 +38,7 @@ order: 3
 
 这里不会有：
 
-* 转载内容
+* 无脑转载内容
 
 ### 联系方式
 
@@ -55,7 +55,7 @@ order: 3
 酷爱编程  
 喜欢足球、音乐
 
-目前在<del>傲游 (Maxthon)</del> 阿里巴巴上班  
+蹭在<del>傲游 (Maxthon)</del> <del>淘宝</del> <del>阿里云</del>上班  
 写代码是我的专业  
 前端开发是我的老本行
 
