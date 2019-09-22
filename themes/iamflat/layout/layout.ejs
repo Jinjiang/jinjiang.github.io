@@ -64,7 +64,6 @@
 
     <div id="nav" class="pure-menu pure-menu-open pure-menu-horizontal">
       <ul>
-        <li><a href="#" onclick="document.body.classList.toggle('dark-mode'), event.preventDefault()">🌚</a></li>
         <% for (var i in site.pages.data.sort(function (a, b) { return a.order - b.order })){ %>
         <li<% if (page.path === site.pages.data[i].path) { %> class="pure-menu-selected"<% } %>>
           <a href="<%- url_for(site.pages.data[i].path.replace(/index\.html$/, '')) %>">
@@ -73,7 +72,6 @@
         </li>
         <% } %>
         <li><a href="<%- url_for(config.archive_dir) %>">归档</li>
-        <li><a href="#" onclick="document.body.classList.toggle('dark-mode'), event.preventDefault()">🌝</a></li>
       </ul>
     </div>
 
@@ -82,10 +80,14 @@
     <div id="footer">
       <a href="/"><%= config.title %></a>
       <% if (theme.rss){ %>
-      <a href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">文章 RSS</a>
-      <% } %><br />
-      我是百度统计：
+      |
+      <a href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>">RSS</a>
+      <% } %>
+      |
+      我是百度统计
       <script src="https://hm.baidu.com/h.js?a0a2372d4b7621d0bfe71f33c58a4bd8"></script>
+      |
+      我会翻脸 <a href="#" onclick="document.body.classList.toggle('dark-mode'), event.preventDefault()" style="font-size: 1.25em;">🌚🌝</a>
     </div>
   </div>
 
