@@ -1,0 +1,18 @@
+---
+title: "[不老歌] 推荐一个 Javascript 监听输入框改动事件的实现方案"
+date: 2009/4/21 18:49
+updated: 2009/4/21 18:49
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p><pre>if (window.addEventListener) { 
+	domInput.addEventListener('input', handler, false); 
+}
+else {
+	domInput.onpropertychange = handler; 
+}</pre>
+如题，以上方案，可以兼容目前的在所有主流操作系统上，所有主流浏览器里，用所有主流输入法输入文本(包括粘贴)的事件。<br />
+<br />
+我们一般监听输入框改动的方案是通过 onkeyup/onkeypress，其属于 web 标准方法，兼容各浏览器，但局限性在于跟一些特定输入法和特定操作系统之间的结合并不完美。比如在 ubuntu 下切换到中文输入法，就触发不了 onkeyup/onkeypress 了，直到关闭输入法，才会触发相关事件。<br />
+<br />
+如果大家有更好的解决方案，欢迎在此交流。</p>

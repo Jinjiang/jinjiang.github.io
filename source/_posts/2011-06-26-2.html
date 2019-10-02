@@ -1,0 +1,192 @@
+---
+title: "[不老歌] git和github简介(下)"
+date: 2011/6/26 18:56
+updated: 2011/6/26 18:56
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p><p class="blg-content">接上一篇<a href="http://bulaoge.net/topic.blg?tuid=27015&tid=2130098" target="_blank">git和github简介(上)</a><br /><br />
+<h3>创建一个git<dfn title="repository">仓库</dfn></h3>
+<ul>
+    <li><code>$ git <dfn title="初始化">init</dfn></code> 初始化仓库</li>
+    <li><code>$ git <dfn title="查看状态">status</dfn></code> 查看当前仓库状态 
+    <pre class="echo"># On <dfn title="分支">branch</dfn> <dfn title="主分支">master</dfn>
+nothing ot commit (...)</pre>
+    </li>
+    <li>
+    <pre>$ git <dfn title="添加">add</dfn> .
+$ git add index.htm style.css ...</pre>
+    添加文件到<dfn title="staging area">临时区域</dfn>，前者为添加全部</li>
+    <li>
+    <pre>$ git <dfn title="提交">commit</dfn> --all --message "xxx"
+$ git commit -am "xxx"</pre>
+    提交修改记录。两者效果相同</li>
+    <li><code>$ git <dfn title="日志">log</dfn></code> 查看修改记录</li>
+    <li><code>.gitignore</code> 文件<br />
+    用来记录自动忽略添加的文件，如<code>config.php</code></li>
+    <li><code>$ git <dfn title="移动">mv</dfn> ... ...</code>移动</li>
+    <li><code>$ git <dfn title="删除">rm</dfn> ... ...</code>删除<br />
+    注意区分<code>git mv/rm</code>和<code>mv/rm</code></li>
+</ul>
+<h4>管理<dfn title="branch">分支</dfn>和<dfn title="tag">标签</dfn></h4>
+<ul>
+    <li><code>$ git <dfn title="分支">branch</dfn></code> 列出所有分支 
+    <pre class="echo">* master
+  xxx
+  yyy</pre>
+    </li>
+    <li><code>$ git branch xxx</code> 创建名为xxx的分支</li>
+    <li><code>$ git <dfn title="切换分支">checkout</dfn> xxx</code> 切换至名为xxx的分支</li>
+    <li><code>$ git <dfn title="合并分支">merge</dfn> xxx</code> 合并xxx分支的修改</li>
+    <li><code>$ git <dfn title="标签">tag</dfn></code> 列出所有标签 
+    <pre class="echo">v3.1
+v3.0
+v2.5
+v2.0
+v1.0</pre>
+    </li>
+    <li><code>$ git tag v2.0</code> 生成一个新标签</li>
+    <li><code>$ git <dfn title="查看标签">show</dfn> v2.0</code>
+    <pre class="echo">tag v2.0
+Tagger: Jinks Zhao ...
+Date:   Sat Jul 3 10:06:16 2010 -0400
+
+half-way to release 1
+
+commit 08eaf7c6b...
+Merge: be96dbe 39a1b50
+Author: Jinks Zhao ...
+Date:   Sat Jul 3 07:28:16 2010 -0400
+
+   Merge branch 'xxx'</pre>
+    查看该标签的相信情况</li>
+    <li><code>$ git <dfn title="显示以上一个标签为基础的提交情况">describe</dfn></code>
+    <pre class="echo">v2.0-2-g8ee0f4a</pre>
+    显示以上一个标签为基础的提交情况</li>
+</ul>
+<h4>部分git高级操作</h4>
+<ul>
+    <li><code>$ git add <dfn title="interactive">-i</dfn></code> 交互式添加</li>
+    <li>
+    <pre>$ git reset --<dfn title="强制恢复一切改动">hard</dfn> HEAD
+$ git reset --<dfn title="恢复到之前的提交，同时保留目前的改动">soft</dfn> xxx
+$ git checkout -- <file.ext></pre>
+    恢复版本或文件</li>
+    <li>
+    <pre>$ git diff
+$ git diff <file.ext>
+$ git diff <commit>
+$ git diff <commit> <file.ext>
+$ git diff <branch1>..<branch2>
+$ git diff <branch1>...<branch2></pre>
+    比较文件或版本之间的差异，有多种参数用法</li>
+    <li>
+    <pre>$ git <dfn title="暂存当前改动">stash</dfn>
+$ git stash <dfn title="取回暂存的修改">apply</dfn></pre>
+    如果你在完成一个功能特性的时候发现之前代码里有一个bug，但是这个bug又和你正在开发的功能特性无关，你想在完成整个功能特性开发之前就修复这个bug。但是现在功能特性已经开发一半了，这时候该如何处理呢？</li>
+</ul>
+<h4>更多的git操作</h4>
+<ul>
+    <li>查阅相关文档和手册：<br />
+    <a href="http://www.kernel.org/pub/software/scm/git/docs/" target="_blank">http://www.kernel.org/pub/software/scm/git/docs/</a></li>
+</ul>
+<h3>git + github.com配合使用</h3>
+<p>发布、管理、派生</p>
+<h4><dfn title="remote">远程</dfn>操作相关的git命令</h4>
+<ul>
+    <li>
+    <pre>$ git <dfn title="克隆">clone</dfn> <dfn title="远程仓库的地址">git://github.com/nickname/projectname.git</dfn> <dfn title="克隆到本地后的仓库名称，即文件夹名，可选项，默认值为远程仓库的名称">[localprojectname]</dfn></pre>
+    克隆一个远程的仓库</li>
+    <li>
+    <pre>$ git <dfn title="远程">remote</dfn> add <remoteName> <remoteURL></pre>
+    添加远程跟踪的分支</li>
+    <li>
+    <pre>$ git <dfn title="向上获取">fetch</dfn> origin master</pre>
+    获取远程最新的代码</li>
+    <li>
+    <pre>$ git <dfn title="合并">merge</dfn> origin/master</pre>
+    合并远程最新的代码</li>
+    <li>
+    <pre>$ git <dfn title="向下同步">pull</dfn> origin master</pre>
+    获取并合并远程最新的代码，前两者的快捷组合命令</li>
+    <li>
+    <pre>$ git <dfn title="推送">push</dfn> origin master</pre>
+    将本地最新的代码推送至远程仓库</li>
+</ul>
+<h4>在github.com创建自己的仓库</h4>
+<img onload="resize2(this)" alt="在github.com创建自己的仓库" src="http://jinjiang.github.com/slides/player/data/images/20120022020306.png" />
+<h4>在github.com创建自己的仓库</h4>
+<img onload="resize2(this)" alt="在github.com成功创建自己的仓库后的操作步骤" src="http://jinjiang.github.com/slides/player/data/images/20120022020323.png" />
+<h4>在github.com创建自己的仓库</h4>
+<ul>
+    <li>登录 github.com 并新建一个仓库</li>
+    <li>起好名字，完成配置</li>
+    <li>本地是否已经有现成的代码?<ul>
+        <li>添加本地<strong>现有的代码</strong></li>
+        <li>或者创建<strong>全新的空仓库</strong>
+        <pre>$ cd existing_git_repo
+$ git remote add origin git@github.com:nickname/projectname.git
+$ git push origin master</pre>
+        </li>
+    </ul>
+    </li>
+</ul>
+<h4>发布、同步本地的代码</h4>
+<ul>
+    <li>
+    <pre>$ git pull origin master</pre>
+    </li>
+    <li>
+    <pre>$ git push origin master</pre>
+    </li>
+    <li>注：直接pull/push主分支并不是很好的习惯</li>
+</ul>
+<h4>创建自己的github pages</h4>
+<ul>
+    <li>项目的 "landing page"</li>
+    <li>形如：http://user.github.com/project/</li>
+    <li>做法：<ul>
+        <li>创建一个名为 <strong>gh-pages</strong> 的远程分支<br />
+        <code>$ git push origin gh-pages</code></li>
+        <li>或者利用 Project Page Generator 自动生成</li>
+    </ul>
+    </li>
+    <li>实例：<a href="http://jinjiang.github.com/css-heart/" target="_blank">实例1</a>
+    <a href="http://jinjiang.github.com/html5-slides-20110512/" target="_blank">
+    实例2</a></li>
+    <li>官方说明：<a href="http://pages.github.com/" target="_blank">http://pages.github.com/</a></li>
+</ul>
+<h4>从github.com<dfn title="fork">派生</dfn>别人的仓库</h4>
+<img onload="resize2(this)" alt="在github.com派生别人的仓库" src="http://jinjiang.github.com/slides/player/data/images/20120022020351.png" />
+<h4>从github.com<dfn title="fork">派生</dfn>别人的仓库</h4>
+<ul>
+    <li>在别人仓库的主页，点击 "<strong>fork</strong>" 按钮派生别人的仓库</li>
+    <li>完成自己的开发之后，点击 "<strong>pull request</strong>" 按钮，申请原作者将自己的改动合并到原仓库中</li>
+</ul>
+<h3>相关资源和参考文献</h3>
+<p>方便后续学习、实践</p>
+<h4>Getting Good with GIT</h4>
+<img onload="resize2(this)" alt="Getting Good with GIT" src="http://jinjiang.github.com/slides/player/data/images/20120022020409.png" />
+<h4>其它学习资料</h4>
+<ul>
+    <li><a href="http://git-scm.com/" target="_blank">http://git-scm.com/</a></li>
+    <li><a href="http://book.git-scm.com/" target="_blank">http://book.git-scm.com/</a></li>
+    <li><a href="http://help.github.com/" target="_blank">http://help.github.com/</a></li>
+    <li><a href="http://progit.org/book/zh" target="_blank">《pro git》(http://progit.org/book/zh)</a></li>
+    <li><a href="http://panweizeng.com/git-basics.html" target="_blank">
+    《Git基础》潘魏增 (http://panweizeng.com/)</a></li>
+</ul>
+<h4>引用材料</h4>
+<ul>
+    <li>
+    <a href="http://rockablepress.com/books/getting-good-with-git/" target="_blank">
+    《Getting Good with GIT》</a></li>
+    <li><a href="http://zh-tw.whygitisbetterthanx.com/" target="_blank">
+    《Why Git Is Better Than X》</a></li>
+    <li>
+    <a href="http://blog.splayer.org/index.php/2011/03/how-to-join-open-source-project/" target="_blank">
+    《如何加入开源项目的小手册》</a></li>
+    <li><a href="http://github.com/" target="_blank">github.com</a></li>
+</ul>
+<h4>木有了！</h4>
+<p>欢迎提问</p></p>

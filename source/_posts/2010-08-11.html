@@ -1,0 +1,30 @@
+---
+title: "[不老歌] !important到底有多important！"
+date: 2010/8/11 19:22
+updated: 2010/8/11 19:22
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p><pre>&lt;!DOCTYPE /&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+body {
+color: blue !important;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body style=&quot;color: red;&quot;&gt;
+hello world
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+
+今天在某技术群里的小发现
+看上面的代码，hello world最终的颜色是什么？
+答案是蓝色
+比内联的 inline css 的优先级还高！
+
+以前一直没注意过这个细节，今天学起来了</p>

@@ -1,0 +1,30 @@
+---
+title: "[不老歌] php 中的 json"
+date: 2009/7/17 12:37
+updated: 2009/7/17 12:37
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>用惯了 javascript 中的 json，格式很简单，很灵活。发现 php 中也有这个东西可以用。<br /><br />
+
+通过 json_encode(obj) 和 json_decode(str, [bool=false]) 可以在 php 中实现 json code 与 json object/array 之间的转换。<br /><br />
+
+比如：
+<pre>var_dump(json_decode('{"title": "Blog", "catogery": "php"}'));</pre>
+会输出下列内容：
+<pre>object(stdClass)#1 (2) {
+  ["title"]=>
+  string(4) "Blog"
+  ["catogery"]=>
+  string(3) "php"
+}</pre><br />
+而第二个参数设为 true 后：
+<pre>var_dump(json_decode('{"title": "Blog", "catogery": "php"}', true));</pre>
+会输出下列内容：
+<pre>array(2) {
+  ["title"]=>
+  string(4) "Blog"
+  ["catogery"]=>
+  string(3) "php"
+}</pre><br />
+最后有一点需要注意的是，json code 中的 key 必需要求使用<strong>双引号</strong>标注起来，而 javascript 中没有这个硬性要求，只要是符合变量名规则的 key 都不需要加双引号。</p>

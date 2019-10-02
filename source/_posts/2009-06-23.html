@@ -1,0 +1,24 @@
+---
+title: "[不老歌] 防止页面被 iframe 内脚本“打散”的两种方法"
+date: 2009/6/23 20:59
+updated: 2009/6/23 20:59
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>页面被 iframe 内脚本“打散”的情况越来越常见。比如，在百度的搜索结果页面中有这样的脚本：<pre>if (top.location != self.location) {
+	top.location=self.location;
+}</pre>这时，如果我们把这个页面作为 iframe 放到另一个页面里，则外层页面会被直接跳转至搜索页面。这个代码对页面本身做了保护——即不会被其它页面引用，也给我们在需要引用这些页面时带来了一些困扰。下面介绍两种解决方法：<br />
+<br />
+1. 通过掩盖 location 和 domain 变量，像下面的代码那样：<pre>if(document.all){
+	var isIE = true;
+	var location = "";
+	var domain = document.domain;
+}</pre>再对 top.location 赋值就不会将页面“打散”了。<br />
+不过这个方法仅仅对 IE 浏览器管用，且会提示脚本错误。<br />
+<br />
+2. 通过 onbeforeunload 事件监听，中断“打散”的动作。即：<pre>window.onbeforeunload = function(evt) {
+	return '(请用户选择留在此页面的提示)';
+};</pre>这样，在页面跳转之前，会弹出一个确认对话框提示用户要不要继续执行页面跳转(即“打散”)的操作。如果用户选择了“否”，则页面会终止跳转操作， iframe 里的脚本也就不会“打散”整个页面。<br />
+这个方法也有弱点，就是它总是弹出确认对话框，有的时候这会让人很受不了。<br />
+<br />
+介绍完毕，两种方法各有优劣，可视状况采用不同的方法。</p>

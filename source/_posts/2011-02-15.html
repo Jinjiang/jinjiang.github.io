@@ -1,0 +1,48 @@
+---
+title: "[不老歌] CSS 3 中的圆角边框 border-radius 知多少？"
+date: 2011/2/15 20:55
+updated: 2011/2/15 20:55
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>摘自<a href="http://www.w3.org/TR/css3-background/#the-border-radius" target="_blank">W3C的官方文档</a>：<br />
+<pre><strong>Name:           border-top-right-radius, border-bottom-right-radius,
+                border-bottom-left-radius, border-top-left-radius</strong>
+Value:          [ ＜length＞ | ＜percentage＞ ] [ ＜length> | ＜percentage＞ ]?
+Initial:        0
+Applies to:     all elements (but see prose)
+Inherited:      no
+Percentages:    Refer to corresponding dimension of the border box.
+Media:          visual
+Computed value: two absolute <length> or percentages
+
+<strong>Name:           border-radius</strong>
+Value:          [ ＜length＞ | ＜percentage＞ ]{1,4} [ / [ ＜length＞ | ＜percentage＞ ]{1,4} ]?
+Initial:        0
+Applies to:     all elements, except table element when ‘border-collapse’ is ‘collapse’
+Inherited:      no
+Percentages:    Refer to corresponding dimension of the border box.
+Media:          visual
+Computed value: see individual properties</pre>
+<br />
+解读：<br />
+<h3>border-*-radius</h3>值的最规矩的写法应该是两个参数，参数类型为长度值或百分数。这两个参数分别代表这个角落的边框圆角的横向半径和纵向半径，当横纵向半径相同时，第二个参数可以省略。<br />
+比如：<br />
+<pre>border-top-right-radius: 20px 10px;
+border-bottom-left-radius: 50% 20%;
+border-bottom-right-radius: 30px;</pre>
+<br />
+<h3>border-radius</h3>值的最规矩的写法应该是4组参数，每一组参数都是中间有一个斜杠的两个参数。如果某一组参数中的两个参数值相同，则第二个参数和斜杠均可以省略。如果第二组参数和第四组参数相同，则第四组参数可以省略。如果第一组参数和第三组参数相同同时第二组参数和第四组参数相同，则第三组和第四组参数均可以省略。如果四组参数均相同，则第二组、第三组和第四组参数均可以省略。<br />
+比如：<br />
+<pre>border-radius: 20px / 10px; /* 椭圆 */
+border-radius: 20px 10px;   /* 一个“扭曲”的圆角，不解释 */
+border-radius: 30px;        /* 最常见的用法 */</pre>
+<br />
+注意前两个意义完全不同哦<br />
+<br />
+以上是圆角边框的书写规则，至于你这么写了它会显示出神马样子，在一些极端情况下各个浏览器的反应还是不尽相同。最标准的应该是下面这个截图的效果了<br />
+<img src="http://www.w3.org/TR/css3-background/transition-region.png" /><br />
+图片来源：<a href="http://www.w3.org/TR/css3-background/transition-region.png" target="_blank">http://www.w3.org/TR/css3-background/transition-region.png</a><br />
+这一点上不得不佩服 IE 9，表现相当完美。每一个细节都很完美。<br />
+<br />
+<a href="http://jsbin.com/awuwo6/8" target="_blank">DEMO</a></p>

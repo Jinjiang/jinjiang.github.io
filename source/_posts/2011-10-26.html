@@ -1,0 +1,64 @@
+---
+title: "[不老歌] 记实践 CSS 3 中几个 background-* 属性时的陷阱一则"
+date: 2011/10/27 1:38
+updated: 2011/10/27 1:38
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>发现最近自己的CSS编码能力有生疏的迹象……<br />
+今天犯了一个非常低级的错误<br />
+<br />
+在此还原一下状况：<br />
+<br />
+设置一个盒子的样式，包括背景颜色、背景图片、图片位置、还有边框，在:hover时还有一些变化，比如边框会变亮变粗。<br />
+<br />
+一开始写好的代码，简化一下大概是这样的：<br />
+
+<pre>
+li {
+    background: #999;
+    border: 1px #333 solid;
+    padding: 0.5em;
+    -*-box-sizing: border-box;
+}
+li:hover {
+    background: #ccc;
+    border-width: 3px;
+}
+li.classA {
+    background-image: url(images/classA-bg.png);
+}
+</pre>
+
+一切正常，跟预想的效果是一样的<br />
+后来我注意到一个细节，当:hover之后边框变粗了，背景图片也相应的向右下方错位了2个像素。为了不想让背景图片错位，我想到了一个办法：就是利用CSS3中的background-origin属性对背景图片的起始坐标改为边框外顶点，这样边框的宽度就不会对背景图片的位置构成影响了。<br />
+于是代码变成了这个样子：<br />
+
+<pre>
+li {
+    background: #999;
+    border: 1px #333 solid;
+    padding: 0.5em;
+    -*-box-sizing: border-box;
+    <strong>-*-background-origin: border-box;</strong>
+}
+</pre>
+
+但是发现这一改动没有“生效”，背景图片依然会错位。<br />
+经过简单的调试，我很快发现了自己的低级失误，就是在设置:hover的背景颜色样式时，没有使用background-color而是background这个缩写：<br />
+
+<pre>
+li:hover {
+    <strong>background: #ccc;</strong>
+    border-width: 3px;
+}
+</pre>
+
+它的出现使得li中的background-origin被覆盖为了默认值(即padding-box)。当这一属性不被修改时，只有background-image被覆盖，但li.classA刚好再次覆盖了背景图片的值，所以这一问题在当时被掩盖了，可只要稍微修改一下background-repeat、background-position、background-clip、background-origin等属性，问题就立刻被暴露了出来。<br />
+<br />
+所以，在处理伪类等动态改变的样式时，如果涉及属性值的覆盖，尽量不要使用简写的属性值进行覆盖，因为很容易“伤及无辜”。<br />
+之前在处理background这类CSS属性的时候，无法就是颜色和图片，所以能否使用简写很好判断，一不小心写错了也很好辨别并更正。随着CSS属性越来越灵活，功能越来越多，现在一不小心写错代码，就需要判断更多的环节去排查。所以CSS属性的简写写法也不是在所有的地方都推荐使用的。<br />
+<br />
+最后总结一下吧：在动态修饰样式时，需要慎用简写，避免“伤及无辜”，同时注意CSS3带来的更多考量。<br />
+<br />
+附：<a href="http://www.css3.info/preview/background-origin-and-background-clip/" target="_blank">background-origin和background-clip这两个CSS3属性的简介</a></p>

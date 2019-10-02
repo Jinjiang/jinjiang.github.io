@@ -1,0 +1,39 @@
+---
+title: "[不老歌] IndexedDB技术简介(一)"
+date: 2012/2/7 18:08
+updated: 2012/2/7 18:08
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p><a href="http://www.w3.org/TR/IndexedDB/" target="_blank">IndexedDB</a> 是HTML5中的一种数据存储方式。用来帮助网站，在浏览器本地，存储结构比较复杂的数据。它和HTML5中其它的数据存储方式有一些共性：<br />
+<br />
+1.和我们熟知的<strong>cookies</strong>类似，IndexedDB是每个域名独立存储数据的。<br />
+对cookies不熟悉的童鞋，可以顺便学习一下cookies，不过这不影响大家理解IndexedDB。网上cookies的教材和文章非常多，这里不一一列举。<br />
+<br />
+2.和<strong>localStorage</strong>相比，IndexedDB可以存储任意格式的json object，而localStorage则只能存string，我们在使用localStorage存储复杂数据的时候，常常会协同JSON.parse和JSON.stringify一起工作，而IndexedDB则可以直接存取对象，无需转换成字符串。<br />
+对localStorage不熟悉的童鞋，可以查阅<a href="http://dev.w3.org/html5/webstorage/" target="_blank">w3c官方文档</a>，这里有一份我参与翻译的<a href="http://www.w3.org/html/ig/zh/wiki/HTML5/webstorage" target="_blank">中文版文档</a>，这里还有一些<a href="http://bulaoge.net/topic.blg?dmn=g3g4&tid=2302783" target="_blank">localStorage的使用建议</a>。<br />
+<br />
+3.和<strong>web sql database</strong>类似，IndexedDB也分数据库，每个数据库可以建立多个不同配置的表，而且所有的操作都在事务(transaction)中完成，不同之处在于web sql database是通过SQL执行语句来完成操作的，而IndexedDB则直接通过JS API完成操作。<br />
+需要指出的是，web sql database规范已经被w3c抛弃，对此不熟的朋友，也不必学习了，如果有童鞋想尝试的，可以找一款webkit浏览器试试看(傲游3、chrome、safari)<br />
+<br />
+<strong>IndexedDB的整体存储结构</strong><br />
+<br />
+见下图，IndexedDB(以下简称IDB)严格遵循w3c的<a href="http://www.w3.org/Security/wiki/Same_Origin_Policy" target="_blank">同源策略</a>，每个源都拥有独立的大存储空间；每个大存储空间内，又可以通过当前源下的页面脚本创建多个数据库；每个数据库可以包含多个表(ObjectStore)；每个表都是一个json对象列表，可以存储多个json对象，比如<code>{"name": "jinjiang", "age": 26}</code>。<br />
+<img src="http://ww3.sinaimg.cn/large/660d0cdfgw1dpq8c6musmj.jpg"/><br />
+<br />
+<strong>ObjectStore中的key</strong><br />
+<br />
+不同的源、不同的数据库、不同的表、不同的对象，都是如何识别的呢？不同的源直接通过域名进行识别，比如weibo.com、maxthon.cn、renren.com；不同的数据库通过一个字符串(name)识别，比如"blog"、"bbs"、"wiki"等；不同的表也通过一个字符串(name)识别，比如"users"、"contacts"、"articles"等；上面这些识别方式都很好理解，不太好理解的，是如何在表(ObjectStore)中识别不同的json对象，即key。<br />
+<br />
+IDB为ObjectStore提供了两种key：<br />
+1.键值对(<strong>out-of-line keys</strong>: key-value pair)<br />
+2.键路径(<strong>inline keys</strong>: keyPath)<br />
+<br />
+第1种是比较好理解的，就像localStorage中的键值对类似，一个key对应一个value，不同的时，localStorage中的key和value都是字符串类型的，而IDB中的key和value都可以是其它json对象。比如<pre>"a" => "b"<br>[3, 7] => 21</pre>第2种是通过value中的某个属性字段直接用作key。因为value都是json数据，所以我们可以这样做，假如我们想创建一个表，里面的数据是类似这种感觉的：<pre>{profile: {id: 1, name: "葛优"}, girls: [...]}<br>{profile: {id: 7, name: "James Bond"}, girls: [...]}<br>{profile: {id: 8, name: "周星驰"}, girls: [...]}</pre>那么我们就可以把profile里的id作为key，方法是为这个表指定一个<strong>keyPath</strong><pre>keyPath => 'profile.id'</pre>这样ObjectStore就会自动按照每个value的<code>value.profile.id</code>进行识别和匹配。<br />
+<br />
+以上就是2种json对象的识别方式。除此之外，我们还可以为ObjectStore加入自增id特性(<strong>key generator</strong>)，这一特性可以让IDB在添加数据时自动分配一个唯一的key，如果是第2种key，IDB还会把key存在响应的keyPath下。<br />
+<br />
+以上就是对IndexedDB存数结构的介绍，先告一段落。<br />
+下一篇文章，会通过简单的接口介绍，帮助大家进一步认识IndexedDB。<br />
+<br />
+(未完待续)</p>

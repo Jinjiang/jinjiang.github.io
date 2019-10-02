@@ -1,0 +1,110 @@
+---
+title: "[不老歌] CSS 3 中的 Transform 用法，含Matrix(注意：不是黑客帝国里的变形金刚……囧)"
+date: 2011/2/22 22:39
+updated: 2011/2/22 22:39
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>首先，权威说明在此：<a href="http://www.w3.org/TR/css3-2d-transforms/" target="_blank">http://www.w3.org/TR/css3-2d-transforms/</a><br />
+今天休假外出，在火车上研习了一本有关SVG的书<a href="http://baike.baidu.com/view/2112780.htm" target="_blank">SVG开发实践</a>。这本书写得蛮不错，虽然理论知识略显凌乱，不过作为一本开发实践的书，已经极大满足了我对SVG的求知欲！<br />
+<br />
+其实技术都是想通的，书中提到了几个很眼熟的东西，让我在看过之余也对其它领域的知识有了更深刻的认识和了解。比如今天我想分享的CSS3属性：transform<br />
+<br />
+在此先做个提示，目前只能在最新版本的<a href="http://www.maxthon.cn/" target="_blank">傲游3</a>、<a href="http://chrome.google.com/" target="_blank">谷歌</a>、<a href="http://www.apple.com.cn/safari/" target="_blank">沙发里(不是春天里)</a>、<a href="http://www.firefox.com.cn/" target="_blank">火狐</a>、<a href="http://www.operachina.com/" target="_blank">歌剧</a>浏览器中使用，并且属性名要加-webkit-、-moz-、-o-的前缀。<br />
+<h3>transform-origin</h3>
+首先，图形在变形(transform)之前，需要确定一个中心(origin)，在SVG、CSS中，默认的中心都是坐标原点(0,0)。如果需要自定义中心，则可以使用transform-origin属性：<br />
+<pre>Name:           transform-origin
+Value:          [ [ ＜percentage＞ | ＜length＞ | left | center | right ]
+                  [ ＜percentage＞ | ＜length＞ | top | center | bottom ]? ] |
+                  [ [ left | center | right ] || [ top | center | bottom ] ]
+Initial:        50% 50%
+Applies to:     block-level and inline-level elements
+Inherited:      no
+Percentages:    refer to the size of the element's box
+Media:          visual
+Computed value: For ＜length＞ the absolute value, otherwise a percentage</pre>
+<br />
+然后就是平移(translate)、拉伸(scale)、倾斜(skew)和旋转(rotate)了，这些东西通通使用transform属性来控制：
+<h3>transform</h3>
+<pre>Name:           transform
+Value:          none | ＜transform-function＞ [ ＜transform-function＞ ]*
+Initial:        none
+Applies to:     block-level and inline-level elements
+Inherited:      no
+Percentages:    refer to the size of the element's box
+Media:          visual
+Computed value: Same as specified value.</pre>
+<br />
+这里面的transform-function就包含了这四种：<br />
+<ul>
+<li>
+<strong>translate</strong>：平移，有translate(value[, value])、translateX(value)、translateY(value)三种写法，表示要平移的横纵坐标，很好理解。
+</li>
+<li>
+<strong>scale</strong>：缩放的比例，有scale(number[, number])、scaleX(number)、scaleY(number)三种写法，里面的number参数分别表示了横向、纵向需要缩放的比例，比如1为不缩放，2为放大1倍，0.5为缩小一倍等等
+</li>
+<li>
+<strong>skew</strong>：倾斜的比例，同样有skew(angle[, angle])、skewX(angle)、skewY(angle)三种写法。里面的angle参数分别表示横坐标、纵坐标要分别顺时针旋转多少度，比如skewX(45deg)表示横坐标顺时针旋转45度，可以把一个矩形变成一个锐角45度的平行四边形。
+</li>
+<li>
+<strong>rotate</strong>：旋转，只有一种写法rotate(angle)，表示顺时针旋转的角度。
+</li>
+</ul>
+这四个东东可以写在同一个css属性里，比如：<br />
+<pre>＜div style="transform:translate(-10px,-20px) scale(2) rotate(45deg) translate(5px,10px)"/＞</pre>
+<br />
+它的效果相当于：<br />
+<pre>＜div style="transform:translate(-10px,-20px)"＞
+  ＜div style="transform:scale(2)"＞
+    ＜div style="transform:rotate(45deg)"＞
+      ＜div style="transform:translate(5px,10px)"＞
+      ＜/div＞
+    ＜/div＞
+  ＜/div＞
+＜/div＞</pre>
+<br />
+相信关注css3的童鞋对上面的这些东西并不陌生，没有关注过css3的童鞋，估计看过上面的描述，也可以很快的理解和掌握这些用法。<br />
+<br />
+不过这些变换如果比较复杂，有没有更简单的写法呢？当然有了，这才是我今天要重点介绍的东西：<br />
+<h3>transform: matrix</h3>
+matrix的写法很吓人：<br />
+<pre>transform: matrix(a, b, c, d, e, f);</pre>
+<br />
+相信很多人看过之后就蒙了，不知道这是啥意思。我自己就是这种情况，一直知道有个matrix，但是始终没有勇气尝试。<br />
+今天看到那本SVG的书，用相对通俗易懂的方式讲解了matrix这个东西，让我突然对自己有信心了，于是把我的理解分享给大家。<br />
+首先matrix里的6个参数会帮助我们构建一个3*3的矩阵……呃，还记得你们大学学过的线性代数么？就是那个可以点乘和叉乘的东东——没错，稍后会涉及到点乘的概念，不过不清楚也别担心，我会把它转化成代数方程，很好理解。<br />
+这个矩阵长这样：<br />
+<pre>|a c e|
+|b d f|
+|0 0 1|</pre>
+<br />
+原来图形中的每一个点(x, y)的新位置都是经过这个矩阵计算出来的(x', y')，大概的公示是：<br />
+<pre>|x|   |a c e|   |x'|
+|y| = |b d f| . |y'|
+|1|   |0 0 1|   |1 |</pre>
+<br />
+这个算是matrix的基本算法，进一步剖析之后，我们会发现：
+<ul>
+<li>
+默认的matrix值为matrix(1, 0, 0, 1, 0, 0)，即变换之后x和y没有变化；
+</li>
+<li>
+e和f其实就是平移变换translate的两个参数，即translate(e, f)相当于matrix(1, 0, 0, 1, e, f)；
+</li>
+<li>
+a和d其实就是伸缩变换scale的两个参数，即scale(a, d)相当于matrix(a, 0, 0, d, 0, 0)；
+</li>
+<li>
+a、b、c和d共同促成了旋转变换，这个稍微有点复杂，但也是一看就懂：<br />
+rotate(a)不难求证，相当于matrix(cos_a, sin_a, -sin_a, cos_a, 0, 0)；
+</li>
+<li>
+旋转变换其实是特殊的倾斜变换加缩放，如果分解成倾斜变换，也不难求证：<br />
+skewX(a)相当于matrix(1, 0, tan_a, 1, 0, 0)；<br />
+skewY(a)相当于matrix(1, tan_a, 0, 1, 0, 0)；
+</li>
+</ul>
+<br />
+所以，matrix其实是对多重旋转、缩放、平移等变换的合计缩写。有点transform雪碧的意思哈 O(∩_∩)O~<br />
+<br />
+最后附一个css 3 transform的玩具：<a href="http://www.css88.com/tool/css3Preview/Transform.html" target="_blank">http://www.css88.com/tool/css3Preview/Transform.html</a>，你可以在左侧的“变形参数”区域自由的调整matrix中a~f的值，右侧的div自然会随之变换，随便改一改那些属性值看看预览效果，matrix就非常好理解了！</p>

@@ -1,0 +1,66 @@
+---
+title: "[不老歌] JS 对 XML 文件与 XML 字符串的解析"
+date: 2009/12/29 2:34
+updated: 2009/12/29 2:34
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>最近在协助某神秘的“有关部门”调试一个神秘的 B/S 系统，发现其中有一段代码是对 XML 数据进行解析的，XML 数据来源可能是字符串，也可能是一个 XML 文件。在原来的系统中，这一部分的实现方式是 IE only 的，即使用 ActiveX 对象，实现 load/loadXML 的方法。所以现在要解决的问题之一，就是使这一段代码可以在IE以外的浏览器环境中正常运行。<br />
+<br />
+后来发现了 DOMParser 这个东东，可以在 IE 以外的环境中对 XML 字符串进行解析处理，问题解决了一半：<br />
+<pre>function loadXml(xml) {
+
+	var doc, parser;
+
+	if (typeof ActiveXObject != 'undefined') {
+		parser = new ActiveXObject ("MSXML2.DOMDocument");
+		parser.async = false;
+		var flag = parser.loadXML(xml);
+		doc = parser.documentElement;
+	}
+	else {
+		parser = new DOMParser();
+		doc = parser.parseFromString(xml, "text/xml");
+		doc = <strong>trim</strong>(doc);
+	}
+
+	return doc;
+}</pre><br />
+对于读取 XML 文件，有查到一个<code>document.implementation.createDocument('', '', null)</code>方法，但只能在 Firefox 下使用，放到 Webkit 核心的浏览器中还是不能正常工作。所以这里直接用到了 Ajax 请求的同步处理方式：<br />
+<pre>function load(url) {
+
+	var doc, loader;
+
+	if (window.ActiveXObject) {
+		try {
+			loader = new ActiveXObject("Msxml2.XMLHTTP"); 
+		}
+		catch (e) {
+			loader = new ActiveXObject("Microsoft.XMLHTTP"); 
+		}
+	}
+	else if (window.XMLHttpRequest) {
+		loader = new XMLHttpRequest(); 
+	}
+	
+	if (loader != null) {
+		loader.open('GET', url, <strong>false</strong>);
+		loader.send(null);
+		doc = loader.responseXML;
+	}
+
+	return <strong>trim</strong>(doc);
+}</pre><br />
+这两大段函数体中都出现了一个共同的函数：<br />
+<pre>function trim(doc) {
+	if (doc && doc.childNodes) {
+		var firstChild = doc.childNodes[0];
+		if (firstChild && firstChild.nodeType == 7) {
+			doc.removeChild(firstChild);
+		}
+	}
+	return doc.firstChild;
+}</pre><br />
+这个函数是为了统一各种不同的 XML 解析结果的根结点(有些解析结果会附带编码说明，或直接取编码说明后的兄弟结点)。<br />
+<br />
+理论阐述如此，而且已经在自己的本子上试过了。明天去有关部门实践一下~</p>

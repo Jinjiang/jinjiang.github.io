@@ -1,0 +1,46 @@
+---
+title: "[不老歌] 科普：如何运用OPML格式向阅读器导入RSS列表"
+date: 2011/1/9 23:47
+updated: 2011/1/9 23:47
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>最近做RSS相关内容的原因，特意去<a href="http://opml.org/" target="_blank">opml.org</a>学习了一下大名鼎鼎的OPML(Outline Processor Markup Language)文件格式。<br />
+<br />
+OPML格式是基于xml的，首先，在根结点下有一个head结点和一个body结点：
+<pre>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;opml&gt;
+    &lt;head&gt;
+        &lt;title&gt;xxx&lt;/title&gt;
+        ...
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;outline ... /&gt;
+        ...
+    &lt;/body&gt;
+&lt;/opml&gt;</pre>
+head结点中的内容和具体的数据关系不大，大概有下面这么几个(最显眼的莫过于title了)
+<pre>&lt;head&gt;
+    &lt;title&gt;xxx&lt;/title&gt;
+    &lt;dateCreated&gt;xxx&lt;/dateCreated&gt;
+    &lt;dateModified&gt;xxx&lt;/dateModified&gt;
+    &lt;ownerName&gt;xxx&lt;/ownerName&gt;
+    &lt;ownerEmail&gt;xxx&lt;/ownerEmail&gt;
+    &lt;ownerId&gt;xxx&lt;/ownerId&gt;
+    &lt;docs&gt;xxx&lt;/docs&gt;
+    &lt;expansionState&gt;xxx&lt;/expansionState&gt;
+    &lt;vertScrollState&gt;xxx&lt;/vertScrollState&gt;
+    &lt;windowTop&gt;xxx&lt;/windowTop&gt;
+    &lt;windowBottom&gt;xxx&lt;/windowBottom&gt;
+    &lt;windowLeft&gt;xxx&lt;/windowLeft&gt;
+    &lt;windowRight&gt;xxx&lt;/windowRight&gt;
+&lt;/head&gt;</pre>
+body结点中全部都是outline结点，表示了RSS列表的内容和目录结构，比如：
+<pre>&lt;body&gt;
+    &lt;outline text=&quot;Folder 1&quot; ...&gt;
+    &lt;outline type=&quot;rss&quot; text=&quot;Title 1&quot; xmlUrl=&quot;http://xxx.rss&quot; ... /&gt;
+    &lt;/outline&gt;
+&lt;/body&gt;</pre>
+这里就是opml最主要的部分了，格式对于html/xml开发者来讲应该相当熟悉了。值得一提的是，几个关键的属性text、title、xmlUrl、htmlUrl、type、description中，title/description/htmlUrl都是可选的，如果text/title同时存在，会以text为准，而不是更常见的title，另外xmlUrl和htmlUrl分别表示这个outline的RSS地址和网站地址，而不是所有的RSS都有htmlUrl的。另外RSS的type必须是"rss"。<br />
+<br />
+其实OPML可以做很多事情——远不止导入导出RSS这种，感兴趣的童鞋可以移步到a href="http://opml.org/" target="_blank">opml.org</a>。</p>

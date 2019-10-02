@@ -1,0 +1,47 @@
+---
+title: "[不老歌] HTML5中的文件处理 之 File Writer API"
+date: 2012/3/6 21:46
+updated: 2012/3/6 21:46
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>这里是介绍HTML5文件处理的第二部分，之前已经介绍过了基础的<a href="http://bulaoge.net/topic.blg?dmn=g3g4&tid=2344378" target="_blank">FileAPI</a>，接下来是如何通过JS创造文件的部分。我们称之为<a href="http://www.w3.org/TR/file-writer-api/" target="_blank">FileWriterAPI</a>。<br />
+<br />
+需要提前解释的是，FileWriterAPI不是一个可以“独立”存在的规范，它强烈的依赖于FileAPI和即将介绍的FileSystemAPI。FileAPI是最基础的接口这毋庸置疑，而之所以先于FileSystemAPI介绍FileWriterAPI，是因为FileSystemAPI是一套更庞大的接口设计集合，FileWriterAPI相比之下相对简单，可以算作是FileSystemAPI也用得到的一部分基础，提前介绍给大家。<br />
+<br />
+<br />
+<strong>总览</strong><br />
+<br />
+这部分一共有三大接口：<br />
+* <code>BlobBuilder</code>接口：创建<code>Blob</code><br />
+* <code>FileSaver</code>接口：提供一些列方法和事件监听方式，代表一个保存文件的过程<br />
+* <code>FileWriter</code>接口：是从<code>FileSaver</code>扩展来的，提供更丰富的输出选择<br />
+<br />
+需要注意的是，<code>FileSaver</code>和<code>FileWriter</code>是不能通过接口指定要保存或要写入的文件的，它们都是对象创建时就已经确定的并且不可更改。同时<code>FileSaver</code>更是不提供控制写入什么内容的接口，要写入的内容也是对象创建时就已经确定的并且不可更改的；而<code>FileWriter</code>可以通过接口控制要写入的内容。<br />
+<br />
+<br />
+<strong>接口描述</strong><br />
+<br />
+同样的，这3个接口其实并不复杂，也很好理解(同样的，接口中的“<code>#Foo</code>”表示任意<code>Foo</code>类型的对象)：<br />
+<br />
+<strong><code>BlobBuilder</code>接口</strong><br />
+<pre>#BlobBuilder.<strong>getBlob([contentType])</strong> // 返回目前已放入的所有Blob数据构成的对象<br>#BlobBuilder.<strong>append(text[, contentType])</strong> // 放入文本数据<br>#BlobBuilder.<strong>append(data)</strong> // 放入数据(Blob或ArrayBugger)</pre><br />
+<strong><code>FileSaver</code>接口</strong><br />
+<pre>#FileSaver.<strong>abort()</strong> // 中断保存操作<br>#FileSaver.<strong>readyState</strong> // 保存工作的状态(DONE、INIT、WRITING)<br>#FileSaver.error // 最后一次出错的错误信息<br>#FileSaver.onwritestart // 写入操作开始时触发<br>#FileSaver.onwrite // 写入操作成功时触发<br>#FileSaver.onwriteend // 写入操作完成时触发(不管成功还是失败)<br>#FileSaver.onprogress // 写入操作过程中触发<br>#FileSaver.onabort // 写入操作被中断时触发<br>#FileSaver.onerror // 写入操作失败时触发</pre><br />
+<strong><code>FileWriter</code>接口</strong><br />
+<pre>#FileWriter.<strong>position</strong> // 当前写入操作所处的位置<br>#FileWriter.<strong>length</strong> // 文件长度(或在无权读取文件信息的情况下返回已写入的长度)<br>#FileWriter.<strong>write(blob)</strong> // 在position处写入blob数据<br>#FileWriter.<strong>seek(offset)</strong> // 设置position属性为offset<br>#FileWriter.<strong>truncate(size)</strong> // 在size处截断文件<br>#FileWriter.abort() // 继承自FileSaver<br>#FileWriter.readyState // 继承自FileSaver<br>#FileWriter.error // 继承自FileSaver<br>#FileWriter.onwritestart // 继承自FileSaver<br>#FileWriter.onwrite // 继承自FileSaver<br>#FileWriter.onwriteend // 继承自FileSaver<br>#FileWriter.onprogress // 继承自FileSaver<br>#FileWriter.onabort // 继承自FileSaver<br>#FileWriter.onerror // 继承自FileSaver</pre><br />
+<br />
+<strong>代码示例</strong><br />
+<br />
+举例一：创建<code>Blob</code>对象<br />
+<pre>var blobBuilder = <strong>new BlobBuilder()</strong>; // 创建BlobBuilder对象<br><strong>blobBuilder.append</strong>("我今天只说三句话；"); // 连续放入文本<br>blobBuilder.append("包括这一句；");<br>blobBuilder.append("我的话完了。");<br><br>var url = window.URL.createObjectURL(<strong>blobBuilder.getBlob()</strong>); // 返回Blob对象并以此创建URL<br>window.open(url); // 通过URL打开这个Blob对象</pre><br />
+举例二：使用<code>FileWriter</code><br />
+<pre>fileEntry.createWriter(function (fileWriter) {<br>    fileWriter.<strong>write</strong>(<strong>blobBuilder.getBlob</strong>()); // 返回Blob对象并通过fileWriter写入<br>    fileWriter.<strong>onwriteend</strong> = function () {...}; // 绑定写入操作完成后的事件<br>});</pre><br />
+这里需要注意的是：<br />
+1.在不同的浏览器下，<code>BlobBuilder</code>和<code>window.URL</code>依然存在着不同的前缀，比如webkit下的接口分别为<code>WebKitBlobBuilder</code>和<code>webkitURL</code>；<br />
+2.这里出现了一个陌生的对象<code>fileEntry</code>和陌生的方法<code>createWriter</code>，这正是接下来要介绍的一套比较复杂的API：FileSystemAPI的一部分内容。想弄清楚<code>fileWriter</code>具体运行的环境，还得继续学习，不过抛开外部环境的形成过程，<code>fileWriter</code>的用法应该可以体会到了；<br />
+3.<code>FileSaver</code>还没有用得到的地方，毕竟标准还没有最终形成，也许他将来某一天，借助其它规范的优势，摇身一变，就用在“另存为对话框”之类的地方了。<br />
+<br />
+以上就是对FileWriterAPI的介绍，紧接着就是FileSystemAPI了，届时HTML5所有文件操作的神秘面纱都会被揭开。<br />
+<br />
+(未完待续)</p>

@@ -1,0 +1,130 @@
+---
+title: "[不老歌] CSS 3 中的 Transition 用法"
+date: 2011/3/22 20:18
+updated: 2011/3/22 20:18
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>W3C 官方文档在此：<a href="http://www.w3.org/TR/css3-transitions/" target="_blank">http://www.w3.org/TR/css3-transitions/</a>
+<h3>概述</h3>
+Transition 的作用和基本原理，就是通过某些 css 属性值的渐变(从一个值过度到另一个值)，达到简单的动画效果。
+<h3>举例</h3>
+例如，我们希望 'left' 属性和 'background-color' 属性的改变可以在2秒之内渐变过度，颜色由红色变成蓝色，横坐标由小变大，这些都是可以通过 transition 来实现的。
+<pre>p {
+    transition-property: width, background-color;
+    transition-duration: 2s;
+}</pre>
+在上述代码的基础上，每次对div的横坐标和背景色进行修改，其属性值都不会立刻切换生效，而是渐变生效，历时2秒钟。
+<h3>transition-property 属性</h3>
+<pre><strong>Name:</strong>           <strong>transition-property</strong>
+Value:          none | all | [ 〈IDENT〉 ] [ ‘,’ 〈IDENT〉 ]*
+Initial:        all
+Applies to:     all elements, :before and :after pseudo elements
+Inherited:      no
+Percentages:    N/A
+Media:          visual
+Computed value  :Same as specified value.</pre>
+属性值 none 表示没有任何动画效果；<br />
+属性值 all 表示所有可变换动画的属性都有动画效果<br />
+还可以以各个属性的属性名作为属性值，或者多个属性名，以逗号隔开<br />
+<br />
+当然了，如果你把 transition-duration 设为 0 的话，这里怎么设置都不会有动画效果的。
+<h3>transition-duration 属性</h3>
+<pre><strong>Name</strong>:           <strong>transition-duration</strong>
+Value:          〈time〉 [, 〈time〉]*
+Initial:        0
+Applies to:     all elements, :before and :after pseudo elements
+Inherited:      no
+Percentages:    N/A
+Media:          interactive
+Computed value: Same as specified value.</pre>
+写个代表时间的数字即可，比如 2s。也可以写多个，用逗号隔开。默认值是 0，即无动画效果。
+<h3>transition-timing-function 属性</h3>
+用来定义动画的渐变公式——相信看过此部分 W3C 文档的人会吐血的，没错，贝塞尔大叔又出现了。。。
+<pre><strong>Name</strong>:           <strong>transition-timing-function</strong>
+Value:          ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(〈number〉, 〈number〉, 〈number〉, 〈number〉) [, ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(〈number〉, 〈number〉, 〈number〉, 〈number〉)]*
+Initial:        ease
+Applies to:     all elements, :before and :after pseudo elements
+Inherited:      no
+Percentages:    N/A
+Media:          interactive
+Computed value:	 Same as specified value.</pre>
+个人觉得大家理解 ease/linear 就行了，稍微进阶点可以再看看 ease-in/ease-out/ease-in-out，至于那个 cubic-bezier 神马的，感兴趣的自己慢慢琢磨吧。推荐一篇文章：<a href="http://www.cnblogs.com/cloudgamer/archive/2009/01/06/Tween.html" target="_blank">http://www.cnblogs.com/cloudgamer/archive/2009/01/06/Tween.html</a> (准确的讲不是推荐文章本身，而是里面的那个 transition-timing-function 预览功能)
+<h3>transition-delay 属性</h3>
+<pre><strong>Name</strong>:           <strong>transition-delay</strong>
+Value:          〈time〉 [, 〈time〉]*
+Initial:        0
+Applies to:     all elements, :before and :after pseudo elements
+Inherited:      no
+Percentages:    N/A
+Media:          interactive
+Computed value: Same as specified value.</pre>
+动画执行的延迟时间，同样是写时间值，属性值写法和 transifion-duration 类似，这里不做过多介绍。
+<h3>transition 简写属性</h3>
+<pre><strong>Name</strong>:           <strong>transition</strong>
+Value:          [〈‘transition-property’〉 || 〈‘transition-duration’〉 || 〈‘transition-timing-function’〉 || 〈‘transition-delay’〉 [, [〈‘transition-property’〉 || 〈‘transition-duration’〉 || 〈‘transition-timing-function’〉 || 〈‘transition-delay’〉]]*
+Initial:        see individual properties
+Applies to:     all elements, :before and :after pseudo elements
+Inherited:      no
+Percentages:    N/A
+Media:          interactive
+Computed value: Same as specified value.</pre>
+依次是属性名、时间间隔、渐变公式、延迟时间，不同的属性名可以写多个这样的组合，用逗号隔开。
+<pre>p {
+    transition: color 2s ease 1s, width 0.5s;
+}</pre>
+<h3>值得注意的几个地方</h3>
+首先，属性值在变换的过程中，可以用js取得中间值，这在 duration 时间比较长的时候可以很明显的感受到。<br />
+其次，property 的属性值必须是具有动画变换能力的属性名，以下是这类属性名的整理和归类：<br />
+颜色值(color)、长度(length)、百分比(percentage)、整数(integer)、数字/实数(number/floating point)、tranform列表(transform list)、矩形坐标(rectangle)、可视状态(visibility)、阴影(shadow)、梯度渐变映射(gradient)等，当然还有由上述属性名组合的用逗号隔开的列表(spece-separated list of above)，或者上述属性名的缩写(shorthand property)。<br />
+在具体一点，如下对应关系：
+<pre>background-color	color
+background-image	only gradients
+background-position	percentage, length
+border-bottom-color	color
+border-bottom-width	length
+border-color		color
+border-left-color	color
+border-left-width	length
+border-right-color	color
+border-right-width	length
+border-spacing		length
+border-top-color	color
+border-top-width	length
+border-width		length
+bottom			length, percentage
+color			color
+crop			rectangle
+font-size		length, percentage
+font-weight		number
+grid-*			various
+height			length, percentage
+left			length, percentage
+letter-spacing		length
+line-height		number, length, percentage
+margin-bottom		length
+margin-left		length
+margin-right		length
+margin-top		length
+max-height		length, percentage
+max-width		length, percentage
+min-height		length, percentage
+min-width		length, percentage
+opacity			number
+outline-color		color
+outline-offset		integer
+outline-width		length
+padding-bottom		length
+padding-left		length
+padding-right		length
+padding-top		length
+right			length, percentage
+text-indent		length, percentage
+text-shadow		shadow
+top			length, percentage
+vertical-align		keywords, length, percentage
+visibility		visibility
+width			length, percentage
+word-spacing		length, percentage
+z-index			integer
+zoom			number</pre></p>

@@ -1,0 +1,37 @@
+---
+title: "[不老歌] IndexedDB技术简介(二)"
+date: 2012/2/8 18:15
+updated: 2012/2/8 18:15
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>接下来介绍IndexedDB(以下简称IDB)的JS接口设计<br />
+<br />
+<img src="http://ww1.sinaimg.cn/large/660d0cdfgw1dpqacott2hj.jpg"/><br />
+如图所示，我们按照操作过程，把IDB的接口分成三部分来介绍：<br />
+1.初始化数据库连接<br />
+2.在数据库中建表<br />
+3.在表中存取数据<br />
+<br />
+<br />
+<strong>初始化数据库连接</strong><pre>var req = window.IndexedDB.open(dbName, dbVersion);<br>req.onsuccess = function (e) {...}<br>req.onupgradeneeded = function (e) {...}<br>req.onerror = function (e) {...}</pre>这里有两个重要的参数，<code>dbName</code>是数据库的名称，<code>dbVersion</code>是数据库的“版本”。第2个参数“版本”可能不太好理解，IDB不允许数据库中的表在同一个版本中发生变化，所以当我们创建新表或删除旧表的时候，必须使用一个不一样的版本号。他的作用在于避免重复修改数据库的表结构。默认的版本是空字符串<code>""</code>，我们在使用时，可以使用<code>"1.0"</code>。如果请求中的版本号和当前数据库的版本号相同，则会触发<code>onsuccess</code>事件，如果版本号不同，则会触发<code>onupgradeneeded</code>事件，我们在这一事件中可以对数据库的表结构进行修改，然后再触发<code>onsuccess</code>事件。<br />
+<br />
+<br />
+<strong>在数据库中建表</strong><pre>req.onupgradeneeded = function (e) {<br>    var db = req.result;<br>    vardb.createObjectStore(storeName, optionParameters);<br>};</pre>之前提到了，当被访问的数据库版本号需要发生改变时，<code>onupgradeneeded</code>事件会被触发，我们就从这个事件继续说起。通过<code>req.result</code>我们可以得到当前的数据库对象<code>db</code>。<code>db</code>有一个方法<code>createObjectStore</code>，是专门用来创建表的。第一个参数是表的名称，第二个参数是可选的，它决定了我们要创建的表是内联关键字还是外部关键字，关键字是否需要自动生成，代表这两个设置的字段分别是<code>keyPath</code>和<code>autoIncrement</code>。比如，当第二个参数是<pre>{keyPath: 'profile.id', autoIncrement: false}</pre>时，说明这个表采用内联关键字，且<code>keyPath</code>是<code>profile.id</code>，同时关键字不是自增的，需要每次插入数据时手动设定；当第二个参数是<pre>{autoIncrement: true}</pre>时，说明这个表采用外部关键字，并且关键字是自增的。<br />
+<br />
+同样的，我们可以在<code>onupgradeneeded</code>事件中删除一个表，方法是<code>db.deleteObjectStore(storeName)</code>。道理很简单，就不展开论述了。<br />
+<br />
+<br />
+<strong>在表中存取数据</strong><pre>req.onsuccess = function (e) {<br>    var db = req.result;<br>    var transaction = db.transaction(storeNames, mode);<br>    var store = transaction.objectStore(storeName);<br>    var subReq = store.add(value, key);<br>    // var subReq = store.get(key);<br>    // var subReq = store.delete(key);<br>    // var subReq = store.clear();<br>    subReq.onsuccess = function (e) {<br>        console.log(subReq.result);<br>    };<br>};</pre>对表中数据的存取通常是在onsuccess事件之后进行的。同样的，我们可以通过req.result获取数据库对象db，并随时通过db进行各种存取数据的操作。<br />
+上一篇文章提到了，所有的数据库操作都是在事务(transaction)中进行的，具体代码格式是这样的：<br />
+第一句，先创建一个<code>transaction</code>，两个参数分别是会涉及到的表的名字和读写模式，表的名字可以是数据也可以是字符串，如<code>"users"</code>或<code>["users", "articles"]</code>，读写模式可以是<code>IDBTransaction.READ_ONLY</code>或<code>IDBTransaction.READ_WRITE</code>。<br />
+第二句，用<code>transaction</code>对象获取一个表，需要传入的参数是表的名称。<br />
+第三句及其后面的四句注释掉的代码，分别是我们可以利用<code>store</code>这个对象进行的基本的表操作——添加数据、获取数据、删除数据、清空表。参数也都很好理解，有一个要注意的地方是，添加数据时，<code>key</code>是可选项，如果我们已经在表里定义了<code>keyPath</code>或表本身有自增关键字，则<code>key</code>是不需要写的。<br />
+最后，如第一篇文章所说，这些操作是异步进行的，想获得操作的结果，可以在<code>subReq.onsuccess</code>事件中，通过访问<code>subReq.result</code>获取操作结果。添加操作的操作结果是关键字，获取数据的操作结果是对象的值，删除操作和清空操作无需返回结果。<br />
+<br />
+<br />
+上述介绍是IDB的一些基本操作，我刻意省略掉了IDB中的遍历、索引以及对各种出错异常的处理。为的是给大家一个直观的印象，用了上面的接口，我们起码可以做到一件事，就是想使用<a href="http://dev.w3.org/html5/webstorage/" target="_blank">localStorage</a>一样通过键值对来存取json对象。<br />
+<br />
+下一篇文章，会进一步介绍遍历操作，并结合firefox 10对IndexedDB的支持情况做一个简单的demo。<br />
+<br />
+(未完待续)</p>

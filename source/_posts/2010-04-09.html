@@ -1,0 +1,22 @@
+---
+title: "[不老歌] 裸奔啦~ 裸奔啦~"
+date: 2010/4/9 14:58
+updated: 2010/4/9 14:58
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>刚通过朋友提醒，今天是著名的CSS裸奔节~<br />
+废话不多说了，来裸奔了<br />
+大家也快快加入到裸奔的行列中来吧<br />
+<br />
+不老歌童鞋们如果想CSS裸奔的话，代码如下：
+<pre>var list = document.head.getElementsByTagName('link');
+for (var i = 0; i < list.length; i++) {
+	if (list[i].rel == 'stylesheet') {
+		document.head.removeChild(list[i]);
+	}
+}
+var tempList = document.head.getElementsByTagName('style');
+for (var i = 0; i < list.length; i++) {
+	document.head.removeChild(list[i]);
+}</pre></p>

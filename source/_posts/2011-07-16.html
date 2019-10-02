@@ -1,0 +1,177 @@
+---
+title: "[不老歌] HTML5的视觉方案及其技术简介(上)"
+date: 2011/7/17 2:31
+updated: 2011/7/17 2:31
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p class="content">在此贴上本人受邀在 Happy Elements 的工程师年会的主题分享<br>
+在线PPT：<a href="http://jinjiang.github.com/slides/new-generated-html5-ui/" target="_blank">http://jinjiang.github.com/slides/new-generated-html5-ui/</a><br>
+PPT源码：<a href="https://github.com/Jinjiang/slides/tree/gh-pages/new-generated-html5-ui" target="_blank">https://github.com/Jinjiang/slides/tree/gh-pages/new-generated-html5-ui</a><br><br>
+
+<h3>自我介绍</h3>
+<ul>
+	<li>赵锦江(勾三股四)</li>
+	<li>Tags: mhtml5/maxthon/f2e/music/football</li>
+	<li>QQ: 110698041</li>
+	<li>E/M: zhaojinjiang@yahoo.com.cn</li>
+	<li>Blog: <a href="http://bulaoge.net/?g3g4" target="_blank">
+		http://bulaoge.net/?g3g4</a></li>
+	<li>Weibo: <a href="http://weibo.com/mx006" target="_blank">
+		http://weibo.com/mx006</a></li>
+</ul>
+<h3>主题概要</h3>
+<ul>
+	<li>传统网页视觉体系介绍</li>
+	<li>HTML5带来新的选择<ul>
+		<li>Canvas</li>
+		<li>CSS 3</li>
+		<li>SVG</li>
+	</ul>
+	</li>
+	<li>技术介绍</li>
+	<li>优劣对比</li>
+	<li>实例展示</li>
+	<li>修炼之道</li>
+</ul>
+<h3>传统网页</h3>
+<p>Web Page → Web App</p>
+<h4>由于贵公司是游戏公司</h4>
+<p>所以我们从游戏开始谈起……</p>
+<h4>传统网页中的“游戏”？</h4>
+<ul>
+	<li>文字游戏 (<a href="http://www.ssiddharth.com/envato/jquizzy/jquizzy.htm" target="_blank">link</a>)</li>
+	<li>升级版的文字游戏：“字符游戏”<ul>
+		<li>符号版的“俄罗斯方块” (<a href="https://github.com/Jinjiang/tetris/" target="_blank">link</a>)</li>
+	</ul>
+	</li>
+	<li>接下来我们看看传统网页是什么样子的，如何衍进的？</li>
+</ul>
+<h4>传统文档中的元素</h4>
+<ul>
+	<li>大标题、小标题</li>
+	<li>段落、列表</li>
+	<li>多媒体内容(插图/音频/视频)、表格</li>
+	<li>加粗、斜体、下划线、角标</li>
+	<li>特殊效果：字号、颜色、背景、跑马灯</li>
+</ul>
+<h4>网页的亮点元素</h4>
+<ul>
+	<li>书签、链接：建立章节和文档间的联系</li>
+	<li>表单：最早的交互</li>
+</ul>
+<h4>更多的样式和版式 (CSS)</h4>
+<ul>
+	<li>样式<ul>
+		<li>边框、边距</li>
+		<li>特殊文字效果</li>
+		<li>主题、皮肤的概念陆续出现</li>
+	</ul>
+	</li>
+	<li>版式<ul>
+		<li>文档流布局(横向布局)</li>
+		<li>浮动布局(纵向布局)</li>
+		<li>叠层布局(自由布局)</li>
+		<li>模板的概念陆续出现</li>
+	</ul>
+	</li>
+	<li>网页不再只是“在线版Word文档”了</li>
+</ul>
+<h4>配套的交互开发 (JavaScript)</h4>
+<ul>
+	<li>管理窗口状态(window/location/screen/history)</li>
+	<li>管理文档内容(dom)</li>
+	<li>管理界面样式(style)</li>
+	<li>管理界面交互(events)<ul>
+		<li>设备：鼠标、键盘</li>
+	</ul>
+	</li>
+	<li>管理表单控件(form)</li>
+	<li>管理用户数据(cookie)</li>
+</ul>
+<h4>更多的控制器 (Ajax)</h4>
+<ul>
+	<li>链接逐渐变为按钮</li>
+	<li>表单提交逐渐变为Ajax Request</li>
+	<li>站点逐渐变为一个或几个页面</li>
+</ul>
+<h4>各类插件飘过……</h4>
+<ul>
+	<li>Flash、Java、类似的还有Silverlight</li>
+	<li>音频视频解码、数据加密、本地存储、高级网络通信、高级图像处理等</li>
+	<li>视频播放、网上银行、大量网页游戏</li>
+	<li>复制到剪贴板</li>
+</ul>
+<h4>终于……</h4>
+<p>贪婪的人类啊！</p>
+<h4>HTML5横空出世 (Web App)</h4>
+<ul>
+	<li>语义增强 (新增语义化标记/表单扩充/更多输入设备匹配/微格式)</li>
+	<li>多媒体增强 (视频/音频/编码格式)</li>
+	<li>通信连接增强 (多进程/Socket/消息提示器)</li>
+	<li>设备支持增强 (原生拖拽/文件系统管理/地理位置信息)</li>
+	<li>样式、特效增强：稍后详细介绍</li>
+	<li>数据管理增强 (本地缓存/本地数据存储/本地数据库)</li>
+	<li>性能功能增强 (部分属性、接口的优化和改进)</li>
+</ul>
+<h4>Web真正有了应用的感觉</h4>
+<p>大量应用横空出世！<br>Web Game 首当其冲！</p>
+<h4>以上就是一个前端开发工作者眼中的Web世界</h4>
+<ul>
+	<li>扯了半天跟游戏没有关系的东东，不知道大家是不是快睡着了……</li>
+	<li>诸位游戏开发工作者是怎么看待Web的呢？</li>
+</ul>
+<h3>HTML5中的视觉新选择</h3>
+<p>Canvas/CSS3/SVG</p>
+<h3>CANVAS</h3>
+<p>游戏开发者的最爱！</p>
+<h4>技术介绍和代码实现</h4>
+<ul>
+	<li>实例1：简单的框线绘制 (<a target="_blank" href="http://jinjiang.github.com/slides/new-generated-html5-ui/demo/canvas-01.html">link</a>)</li>
+	<li>实例2：使用路径：二次曲线和贝塞尔曲线 (<a target="_blank" href="http://jinjiang.github.com/slides/new-generated-html5-ui/demo/canvas-02.html">link</a>)</li>
+	<li>实例3：画布状态管理：记录和恢复 (<a target="_blank" href="http://jinjiang.github.com/slides/new-generated-html5-ui/demo/canvas-03.html">link</a>)</li>
+	<li>实例4：导入位图：Image 文件 / DataURI (<a target="_blank" href="http://jinjiang.github.com/slides/new-generated-html5-ui/demo/canvas-04.html">link</a>)</li>
+	<li>实例5：动画的做法：擦了画，画了擦 (<a target="_blank" href="http://jinjiang.github.com/slides/new-generated-html5-ui/demo/canvas-05.html">link</a>)</li>
+</ul>
+<h5>其它细节</h5>
+<ul>
+	<li>图像合成规则</li>
+	<li>框线边缘样式</li>
+	<li>文字绘制</li>
+	<li>画布变形</li>
+	<li>像素级操作</li>
+</ul>
+<h4>Canvas的特点</h4>
+<h5>优点</h5>
+<ul>
+	<li>符合传统游戏开发的习惯</li>
+	<li>执行效率高</li>
+	<li>效果绝对统一</li>
+	<li>可以进行像素级别的雕琢</li>
+	<li>开发级别非常底层，发挥空间很大</li>
+</ul>
+<h5>缺陷和其它不确定因素</h5>
+<ul>
+	<li>事件判定的工作比较复杂，需要计算坐标</li>
+	<li>实现动画的工作比较繁琐，需要深入到每一帧</li>
+	<li>无法利用任何平台特性(表单控件、系统主题)</li>
+	<li>是一块真正的“布”</li>
+</ul>
+<h4>自己动手丰衣足食</h4>
+<h4>实例演示</h4>
+<ul>
+	<li><a href="http://chrome.angrybirds.com/" target="_blank">愤怒的小鸟</a></li>
+	<li>
+	<a href="http://ie.microsoft.com/testdrive/Graphics/CanvasPinball/" target="_blank">
+	Canvas弹珠</a></li>
+	<li><a href="http://www.mhtml5.com/games/tank/" target="_blank">坦克大战</a></li>
+	<li><a href="http://www.theshodo.com/Write" target="_blank">书道</a></li>
+</ul>
+<h4>延伸阅读</h4>
+<ul>
+	<li><a href="https://developer.mozilla.org/en/WebGL" target="_blank">WebGL</a></li>
+	<li><a href="https://developer.mozilla.org/en/HTML/Canvas" target="_blank">MDC Canvas</a></li>
+	<li><a target="_blank" href="http://simon.html5.org/dump/html5-canvas-cheat-sheet.html">Canvas手册</a></li>
+	<li>Canvas实践机会不多，就简单介绍到这里吧，不敢再班门弄斧了……</li>
+</ul>
+<br><br><a href="http://bulaoge.net/topic.blg?tuid=27015&tid=2150004" target="_blank">继续查看下半部分</a></p>

@@ -1,0 +1,15 @@
+---
+title: "[不老歌] 继续研究 Aero 特效在 WPF 下的扩展"
+date: 2009/9/27 17:24
+updated: 2009/9/27 17:24
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>WPF 的语法对于一名 Ajax 选手来讲，是非常有诱惑力的！<br />
+今天把 DwmExtendFrameIntoClientArea 这个方法应用到了 WPF 下面。<br />
+<br />
+<a href="http://bulaoge.com/topic.blg?dmn=jinjiang&tid=1272348#Content" target="_blank">之前那个例子</a>是在 Forms Application 下实现的——由于之前不太清楚 WPF 中如何找到 DwmExtendFrameIntoClientArea 的第一个 hWnd 类参数，今天查了下：<pre>IntPtr mainWindowPtr = new WindowInteropHelper(this).Handle;<br />HwndSource mainWindowSrc = HwndSource.FromHwnd(mainWindowPtr);<br />mainWindowSrc.CompositionTarget.BackgroundColor = System.Windows.Media.Color.FromArgb(0, 0, 0, 0);</pre><br />
+然后<pre>DwmExtendFrameIntoClientArea(mainWindowSrc.Handle, new MARGINS(-1, -1, -1, -1));</pre><br />
+即可。<br />
+<br />
+对 WPF 的兴趣越来越浓了，打算继续深入学习！</p>

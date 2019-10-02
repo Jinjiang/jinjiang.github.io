@@ -1,0 +1,23 @@
+---
+title: "[不老歌] 终于把蒋定宇分享的modev代码跑通了！"
+date: 2010/8/1 3:39
+updated: 2010/8/1 3:39
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>资料来源：<a href="http://www.slideshare.net/josephj/webrebuild" target="_blank">http://www.slideshare.net/josephj/webrebuild</a><br />
+<a href="http://www.yupoo.com/photos/zhaojinjiang/76569479/" title="来自蒋定宇分享的modev站点预览截图"><img src="http://pic.yupoo.com/zhaojinjiang/168029b7f201/medium.jpg" alt="来自蒋定宇分享的modev站点预览截图" width="450" height="500" border="0" /></a><br />
+这里有真相！<br />
+<br />
+这对于我这种完全不懂linux/apache的人来说，真是花了不少功夫……<br />
+<br />
+1.首先要在linux上面安装apache/php，我使用了Ubuntu自己提供的安装包和直接安装的方式。<br />
+2.然后认真学习了apache的配置文件，了解了Ubuntu里apache的默认配置信息，也看懂了蒋定宇的配置文件。<br />
+3.把apache的配置文件也写好了，重启apache，发现网站还是没有跑起来——系统提示apc_fetch()函数执行失败<br />
+4.又去php.net查阅了一翻，发现它是属于PECL的一个包，默认是没有被安装的。于是开始想尽一切办法把APC包装好<br />
+5.一开始安装了PEAR PECL，然后把网上的最新版本APC包下载下来，可怎么也安装不上，似乎文件包和安装命令不太匹配的样子，这个问题纠结了我很久，直到刚才……<br />
+6.昨天我请教了我们公司后端开发的同事，他说，我按照Ubuntu自己提供的安装包安装，这个是一个关键：即安装目录是被拆开放到不同的文件夹中，这使得安装第三方扩展包的时候无从下手。刚才我又想到了这句话，心想如果APC也通过Ubuntu自己提供的安装包安装，应该就100%没有问题了。于是打开“新立得”软件包管理者，搜索，果然搜到了一个叫做“php5-apc”的模块，安装完成。<br />
+7.于是欣喜得去刷新页面——还是没打开<br />
+8.其实这离成功非常近了，重启apache，或，重启Ubuntu，东西就都出来了(就是上图的样子)<br />
+<br />
+太TM兴奋啦！！</p>

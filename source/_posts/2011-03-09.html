@@ -1,0 +1,65 @@
+---
+title: "[不老歌] CSS 中的颜色属性 color 知多少？"
+date: 2011/3/9 17:20
+updated: 2011/3/9 17:20
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>真相在此：<a href="http://www.w3.org/TR/2003/CR-css3-color-20030514/#colorunits" target="_blank">http://www.w3.org/TR/2003/CR-css3-color-20030514/#colorunits</a><br />
+----------------------------------------------<br />
+首先，css 的 <code>color</code> 属性值，可以是一个关键字定义，也可以通过数值来定义。且两者都有多种定义的形式。<h3>HTML 4 颜色关键字(HTML 4 color keywords)</h3><span style="color: #000000">■</span> Black = #000000<br />
+<span style="color: #008000">■</span> Green = #008000<br />
+<span style="color: #C0C0C0">■</span> Silver = #C0C0C0<br />
+<span style="color: #00FF00">■</span> Lime = #00FF00<br />
+<span style="color: #808080">■</span> Gray = #808080<br />
+<span style="color: #808000">■</span> Olive = #808000<br />
+<span style="color: #000000">□</span> White = #FFFFFF<br />
+<span style="color: #FFFF00">■</span> Yellow = #FFFF00<br />
+<span style="color: #800000">■</span> Maroon = #800000<br />
+<span style="color: #000080">■</span> Navy = #000080<br />
+<span style="color: #FF0000">■</span> Red = #FF0000<br />
+<span style="color: #0000FF">■</span> Blue = #0000FF<br />
+<span style="color: #800080">■</span> Purple = #800080<br />
+<span style="color: #008080">■</span> Teal = #008080<br />
+<span style="color: #FF00FF">■</span> Fuchsia = #FF00FF<br />
+<span style="color: #00FFFF">■</span> Aqua = #00FFFF<br />
+例如：<br />
+<pre>body {color: black; background: white }<br />h1 { color: maroon }<br />h2 { color: olive }</pre><h3>数值定义</h3><h4>RGB颜色值</h4>这个最常见了，不过一共有两种写法，例如：<br />
+<pre>em { color: #f00 }              /* #rgb */<br />em { color: #ff0000 }           /* #rrggbb */<br />em { color: rgb(255,0,0) }      /* integer range 0 - 255 */<br />em { color: rgb(100%, 0%, 0%) } /* float range 0.0% - 100.0% */</pre><br />
+还有一点需要注意，如果数值超出了正常范围(比如负数或超过255的整数等等)，则会取合理范围内的极限值，比如：<br />
+<pre>em { color: rgb(255,0,0) }       /* integer range 0 - 255 */<br />em { color: rgb(300,0,0) }       /* clipped to rgb(255,0,0) */<br />em { color: rgb(255,-10,0) }     /* clipped to rgb(255,0,0) */<br />em { color: rgb(110%, 0%, 0%) }  /* clipped to rgb(100%,0%,0%) */</pre><h4>RGBA颜色值</h4>在RGBA的基础上，多了一个alpha通道透明度的定义，例如：<br />
+<pre>em { color: rgb(255,0,0) }      /* integer range 0 - 255 */<br />em { color: rgba(255,0,0,1)     /* the same, with explicit opacity of 1 */</pre><h4>穿插：transparent 关键字</h4>透明，无颜色，相当于<code>rgba(0,0,0,0)</code><h4>HSL颜色值</h4>一个整数 + 两个百分数，分别表示色相、饱和度和亮度。例如：<br />
+<pre>* { color: hsl(0, 100%, 50%) }   /* red */<br />* { color: hsl(120, 100%, 50%) } /* green */<br />* { color: hsl(120, 100%, 25%) } /* light green */<br />* { color: hsl(120, 100%, 75%) } /* dark green */<br />* { color: hsl(120, 50%, 50%) }  /* pastel green, and so on */</pre><br />
+这样的写法目前还不太常见，但这样的定义方式给颜色渐变的计算带来了很多方便，或许将来会大有所为哦：）<h4>HSLA颜色值</h4>同理，在HSL的基础上加入了alpha透明通道。比如：<br />
+<pre>em { color: hsl(120, 100%, 50%) }     /* green */<br />em { color: hsla(120, 100%, 50%, 1) } /* the same, with explicit opacity of 1 */</pre><h3>SVG颜色关键字</h3>道理和HTML4的颜色关键字类似但范围更广，这里略去。<h3>currentColor颜色关键字</h3>表示与当前元素的color属性值相同，多用在使得边框颜色和文字颜色一直等地方。<h3>系统颜色(CSS System Colors)</h3>这些颜色很神奇，它会根据你的运行环境，代表与之相匹配颜色。比如我们希望某个div的文字颜色、背景色和操作系统tooltip的颜色保持一致，就可以写<br />
+<pre>.tooltip {color: InfoText; background: InfoBackground}</pre><br />
+有的时候我们希望页面样式和我们的操作系统完美融合到一体，不妨试试这些属性值：<h4>CSS 2 系统颜色</h4><span style="color: ActiveBorder">■</span> ActiveBorder<br />
+<span style="color: ActiveCaption">■</span> ActiveCaption<br />
+<span style="color: AppWorkspace">■</span> AppWorkspace<br />
+<span style="color: Background">■</span> Background<br />
+<span style="color: ButtonFace">■</span> ButtonFace<br />
+<span style="color: ButtonHighlight">■</span> ButtonHighlight<br />
+<span style="color: ButtonShadow">■</span> ButtonShadow<br />
+<span style="color: ButtonText">■</span> ButtonText<br />
+<span style="color: CaptionText">■</span> CaptionText<br />
+<span style="color: GrayText">■</span> GrayText<br />
+<span style="color: Highlight">■</span> Highlight<br />
+<span style="color: HighlightText">■</span> HighlightText<br />
+<span style="color: InactiveBorder">■</span> InactiveBorder<br />
+<span style="color: InactiveCaption">■</span> InactiveCaption<br />
+<span style="color: InactiveCaptionText">■</span> InactiveCaptionText<br />
+<span style="color: InfoBackground">■</span> InfoBackground<br />
+<span style="color: InfoText">■</span> InfoText<br />
+<span style="color: Menu">■</span> Menu<br />
+<span style="color: MenuText">■</span> MenuText<br />
+<span style="color: Scrollbar">■</span> Scrollbar<br />
+<span style="color: ThreeDDarkShadow">■</span> ThreeDDarkShadow<br />
+<span style="color: ThreeDFace">■</span> ThreeDFace<br />
+<span style="color: ThreeDHighlight">■</span> ThreeDHighlight<br />
+<span style="color: ThreeDLightShadow">■</span> ThreeDLightShadow<br />
+<span style="color: ThreeDShadow">■</span> ThreeDShadow<br />
+<span style="color: Window">■</span> Window<br />
+<span style="color: WindowFrame">■</span> WindowFrame<br />
+<span style="color: WindowText">■</span> WindowText<h4>Flavor系统颜色</h4>这个关键字有点生僻了，我自己都没用过也没见过，文档里第一次看到，暂不细说了<br />
+<br />
+最后，尽管color属性值可以有很多种方式，可以显示出各种效果，但别让网页的内容过分依赖于颜色，尽量让网页内容不通过颜色的修饰，也可以正常的表达意思(Ensure that text and graphics are understandable when viewed without color.)。</p>

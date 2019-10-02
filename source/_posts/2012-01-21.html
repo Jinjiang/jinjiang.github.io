@@ -1,0 +1,39 @@
+---
+title: "[不老歌] 手把手教你入门EaselJS做HTML5动画"
+date: 2012/1/21 20:39
+updated: 2012/1/21 20:39
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>今天借由<a href="http://easeljs.com/" target="_blank">EaselJS</a>这个脚本库，写一个简单的动画给大家当做为示范。<br />
+<br />
+<a href="http://jinjiang.github.com/demos/frog-animations/" target="_blank">DEMO演示链接</a><br />
+这个demo的最终效果是游戏割绳子(Cut the Rope)中的小青蛙的动画表情。<br />
+<br />
+首先简单介绍一下EaselJS这个脚本库，它是我最近发现的一个用来绘制Canvas动画的脚本库，比起Canvas的底层API，这个脚本库的接口设计更简单易用，所以做起动画来就易如反掌了。这里有详细的<a href="http://easeljs.com/" target="_blank">信息</a>和<a href="http://easeljs.com/docs" target="_blank">文档</a><br />
+<h3>素材</h3>我们今天要完成的动画是通过Canvas技术，一帧一帧绘制出来的，那么首先需要每一帧动画的素材。我们从<a href="http://cuttherope.ie/" target="_blank">http://cuttherope.ie/</a>找到了一些素材，并把每一帧动画都切割成100*100像素的图像。这里我们选择了小青蛙的两个状态动画：点头的状态和撅嘴的失败的状态，一共19+13=32帧。<br />
+<br />
+在EaselJS中，我们可以把多个连续的图像排列成为一张大图，再用脚本将其切割为多帧动画，所以我们把这些素材按顺序合并成一张100*3200的大图片，这跟CSS Sprites技术有异曲同工之妙。最后的图片保存为了<code><a href="http://jinjiang.github.com/demos/frog-animations/sprites.png" target="_blank">sprites.png</a></code>。<br />
+<h3>准备工作</h3>首先，导入easeljs脚本库<br />
+<pre>_script src="<strong>easeljs.js</strong>">_/script></pre>然后，创建canvas标签<br />
+<pre>_canvas id="canvas" width="100" height="100">_/canvas></pre><h3>准备编写JS</h3>创建舞台(stage)<br />
+<pre>// create a new stage and point it at our canvas<br />var stage = new <strong>Stage</strong>(document.getElementById('canvas'));</pre><h3>创建小青蛙</h3>小青蛙是由一个 <code>BitmapAnimation</code> 类创建出来的全局变量 <code>icon</code>，这类对象可以在舞台中播放动画。而动画是由 <code>sprites.png</code> 中的图片循环播放生成的，这里我们需要通过另一个类创建对象：<code>SpriteSheet</code>，整个小青蛙的创建方法如下：<br />
+<pre>// create a SpriteSheet using "sprites.png" with a frame size of 100x100<br />var spriteSheet  = new <strong>SpriteSheet</strong>({<br />    images: [<strong>"sprites.png"</strong>],<br />    frames: {width: 100, height: 100}<br />});<br /><br />// create a BitmapAnimation to display frames from the sprite sheet<br />icon = new <strong>BitmapAnimation</strong>(spriteSheet);</pre><h3>播放动画</h3>创建完毕之后，这个小青蛙的对象需要添加到舞台中：<br />
+<pre>// append into stage and start animations<br />stage.<strong>addChild</strong>(icon);<br />icon.<strong>gotoAndPlay</strong>(0);<br /><strong>Ticker</strong>.addListener(stage);</pre>对上面的代码做一下解释：第一行代码是把小青蛙的对象添加到舞台，用到了舞台的 <code>Stage.prototype.addChild</code> 接口；第二行代码是让动画从第1帧开始播放，用到了 <code>BitmapAnimation.prototype.gotoAndPlay</code> 接口；第三行代码则是开始播放动画，它的原理有点意思，<code>Ticker</code> 是EaselJS中的又一个类，用来作为控制动画播放的“节拍器”。当我们使用 <code>Ticker.addListener</code> 方法时，节拍器会有节奏的触发第一个参数的 <code>tick</code> 函数(默认是20帧/秒)，而 <code>stage</code> 对象刚好有一个默认函数 <code>Stage.prototype.tick</code>，会把舞台中的所有动画元素向前播放一帧。这样，小青蛙的动作就会连贯的播放出来了。<br />
+我们现在看到的效果就是一只小青蛙连续的点头和撅嘴，是不是很可爱 :-)<br />
+<a href="http://jinjiang.github.com/demos/frog-animations/index2.html" target="_blank">此时的阶段性DEMO演示链接 1</a><h3>加入动画的控制，让小青蛙连续点头</h3>接下来加入一些动画的控制，比如让小青蛙处于循环点头的状态——事实上这才是割绳子游戏中的正常状态。<br />
+<pre>// bind animation events<br />icon.tick = function () {<br />    if (icon.<strong>currentFrame</strong> == 18) {<br />        icon.currentFrame = 0;<br />    }<br />};</pre>这里给<code>icon.tick</code>赋值一个函数，这个函数会在每一帧动画播放之后被触发。我们在这个函数中判断，如果播放到第19帧时，立即从第1帧继续播放。这样，小青蛙点头的动画就可以重复播放了。设置当前帧数的方法是修改 <code>icon.currentFrame</code> 的值。<br />
+<a href="http://jinjiang.github.com/demos/frog-animations/index3.html" target="_blank">此时的阶段性DEMO演示链接 2</a><h3>加入小青蛙撅嘴状态的切换</h3>在这个基础上，我们再加入让青蛙撅嘴的状态，并且可以通过回车键使小青蛙切换到撅嘴的状态。<br />
+<pre>window.onkeydown = function (event) {<br />    if (event.keyCode == 13) {<br />        <strong>icon.gotoAndPlay(19);</strong><br />    }<br />};</pre>刷新页面，这时，我们看到，小青蛙还是处在连续点头的状态，当我们按下回车键时，小青蛙立刻从第20帧开始继续播放，即撅嘴。但有个小问题，因为节拍器是循环播放的，所以当撅嘴的动画播放完毕之后，动画会自动跳到第1帧。即重新回到连续点头的状态。<br />
+<a href="http://jinjiang.github.com/demos/frog-animations/index4.html" target="_blank">此时的阶段性DEMO演示链接 3</a><br />
+<br />
+这其实不是我们希望看到的，我们希望小青蛙撅嘴之后，停留在最后一帧，当用户再次按下回车键后，再回到连续点头的状态。所以，我们还会对代码做一些修改。<h3>最终完成</h3>首先，加入<code>toggle</code>函数，通过<code>flag</code>记录当前的状态是连续点头还是撅嘴：<br />
+<pre>function toggle() {<br />    if (flag) {<br />        icon.gotoAndPlay(0);<br />    }<br />    else {<br />        icon.gotoAndPlay(19);<br />    }<br />    flag = !flag;<br />}<br /><br />window.onkeydown = function (event) {<br />    if (event.keyCode == 13) {<br />        <strong>toggle();</strong><br />    }<br />};</pre>然后，绑定 <code>icon</code> 的另一个事件 <code>onAnimationEnd</code><br />
+<pre>icon.<strong>onAnimationEnd</strong> = function () {<br />    icon.paused = true;<br />    icon.currentFrame = 31;<br />}</pre>这个事件会在动画播放到最后一帧时触发，即第32帧时，我们在这个事件中要处理的就是让动画暂停下来，同时让动画停留在第32帧。<br />
+<br />
+再次保存刷新页面，我们的动画就大功告成了！<br />
+<a href="http://jinjiang.github.com/demos/frog-animations/" target="_blank">DEMO演示链接</a><h3>总结</h3>以上就是我们对EaselJS脚本库制作动画的一个简单实践。通过这次实践，我们会发现其实动画无非是图片的快速连续播放，而帧的概念、多帧图片合并(sprites)的方法，让动画制作更加简单，我们结合节拍器对动画的每一帧进行控制。除了EaselJS，类似的Canvas脚本库还有一些，这个是我觉得相对简单易懂的。在此推荐给各位！<br />
+<br />
+这应该是我今年最后一篇技术博客了，明年我会继续坚持写博客，多多写一些技术类的文章，多多跟大家分享和探讨HTML5。最后预祝大家，尤其是诸位技术宅男们，新年快乐！工作顺利！<br />
+<br />
+以上</p>

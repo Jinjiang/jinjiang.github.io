@@ -1,0 +1,24 @@
+---
+title: "[不老歌] Javascript语言特性学习笔记(二)"
+date: 2010/1/20 2:37
+updated: 2010/1/20 2:37
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>之前写过<a href="/topic.blg?dmn=g3g4&tid=1134019" target="_blank">一篇Javascript的学习笔记</a>，貌似过去很久了……<br />
+<br />
+今天是第二篇。<br />
+-----------------------------------------------------------------<br />
+<br />
+<strong>Javascript中的非函数式语言特性</strong><br />
+<br />
+<u>1</u>. Javascript中提供的变量作用域共有三种：表达式(直接量)、<del>语句</del>、函数(局部变量)和全局(全局变量)<br />
+<u>2</u>. typeof null == 'Object';<br />
+<u>3</u>. 对象只有“构造于某个原型”，并不存在“持有某个原型”，所以构造器(实质为一个函数)的原型是一个实例(对象)，而实例(实质为一个对象)的构造器是一个函数(构造器)<br />
+<u>4</u>. 函数只有在需要引用到原型时，才具有构造器的特性。而且函数的原型总是一个Object()构造器的实例。不过该实例创建后，constructor属性总先被赋值为当前函数，即：MyObj.prototype.constructor == MyObj<br />
+<u>5</u>. 多个原型和多个构造器之间交替相联系，形成了一条原型链<br />
+<u>6</u>. 万物皆为prototype链 + props链，空对象{}可理解为其prototype链为Object.prototype，props链为空<br />
+<u>7</u>. 一般Javascript的对象(构造器)组成为：内置对象(Number/String/.../Math/Global/Arguments)、引擎扩展对象(ActiveXObject/COM/XML/...)、宿主对象(window/navigator/image/...)<br />
+<br />
+写得有点粗略了，有些东西还是挺晦涩的，没有写出具体的例子……<br />
+暂总结如下，下一次是函数式语言特性的部分</p>

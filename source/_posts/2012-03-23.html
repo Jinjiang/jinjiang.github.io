@@ -1,0 +1,71 @@
+---
+title: "[不老歌] html5中的消息通信简介 + 我的新网站开张"
+date: 2012/3/23 23:41
+updated: 2012/3/23 23:41
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>随着网页时效性需求的增强和其所涉及范围的扩大，各种消息通信的运用越来越多。在html5中，有很一部分消息通信的新规范，旨在让这些工作更加方便实用。接下来会为大家介绍4个比较主要的通信方式：<br />
+<br />
+* WebSocket<br />
+* Server-Sent Event<br />
+* Cross-Document Messaging<br />
+* Channel Messaging<br />
+<br />
+<br />
+<strong>WebSocket</strong><br />
+<br />
+这个技术已经被越来越多的人注意到了。长连接一直以来一直是web的一个盲区，而WebSocket让网页通过几个简单的js接口，就可以和服务器建立长连接；另外一个好处，也是长连接随之带来的，就是省掉了每次传统请求中的HTTP头、cookies等信息的冗余传输。<br />
+<br />
+WebSocket的新知识分两部分：一部分是浏览器端的js接口定义，方便前端开发调用；另一部分是WebSocket协议，对浏览器相关js接口的底层实现和服务器端的配合提出了明确的要求，这部分主要是服务器开发和浏览器开发需要比较关注，对前端开发者影响不大。<br />
+<br />
+WebSocket的大致js接口设计如下：<pre>socket = new WebSocket(url[, protocols]);<br>socket.url;<br>socket.readyState; // CONNECTING|OPEN|CLOSING|CLOSED<br>socket.send(...); // string|arraybuffer|blob<br>socket.onmessage = function (e) {<br>    e.data;<br>};<br>socket.onopen = function (e) {...};<br>socket.onerror = function (e) {...};<br>socket.onclose = function (e) {...};</pre><br />
+<br />
+更详细的介绍可以移步到：<a href="http://www.w3.org/TR/websockets/" target="_blank">http://www.w3.org/TR/websockets/</a><br />
+<br />
+<br />
+<strong>Server-Sent Event</strong><br />
+<br />
+顾名思义，这个新特性可以允许服务器更方便的主动发送信息给浏览器。从量级上看，这个比WebSocket更轻量级一些，但它的好处也很明显。首先，它不需要特殊的协议和特殊的服务器语言，现行的主流技术完全可以应付；第二，它强调的是服务器发送，而不是双向通信，这样开发和实现更简单，更有效率。一个很适用的场景就是微博页面的新微博、新评论、新私信的实时推送。<br />
+<br />
+Server-Sent Event简称作SSE。SSE的使用方法也非常简单：<pre>var source = new EventSource('./sse.php');<br>source.addEventListener('message', function (e) {e.data;...}, false);<br>source.addEventListener('add', function (e) {e.data;...}, false);<br>source.addEventListener('customEventType', function (e) {e.data;...}, false);</pre>然后服务器端返回特定的格式：<pre>echo "event:customEventType"; // 确定事件类型<br>echo "data:content string here..."; // 返回数据内容<br>echo "retry:5000" // 5秒之后请求第二次;</pre>就可以配合工作了。<br />
+<br />
+更详细的介绍可以移步到：<a href="http://dev.w3.org/html5/eventsource/" target="_blank">http://dev.w3.org/html5/eventsource/</a><br />
+<br />
+<br />
+<strong>Cross-Document Messaging</strong><br />
+<br />
+这个技术主要运用在不同window/worker之间进行消息通信。运行环境比如iframe、webworker、window.open打开的新窗口等。不同网页之间的通信，可以让web元素更多元化的融合在一起。<br />
+<br />
+Cross-Document Messaging的接口用法大致如下：<pre>// on top<br>iframe.postMessage('hello');<br><br>// on iframe<br>window.onmessage = function (e) {e.data;...}</pre>值得注意的是，这项技术可以解决跨域问题——当然，有个限制，就是被请求的页面通过head信息明确授权跨域访问。<br />
+<br />
+<br />
+<strong>Channel Messaging</strong><br />
+<br />
+这项技术就更加奇妙了，它允许js创建一个频道(channel)，每个频道有两个端口(port)对象，这两个端口对象的引用不论通过何种方式传递到何处，只要端口1调用postMessage(data)发个消息，端口2就会立刻收到onmessage事件，反之亦然。大概用法是这样的：<pre>var channel = new MessageChannel();<br>var port1 = channel.port1;<br>var port2 = channel.port2;<br>port1.onmessage = function (e) {e.data;...};<br>port2.postMessage('Hello Port1!');</pre>Channel Messaging给了我们很大的想象空间，做一些有趣的技术实现。<br />
+<br />
+有关Cross-Document Messaging和Channel Messaging的更详细介绍请移步到：<a href="http://www.w3.org/TR/webmessaging/" target="_blank">http://www.w3.org/TR/webmessaging/</a><br />
+<br />
+<br />
+<strong>更多的消息通信内容</strong><br />
+<br />
+希望关注html5消息通信这部分内容的朋友，可以进一步看看这几样东西：一个是WebWorker，以及随之而来的各种同步数据操作接口(之前的接口多半都是异步的，通过回调函数继续处理的，这样的代码比较不够直观，而在worker里不存在“界面卡死”一说，所以就没有必要了)，还有就是WebRTC技术，让客户端更加主导通信。<br />
+<br />
+--------<br />
+<br />
+<strong>Demo</strong><br />
+<br />
+这里制作了一个简单的demo，涵盖了除WebSocket之外的所有其它3项技术：Cross-Document Messaging、Channel Messaging、Server-Sent Event。目前webkit内核对这部分技术的支持还是比较完善的。另外SSE中的php部分代码很简单，我的php也很烂，拿不出手，就不公开代码了。<br />
+<a href="http://jiongks.name/demos/web-msg/" target="_blank">http://jiongks.name/demos/web-msg/</a><br />
+<br />
+--------<br />
+<br />
+<strong>我的新网站</strong><br />
+<br />
+好吧，既然新的demo已经分享给大家了，也就不瞒着大家了。我开启了又一个新网站：<strong><a href="http://jiongks.name/" target="_blank">囧克斯</a></strong>，空间架设在sae上：http://jiongks.sinaapp.com/ 大家也可以通过 <a href="http://jiongks.name/" target="_blank">http://jiongks.name/</a> 直接访问，这个域名我前阵子刚买下来。<br />
+<br />
+现在刚开始，里面东西并不多，我放了之前的demo和ppt充数，新网站的一些未来打算我也已经想到了一部分写上去了。另外不知道新设计的皮肤经不经得起大家的审美考验。欢迎大家参观留言助兴 :-)<br />
+<br />
+今后不老歌会继续保持更新，但也会考虑把内容和访问量逐渐迁移引导过去。<br />
+<br />
+恩，就是这么多了。</p>

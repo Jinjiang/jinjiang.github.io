@@ -1,0 +1,92 @@
+---
+title: "[不老歌] 用 CSS 3 画出来的一颗大红心"
+date: 2011/2/12 11:18
+updated: 2011/2/12 11:18
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p><p>情人节温情更新：</p>
+<p>已经可以在 Firefox / IE 9 下正常观看 O(∩_∩)O~</p>
+<hr />
+<style>
+#heart {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    line-height: 350px;
+    text-align: center;
+    font-family: Cambria, Georgia;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: black 2px 2px 4px;
+    cursor: pointer;
+}
+#heart span {
+    position: absolute;
+    z-index: -1;
+    top: 135px;
+    left: 150px;
+    border: 0 red solid;
+    border-width: 25px 50px 100px 50px;
+    width: 0;
+    margin: auto;
+}
+#heart:before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 10px;
+    left: 0;
+    background: red;
+    border: 0 red solid;
+    border-width: 125px 100px;
+    -webkit-border-radius: 100px / 125px;
+    -moz-border-radius: 100px / 125px;
+    border-radius: 100px / 125px;
+}
+#heart:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 10px;
+    right: 0;
+    background: red;
+    border: 0 red solid;
+    border-width: 125px 100px;
+    -webkit-border-radius: 100px / 125px;
+    -moz-border-radius: 100px / 125px;
+    border-radius: 100px / 125px;
+}
+#heart span:after {
+    content: "";
+    position: absolute;
+    left: -168px;
+    top: 68px;
+    border: 168px transparent solid;
+    border-top-color: red;
+}
+#heart:hover {
+    color: yellow;
+}
+#heart:active {
+    line-height: 354px;
+}
+#heart:hover:before,
+#heart:hover:after,
+#heart:hover span {
+    border-color: #F00000;
+}
+#heart:hover span:after {
+    border-top-color: #F00000;
+}
+</style><div id="heart"><span></span>I'm a CSS 3 Heart!</div>
+<p>如题，直接上效果吧~</p>
+<p>原本只是在Webkit上可以正常工作的，后来顺应民意，兼容了Gecko</p>
+<p>这样大家就可以在傲游3、谷歌、沙发里(不是春天里)看到效果了</p>
+<p>至于IE…… 谁能帮我回答一下这个问题？</p>
+<del><p>如果你是通过订阅或人人日志、开心日志或微博等不靠谱平台看到的，可能效果不正，有劳移步至此欣赏：<a href="http://bulaoge.net/topic.blg?tuid=27015&tid=1968094" target="_blank">http://bulaoge.net/topic.blg?tuid=27015&tid=1968094</a></p>
+<p>最后贴源代码到 GitHub：<a href="https://github.com/Jinjiang/CSS-Heart" target="_blank">https://github.com/Jinjiang/CSS-Heart</a></p></del></p>

@@ -1,0 +1,33 @@
+---
+title: "[不老歌] IndexedDB技术简介(四)"
+date: 2012/2/14 21:06
+updated: 2012/2/14 21:06
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>这篇文章会接着介绍IndexedDB(以下简称IDB)。我们会介绍如何解决在webkit内核下、新旧版本规范的兼容问题。<br />
+<br />
+目前支持IDB的webkit内核浏览器有chrome和傲游3，safari暂不支持IDB。<br />
+<br />
+首先，由于内核不同，所以<code>window.indexedDB</code>被改为了带有<code>webkit</code>前缀的变量window.webkitIndexedDB。同时发生变化的还有两个对象<code>IDBKeyRange</code>和<code>IDBTransaction</code>。如果想兼容gecko和webkit内核，那么可以在程序的开头加入如下代码：<br />
+<pre>if ('webkitIndexedDB' in window) {<br>    window.indexedDB = webkitIndexedDB;<br>    window.IDBKeyRange = webkitIDBKeyRange;<br>    window.IDBTransaction = window.webkitIDBTransaction;<br>}<br>else if ('mozIndexedDB' in window) {<br>    window.indexedDB = mozIndexedDB;<br>}</pre><br />
+其次，webkit内核(chrome17或傲游3.3)和Firefox9及其更旧的版本遵循的IDB规范已经是旧版本的规范了，而Firefox10已经遵循的是新版本IDB规范。两者的主要区别在于版本控制的方式不同。旧版中的版本变更方式是：<br />
+<pre>var req = window.indexedDB.open(dbName); // 旧版在这里不需要写明dbVersion<br>req.onsuccess = function (e) {<br>    var db = this.result;<br>    if (db.version != '1.0') {<br>        var subReq = db.setVersion('1.0'); // 通过setVersion修改版本号，而不是onupgradeneeded事件<br>        subReq.onsuccess = function (e) {<br>            // TODO: real success code<br>        };<br>    }<br>    else {<br>        // TODO: real success code<br>    }<br>};</pre><br />
+除了上述的两点不同，新旧两版的接口设计基本上是相同的。<br />
+规范的频繁变更确实不是我们希望看到的，在IDB尚未被广泛应用时做出改变，或许影响面还不算太大。但如果我们希望通过一套代码兼容新旧两版规范，还是有办法的。<br />
+<pre>var req = window.indexedDB.open(dbName, dbVersion); // 对于旧版而言，会忽略第二个参数，因此这里可以兼容<br>req.onsuccess = function (e) {<br>    var db = this.result;<br>    if (db.version != dbVersion) { // 新版中两者绝对一致，否则只会触发onupgradeneeded事件，因此这里也可以兼容<br>        // TODO: code of changing object stores for new version<br>        var subReq = db.setVersion(dbVersion);<br>        subReq.onsuccess = function (e) {<br>            // TODO: real success code<br>        };<br>    }<br>    else {<br>        // TODO: real success code<br>    }<br>};<br>req.onupgradeneeded = function (e) {<br>    // TODO: code of changing object stores for new version<br>};</pre><br />
+<br />
+---------------- 兼容IE的分割线 ---------------<br />
+<br />
+这里额外插入一段如何兼容IE10的说明，IE10最新的预览版也已经支持了IndexedDB，和<code>window.webkitIndexedDB</code>和<code>window.mozIndexedDB</code>类似，IE10中对应的变量名为<code>window.msIndexedDB</code>，所以，相兼容IE，把上面第一部分的代码改为：<pre>if ('webkitIndexedDB' in window) {<br>    window.indexedDB = webkitIndexedDB;<br>    window.IDBKeyRange = webkitIDBKeyRange;<br>    window.IDBTransaction = window.webkitIDBTransaction;<br>}<br>else if ('mozIndexedDB' in window) {<br>    window.indexedDB = mozIndexedDB;<br>}<br>else if ('msIndexedDB' in window) {<br>    window.indexedDB = msIndexedDB;<br>}</pre>即可。下面的“全兼容”的例子已经用到了这段代码。<br />
+<br />
+---------------- 兼容IE的分割线 ---------------<br />
+<br />
+这样，我们就完成了不同内核不同版本下的“全兼容”。<br />
+还记得<a href="http://jinjiang.github.com/demos/indexed-db/firefox-10.html" target="_blank">上一篇文章中的demo</a>吗？我通过上面的兼容方法，对这个例子做了进一步的兼容性处理和接口封装，得到了另一个demo：<br />
+<br />
+<a href="http://jinjiang.github.com/demos/indexed-db/" target="_blank">DEMO演示链接</a> (firefox/chrome/maxthon)<br />
+<br />
+至此，IndexedDB技术介绍告一段落。我们先后介绍了<a href="http://bulaoge.net/topic.blg?dmn=g3g4&tid=2329796" target="_blank">基本原理</a>、<a href="http://bulaoge.net/topic.blg?dmn=g3g4&tid=2330716" target="_blank">接口定义</a>、并<a href="http://bulaoge.net/topic.blg?dmn=g3g4&tid=2335030" target="_blank">通过一个简单的例子</a>，进行了gecko/webkit内核下的新旧规范的兼容和适配，希望诸位看过之后有所收获。IndexedDB的用途和用法还有很多，在此不一一列举，大家可以在<a href="http://www.w3.org/TR/IndexedDB/" target="_blank">W3C的官方文档</a>中继续研究和探索。<br />
+<br />
+完</p>

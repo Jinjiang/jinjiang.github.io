@@ -1,0 +1,68 @@
+---
+title: "[不老歌] HTML5中的文件处理 之 File API"
+date: 2012/2/22 23:28
+updated: 2012/2/22 23:28
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>在众多HTML5规范中，有一部分规范是跟文件处理有关的，在早期的浏览器技术中，处理小量字符串是js最擅长的处理之一。但文件处理，尤其是二进制文件处理，一直是个空白。在一些情况下，我们不得不通过Flash/ActiveX/NP插件或云端的服务器处理较为复杂或底层的数据。今天，HTML5的一系列新规范正在致力于让浏览器具备更强大的文件处理能力。<br />
+<br />
+今天要介绍的<strong><a href="http://www.w3.org/TR/FileAPI/" target="_blank">FileAPI</a></strong>，就是为解决这类问题而生的。<br />
+<br />
+<br />
+<strong>总览</strong><br />
+<br />
+FileAPI是一些列文件处理规范的基础，包含最基础的文件操作的JavaScript接口设计。其中最主要的接口定义一共有4个：<br />
+* <code>FileList</code>接口: 可以用来代表一组文件的JS对象，比如用户通过<code>input[type="file"]</code>元素选中的本地文件列表<br />
+* <code>Blob</code>接口: 用来代表一段二进制数据，并且允许我们通过JS对其数据以字节为单位进行“切割”<br />
+* <code>File</code>接口: 用来代步一个文件，是从<code>Blob</code>接口继承而来的，并在此基础上增加了诸如文件名、MIME类型之类的特性<br />
+* <code>FileReader</code>接口: 提供读取文件的方法和事件<br />
+<br />
+这里有两点细节需要注意：<br />
+1. 我们平时使用<code>input[type="file"]</code>元素都是选中单个文件，其本身是允许同时选中多个文件的，所以会用到<code>FileList</code><br />
+2. <code>Blob</code>接口和<code>File</code>接口可以返回数据的字节数等信息，也可以“切割”，但无法获取真正的内容，这也正是<code>FileReader</code>存在的意义，而文件大小不一时，读取文件可能存在明显的时间花费，所以我们用异步的方式，通过触发另外的事件来返回读取到的文件内容<br />
+<br />
+<br />
+<strong>接口描述</strong><br />
+<br />
+这4个接口其实并不复杂，也很好理解(接口中的“<code>#Foo</code>”表示任意<code>Foo</code>类型的对象)：<br />
+<br />
+<br />
+<strong><code>FileList</code>接口</strong><br />
+<pre>#FileList[index] // 得到第index个文件</pre><br />
+<strong><code>Blob</code>接口</strong><br />
+<pre>#Blob.size // 只读特性，数据的字节数<br>#Blob.type // 只读属性，数据的MIME类型<br>#Blob.slice(start, end) // 将当前文件切割并将结果返回</pre><br />
+<strong><code>File</code>接口</strong><br />
+<pre>#File.size // 继承自Blob，意义同上<br>#File.slice(start, length) // 继承自Blob，意义同上<br>#File.name // 只读属性，文件名<br>#File.type // 只读属性，文件的MIME类型<br>#File.lastModifiedDate // 只读属性，文件的上次修改日期</pre><br />
+<strong><code>FileReader</code>方法</strong><br />
+<pre>#FileReader.readAsArrayBuffer(blob/file) // 以ArrayBuffer格式读取文件内容<br>#FileReader.readAsBinaryString(blob/file) // 以二进制格式读取文件内容(该方法已不推荐使用，感谢 @超人与酱油瓶 指正)<br>#FileReader.readAsText(file, [encoding]) // 以文本(及字符串)格式读取文件内容，并且可以强制选择文件编码<br>#FileReader.readAsDataURL(file) // 以DataURL格式读取文件内容<br>#FileReader.abort() // 终止读取操作</pre><br />
+<strong><code>FileReader</code>事件</strong><br />
+<pre>#FileReader.onloadstart // 读取操作开始时触发<br>#FileReader.onload // 读取操作成功时触发<br>#FileReader.onloadend // 读取操作完成时触发(不论成功还是失败)<br>#FileReader.onprogress // 读取操作过程中触发<br>#FileReader.onabort // 读取操作被中断时触发<br>#FileReader.onerror // 读取操作失败时触发</pre><br />
+<strong><code>FileReader</code>属性</strong><br />
+<pre>#FileReader.result // 读取的结果(二进制、文本或DataURL格式)<br>#FileReader.readyState // 读取操作的状态(EMPTY、LOADING、DONE)</pre><br />
+<br />
+<strong>代码示例</strong><br />
+<br />
+举例一：控制file控件，读取其中的第二个文件，并将其文本内容在控制台输出<br />
+<pre>var input = document.querySelector('input[type="file"]'); // 找到第一个file控件<br>var firstFile = input.files[0]; // file控件的files特性其实就是一个FileList类型的对象<br>var secondFile = input.files[1]; // 当file控件的multiple特性为true时，我们可以同时选择多个文件，通过input.files[n]可以按序访问这些文件<br>var reader = new FileReader(); // 新建一个FileReader类型的对象<br>reader.readAsText(secondFile); // 按文本格式读取file控件中的第二个文件<br>reader.onloadend = function (e) { // 绑定读取操作完成的事件<br>    console.log(reader.result); // 取得读取结果并输出<br>};</pre><br />
+举例二：给一个含utf-8编码的文本文件file去掉BOM头信息<br />
+<pre>var size = file.size; // 先取得文件总字节数<br>var result = file.slice(3, size - 3); // 用slice方法去掉开头的3个字节</pre><br />
+<br />
+<strong>最后，对FileAPI实践的两点注意</strong><br />
+<br />
+1. <code>#Blob.slice</code>在webkit内核中加入了前缀，即<code>#Blob.webkitSlice</code>；<br />
+2. 规范中还明确规定了各种出错处理和异常处理，这些内容是同样重要的：不论对于一套完备的规范，还是对于一个健壮的程序而言。由于篇幅有限，这部分就不细说了，大家可以在<a href="http://www.w3.org/TR/FileAPI/" target="_blank">W3C官网</a>自由查阅<br />
+<br />
+<br />
+-------- 再补充一个知识：<code>Blob URI</code> --------<br />
+<br />
+这个东西可以为一个<code>Blob</code>对象提供URI访问的方式和可能，内存中的<code>Blob</code>对象无法很方便的传递给其它页面，于是我们设计了<code>Blob URI</code>，使得这个<code>Blob</code>对象可以在同源的任何网页中，通过向这个<code>URI</code>发送Ajax请求等方式进行访问。<pre>window.URL.createObjectURL(blob[, options])<br>window.URL.revokeObjectURL(url)</pre>前者可以为<code>blob</code>创建一个URI，后者可以取消<code>url</code>对应的blob关联。这里面还有一个options值得注意，目前<code>options</code>中只有<code>oneTimeOnly</code>特性有效，表示该url第一次被调用后自动revoke。<br />
+<br />
+由于<code>File</code>继承自<code>Blob</code>，所以我们也可以将某个<code>File</code>对象转化成<code>URI</code>供同源网页访问和使用。<pre>var url = window.URL.createObjectURL(imageFile);<br>...<br>img.src = url;<br>...<br>window.URL.revokeBlobURL();</pre><br />
+<br />
+-------- 补充完毕 --------<br />
+<br />
+<br />
+以上就是FileAPI的简单介绍。万丈高楼平地起，后面的文件操作会更神奇更有趣。<br />
+<br />
+(未完待续)</p>

@@ -1,0 +1,29 @@
+---
+title: "[不老歌] 对HTML5中LocalStorage的一些使用建议"
+date: 2012/1/4 22:25
+updated: 2012/1/4 22:25
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>上个月末的w3ctech上，有同行提到了LocalStorage这个话题，我觉得在HTML5的众多新特性中，LocalStorage算是比较实际同时浏览器也比较好实现的特性。<br />
+<br />
+LocalStorage的规范描述在这里：<a href="http://dev.w3.org/html5/webstorage/" target="_blank">http://dev.w3.org/html5/webstorage/</a><br />
+<br />
+首先一个细节，LocalStorage只能存储键值对(key-value pair)形式的数据，并且key和value都只能存储为字符串类型。之所以这样说，因为JS是动态语言，我们可以在<code>setItem</code>时传入int型数据(比如<code>localStorage.setItem("a", 1)</code>)，但是它会转换成字符串之后再进行存储和准备随时调用，当我们用<code>getItem</code>访问<code>"a"</code>时(<code>localStorage.getItem("a")</code>)，得到的是字符串<code>"1"</code>而非数字<code>1</code>。<br />
+<br />
+第二，虽然<code>localStorage[key] = value</code>的写法主流的浏览器都是支持的，但不推荐这样书写代码(更正一下，标准里有getter/setter的明确规定，上书写法也是标准的一部分，感谢Kenny提醒)。而且很显而易见的问题是：对<code>length</code>、<code>setItem</code>、<code>getItem</code>、<code>clear</code>这样的key进行读写是会产生问题的。假如我们执行：<pre>localStorage.setItem = null;<br />localStoarge.removeItem = null;<br />localStorage.clear = null;</pre>那么整个LocalStorage的接口完备性将会遭到破坏。<br />
+<br />
+当然，对JS比较熟悉的童鞋可以思考一个附加的变态问题，执行了上述代码之后，localStorage还有没有办法恢复正常呢？<br />
+<br />
+第三，如果我们不想存储字符串，而是类型更丰富结构更复杂的数据，我们推荐大家和JSON的相关函数<code>JSON.parse</code>/<code>JSON.stringify</code>配合使用。这样我们可以方便复杂数据结构和字符串之间的转换，获取数据的时候使用<code>JSON.parse(localStorage.getItem("a"))</code>，写入数据的时候使用<code>localStorage.setItem("a", JSON.stringify(obj))</code>。<br />
+<br />
+第四，LocalStorage跟cookies一样是按照域名为单位进行独立存储的，且是有容量上限的(一般为5MB)，当我们调用<code>setItem</code>时如果超过容量上限，会触发<code>QuotaExceededError</code>异常。我的经验是，如果你是存文本的，一般碰不到这根线，可以无视；如果用DataURI方式存二进制文件，就需要特别注意了，视频的话，基本没有5MB以下的，所以不会考虑LocalStorage的，也不用特别注意；但如果是图片，很容易几百K的图片多存几张就够5MB了，所以有必要提个醒。当然有些浏览器也会通过提醒用户确认来允许网站使用更多的容量，那个是另一说了。<br />
+<br />
+上述四个建议是我个人使用LocalStorage最常碰到的状况，这里分享给大家。<br />
+<br />
+最后在附送一个“高阶”技巧：<code>window.onstorage</code>事件。其实这也不算多高级，只是用的地方比较少罢了。假如我们同时打开了同域下的多个页面，这时我在一个页面里操作<code>localStorage.setItem</code>、<code>localStorage.removeItem</code>或<code>localStorage.clear</code>，其它同域的页面就会触发这个事件。事件附带的参数是这样的：<pre>window.onstorage = function (event) {<br />    var key = event.key // 被修改的键名<br />    var oldValue = event.oldValue // 旧的值<br />    var newValue = event.newValue // 新的值<br />    var url = event.url // 触发改变的网页的url<br />    var storage = event.storageArea // 当前localStorage的引用(当sessionStorage改变时，这里就是当前sessionStorage的引用，好吧扯远了，看不懂可以先无视)<br />}</pre><br />
+这个特性可以帮助我们在多个页面间实现简单的通信、同步和数据交互，比如在一个网站的用户设置页面中修改用户昵称，那么你的所有页面中的昵称也都瞬间改变了。当然，与之产生的注意事项是要回避循环修改，以免浏览器进入死循环。<br />
+<br />
+以上<br />
+<br />
+其实对于LocalStorage还有很多细节，对HTML5感兴趣的童鞋可以进一步挖掘。来年的交流会上，我们一定还会聊到LocalStorage。到那时，我们可以再做更深入的讨论和交流。</p>

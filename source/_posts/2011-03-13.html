@@ -1,0 +1,57 @@
+---
+title: "[不老歌] 记解答QQ群里的一个JavaScript问题"
+date: 2011/3/13 22:25
+updated: 2011/3/13 22:25
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>问题是这样的：<br />
+<pre>window.onload = function () {
+    var jsonStr = '{"name": "w", "sex": "male"}';
+
+    //method 1
+    var json = (new Function("return " + jsonStr))();
+
+    //method 2
+    function strToJson(str) {
+        return str;
+    };
+    var json = new strToJson(jsonStr);
+}</pre>
+问 method 2 为什么不能达到 method 1 的效果？<br />
+<br />
+大家觉得对于这样的问题该如何解答呢？<br />
+<br />
+我是这么分析的。<br />
+<h3>new Function('...')</h3>
+首先我觉得这位朋友对 new Function('...') 的意思没有完全理解正确。这句话是用来定义一个函数的，换句话说：<br />
+<pre>var funcName = new Function('return 1;');</pre>
+相当于：<br />
+<pre>function funcName() {return 1;}</pre>
+如果这两句 js 等价可以理解的话，那么 method 1 就等价于：<br />
+<pre>var json = (function () {return {"name": "w", "sex": "male"}})()</pre>
+<h3>(function () {...})()</h3>
+如果还看得不明白，那么这位朋友对匿名函数的定义和调用可能也不熟悉。比如：<br />
+<pre>function funcName() {return 1;}
+var a = funcName();</pre>
+相当于：<br />
+<pre>var a = (function funcName() {return 1;})();</pre>
+进而：<br />
+<pre>var a = (function () {return 1;})();</pre>
+所以 method 1 又可以进一步等价于<br />
+<pre>function funcName() {return {"name": "w", "sex": "male"}}
+var json = funcName();</pre>
+<h3>(function () {...})()写法的好处在哪里？</h3>
+如果大家接触的js略微深入一些，会发现如今的js代码里已经大量存在(function () {...})()这样的用法了——包括一些比较复杂的函数。那么大家为什么都这么用呢？好处在哪里呢？<br />
+这种写法相比较先定义一个有名字的函数，再执行这个函数的写法相比，有一个比较明显的区别，就是你不需要为执行的函数起名字。这样的好处是这段函数的定义不会污染命名空间。<br />
+那你可能还有另外一个疑问，我不写成函数，直接写函数里的代码让它执行不就行了吗？如果要回答这个问题，我们需要引入更复杂的函数，比如：<br />
+<pre>(function () {var a = ...; ...})()</pre>
+如果把函数里的代码直接写在外面：<br />
+<pre>var a = ...;
+...</pre>
+这样的话，命名空间会被函数定义中的局部变量所污染。而上一种写法可以使你尽情的使用局部变量而不会有命名空间被污染的后顾之忧。<br />
+所以综合两方面的优势，(function () {...})()算是一个两全其美的写法，它也因此被广泛运用了起来。<br />
+<br />
+如果对 method 1 有足够深入和准确的认识，那么 method 2 显然是做不到 method 1 相同的结果的。而且 method 2 中的 strToJson 是一个普通的执行函数而不是构造函数，在这里用 new strToJson() 当构造函数创建对象就更杯具了，离 method 1 的思路也越来越远了。<br />
+<br />
+这里想提醒大家的是，(new Function(...))() 的代码执行方式和 eval(...) 有异曲同工之妙，都是将字符串当做脚本来执行。我们平时对于 eval 的使用时很谨慎的，而 new Function 则见得非常少，也几乎不会主动去使用，<del>其实在实际运用的时候需要和 eval 同等对待</del>但它和(function () {...})()的道理相同，会比eval更好的解决命名空间被污染的问题(感谢egg的补充)。</p>

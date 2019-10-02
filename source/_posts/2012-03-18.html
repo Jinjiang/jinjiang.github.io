@@ -1,0 +1,62 @@
+---
+title: "[不老歌] Typed Arrays 是神马？"
+date: 2012/3/19 1:53
+updated: 2012/3/19 1:53
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>在越来越多的W3C规范中见到TypedArrays和arrayBuffer这两个名词了，由于实际开发中还用不到，每次读到，就跳过去了。<br />
+<br />
+当然这是不对滴……<br />
+<br />
+今天，我们就来讨论一下这个<a href="https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/doc/spec/TypedArray-spec.html" target="_blank">JavaScript typed arrays</a><br />
+<br />
+<img src="http://ww1.sinaimg.cn/large/660d0cdfgw1dr4j6i4aivj.jpg"/><br />
+<br />
+<br />
+<strong>简介</strong><br />
+<br />
+首先，这个东东可以看做是对字符串格式的扩展，也可以看做是比字符串更好的描述二进制内容的数据类型。我们都知道，平时用记事本打开一个二进制文件，往往会看到一些稀奇古怪的字符、间歇的空格空行等等。这是因为二进制文件中每一个“字符”单位的数据都是无意义的，这不想文本文件那样，每个字符单位的数据可以独立查看和理解。所以，我们在处理二进制数据的时候，用字符串是很困难的，能用到的恐怕就只有类似<pre>for (var i = 0; i < str.length; i++) {<br>    console.log(str.charCodeAt(i));<br>}</pre>的操作，才有可能让我们进行二进制级别的数据操作。<br />
+<br />
+我们今天要介绍的TypedArray比这样处理方便得多。<br />
+<br />
+<br />
+<strong>原理</strong><br />
+<br />
+TypedArray的大概原理就是以charCode数组的形式，把一个二进制文件进行分解和体现。而数字进制有8、16、32、64这么几种。<br />
+<br />
+<br />
+<strong>接口介绍</strong><br />
+<br />
+这里一共有2个独立的接口和1个系列的接口，独立的接口就是ArrayBuffer和ArrayBufferView，系列接口就是TypedArray系列，包括下面几种接口：<br />
+<br />
+* Int8Array	1B<br />
+* Uint8Array	1B<br />
+* Uint8ClampedArray	1B<br />
+* Int16Array	2B<br />
+* Uint16Array	2B<br />
+* Int32Array	4B<br />
+* Uint32Array	4B<br />
+* Float32Array	4B<br />
+* Float64Array	8B<br />
+<br />
+ArrayBuffer是用来记录数组形式的二进制数据的，主要有两个特性/方法：byteLength和slice(begin, end)，用法和FileAPI中的Blob的接口相对应，基本一样。<br />
+<br />
+ArrayBufferView则是用来可视化展示数据的一个基本接口，它包含一个ArrayBuffer对象，其特性名为buffer，另外有两个特性可以决定数据展示的范围：byteOffset和byteLength。<br />
+<br />
+最后，TypedArray则是由ArrayBufferView继承而来，除了具有buffer、byteOffset、byteLength之外，还具有以下特性/方法：<pre>const BYTES_PER_ELEMENT // 取决于具体的单位字节数<br><br>readonly length; // 长度<br><br>getter get(index); // 数组取值<br>setter set(index, value); // 数组赋值<br><br>void set(array[, offset]); // 设置数据<br>TypedArray subarray(begin[, end]); // 截取其中一部分</pre><br />
+<br />
+<br />
+<strong>举个简单的例子</strong><br />
+<br />
+我们试着读取一下百度的favicon，打开<a href="http://www.baidu.com/" target="_blank">http://www.baidu.com/</a>，然后在命令行里敲入下面的代码：<pre>var a = new XMLHttpRequest;<br>a.open('GET', 'http://www.baidu.com/favicon.ico');<br>a.responseType = 'arraybuffer';<br>a.send();</pre>这样a.response就会得到一个ArrayBuffer对象，对象的数据内容正代表了站点图标的二进制数据。然后我们继续运行<pre>var b = new Int16Array(a.response);</pre>这样就得到了一份16进制格式的数据。我们将其在命令行输出，这时就会看到：<pre style="height: 12em; overflow: auto;">Int16Array<br>  0: 0<br>  1: 1<br>  2: 1<br>  3: 4112<br>  4: 16<br>  5: 1<br>  6: 4<br>  7: 296<br>  8: 0<br>  9: 22<br>  10: 0<br>  11: 40<br>  12: 0<br>  13: 16<br>  14: 0<br>  15: 32<br>  16: 0<br>  17: 1<br>  18: 4<br>  19: 0<br>  20: 0<br>  21: 128<br>  22: 0<br>  23: 0<br>  24: 0<br>  25: 0<br>  26: 0<br>  27: 0<br>  28: 0<br>  29: 0<br>  30: 0<br>  31: 0<br>  32: 0<br>  33: 0<br>  34: 128<br>  35: -32768<br>  36: 0<br>  37: -32768<br>  38: 128<br>  39: 128<br>  40: 0<br>  41: 128<br>  42: 128<br>  43: -32640<br>  44: 0<br>  45: -32640<br>  46: 128<br>  47: -16192<br>  48: 192<br>  49: 0<br>  50: 255<br>  51: -256<br>  52: 0<br>  53: -256<br>  54: 255<br>  55: 255<br>  56: 0<br>  57: 255<br>  58: 255<br>  59: -1<br>  60: 0<br>  61: -1<br>  62: 255<br>  63: -13108<br>  64: -13108<br>  65: -13108<br>  66: -13108<br>  67: -49<br>  68: -1<br>  69: -1<br>  70: -769<br>  71: -1841<br>  72: -14388<br>  73: -13188<br>  74: -881<br>  75: -817<br>  76: -13108<br>  77: -13108<br>  78: -817<br>  79: -817<br>  80: -13108<br>  81: -13108<br>  82: -817<br>  83: -1841<br>  84: -13108<br>  85: -13108<br>  86: -881<br>  87: -49<br>  88: -13172<br>  89: -14132<br>  90: -769<br>  91: -29489<br>  92: -13176<br>  93: -30516<br>  94: -824<br>  95: -13105<br>  96: -29489<br>  97: -824<br>  98: -820<br>  99: -13105<br>  100: -49<br>  101: -1793<br>  102: -824<br>  103: -29489<br>  104: -14200<br>  105: -14088<br>  106: -769<br>  107: -49<br>  108: -13060<br>  109: -13060<br>  110: -769<br>  111: -49<br>  112: -13060<br>  113: -13060<br>  114: -769<br>  115: -49<br>  116: -14088<br>  117: -28673<br>  118: -769<br>  119: -49<br>  120: -1<br>  121: -1<br>  122: -769<br>  123: -13108<br>  124: -13108<br>  125: -13108<br>  126: -13108<br>  127: 0<br>  128: 0<br>  129: 0<br>  130: 0<br>  131: 0<br>  132: 0<br>  133: 0<br>  134: 0<br>  135: 0<br>  136: 0<br>  137: 0<br>  138: 0<br>  139: 0<br>  140: 0<br>  141: 0<br>  142: 0<br>  143: 0<br>  144: 0<br>  145: 0<br>  146: 0<br>  147: 0<br>  148: 0<br>  149: 0<br>  150: 0<br>  151: 0<br>  152: 0<br>  153: 0<br>  154: 0<br>  155: 0<br>  156: 0<br>  157: 0<br>  158: 0<br>  buffer: ArrayBuffer<br>  byteLength: 318<br>  byteOffset: 0<br>  length: 159<br>  __proto__: Int16Array</pre><br />
+这正是站点图标的数据，数据非常可视化，非常友好。<br />
+<br />
+<br />
+<strong>总结</strong><br />
+<br />
+TypedArray的好处是，略显枯燥晦涩的位操作，可以摇身一变，变成我们熟悉的数学计算，一个比较好理解的事情，就是用js实现zip压缩算法。感兴趣的可以移步到<a href="http://gildas-lormeau.github.com/zip.js/" target="_blank">zip.js</a>去看看他们的实现。<br />
+<br />
+其实我这里还等于顺带介绍了<a href="http://www.w3.org/TR/XMLHttpRequest/" target="_blank">XMLHttpRequest Level 2</a>，新增的接口我刚才的例子中也提到了一部分。其它新增的接口还有请求与发送更丰富的数据格式、ajax请求可以显示进度(onprogress)等等，这里不做展开介绍了，感兴趣的可以自行移步学习。<br />
+<br />
+以上</p>

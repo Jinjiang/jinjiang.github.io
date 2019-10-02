@@ -1,0 +1,135 @@
+---
+title: "[不老歌] WebApp时代的界面布局浅析(我在WebReBuild.ORG第五届年会北京站上的主题分享)"
+date: 2011/11/15 16:15
+updated: 2011/11/15 16:15
+---
+
+<p><mark>本文摘自 勾三股四 更早时期的 <a href="http://bulaoge.net/?g3g4">不老歌</a> 博客。</mark></p>
+<p>在线幻灯片地址：<br />
+<a href="http://jinjiang.github.com/slides/think-about-webapp-layout/" target="_blank">http://jinjiang.github.com/slides/think-about-webapp-layout/</a><br />
+说明：如果您使用的是<a href="http://blog.maxthon.cn/?p=1542" target="_blank">文艺浏览器</a>，那么您使用的是普通浏览器或XX浏览器，则幻灯片的内容会以普通网页的方式呈现。<br />
+<br />
+下面是内容摘要：<br />
+<h3>WebPage时代的布局</h3><h4>WebPage</h4>  * 其功效集中在内容的展现<br />
+  * 多以文档形式存在<br />
+  * 流式布局<br />
+常见的WebPage布局<br />
+  * 页眉<br />
+  * 横向导航<br />
+  * 侧边导航<br />
+  * 正文内容<br />
+  * 页脚<br />
+Beautiful HTML Code<br />
+  * http://css-tricks.com/121-what-beautiful-html-code-looks-like/<br />
+经典案例：新闻、博客<h3>WebPage++时代</h3>不同之处：<br />
+  * 谋求更丰富的交互<br />
+  * 谋求更灵活的布局<br />
+  * 谋求更开放的版式<br />
+比如：<br />
+  * 大量的交互性元素<br />
+  * 对操作的集中控制<br />
+  * 更复杂的交互逻辑<br />
+从界面的角度看：<br />
+  * 围绕着内容发展出了各种各样的按钮和浮层<br />
+  * 出现了控制面板和工具条<br />
+  * 出现了复杂的交互<br />
+  * 内容由静态转为动态，信息越来越多<br />
+  * WebApp的影子开始浮现<br />
+典型的例子：微博、SNS<h3>WebApp时代的到来</h3>什么是WebApp？两条线索：<br />
+  * 能够取代传统应用程序<br />
+  * 运用了大量的HTML5技术<br />
+经典的案例：Google Apps、iCloud.com<br />
+更多的WebApp：http://web.appstorm.net/<br />
+<h3>界面布局正在悄然改变……</h3><h4>WebPage</h4>  * 内容 → 网页 → 浏览区域<br />
+<h4>WebApp</h4>  * 内容 → 可视区域<br />
+<h3>WebPage vs. WebApp</h3>WebPage<br />
+  * 网页好比一张长长的画卷，<br />
+  * 浏览器犹如放大镜，<br />
+  * 浏览网页，好比用户那着放大镜看画卷的局部<br />
+WebApp<br />
+  * 浏览器如观光玻璃，<br />
+  * 内容如流水一样，浩瀚、灵活，<br />
+  * 用户在水族馆里观赏风景<br />
+<h3>回归到界面的本质</h3>  * 直接根据可视空间设计界面<br />
+  * 解放思想，解放生产力<br />
+<h4>换个角度考虑界面布局</h4>以可视空间为本 →<br />
+如何充分利用有边界的可视空间？ →<br />
+填满可视空间先…… →<br />
+开始各种探索、思考、纠结……<br />
+这时，我们不妨从传统应用程序的界面中开拓视野，找寻灵感&#128161;<br />
+<h3>找了几个别的领域的前端技术</h3>介绍几种界面布局的思路<br />
+  * WPF (Windows Presentation Foundation)：是微软推出的基于Windows Vista的用户界面框架，属于.net的一部分<br />
+  * Cocoa：苹果公司为Mac OS X所创建的原生面向对象的编程环境<br />
+  * HTMLayout：一个免费的开源界面库(核心未开源)，以DLL的方式运行，可以高效的解析和渲染HTML网页，并根据界面库的特征，做了很多有用的功能性扩展。傲游3浏览器的界面就是基于HTMLayout设计和开发的<br />
+<h3>WPF</h3>  * StackPanel：朝一个特定的方向(横向或纵向)，依次排列子元素<br />
+  * WrapPanel：在 StackPanel 的基础上，可以允许子元素自动折行<br />
+  * Grid：网格式布局，可设定一共几行几列，和每行的行高、每列的列宽<br />
+  * DockPanel：把界面分成上、下、左、右、中间5个部分<br />
+<h3>Appkit (Cocoa)</h3><h4>坐标、尺寸及其自动调整的方式</h4><h4>一些特定界面元素</h4>  * Toolbar：一种特定的布局方式，只能出现在窗口的最上部。子元素从左到右排布，可以放置按钮、输入框，也可以放置“可无限撑大”的空白区域，将其右侧的子元素挤到工具栏的最后边<br />
+  * Menu：菜单栏，永远在屏幕的最上面<br />
+<h4>更多子元素的内部布局</h4>  * TableView<br />
+  * OutlineView<br />
+  * CollectionView<br />
+更复杂的界面布局都需要通过代码来实现<br />
+<h3>HTMLayout</h3><h4>height: 100%</h4>  * 可以让元素撑满整个窗口的高度<br />
+  * 传递很明确的信息：——应用程序的界面是有固定高度的<br />
+<h4>新长度单位：%%</h4>  * 在剩余的总长度中选取相应比例的长度，相当于WPF中的*单位<br />
+  * http://www.terrainformatica.com/htmlayout/fspu.whtm<br />
+<h4>新布局方式：flow</h4>  * vertical | horizontal | vertical-flow | horizontal-flow | grid<br />
+  * 前四个相当于WPF中的StackPanel和WrapPanel，分横向纵向两个方向<br />
+  * 第五个相当于WPF中的Gird<br />
+  * http://www.terrainformatica.com/htmlayout/flow.whtm<br />
+其它<br />
+  * calc(...) 长度计算函数：http://www.terrainformatica.com/htmlayout/csss!-calc-function.whtm<br />
+  * Flex 布局 / min-intrinsic / max-intrinsic：http://www.terrainformatica.com/w3/flex-layout/flex-layout.htm<br />
+更多：http://www.terrainformatica.com/htmlayout/<br />
+<h4>HTMLayout 实践</h4>  * 傲游3浏览器皮肤系统<br />
+  * 大量的素材、文档、源代码<br />
+  * 首页 → 傲游实验室 → 皮肤系统：http://www.maxthon.cn/lab/skin/<br />
+<h3>简单回顾一下</h3>  * 从 NativeApp 得到的启发<br />
+<h4>流式布局其实很棒</h4>  * 遭遇了流式布局缺失的界面库，才懂得流式布局的强大！<br />
+  * 流式布局想垒积木一样灵活，非常适合功能性界面<br />
+<h4>DockPanel 式布局很讨喜</h4>  * 较为复杂的应用程序几乎都可以从DockPanel作为界面布局的起点<br />
+<h4>绝对定位应用最为广泛</h4>  * 在较为简单的界面中，绝对定位是最直观、成本最低的方式<br />
+  * 可以很好的配合所见即得编辑器进行布局<br />
+<h4>绝对定位可能面临的问题</h4>  * DPI的改变<br />
+  * 多语言环境等<br />
+建议<br />
+  * 给每个元素保留足够的余地，以应付内容变化<br />
+  * 从排版上尽量回避由于文字长短、多媒体元素尺寸大小造成的布局混乱<br />
+  * 推荐：《Flexible Web Design》Zoe Mickley Gillenwater (加)<br />
+<h3>几个WebApp的“好朋友”</h3><h4>box-sizing</h4>  * 可以选择根据边框、内边距或实际内容计算盒模型，适用于边框大小、边距大小会动态变化的元素<br />
+  * http://www.w3.org/TR/css3-ui/#box-sizing<br />
+<h4>background-origin (-clip)</h4>  * 可以选择根据边框、内边距或实际内容计算背景图片的坐标起点和覆盖区域，同样适用于边框大小、边距大小会动态变化的元素<br />
+  * http://www.w3.org/TR/css3-background/#the-background-origin<br />
+  * http://www.w3.org/TR/css3-background/#the-background-clip<br />
+<h4>绝对定位</h4>  * 快速定位一个元素在窗口中的位置和大小，适用于尺寸需要根据窗口变化而变化的元素<br />
+<h4>display: box / flex-*</h4>  * 类似 grid 的布局，可以让若干子元素，通过具体长度或长度比例，撑满整行/整列容器空间，但它是单行或单列的，并没有网格形式，适用于工具栏等元素，以及界面上大块的布局划分<br />
+  * http://www.w3.org/TR/css3-flexbox/<br />
+<h4>transform (-origin)</h4>  * 等比例伸缩盒模型中的几乎一切内容，适用于尺寸需要等比例变化的展示性元素<br />
+  * http://www.w3.org/TR/css3-2d-transforms/<br />
+<h4>grid</h4>网格化布局，从设计的角度看，非常实用<br />
+  * http://www.w3.org/TR/css3-grid-layout/<br />
+<h4>media queries</h4>通过不同的界面尺寸，应用不同的CSS样式<br />
+  * http://www.w3.org/TR/css3-mediaqueries/<br />
+<h4>multi-column / regions</h4>  * 两者均属于对于界面布局细节的雕琢<br />
+  1. 分列显示大块内容 (demo)<br />
+  2. 打破“矩形盒子”的限制，在高度自定义的一个或多个区域内填充内容<br />
+  * http://www.w3.org/TR/css3-multicol/<br />
+  * http://www.w3.org/TR/css3-regions/<br />
+<h3>参考资料</h3>  * w3c官网 - CSS：http://www.w3.org/Style/CSS/current-work<br />
+  * win8 html5 platform 展示页：http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/<br />
+  * HTML5 Rocks：Tutorials：http://www.html5rocks.com/en/tutorials/<br />
+  * 前端观察：http://www.qianduan.net/<br />
+<h3>其实，这张幻灯片也是一个WebApp！</h3><h4>HTML5幻灯片系统</h4>传统PPT<br />
+  * 太过笨重<br />
+  * 很多冗余的功能和设计<br />
+  * 只有一张空白幻灯片的pptx文件也有几百行代码<br />
+  * 大部分的Powerpoint功能我们根本用不到<br />
+<h4>HTML5幻灯片系统</h4>  * 带有交互性的演示<br />
+  * 小巧轻便、易于分享和传播<br />
+  * 跨平台<br />
+  * 可扩展<br />
+  * 可融入其它的软件和系统<br />
+<h4>希望重新定义幻灯演示</h4>欢迎加入我们的行列！<br />
+<h3>迎接挑战吧！</h3>THANKS & QA</p>
