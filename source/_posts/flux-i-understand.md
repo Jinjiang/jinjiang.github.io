@@ -16,7 +16,8 @@ updated: 2016/08/23 14:11
 
 这是 Flux 官方提供的一张说明图：
 
-![](http://facebook.github.io/flux/img/flux-simple-f8-diagram-with-client-action-1300w.png)
+![](https://facebook.github.io/flux/img/overview/flux-simple-f8-diagram-with-client-action-1300w.png)
+
 
 图中有四个名词：
 
