@@ -1,10 +1,10 @@
 ---
-title: '通过HTML5 Canvas API调节图像的亮度和颜色'
+title: '[译]通过HTML5 Canvas API调节图像的亮度和颜色'
 date: 2013/10/11 04:15:29
 updated: 2013/12/11 10:52:22
 ---
 
-译自：[Adjusting Image Brightness and Color Using the HTML5 Canvas API](http://www.storminthecastle.com/2013/10/06/color-matrix-filters-using-the-html5-canvas/)
+<mark>译自：[Adjusting Image Brightness and Color Using the HTML5 Canvas API](http://www.storminthecastle.com/2013/10/06/color-matrix-filters-using-the-html5-canvas/)</mark>
 
 你曾否需要调节一张图片的亮度？或者增强红色通道让它变得温暖一些？
 

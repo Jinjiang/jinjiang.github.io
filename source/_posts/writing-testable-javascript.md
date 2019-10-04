@@ -1,10 +1,10 @@
 ---
-title: '撰写可测试的 JavaScript'
+title: '[译]撰写可测试的 JavaScript'
 date: 2013/12/11 11:28:58
 updated: 2016/06/15 10:45:48
 ---
 
-译自：[Writing Testable JavaScript - A List Apart](http://alistapart.com/article/writing-testable-javascript)
+<mark>译自：[Writing Testable JavaScript - A List Apart](http://alistapart.com/article/writing-testable-javascript)</mark>
 
 这篇文章算是 A List Apart 系列文章中，包括滑动门在内，令我印象最深刻的文章之一。最近有时间翻译了一下，分享给更多人，希望对大家有所帮助！
 

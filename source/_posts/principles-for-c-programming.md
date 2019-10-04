@@ -1,8 +1,10 @@
 ---
-title: 'C 程序的原则'
+title: '[译]C 程序的原则'
 date: 2017/03/19 04:48:07
 updated: 2017/03/19 05:07:11
 ---
+
+<mark>译自：[Principles for C programming](https://drewdevault.com/2017/03/15/How-I-learned-to-stop-worrying-and-love-C.html)</mark>
 
 按照 Doug Gwyn 的话说：“Unix 不会阻止你做愚蠢的事情，因为那会同样阻止你做聪明的事情”。C 是一个非常强大的工具，但使用它的时候需要非常小心和[自律][discipline]。学习这些纪律是绝对值得的，因为 C 是所有程序语言中最优秀的。一个自律的 C 程序员将会……
 

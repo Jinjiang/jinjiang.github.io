@@ -1,10 +1,10 @@
 ---
-title: 'JavaScript V8性能小贴士'
+title: '[译]JavaScript V8性能小贴士'
 date: 2013/09/29 07:32:13
 updated: 2013/12/11 10:52:16
 ---
 
-译自：[Performance Tips for JavaScript in V8](https://www.html5rocks.com/en/tutorials/speed/v8/)
+<mark>译自：[Performance Tips for JavaScript in V8](https://www.html5rocks.com/en/tutorials/speed/v8/)</mark>
 
 ### 简介
 

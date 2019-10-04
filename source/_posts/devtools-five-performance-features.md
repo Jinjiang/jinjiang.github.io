@@ -1,10 +1,10 @@
 ---
-title: 'Chrome开发者工具中评估性能的五大新特性'
+title: '[译]Chrome开发者工具中评估性能的五大新特性'
 date: 2013/09/18 06:37:03
 updated: 2013/12/11 10:52:06
 ---
 
-摘自：[Chrome DevTools Revolutions 2013](https://www.html5rocks.com/en/tutorials/developertools/revolutions2013/)
+<mark>摘自：[Chrome DevTools Revolutions 2013](https://www.html5rocks.com/en/tutorials/developertools/revolutions2013/)</mark>
 
 本次开发者工具的改进中有几项新特性是针对性能的：
 

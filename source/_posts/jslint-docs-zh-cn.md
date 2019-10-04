@@ -1,5 +1,5 @@
 ---
-title: '[翻译] JSLint 文档'
+title: '[译]JSLint 文档'
 date: 2013/02/17 03:04:46
 updated: 2013/02/17 03:07:14
 tags:
@@ -7,7 +7,7 @@ tags:
 - 翻译
 ---
 
-原文地址：[https://www.jslint.com/lint.html](https://www.jslint.com/lint.html)
+<mark>译自：[https://www.jslint.com/lint.html](https://www.jslint.com/lint.html)</mark>
 
 ### 什么是`JSLint`？
 

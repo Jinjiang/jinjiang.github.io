@@ -1,10 +1,10 @@
 ---
-title: '如何成为一名卓越的前端工程师'
+title: '[译]如何成为一名卓越的前端工程师'
 date: 2015/08/10 07:00:58
 updated: 2017/06/27 04:39:31
 ---
 
-译自 [Philip Walton 的博客](http://philipwalton.com/articles/how-to-become-a-great-front-end-engineer/)
+<mark>译自 [Philip Walton 的博客](http://philipwalton.com/articles/how-to-become-a-great-front-end-engineer/)</mark>
 
 看过之后非常有感触，很多观点都是自己长期非常坚持和认同的，所以翻译出来分享给更多的前端同学！
 

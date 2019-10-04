@@ -1,5 +1,5 @@
 ---
-title: '如何让办公室政治最小化'
+title: '[译]如何让办公室政治最小化'
 date: 2015/08/02 04:53:04
 updated: 2015/08/03 04:52:06
 tags:
@@ -9,7 +9,7 @@ tags:
 来来来，看看办公室政治是个什么东西，以及如何将其最小化  
 翻译如有疏漏还请指正
 
-译自：[How to Minimize Politics in Your Company](http://www.bhorowitz.com/how_to_minimize_politics_in_your_company) via www.bhorowitz.com
+<mark>译自：[How to Minimize Politics in Your Company](http://www.bhorowitz.com/how_to_minimize_politics_in_your_company) via www.bhorowitz.com</mark>
 
 *更新：跟身边一些朋友讨论之后，觉得之前翻译的标题“杜绝”言过了，还是规规矩矩翻译成了“最小化”*
 

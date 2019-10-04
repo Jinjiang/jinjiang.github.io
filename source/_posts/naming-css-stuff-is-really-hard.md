@@ -1,5 +1,5 @@
 ---
-title: 'CSS命名神马的真心难'
+title: '[译]CSS命名神马的真心难'
 date: 2014/09/23 05:18:41
 updated: 2014/10/26 03:23:44
 tags:
@@ -7,7 +7,7 @@ tags:
 - css
 ---
 
-译自：[Naming CSS Stuff Is Really Hard](http://seesparkbox.com/foundry/naming_css_stuff_is_really_hard)
+<mark>译自：[Naming CSS Stuff Is Really Hard](http://seesparkbox.com/foundry/naming_css_stuff_is_really_hard)</mark>
 
 找到的这篇文章算是对我之前写的 [《标签？ID？还是CLASS？》](/blog/html-or-id-or-class/) 的再深入。我当时写那篇文章的时候，就有朋友提出了“非语义化”的 class 命名的问题，我当时确实觉得很纠结，简单的想法是“框架性质的表象 class 我没异议……框架的实质是通过降低灵活性达成更广泛的共识，我们个人不要再创造这样的样式就好了”，但没有想到特别好的“套路”，更多的是在实际情况中再分辨。看过这篇文章，我似乎找到了更好的答案。同时顺着文中提到的 [Nicolas 那篇文章](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)看下去，也对 OOCSS、BEM 之类的提法有了更多的认同感。特译给大家参考。<!--more-->
 

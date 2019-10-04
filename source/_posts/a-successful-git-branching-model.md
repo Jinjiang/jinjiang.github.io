@@ -1,10 +1,10 @@
 ---
-title: 'Git 分支的最佳实践'
+title: '[译]Git 分支的最佳实践'
 date: 2014/01/01 11:59:23
 updated: 2014/10/15 05:40:07
 ---
 
-译自：[A successful Git branching model &raquo; nvie.com](https://nvie.com/posts/a-successful-git-branching-model/)
+<mark>译自：[A successful Git branching model &raquo; nvie.com](https://nvie.com/posts/a-successful-git-branching-model/)</mark>
 
 ----
 

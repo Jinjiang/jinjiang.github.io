@@ -1,10 +1,10 @@
 ---
-title: '如果管理是唯一可走的路，那就完蛋了'
+title: '[译]如果管理是唯一可走的路，那就完蛋了'
 date: 2017/03/28 12:34:18
 updated: 2017/08/01 02:58:36
 ---
 
-译自：[https://moz.com/rand/if-management-is-the-only-way-up-were-all-fd/](https://moz.com/rand/if-management-is-the-only-way-up-were-all-fd/)
+<mark>译自：[https://moz.com/rand/if-management-is-the-only-way-up-were-all-fd/](https://moz.com/rand/if-management-is-the-only-way-up-were-all-fd/)</mark>
 
 注：作者 Rand 是 Moz 的 CEO，文中反复出现两个词：IC (Individual Contributor) 和 PW (People Wrangler)，分别翻译成了一线员工和经理人。
 

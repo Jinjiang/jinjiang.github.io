@@ -1,10 +1,10 @@
 ---
-title: '为什么我不会无偿加班且你也不应该'
+title: '[译]为什么我不会无偿加班且你也不应该'
 date: 2017/04/01 08:06:05
 updated: 2017/08/01 02:57:44
 ---
 
-译自：[http://thecodist.com/article/why_i_don_39_t_do_unpaid_overtime_and_neither_should_you](http://thecodist.com/article/why_i_don_39_t_do_unpaid_overtime_and_neither_should_you)
+<mark>译自：[http://thecodist.com/article/why_i_don_39_t_do_unpaid_overtime_and_neither_should_you](http://thecodist.com/article/why_i_don_39_t_do_unpaid_overtime_and_neither_should_you)</mark>
 
 原文写于 2012 年，至今已经有一段时间了，前段时间这篇文章又被大家翻出来热烈讨论，看过之后有些感触，所以翻译了一下
 

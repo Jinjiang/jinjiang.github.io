@@ -1,10 +1,10 @@
 ---
-title: '视觉差，走起！'
+title: '[译]视觉差，走起！'
 date: 2013/09/22 05:11:17
 updated: 2013/12/11 10:52:11
 ---
 
-翻译自：[https://www.html5rocks.com/en/tutorials/speed/parallax/](https://www.html5rocks.com/en/tutorials/speed/parallax/)
+<mark>译自：[https://www.html5rocks.com/en/tutorials/speed/parallax/](https://www.html5rocks.com/en/tutorials/speed/parallax/)</mark>
 
 ### 简介
 

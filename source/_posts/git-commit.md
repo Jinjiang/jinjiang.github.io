@@ -1,10 +1,10 @@
 ---
-title: '如何撰写 Git 提交信息'
+title: '[译]如何撰写 Git 提交信息'
 date: 2017/03/20 03:28:05
 updated: 2017/08/18 03:42:17
 ---
 
-译自：[https://chris.beams.io/posts/git-commit/](https://chris.beams.io/posts/git-commit/)
+<mark>译自：[https://chris.beams.io/posts/git-commit/](https://chris.beams.io/posts/git-commit/)</mark>
 
 ----
 
