@@ -31,7 +31,7 @@ order: 1
 
 #### 翻译
 
-* [《Sass与Compass实战》](https://www.ituring.com.cn/book/1350) <small>合译者 2014</small>
+* [《Sass与Compass实战》](https://www.ituring.com.cn/book/1350) <small>合译者 2014 - [亚马逊购买链接](https://www.amazon.cn/dp/B015PQUWI8/)</small>
 * [Vue.js 中文官网](https://cn.vuejs.org/)
 
 #### 其它略陈旧的 demo
