@@ -12,16 +12,27 @@ order: 1
 - 我的 CodePen 的 [Pens](https://codepen.io/Jinjiang/pens/)
 - 我的 CodeSandbox 的 [Sandboxes](https://codesandbox.io/u/Jinjiang/sandboxes)
 
-### Screencasts
+### 非 Demos
 
-* [《Web Components 中的 CSS》](http://www.tudou.com/programs/view/8bvwGHaL6T4/) <small>CSS Conf 2015-01-10</small>
-* [《CSS will-change 规范介绍》](http://www.tudou.com/programs/view/FjO_PdgSV94/) <small>W3C HTML 中文兴趣组 ig 在线 talk 2014-10-12</small>
+#### 录屏
+
 * [《Web Components 系列规范介绍》](http://www.tudou.com/plcover/r0pA0z77CgM/) <small>W3C HTML 中文兴趣组 ig 在线 talk 2014-09-15</small>
+* [《CSS will-change 规范介绍》](http://www.tudou.com/programs/view/FjO_PdgSV94/) <small>W3C HTML 中文兴趣组 ig 在线 talk 2014-10-12</small>
+* [《Web Components 中的 CSS》](http://www.tudou.com/programs/view/8bvwGHaL6T4/) <small>CSS Conf 2015-01-10</small>
 
-### Podcasts
+#### 访谈
 
-* [《Weex meets Vue，记一次 Weex 前端团队的讨论》](https://github.com/weexteam/article/issues/77) <small>2016-09-09</small>
-* [《Vue.js Podcast 报名中，尤小右、勾三股四带你畅聊 Vue.js》](https://juejin.im/entry/5731fe6ac4c9710060dacb55) <small>2016-05-13</small>
+* [Vue.js Podcast 报名中，尤小右、勾三股四带你畅聊 Vue.js](https://juejin.im/entry/5731fe6ac4c9710060dacb55) <small>掘金 2016-05-13</small>
+* [Weex meets Vue，记一次 Weex 前端团队的讨论](https://github.com/weexteam/article/issues/77) <small>Weex Team 2016-09-09</small>
+* [阿里 Weex 负责人勾股：开源社区不纯粹做技术的事情](https://www.oschina.net/question/2886655_2214296) <small>开源中国-开源访谈 2016-12-18</small>
+* [勾三股四：用技术追寻世界的确定答案](https://www.ituring.com.cn/article/507922) <small>图灵社区-图灵访谈 2019-07-05</small>
+* [The Solo JavaScript Developer Challenging Google and Facebook](https://www.wired.com/story/the-solo-javascript-developer-challenging-google-facebook/) <small>连线杂志 2018-08-23 (蹭尤雨溪的流量)</small>
+* [Vue.js: The Documentary](https://www.youtube.com/watch?v=OrxmtDw4pVI) <small>Honeypot 2020-02-24 (蹭尤雨溪的流量)</small>
+
+#### 翻译
+
+* [《Sass与Compass实战》](https://www.ituring.com.cn/book/1350) <small>合译者 2014</small>
+* [Vue.js 中文官网](https://cn.vuejs.org/)
 
 #### 其它略陈旧的 demo
 
