@@ -1,4 +1,3 @@
 module.exports = {
-  title: "Jinjiang",
-  description: "Jinjiang's Dev Site"
+  title: "Jinjiang's Dev Space"
 }
