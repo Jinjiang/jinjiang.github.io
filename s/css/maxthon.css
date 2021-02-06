@@ -1,0 +1,99 @@
+body, input, button, select, label, textarea {
+    font-family: "Lucida Grande", "Microsoft JhengHei", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+    background: white url(/s/images/bg.png) no-repeat fixed right 20px;
+    line-height: 1.5;
+}
+input, button, select, label, textarea {
+    font-size: 100%;
+}
+button, input[type="submit"], input[type="button"] {
+    -webkit-appearance: push-button;
+}
+h1 {
+    border-bottom: thick #003366 solid;
+    padding-bottom: 0.5em;
+}
+h2 {
+    background-color: #3399cc;
+    color: #FFFFFF;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 3px #999;
+}
+h1, h2 {
+    margin: 0.5em 0;
+}
+h3, h4 {
+    margin: 1em 0;
+}
+h1, h3, h4 {
+    color: #003366;
+}
+h5, h6 {
+    color: #666666;
+}
+dt {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+dd {
+    margin-bottom: 0.5em;
+    background-color: #eeeeee;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 5px;
+}
+ul {
+    list-style-type: square;
+}
+li {
+    margin: 1em 0;
+    padding: 0;
+}
+ul, ol {
+    margin: 1em 0;
+    padding: 0;
+    padding-left: 2em;
+}
+table {
+    border-collapse: collapse;
+    border-color: #069;
+}
+td, th {
+    padding: 5px 10px;
+    border-color: #069;
+    cursor: default;
+}
+th {
+    background: #d2e0f3;
+}
+tr:nth-child(odd) td {
+    background: #f0f0f0;
+}
+tr:hover td {
+    background: #eef;
+}
+blockquote, q, pre, code {
+    background: #eee;
+    border-radius: 5px;
+}
+blockquote, pre {
+    padding: 0.5em;
+    overflow: auto;
+}
+pre, code {
+    font-family: Monaco, Consolas;
+}
+mark {
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+
+
+
+.disabled {
+    color: gray;
+    border-radius: 5px;
+}
