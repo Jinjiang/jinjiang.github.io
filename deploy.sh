@@ -6,6 +6,9 @@ set -e
 # build
 npm run docs:build
 
+# clone the circleci config
+cp -r .circleci docs/.vitepress/dist/
+
 # navigate into the build output directory
 cd docs/.vitepress/dist
 
