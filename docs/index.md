@@ -33,7 +33,11 @@ https://github.com/Jinjiang/vue-keyboard-over
 
 ## Slides
 
+All my tech slides
+
 https://github.com/Jinjiang/slides
+
+- [Preview online](https://jinjiang.dev/slides/)
 
 ## Archives
 
@@ -42,3 +46,7 @@ https://github.com/Jinjiang/slides
 - [Zorro HTML](https://github.com/zorro-html): A collection of web components to easily use.
 - [grunt-combo-html-css-js](https://github.com/Jinjiang/grunt-combo-html-css-js): Combine css links and javscript files to html file with inline tags automatically.
 - [name-loader](https://github.com/Jinjiang/name-loader): A loader that returns the module name.
+
+## More
+
+Check out my GitHub: https://github.com/Jinjiang
