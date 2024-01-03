@@ -1,7 +1,9 @@
 node_modules
-yarn.lock
+pnpm-lock.yaml
 
-dist
+docs/.vitepress/dist
+docs/.vitepress/cache
+
 *.log
 
 TODO
