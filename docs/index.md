@@ -8,6 +8,12 @@ A linting tool for Chinese language.
 
 https://github.com/zhlint-project/zhlint
 
+### Vlite
+
+A lite demo server, inspired by Vite.
+
+https://github.com/Jinjiang/vlite
+
 ### Vue Simple Compiler
 
 A lib to compile Vue Single-File Component into plain JavaScript & CSS.
