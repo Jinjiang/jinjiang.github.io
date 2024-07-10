@@ -20,6 +20,20 @@ A lib to compile Vue Single-File Component into plain JavaScript & CSS.
 
 https://github.com/Jinjiang/vue-simple-compiler
 
+### Marked Slides
+
+A component that renders Markdown into slides.
+
+- https://bit.cloud/zhaojinjiang/slides/ui/marked-slides
+- https://bit.cloud/zhaojinjiang/slides/ui/marked-slides-plus
+- https://bit.cloud/zhaojinjiang/slides/apps/my-slides
+
+### VitePress Translation Helper
+
+A translation toolkit for VitePress.
+
+https://github.com/vuejs-translations/vitepress-translation-helper
+
 ### Source Map View (wip)
 
 A web app to view source code and source maps side-by-side.
@@ -28,11 +42,9 @@ https://github.com/Jinjiang/source-map-view
 
 ## Slides
 
-All my tech slides
+All my tech slides: [preview online](https://jinjiang.dev/slides/)
 
 https://github.com/Jinjiang/slides
-
-- [Preview online](https://jinjiang.dev/slides/)
 
 ## Archives
 
