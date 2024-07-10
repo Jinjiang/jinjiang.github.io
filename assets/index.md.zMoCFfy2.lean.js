@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as r,a2 as i}from"./chunks/framework.CEEDLcpe.js";const b=JSON.parse('{"title":"Welcome","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),t={name:"index.md"},l=i("",27),o=[l];function s(n,h,p,d,c,u){return r(),a("div",null,o)}const g=e(t,[["render",s]]);export{b as __pageData,g as default};
