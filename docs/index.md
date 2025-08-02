@@ -46,6 +46,10 @@ All my tech slides: [preview online](https://jinjiang.dev/slides/)
 
 https://github.com/Jinjiang/slides
 
+## Other side projects
+
+- [Football Tactical Board](https://jinjiang.dev/football-tactical-board/)
+
 ## Archives
 
 - [Vue A11y Utils](https://github.com/Jinjiang/vue-a11y-utils): Utilities for accessibility (a11y) in Vue.js
