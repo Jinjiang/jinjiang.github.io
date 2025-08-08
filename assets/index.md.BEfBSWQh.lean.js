@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as r,a2 as t}from"./chunks/framework.CQ12TVIp.js";const b=JSON.parse('{"title":"Welcome","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),i={name:"index.md"},l=t("",29),o=[l];function s(n,h,p,d,c,u){return r(),a("div",null,o)}const g=e(i,[["render",s]]);export{b as __pageData,g as default};
