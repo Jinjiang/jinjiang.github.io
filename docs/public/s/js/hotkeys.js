@@ -15,7 +15,7 @@
           const tag = (document.activeElement && document.activeElement.tagName) || '';
           if (!/^(INPUT|TEXTAREA|SELECT)$/.test(tag)) {
             e.preventDefault();
-            window.location.assign('/football-tactical-board/dashboard.html');
+            window.location.assign('/football-tactical-board/');
           }
         }
       }
