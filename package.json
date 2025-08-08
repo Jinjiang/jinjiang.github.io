@@ -7,9 +7,12 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d docs/.vitepress/dist"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0"
+    "vitepress": "^1.0.0",
+    "gh-pages": "^6.3.0"
   }
 }
